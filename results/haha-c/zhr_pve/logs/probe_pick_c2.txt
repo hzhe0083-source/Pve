@@ -1,0 +1,3 @@
+[33;1m2026-10-31 16:36:11,460 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+source states 102400, done rate 0.276; held-out AUROC 0.811, accuracy 0.734
+saved data/done_probe_pick_c2.pt

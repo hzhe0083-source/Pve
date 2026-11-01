@@ -1,0 +1,37 @@
+PROT_START 10:40:07 dell-Precision-3680 jobs=24
+DONE place_nsa64_s1
+DONE place_nsa64np_s1
+DONE place_nsa64npr_s1
+DONE place_nsa64_s2
+DONE place_nsa64np_s2
+DONE place_nsa64npr_s2
+DONE place_nsa64_s3
+DONE place_nsa64np_s3
+DONE place_nsa64npr_s3
+DONE place_nsa64_s4
+DONE place_nsa64np_s4
+DONE place_nsa64npr_s4
+DONE place_nsa64_s5
+DONE place_nsa64np_s5
+DONE place_nsa64npr_s5
+DONE place_nsa64_s6
+DONE place_nsa64np_s6
+DONE place_nsa64npr_s6
+DONE place_nsa64_s7
+DONE place_nsa64np_s7
+DONE place_nsa64npr_s7
+DONE place_nsa64_s8
+DONE place_nsa64np_s8
+DONE place_nsa64npr_s8
+PROT_END 11:26:37
+PROT_START 11:26:37 dell-Precision-3680 jobs=9
+DONE stack_nsa64_s1
+DONE stack_nsa64np_s1
+DONE stack_nsa64npr_s1
+DONE stack_nsa64_s2
+DONE stack_nsa64np_s2
+DONE stack_nsa64_s3
+DONE stack_nsa64npr_s2
+DONE stack_nsa64np_s3
+DONE stack_nsa64npr_s3
+PROT_END 11:54:58

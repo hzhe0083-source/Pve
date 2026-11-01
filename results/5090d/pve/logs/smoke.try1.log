@@ -1,0 +1,516 @@
+Downloading PhysX GPU library to /home/zhr/.sapien/physx/105.1-physx-5.3.1.patch0 from Github. This can take several minutes. If it fails to download, please manually download fhttps://github.com/sapien-sim/physx-precompiled/releases/download/105.1-physx-5.3.1.patch0/linux-so.zip and unzip at /home/zhr/.sapien/physx/105.1-physx-5.3.1.patch0.
+Traceback (most recent call last):
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 540, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 638, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/a2r-train/python/cpython-3.11.17-linux-x86_64-gnu/lib/python3.11/http/client.py", line 1443, in getresponse
+    response.begin()
+  File "/home/zhr/a2r-train/python/cpython-3.11.17-linux-x86_64-gnu/lib/python3.11/http/client.py", line 337, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/a2r-train/python/cpython-3.11.17-linux-x86_64-gnu/lib/python3.11/http/client.py", line 306, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 510, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 540, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 638, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/a2r-train/python/cpython-3.11.17-linux-x86_64-gnu/lib/python3.11/http/client.py", line 1443, in getresponse
+    response.begin()
+  File "/home/zhr/a2r-train/python/cpython-3.11.17-linux-x86_64-gnu/lib/python3.11/http/client.py", line 337, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/a2r-train/python/cpython-3.11.17-linux-x86_64-gnu/lib/python3.11/http/client.py", line 306, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhr/pve/scripts/smoke_maniskill.py", line 19, in <module>
+    env = gym.make(a.env, num_envs=a.num_envs, obs_mode="state", control_mode="pd_joint_delta_pos",
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/gymnasium/envs/registration.py", line 738, in make
+    env = env_creator(**env_spec_kwargs)  # ty:ignore[call-top-callable]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/utils/registration.py", line 182, in make
+    env = env_spec.make(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/utils/registration.py", line 79, in make
+    return self.cls(**_kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/envs/tasks/tabletop/push_cube.py", line 65, in __init__
+    super().__init__(*args, robot_uids=robot_uids, **kwargs)
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/envs/sapien_env.py", line 245, in __init__
+    physx.enable_gpu()
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/sapien/physx/__init__.py", line 53, in enable_gpu
+    res = requests.get(url)
+          ^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/api.py", line 87, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/adapters.py", line 711, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+SMOKE_RUN_FAILED PushCube-v1 1024
+Downloading PhysX GPU library to /home/zhr/.sapien/physx/105.1-physx-5.3.1.patch0 from Github. This can take several minutes. If it fails to download, please manually download fhttps://github.com/sapien-sim/physx-precompiled/releases/download/105.1-physx-5.3.1.patch0/linux-so.zip and unzip at /home/zhr/.sapien/physx/105.1-physx-5.3.1.patch0.
+Traceback (most recent call last):
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 239, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 494, in _make_request
+    raise new_e
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 470, in _make_request
+    self._validate_conn(conn)
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1125, in _validate_conn
+    conn.connect()
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 827, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 248, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<HTTPSConnection(host='github.com', port=443) at 0x7b550cfc2e10>, 'Connection to github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 555, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /sapien-sim/physx-precompiled/releases/download/105.1-physx-5.3.1.patch0/linux-so.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7b550cfc2e10>, 'Connection to github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhr/pve/scripts/smoke_maniskill.py", line 19, in <module>
+    env = gym.make(a.env, num_envs=a.num_envs, obs_mode="state", control_mode="pd_joint_delta_pos",
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/gymnasium/envs/registration.py", line 738, in make
+    env = env_creator(**env_spec_kwargs)  # ty:ignore[call-top-callable]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/utils/registration.py", line 182, in make
+    env = env_spec.make(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/utils/registration.py", line 79, in make
+    return self.cls(**_kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/envs/tasks/tabletop/push_cube.py", line 65, in __init__
+    super().__init__(*args, robot_uids=robot_uids, **kwargs)
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/envs/sapien_env.py", line 245, in __init__
+    physx.enable_gpu()
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/sapien/physx/__init__.py", line 53, in enable_gpu
+    res = requests.get(url)
+          ^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/api.py", line 87, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/adapters.py", line 717, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /sapien-sim/physx-precompiled/releases/download/105.1-physx-5.3.1.patch0/linux-so.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7b550cfc2e10>, 'Connection to github.com timed out. (connect timeout=None)'))
+SMOKE_RUN_FAILED PushCube-v1 2048
+Downloading PhysX GPU library to /home/zhr/.sapien/physx/105.1-physx-5.3.1.patch0 from Github. This can take several minutes. If it fails to download, please manually download fhttps://github.com/sapien-sim/physx-precompiled/releases/download/105.1-physx-5.3.1.patch0/linux-so.zip and unzip at /home/zhr/.sapien/physx/105.1-physx-5.3.1.patch0.
+Traceback (most recent call last):
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 239, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 494, in _make_request
+    raise new_e
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 470, in _make_request
+    self._validate_conn(conn)
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1125, in _validate_conn
+    conn.connect()
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 827, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 248, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<HTTPSConnection(host='github.com', port=443) at 0x7bfc591c3250>, 'Connection to github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 555, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /sapien-sim/physx-precompiled/releases/download/105.1-physx-5.3.1.patch0/linux-so.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7bfc591c3250>, 'Connection to github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhr/pve/scripts/smoke_maniskill.py", line 19, in <module>
+    env = gym.make(a.env, num_envs=a.num_envs, obs_mode="state", control_mode="pd_joint_delta_pos",
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/gymnasium/envs/registration.py", line 738, in make
+    env = env_creator(**env_spec_kwargs)  # ty:ignore[call-top-callable]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/utils/registration.py", line 182, in make
+    env = env_spec.make(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/utils/registration.py", line 79, in make
+    return self.cls(**_kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/envs/tasks/tabletop/push_cube.py", line 65, in __init__
+    super().__init__(*args, robot_uids=robot_uids, **kwargs)
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/envs/sapien_env.py", line 245, in __init__
+    physx.enable_gpu()
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/sapien/physx/__init__.py", line 53, in enable_gpu
+    res = requests.get(url)
+          ^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/api.py", line 87, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/adapters.py", line 717, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /sapien-sim/physx-precompiled/releases/download/105.1-physx-5.3.1.patch0/linux-so.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x7bfc591c3250>, 'Connection to github.com timed out. (connect timeout=None)'))
+SMOKE_RUN_FAILED PushCube-v1 4096
+Downloading PhysX GPU library to /home/zhr/.sapien/physx/105.1-physx-5.3.1.patch0 from Github. This can take several minutes. If it fails to download, please manually download fhttps://github.com/sapien-sim/physx-precompiled/releases/download/105.1-physx-5.3.1.patch0/linux-so.zip and unzip at /home/zhr/.sapien/physx/105.1-physx-5.3.1.patch0.
+Traceback (most recent call last):
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 540, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 638, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/a2r-train/python/cpython-3.11.17-linux-x86_64-gnu/lib/python3.11/http/client.py", line 1443, in getresponse
+    response.begin()
+  File "/home/zhr/a2r-train/python/cpython-3.11.17-linux-x86_64-gnu/lib/python3.11/http/client.py", line 337, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/a2r-train/python/cpython-3.11.17-linux-x86_64-gnu/lib/python3.11/http/client.py", line 306, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 510, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 540, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 638, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/a2r-train/python/cpython-3.11.17-linux-x86_64-gnu/lib/python3.11/http/client.py", line 1443, in getresponse
+    response.begin()
+  File "/home/zhr/a2r-train/python/cpython-3.11.17-linux-x86_64-gnu/lib/python3.11/http/client.py", line 337, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/a2r-train/python/cpython-3.11.17-linux-x86_64-gnu/lib/python3.11/http/client.py", line 306, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhr/pve/scripts/smoke_maniskill.py", line 19, in <module>
+    env = gym.make(a.env, num_envs=a.num_envs, obs_mode="state", control_mode="pd_joint_delta_pos",
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/gymnasium/envs/registration.py", line 738, in make
+    env = env_creator(**env_spec_kwargs)  # ty:ignore[call-top-callable]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/utils/registration.py", line 182, in make
+    env = env_spec.make(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/utils/registration.py", line 79, in make
+    return self.cls(**_kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/envs/tasks/tabletop/pick_cube.py", line 64, in __init__
+    super().__init__(*args, robot_uids=robot_uids, **kwargs)
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/envs/sapien_env.py", line 245, in __init__
+    physx.enable_gpu()
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/sapien/physx/__init__.py", line 53, in enable_gpu
+    res = requests.get(url)
+          ^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/api.py", line 87, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/adapters.py", line 711, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+SMOKE_RUN_FAILED PickCube-v1 2048
+Downloading PhysX GPU library to /home/zhr/.sapien/physx/105.1-physx-5.3.1.patch0 from Github. This can take several minutes. If it fails to download, please manually download fhttps://github.com/sapien-sim/physx-precompiled/releases/download/105.1-physx-5.3.1.patch0/linux-so.zip and unzip at /home/zhr/.sapien/physx/105.1-physx-5.3.1.patch0.
+Traceback (most recent call last):
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 239, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 494, in _make_request
+    raise new_e
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 470, in _make_request
+    self._validate_conn(conn)
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1125, in _validate_conn
+    conn.connect()
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 827, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 248, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<HTTPSConnection(host='github.com', port=443) at 0x73a4f6c9e150>, 'Connection to github.com timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 555, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /sapien-sim/physx-precompiled/releases/download/105.1-physx-5.3.1.patch0/linux-so.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x73a4f6c9e150>, 'Connection to github.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhr/pve/scripts/smoke_maniskill.py", line 19, in <module>
+    env = gym.make(a.env, num_envs=a.num_envs, obs_mode="state", control_mode="pd_joint_delta_pos",
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/gymnasium/envs/registration.py", line 738, in make
+    env = env_creator(**env_spec_kwargs)  # ty:ignore[call-top-callable]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/utils/registration.py", line 182, in make
+    env = env_spec.make(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/utils/registration.py", line 79, in make
+    return self.cls(**_kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/envs/tasks/tabletop/peg_insertion_side.py", line 84, in __init__
+    super().__init__(
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/envs/sapien_env.py", line 245, in __init__
+    physx.enable_gpu()
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/sapien/physx/__init__.py", line 53, in enable_gpu
+    res = requests.get(url)
+          ^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/api.py", line 87, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/adapters.py", line 717, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /sapien-sim/physx-precompiled/releases/download/105.1-physx-5.3.1.patch0/linux-so.zip (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x73a4f6c9e150>, 'Connection to github.com timed out. (connect timeout=None)'))
+SMOKE_RUN_FAILED PegInsertionSide-v1 1024
+Downloading PhysX GPU library to /home/zhr/.sapien/physx/105.1-physx-5.3.1.patch0 from Github. This can take several minutes. If it fails to download, please manually download fhttps://github.com/sapien-sim/physx-precompiled/releases/download/105.1-physx-5.3.1.patch0/linux-so.zip and unzip at /home/zhr/.sapien/physx/105.1-physx-5.3.1.patch0.
+Traceback (most recent call last):
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 540, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 638, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/a2r-train/python/cpython-3.11.17-linux-x86_64-gnu/lib/python3.11/http/client.py", line 1443, in getresponse
+    response.begin()
+  File "/home/zhr/a2r-train/python/cpython-3.11.17-linux-x86_64-gnu/lib/python3.11/http/client.py", line 337, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/a2r-train/python/cpython-3.11.17-linux-x86_64-gnu/lib/python3.11/http/client.py", line 306, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 510, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/util/util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 540, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/urllib3/connection.py", line 638, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/a2r-train/python/cpython-3.11.17-linux-x86_64-gnu/lib/python3.11/http/client.py", line 1443, in getresponse
+    response.begin()
+  File "/home/zhr/a2r-train/python/cpython-3.11.17-linux-x86_64-gnu/lib/python3.11/http/client.py", line 337, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/a2r-train/python/cpython-3.11.17-linux-x86_64-gnu/lib/python3.11/http/client.py", line 306, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhr/pve/scripts/restore_check.py", line 19, in <module>
+    env = gym.make(a.env, num_envs=a.num_envs, obs_mode="state", control_mode="pd_joint_delta_pos",
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/gymnasium/envs/registration.py", line 738, in make
+    env = env_creator(**env_spec_kwargs)  # ty:ignore[call-top-callable]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/utils/registration.py", line 182, in make
+    env = env_spec.make(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/utils/registration.py", line 79, in make
+    return self.cls(**_kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/envs/tasks/tabletop/push_cube.py", line 65, in __init__
+    super().__init__(*args, robot_uids=robot_uids, **kwargs)
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/mani_skill/envs/sapien_env.py", line 245, in __init__
+    physx.enable_gpu()
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/sapien/physx/__init__.py", line 53, in enable_gpu
+    res = requests.get(url)
+          ^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/api.py", line 87, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zhr/pve/.venv/lib/python3.11/site-packages/requests/adapters.py", line 711, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+RESTORE_RUN_FAILED PushCube-v1

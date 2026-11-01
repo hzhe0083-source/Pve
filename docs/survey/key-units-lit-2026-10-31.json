@@ -1,0 +1,922 @@
+[
+ {
+  "key": "v2:de12c0a7d41e295649bfcd12908dcdfd0c0dee61694ac1071f8a94af0b5fde8d",
+  "result": {
+   "papers": [
+    {
+     "title": "Training Neural Networks with Fixed Sparse Masks",
+     "authors": "Yi-Lin Sung, Varun Nair, Colin Raffel",
+     "venue_year": "NeurIPS 2021",
+     "link": "https://arxiv.org/abs/2111.09839",
+     "selection_criterion": "Diagonal empirical Fisher per parameter: mean of squared log-likelihood gradients over N target-task samples (N=1024; 32 samples were already enough on GLUE). Keep the top-k parameters, compute the mask once and hold it fixed while training only those weights.",
+     "granularity": "parameter",
+     "domain": "NLP (BERT-Large on GLUE) and vision (ResNet-34 on CIFAR-10); supervised transfer / distributed training",
+     "compares_against_random_subset": true,
+     "closeness": "very close",
+     "note": "Closest match to your criterion and protocol: score once on new-task gradients, freeze the mask, train only the selected weights. A random mask is clearly worse (GLUE 76.8 vs 82.6 at 0.5% of weights; CIFAR-10 74.8 vs 90.5), and FISH at 0.5% matches dense fine-tuning (82.5). Differences from yours: it selects individual weights, not whole unit rows; it uses a supervised loss, not PPO; and there is no pretrained head. Borrow two ablations: how many samples (PPO iterations) the Fisher estimate needs, and a sweep over mask sparsity."
+    },
+    {
+     "title": "Neuron-level Balance between Stability and Plasticity in Deep Reinforcement Learning",
+     "authors": "Jiahua Lan, Sen Zhang, Haixia Pan, Ruijun Liu, Li Shen, Dacheng Tao",
+     "venue_year": "arXiv preprint 2025 (no peer-reviewed venue found)",
+     "link": "https://arxiv.org/abs/2504.08000",
+     "selection_criterion": "Goal-oriented 'RL skill neuron' score. Acc = fraction of steps on which 'activation above its mean' agrees with 'goal metric above its mean' (Meta-World success, Atari return); Score = max(Acc, 1-Acc). The top ~20% of neurons in all layers except the last are selected.",
+     "granularity": "unit/neuron (mask applied to each unit's incoming-weight gradients)",
+     "domain": "Continual RL: Meta-World robot manipulation and Atari",
+     "compares_against_random_subset": true,
+     "closeness": "very close",
+     "note": "Closest in-domain neuron-level work: it picks a small set of task-critical neurons in an RL policy and includes a random-neuron ablation (Table 3). But it goes the opposite way from you. It shrinks the gradients of the OLD task's skill neurons to at most 0.1x (mask = alpha(1-Score), alpha=0.2) and trains everything else, plus replay, to avoid forgetting. You pick neurons for the NEW task, train only those, and freeze the rest. Its score is activation-success correlation and needs no backward pass, so it is a ready-made alternative scorer. A reviewer will cite it. Your novelty lies in choosing units for the new task by policy-gradient Fisher and training only them."
+    },
+    {
+     "title": "Gradient-based Parameter Selection for Efficient Fine-Tuning",
+     "authors": "Zhi Zhang, Qizhe Zhang, Zijun Gao, Renrui Zhang, Ekaterina Shutova, Shiji Zhou, Shanghang Zhang",
+     "venue_year": "CVPR 2024",
+     "link": "https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Gradient-based_Parameter_Selection_for_Efficient_Fine-Tuning_CVPR_2024_paper.html",
+     "selection_criterion": "For every neuron, the top-K incoming weights by gradient magnitude on target data (K=1 for most tasks, up to 10 on harder ones). Gradients come from a head-free supervised contrastive loss, so the randomly initialised classifier head does not distort the scores. Only the masked weights are trained.",
+     "granularity": "parameter, chosen per neuron (top-K incoming connections of every neuron)",
+     "domain": "Vision (ViT/CNN; FGVC, VTAB); supervised transfer",
+     "compares_against_random_subset": true,
+     "closeness": "very close",
+     "note": "Gradient selection beats 'neuron random' and 'net random' at the same budget on all 5 FGVC datasets, but only by about 0.5-1 point (CUB 88.07 vs 87.17 vs 86.60). Neuron-level allocation beats layer-level, which beats network-level (Table 6a). Its worry about a random head corrupting the selection gradients is the same one your head-only warm-up addresses. That warm-up is the linear-probe-then-fine-tune idea of LP-FT (Kumar et al., ICLR 2022), and you should cite it. Key difference: GPS spreads the budget over all neurons (a few weights each), while you concentrate it on a few whole units. A GPS-style 'every unit, top-K weights' variant at your budget is a cheap extra baseline."
+    },
+    {
+     "title": "S2FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+     "authors": "Xinyu Yang, Jixuan Leng, Geyang Guo, Jiawei Zhao, Ryumei Nakada, Linjun Zhang, Huaxiu Yao, Beidi Chen",
+     "venue_year": "NeurIPS 2024",
+     "link": "https://arxiv.org/abs/2412.06289",
+     "selection_criterion": "Picks a few attention heads and FFN channels per block and trains only those rows/columns. Compared rules, each in largest and smallest variants on a calibration set: random (the default), weight magnitude, activation magnitude, weight x activation, gradient magnitude.",
+     "granularity": "unit (heads / FFN channels = whole rows/columns)",
+     "domain": "NLP (LLaMA fine-tuning; commonsense and arithmetic reasoning)",
+     "compares_against_random_subset": true,
+     "closeness": "very close",
+     "note": "The most important warning for your hypothesis. With unit-level selection on LLaMA3-8B, random was a strong default. Picking the LARGEST-gradient channels was worse than random (commonsense 85.4 vs 86.6; arithmetic 77.8 vs 79.6), and largest-activation was also worse. The authors argue those units hold the pretrained knowledge, so editing them damages the model. The SMALLEST-activation channels beat random (87.3 / 80.0). This is the same structure as your method (train only selected whole rows), so your top-Fisher vs random-units comparison is a real test. A 'lowest-activation / dormant units' arm is cheap and well motivated."
+    },
+    {
+     "title": "Continual Task Allocation in Meta-Policy Network via Sparse Prompting",
+     "authors": "Yijun Yang, Tianyi Zhou, Jing Jiang, Guodong Long, Yuhui Shi",
+     "venue_year": "ICML 2023",
+     "link": "https://proceedings.mlr.press/v202/yang23t.html",
+     "selection_criterion": "The task's Sentence-BERT text embedding is sparse-coded (lasso) over a learned per-layer dictionary. Positive coefficients give a binary neuron mask. The prompt and dictionary are refined during RL with a straight-through estimator.",
+     "granularity": "unit/neuron (per-layer neuron masks expanded to weight masks)",
+     "domain": "Continual RL, robot manipulation (Continual World CW10/CW20 on Meta-World, SAC)",
+     "compares_against_random_subset": false,
+     "closeness": "very close",
+     "note": "Same structure as yours: for each new task, a sub-network of neurons is chosen and trained with RL, while weights used by earlier tasks are gradient-masked. It runs on Meta-World with an MLP actor (4x1024). The selection is not data-driven, though: it comes from the task description, not the new task's gradients. There is no random-neuron control; the nearest ablation is a frozen random dictionary (CW20 average performance 0.88 -> 0.73). Follow-up SSDE (Zheng et al., arXiv 2503.05246, 2025) keeps the sparse-coding allocation and splits frozen forward-transfer from trainable task parameters. It also resets 'dormant' neurons found by input-perturbation sensitivity and reports 95% success on CW10-v1. Your differentiator is gradient/Fisher selection from a single pretrained source policy."
+    },
+    {
+     "title": "The Multiple Ticket Hypothesis: Random Sparse Subnetworks Suffice for RLVR",
+     "authors": "Israel Adewuyi, Solomon Okibe, Vladmir Ivanov",
+     "venue_year": "arXiv preprint 2026",
+     "link": "https://arxiv.org/abs/2602.01599",
+     "selection_criterion": "None: uniformly random parameter masks (e.g. 1% trainable), compared only with structured first-layer-only / last-layer-only masks and with full fine-tuning",
+     "granularity": "parameter",
+     "domain": "LLM RL fine-tuning (GRPO on Qwen2.5; MATH, GSM8K, Alphabet Sort)",
+     "compares_against_random_subset": false,
+     "closeness": "related",
+     "note": "The counter-hypothesis to yours, in RL fine-tuning: random 1% masks match or slightly beat full-parameter GRPO. 20 different random masks with near-zero overlap (Jaccard about 0.005) all work, and performance only collapses below about 0.01% trainable. The authors credit RL's implicitly KL-limited, low-dimensional updates. Random masks are the method itself, and the paper never tests importance-selected masks against random ones. Your Fisher-vs-random-units experiment fills exactly that gap, in a different domain (MLP PPO policies). Unrefereed preprint."
+    },
+    {
+     "title": "Importance Estimation for Neural Network Pruning",
+     "authors": "Pavlo Molchanov, Arun Mallya, Stephen Tyree, Iuri Frosio, Jan Kautz",
+     "venue_year": "CVPR 2019",
+     "link": "https://openaccess.thecvf.com/content_CVPR_2019/html/Molchanov_Importance_Estimation_for_Neural_Network_Pruning_CVPR_2019_paper.html",
+     "selection_criterion": "First-order Taylor importance of a unit: the squared gradient of the loss with respect to a multiplicative gate on that unit, I_m = (sum over the unit's parameters of g_s*w_s)^2, averaged over 10-30 minibatches. A second-order variant is also given.",
+     "granularity": "unit (neuron / filter)",
+     "domain": "Vision (CNN pruning on CIFAR-10, ImageNet)",
+     "compares_against_random_subset": true,
+     "closeness": "related",
+     "note": "The principled unit-level version of your score. The squared gate gradient is the Fisher of a per-unit gate; Theis et al., 'Faster gaze prediction with dense networks and Fisher pruning' (arXiv 1801.05787), derive the same quantity. It asks how the loss changes if the whole unit's output is scaled, which is exactly the question when you unfreeze a whole unit. Your sum of squared incoming-weight gradients instead grows with the input norm and ignores the unit's own pre-activation. Run it as a second scorer: it costs one extra product per unit, (dL/dz)*z. Includes random-unit baselines on CIFAR-10."
+    },
+    {
+     "title": "Measure gradients, not activations! Enhancing neuronal activity in deep reinforcement learning",
+     "authors": "Jiashun Liu, Zihao Wu, Johan Obando-Ceron, Pablo Samuel Castro, Aaron Courville, Ling Pan",
+     "venue_year": "NeurIPS 2025",
+     "link": "https://arxiv.org/abs/2505.24061",
+     "selection_criterion": "GraMa: a neuron's mean absolute gradient of the loss with respect to its output, normalised by the layer average. ReGraMa periodically resets neurons with GraMa <= tau (incoming weights re-initialised, outgoing weights zeroed).",
+     "granularity": "unit/neuron",
+     "domain": "Deep RL (SAC MLPs; BRO-net on DeepMind Control; diffusion-policy DACER on MuJoCo)",
+     "compares_against_random_subset": false,
+     "closeness": "related",
+     "note": "An RL-specific, gradient-based unit score that measures how much a unit can still learn, not how active it is. The authors show that activation-based dormancy (ReDo) misses low-learning units and resets high-learning ones in complex networks; the two agree on plain ReLU MLPs. It is close to a per-unit version of your score (first moment of the output gradient instead of squared weight gradients), though it is used for resets, not for choosing units to fine-tune. Practical point: raw squared gradients differ in scale across layers, so a global top-k can pile into one layer. Per-layer normalisation, as in GraMa and ReDo, avoids that."
+    },
+    {
+     "title": "Task-Specific Skill Localization in Fine-tuned Language Models",
+     "authors": "Abhishek Panigrahi, Nikunj Saunshi, Haoyu Zhao, Sanjeev Arora",
+     "venue_year": "ICML 2023",
+     "link": "https://proceedings.mlr.press/v202/panigrahi23a.html",
+     "selection_criterion": "Learned 'graft' mask: a sigmoid-relaxed binary mask over parameters, initialised from the top-s parameters by movement during fine-tuning and optimised for about 100 SGD steps. Pasting only the masked fine-tuned values onto the pretrained model must keep the task loss low.",
+     "granularity": "parameter",
+     "domain": "NLP (RoBERTa, GPT-2; 13 tasks), plus a small continual-learning experiment",
+     "compares_against_random_subset": true,
+     "closeness": "related",
+     "note": "Direct evidence for 'a few parameters decide the skill'. At most 0.01% of weights (under 8.5k) recover at least 95% of fine-tuned performance, with no retraining. Random grafts of the same size are far worse (SST-2 about 78% vs 92.4%), and largest-movement regions are also worse than the learned mask. The regions for different tasks barely overlap. It gives you an oracle upper bound: after a full PPO fine-tune, fit a graft mask and check how much it overlaps your early-Fisher units."
+    },
+    {
+     "title": "Reinforcement Learning Finetunes Small Subnetworks in Large Language Models",
+     "authors": "Sagnik Mukherjee, Lifan Yuan, Dilek Hakkani-Tur, Hao Peng",
+     "venue_year": "NeurIPS 2025",
+     "link": "https://arxiv.org/abs/2505.11711",
+     "selection_criterion": "Post hoc: the subnetwork is the set of parameters whose value changed (beyond a bf16 tolerance) after full RL fine-tuning; that subnetwork is then retrained alone.",
+     "granularity": "parameter",
+     "domain": "LLM RL fine-tuning (7 algorithms incl. PPO, GRPO, DPO; 10 LLMs)",
+     "compares_against_random_subset": false,
+     "closeness": "related",
+     "note": "Supports half of your hypothesis. RL changes only 5-30% of weights, and retraining just that subnetwork matches or beats full fine-tuning (DPO 41.9 vs 40.3; PRIME 72.2 vs 69.8). The subnetworks also overlap across seeds and algorithms more than chance. Two caveats for you. (1) The sparsity is not unit-structured: it is spread fairly evenly over layers and the updates are nearly full-rank. (2) The mask comes from the finished full fine-tune, not from early gradients, and there is no random-subset control. So it cannot show that 'key' parameters beat random ones."
+    },
+    {
+     "title": "The Dormant Neuron Phenomenon in Deep Reinforcement Learning",
+     "authors": "Ghada Sokar, Rishabh Agarwal, Pablo Samuel Castro, Utku Evci",
+     "venue_year": "ICML 2023 (oral)",
+     "link": "https://proceedings.mlr.press/v202/sokar23a.html",
+     "selection_criterion": "Dormancy score: a neuron's mean |activation| divided by the layer average; neurons with score <= tau are recycled (incoming weights re-initialised, outgoing weights zeroed).",
+     "granularity": "unit/neuron",
+     "domain": "Deep RL (DQN and DrQ(eps) on Atari, SAC on MuJoCo)",
+     "compares_against_random_subset": true,
+     "closeness": "related",
+     "note": "A unit-level RL criterion from the activation side. In a DQN ablation, recycling random or the most active neurons instead of dormant ones hurts learning and can collapse it, so in RL which units you touch matters. For you this suggests a different choice: give the new task the source policy's dormant or low-activation units, which are spare capacity (consistent with S2FT's smallest-activation result). The highest-Fisher units may instead encode the source skill. Related unit-utility criteria: continual backprop's contribution utility (Dohare et al., Nature 2024) and UPGD's utility-based updates (Elsayed & Mahmood, ICLR 2024)."
+    },
+    {
+     "title": "Continual World: A Robotic Benchmark For Continual Reinforcement Learning",
+     "authors": "Maciej Wołczyk, Michał Zając, Razvan Pascanu, Łukasz Kuciński, Piotr Miłoś",
+     "venue_year": "NeurIPS 2021",
+     "link": "https://arxiv.org/abs/2105.10919",
+     "selection_criterion": "Benchmark. Its PackNet baseline (Mallya & Lazebnik, CVPR 2018) chooses which weights each task keeps by magnitude pruning, retrains, then freezes them. Other baselines use importance regularisers (EWC with Fisher, MAS with output sensitivity).",
+     "granularity": "parameter (PackNet weight masks)",
+     "domain": "Continual RL, robot manipulation (Meta-World, SAC, MLP 4x256)",
+     "compares_against_random_subset": false,
+     "closeness": "related",
+     "note": "The robot-RL reference point for parameter isolation. On CW20, PackNet has the best average performance (0.80) and zero forgetting, but its forward transfer is only 0.19. That is no better than plain fine-tuning (0.20) and far below the reference transfer of 0.46. Freezing weights protects old skills but does not by itself speed up new ones, which is exactly what you must show. Same setting as yours: MLP policy on Meta-World. It also finds that regularising the critic hurts, so keep the critic free. Follow-up 'Disentangling Transfer in Continual RL' (Wołczyk et al., NeurIPS 2022) studies actor vs critic transfer and reports 87% final success with ClonEx-SAC vs PackNet's 80%."
+    },
+    {
+     "title": "Fine-tuning Reinforcement Learning Models is Secretly a Forgetting Mitigation Problem",
+     "authors": "Maciej Wołczyk, Bartłomiej Cupiał, Mateusz Ostaszewski, Michał Bortkiewicz, Michał Zając, Razvan Pascanu, Łukasz Kuciński, Piotr Miłoś",
+     "venue_year": "ICML 2024 (spotlight)",
+     "link": "https://arxiv.org/abs/2402.02868",
+     "selection_criterion": "No subset selection. It compares knowledge-retention methods during fine-tuning: EWC (Fisher-weighted penalty), behavioural cloning, kickstarting, episodic memory.",
+     "granularity": "whole network (regularisation)",
+     "domain": "RL fine-tuning: NetHack, Montezuma's Revenge, RoboticSequence (4 chained Meta-World stages)",
+     "compares_against_random_subset": false,
+     "closeness": "related",
+     "note": "Explains why full fine-tuning of a pretrained policy fails: it forgets abilities in states the new task reaches only later. On RoboticSequence, vanilla fine-tuning is no better than training from scratch, while BC solves all four stages 80% of the time; EM and EWC also help. Your frozen-majority design prevents this forgetting by construction, so BC- or EWC-regularised fine-tuning are fair and stronger baselines than plain full fine-tuning. Coarser 'freeze the source, add capacity' baselines: Progressive Nets (Rusu et al., arXiv 1606.04671), PEX (Zhang et al., ICLR 2023) and Plasticity Injection (Nikishin et al., NeurIPS 2023)."
+    },
+    {
+     "title": "Overcoming Catastrophic Forgetting with Hard Attention to the Task",
+     "authors": "Joan Serrà, Dídac Surís, Marius Miron, Alexandros Karatzoglou",
+     "venue_year": "ICML 2018",
+     "link": "https://proceedings.mlr.press/v80/serra18a.html",
+     "selection_criterion": "Learned per-task, near-binary attention gate on every unit (sigmoid of a task embedding, annealed). Units used by earlier tasks have the gradients of their incoming and outgoing weights reduced by the cumulative attention.",
+     "granularity": "unit/neuron",
+     "domain": "Continual learning (image classification task sequences)",
+     "compares_against_random_subset": false,
+     "closeness": "related",
+     "note": "The standard unit-level masking method. It learns which units each task uses end to end, with a sparsity regulariser, instead of scoring them heuristically. That makes it the natural 'learned selection' alternative to your Fisher top-k: learn a gate per unit on the new task and unfreeze the units it turns on. Weight-level relatives: PackNet (magnitude pruning, Mallya & Lazebnik, CVPR 2018), Piggyback (learned binary masks on a frozen backbone, Mallya et al., ECCV 2018) and Supermasks in Superposition (Wortsman et al., NeurIPS 2020)."
+    },
+    {
+     "title": "Overcoming catastrophic forgetting in neural networks",
+     "authors": "James Kirkpatrick, Razvan Pascanu, Neil Rabinowitz, Joel Veness, Guillaume Desjardins, Andrei A. Rusu, Kieran Milan, John Quan, Tiago Ramalho, Agnieszka Grabska-Barwinska, Demis Hassabis, Claudia Clopath, Dharshan Kumaran, Raia Hadsell",
+     "venue_year": "PNAS 2017",
+     "link": "https://doi.org/10.1073/pnas.1611835114",
+     "selection_criterion": "Diagonal Fisher information of each parameter on the OLD task (expected squared log-likelihood gradient), used to weight a quadratic penalty rather than as a hard selection",
+     "granularity": "parameter (soft weighting)",
+     "domain": "Supervised (permuted MNIST) and RL (sequential Atari)",
+     "compares_against_random_subset": false,
+     "closeness": "background",
+     "note": "Origin of your 'Fisher-like' score, used with the opposite sign: EWC protects weights with high Fisher on the OLD task, while you train units with high Fisher on the NEW task. Cite it to frame the criterion. Note the gap it exposes: squared gradients of PPO's clipped surrogate are advantage-weighted, so they are not the policy's Fisher E[(grad log pi)^2]. Scoring units with grad log pi(a|s) on new-task rollouts would be the textbook Fisher, and comparing the two is a cheap ablation."
+    }
+   ]
+  }
+ },
+ {
+  "key": "v2:73cfd09899d1d7c6c7cb9aef08f002d723dac102876deae5a183205fabad4eae",
+  "result": {
+   "papers": [
+    {
+     "title": "Training Neural Networks with Fixed Sparse Masks",
+     "authors": "Yi-Lin Sung, Varun Nair, Colin Raffel",
+     "venue_year": "NeurIPS 2021",
+     "link": "https://arxiv.org/abs/2111.09839",
+     "selection_criterion": "Diagonal empirical Fisher for each parameter: the mean squared gradient of log p at the true label. It is estimated on N examples before training (N=1024 for GLUE, and results stay stable down to about 32). The top-k parameters across the whole model form the mask, which stays fixed for the whole run. The new classifier head is always included.",
+     "granularity": "parameter",
+     "domain": "NLP (GLUE transfer with BERT-large); also distributed training and sparse checkpoint updates",
+     "compares_against_random_subset": true,
+     "closeness": "very close",
+     "note": "This is the closest prior work. It is our recipe at the level of single weights: a fixed mask chosen by Fisher, plus a head that always trains. GLUE test average with 0.5% of parameters: FISH 82.6, random mask 76.8, dense fine-tuning 82.5. On validation, FISH beats the random mask at every sparsity level. FISH computes its mask with a randomly initialised head; we compute ours after a few head-only iterations. Differences from our method: we select whole units (weight rows plus bias), use a PPO policy-gradient loss instead of log-likelihood, start from a trained RL source policy, and target robot manipulation. Several searches found no RL or robotics paper that trains Fisher-selected hidden units plus the output layer."
+    },
+    {
+     "title": "Raise a Child in Large Language Model: Towards Effective and Generalizable Fine-tuning",
+     "authors": "Runxin Xu, Fuli Luo, Zhiyuan Zhang, Chuanqi Tan, Baobao Chang, Songfang Huang, Fei Huang",
+     "venue_year": "EMNLP 2021",
+     "link": "https://aclanthology.org/2021.emnlp-main.749/",
+     "selection_criterion": "Child-Tuning_D: diagonal empirical Fisher (mean squared gradient of log-likelihood) for each parameter on the task training set, computed once before fine-tuning. The top p_D (10-30%) of parameters form a fixed child network, and gradients outside it are masked. Child-Tuning_F instead resamples a random Bernoulli mask at every step.",
+     "granularity": "parameter",
+     "domain": "NLP (GLUE; BERT-large and other pretrained LMs)",
+     "compares_against_random_subset": true,
+     "closeness": "very close",
+     "note": "Ablation on BERT-large, average over CoLA, RTE, MRPC and STS-B: vanilla fine-tuning 78.42, randomly chosen child network 78.61, lowest-Fisher child 73.13, highest-Fisher child (Child-Tuning_D) 79.79. So the Fisher ranking beats a random child by about 1.2 points, and inverting the ranking costs about 6.7 points, which shows the criterion carries real signal. The selected subsets are large (10-30% of weights), and the goal is generalisation and less drift, not few-unit adaptation or speed. The paper does not state that the random child is the same size."
+    },
+    {
+     "title": "S2FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+     "authors": "Xinyu Yang, Jixuan Leng, Geyang Guo, Jiawei Zhao, Ryumei Nakada, Linjun Zhang, Huaxiu Yao, Beidi Chen",
+     "venue_year": "NeurIPS 2024",
+     "link": "https://arxiv.org/abs/2412.06289",
+     "selection_criterion": "By default, a few attention heads and FFN channels per block are chosen at random (S2FT-R). An ablation selects them instead by largest or smallest weight magnitude, activation, weight times activation, or gradient magnitude.",
+     "granularity": "unit (FFN channel rows/columns, attention heads)",
+     "domain": "NLP (LLM fine-tuning on LLaMA; commonsense and arithmetic reasoning)",
+     "compares_against_random_subset": true,
+     "closeness": "very close",
+     "note": "This is the strongest counter-evidence at unit level. On LLaMA3-8B (commonsense / arithmetic accuracy), random channels score 86.6 / 79.6, largest-gradient channels 85.4 / 77.8, and largest-activation channels 84.7 / 77.1. Only smallest-activation channels beat random, by 0.4-0.7 points. The authors attribute this to small-activation channels holding less pretrained knowledge, so editing them disturbs less. They test gradient magnitude, not Fisher. For us, a random-units control of the same size is essential, and retention of the source task should be measured as well as new-task speed."
+    },
+    {
+     "title": "Gradient-based Parameter Selection for Efficient Fine-Tuning",
+     "authors": "Zhi Zhang, Qizhe Zhang, Zijun Gao, Renrui Zhang, Ekaterina Shutova, Shiji Zhou, Shanghang Zhang",
+     "venue_year": "CVPR 2024",
+     "link": "https://openaccess.thecvf.com/content/CVPR2024/html/Zhang_Gradient-based_Parameter_Selection_for_Efficient_Fine-Tuning_CVPR_2024_paper.html",
+     "selection_criterion": "Gradient magnitude of a supervised contrastive loss on task data. The contrastive loss is used so that a randomly initialised head does not distort the gradients. For every neuron, its top-K incoming connections are kept (K=1 for most tasks). The mask is fixed and all other weights are frozen.",
+     "granularity": "parameter (top-K per neuron)",
+     "domain": "vision (ViT transfer; FGVC datasets and others)",
+     "compares_against_random_subset": true,
+     "closeness": "very close",
+     "note": "Same-count controls, averaged over 5 FGVC datasets: GPS 91.36, random per neuron 90.83, random global 90.53, and global top-k by gradient 90.80. The global top-k concentrates in the top blocks and is no better than random. Gains over random are real but small (+0.07 to +0.9). Two lessons for us. First, a global unit ranking by squared gradient may pile into the last hidden layer, so use per-layer quotas or per-layer normalisation. Second, spreading the budget as a few weights in every unit is a design alternative worth trying. GPS uses its contrastive loss for the same reason we warm up the head first."
+    },
+    {
+     "title": "The State of Sparse Training in Deep Reinforcement Learning",
+     "authors": "Laura Graesser, Utku Evci, Erich Elsen, Pablo Samuel Castro",
+     "venue_year": "ICML 2022",
+     "link": "https://proceedings.mlr.press/v162/graesser22a.html",
+     "selection_criterion": "Compares rules for choosing which parameters are active in deep RL: magnitude pruning, static random sparsity, SET (random regrowth) and RigL (regrowth of the connections with the largest gradient magnitude).",
+     "granularity": "parameter",
+     "domain": "deep RL (DQN on Atari and classic control; SAC and PPO on MuJoCo)",
+     "compares_against_random_subset": true,
+     "closeness": "related",
+     "note": "This is direct RL evidence on gradient-chosen versus randomly chosen parameters. At 50-95% sparsity, RigL's gradient-based growth gave little or no gain over SET's random growth, with confidence intervals often overlapping; PPO results were noisier than SAC. The authors attribute this to a low signal-to-noise ratio in RL gradients, which falls as sparsity rises. For us: squared PPO gradients from a few iterations may give a noisy ranking. We should accumulate over more samples or iterations, check that the ranking is stable across seeds, and always report the random-units control."
+    },
+    {
+     "title": "Pruning Convolutional Neural Networks for Resource Efficient Inference",
+     "authors": "Pavlo Molchanov, Stephen Tyree, Tero Karras, Timo Aila, Jan Kautz",
+     "venue_year": "ICLR 2017",
+     "link": "https://arxiv.org/abs/1611.06440",
+     "selection_criterion": "First-order Taylor score for each feature map or unit: |mean over positions and minibatch of activation times dL/d(activation)|, which approximates the loss change if the unit is removed. Scores are L2-normalised within each layer so that units can be ranked across layers.",
+     "granularity": "unit (feature map / neuron)",
+     "domain": "vision (transfer: VGG-16 and AlexNet fine-tuned on Birds-200 and Flowers-102; ImageNet; 3D-CNN gesture recognition)",
+     "compares_against_random_subset": true,
+     "closeness": "related",
+     "note": "This is the canonical unit-level importance score, studied in a transfer-learning setting. Spearman correlation with the oracle (true loss change when the unit is removed), VGG-16 on Birds-200: Taylor 0.73, OBD 0.59, mean activation 0.56, weight norm 0.27, random 0.00. Taylor also beats random pruning on ImageNet. It ranks units to remove rather than units to train, but the |a * dL/da| score and the per-layer normalisation are cheap alternatives or ablations for our row-wise sum of squared gradients. It also compares directly against Optimal Brain Damage (LeCun et al., NeurIPS 1989)."
+    },
+    {
+     "title": "Importance Estimation for Neural Network Pruning",
+     "authors": "Pavlo Molchanov, Arun Mallya, Stephen Tyree, Iuri Frosio, Jan Kautz",
+     "venue_year": "CVPR 2019",
+     "link": "https://openaccess.thecvf.com/content_CVPR_2019/html/Molchanov_Importance_Estimation_for_Neural_Network_Pruning_CVPR_2019_paper.html",
+     "selection_criterion": "For each parameter, (g*w)^2, a first-order Taylor estimate of the squared loss change. Unit importance is the sum of this over the unit's parameters, or the gate form (sum of g*w)^2. Scores are averaged as an exponential moving average over 10-30 minibatches before each pruning step. A second-order variant is also given.",
+     "granularity": "unit (filter / neuron)",
+     "domain": "vision (CIFAR-10; ImageNet with ResNet, DenseNet, VGG)",
+     "compares_against_random_subset": true,
+     "closeness": "related",
+     "note": "This is the pruning-side analogue of our score, a sum of squared per-weight terms over a unit's weights. The difference is that each term is multiplied by w, which measures how much removing the unit costs. Our score uses g alone, which measures how much training the unit would lower the new-task loss to first order. Testing (g*w)^2 against g^2 is a useful ablation. Taylor scores reach over 0.93 Spearman correlation with the oracle on ImageNet networks, versus about 0.59 for weight magnitude. On a small CIFAR network, weight-magnitude pruning was about as poor as random removal. Averaging over many minibatches is a cheap fix for noisy rankings."
+    },
+    {
+     "title": "Pruning Neural Networks at Initialization: Why are We Missing the Mark?",
+     "authors": "Jonathan Frankle, Gintare Karolina Dziugaite, Daniel M. Roy, Michael Carbin",
+     "venue_year": "ICLR 2021",
+     "link": "https://arxiv.org/abs/2009.08576",
+     "selection_criterion": "Evaluates scores for pruning at initialisation: SNIP (connection sensitivity |g*w| from one batch), GraSP (-w * Hg), SynFlow, and magnitude at init.",
+     "granularity": "parameter",
+     "domain": "vision (image classification)",
+     "compares_against_random_subset": true,
+     "closeness": "related",
+     "note": "This is the key caution for one-shot importance scores taken early. These methods beat plain random pruning, and all fall short of magnitude pruning after training. Randomly shuffling which weights are kept within each layer (same per-layer counts), or re-initialising them, keeps or improves accuracy. So the per-weight choice adds nothing beyond the per-layer budget. For us, scores measured on a trained source policy after the head warm-up should carry more signal than scores at initialisation. The decisive control is random units with the same count per layer, not just the same total."
+    },
+    {
+     "title": "Task-Specific Skill Localization in Fine-tuned Language Models",
+     "authors": "Abhishek Panigrahi, Nikunj Saunshi, Haoyu Zhao, Sanjeev Arora",
+     "venue_year": "ICML 2023",
+     "link": "https://proceedings.mlr.press/v202/panigrahi23a.html",
+     "selection_criterion": "A learned sparse binary mask ('grafting'). It starts from the parameters that moved most, |theta_ft - theta_pre|, after full fine-tuning, and is then optimised for about 100 steps on the task loss.",
+     "granularity": "parameter",
+     "domain": "NLP (RoBERTa, GPT-2; SST-2, AGNews, QNLI, QQP and others)",
+     "compares_against_random_subset": true,
+     "closeness": "related",
+     "note": "This strongly supports the idea that a few weights carry a new skill. Grafting about 0.01% of the fine-tuned weights onto the pretrained model recovers at least 95% of fine-tuned accuracy. Random regions of the same size do far worse: SST-2 92.4 vs 77.8, QNLI 84.7 vs 50.7, AGNews 91.1 vs 65.8. Re-training only the localised region from the pretrained weights also works (QNLI 87.4), and the top-k by movement alone was weaker than the learned region. Caveat: the region is found after a full fine-tune, whereas our units must be chosen before training."
+    },
+    {
+     "title": "On Lottery Tickets and Minimal Task Representations in Deep Reinforcement Learning",
+     "authors": "Marc Aurel Vischer, Robert Tjarko Lange, Henning Sprekeler",
+     "venue_year": "ICLR 2022",
+     "link": "https://arxiv.org/abs/2105.01648",
+     "selection_criterion": "Iterative global magnitude pruning after training (20% per round) with weights rewound to their initial values. Counterfactual controls: permuted weights with the same mask, permuted mask with matched per-layer sparsity, and random masks.",
+     "granularity": "parameter (masks; input-layer masks remove whole observation dimensions)",
+     "domain": "deep RL (Cart-Pole, Acrobot, MinAtar, Atari subset, PyBullet continuous control with PPO; also behaviour cloning)",
+     "compares_against_random_subset": true,
+     "closeness": "related",
+     "note": "Lottery tickets in deep RL. For MLP agents, the mask explains most of the ticket effect: permuting the surviving weights barely hurts, but permuting the mask at the same per-layer sparsity causes a large drop. For CNN agents the initialisation matters more. The masks cut task-irrelevant inputs; for example, Cart-Pole keeps only pole angle and angular velocity. This supports the claim that which connections are kept matters in small MLP policies like ours, although finding these masks needs repeated full training runs. Yu et al. (ICLR 2020) earlier showed RL tickets beating random initialisations of the same size."
+    },
+    {
+     "title": "The Dormant Neuron Phenomenon in Deep Reinforcement Learning",
+     "authors": "Ghada Sokar, Rishabh Agarwal, Pablo Samuel Castro, Utku Evci",
+     "venue_year": "ICML 2023",
+     "link": "https://proceedings.mlr.press/v202/sokar23a.html",
+     "selection_criterion": "Tau-dormant score: a unit's mean |activation| over a batch divided by the layer average. Units below tau are recycled: incoming weights are re-initialised and outgoing weights set to zero.",
+     "granularity": "unit (neuron)",
+     "domain": "deep RL (DQN and DrQ(eps) on Atari; SAC on MuJoCo)",
+     "compares_against_random_subset": true,
+     "closeness": "related",
+     "note": "This is RL evidence that a unit-level score beats choosing the same number of units at random. Recycling random units, or the most active units, instead of dormant ones hindered learning or caused collapse. The selection is for resetting, not for selective training. Relevance to us: RL networks accumulate dormant units, and dormant or saturated units get near-zero gradients, so a squared-gradient score will never pick them. We should report the dormant fraction of the source actor and could consider a combined rule. A follow-up, GraMa (Liu et al., NeurIPS 2025), scores units by layer-normalised gradient magnitude instead of activation."
+    },
+    {
+     "title": "Finding Skill Neurons in Pre-trained Transformer-based Language Models",
+     "authors": "Xiaozhi Wang, Kaiyue Wen, Zhengyan Zhang, Lei Hou, Zhiyuan Liu, Juanzi Li",
+     "venue_year": "EMNLP 2022",
+     "link": "https://aclanthology.org/2022.emnlp-main.765/",
+     "selection_criterion": "Predictivity: how accurately a single FFN neuron's activation, thresholded at its mean, predicts the task label (the better of acc and 1-acc), averaged over several prompt-tuning runs.",
+     "granularity": "unit (FFN neuron)",
+     "domain": "NLP (RoBERTa; prompt tuning, adapters, BitFit)",
+     "compares_against_random_subset": true,
+     "closeness": "related",
+     "note": "Shows that a few task-specific neurons decide task performance. Adding noise to the top skill neurons drops accuracy far more than adding noise to random neurons. The same neurons matter under adapter and BitFit tuning, which suggests they come from pre-training. Keeping only the top 2% of skill neurons active, with the rest fixed at their mean, keeps most of the prompt-tuning accuracy (no random-pruning control there). This gives a cheap, gradient-free alternative score: rank actor units by how well their activation predicts new-task success or advantage sign."
+    },
+    {
+     "title": "Knowledge Neurons in Pretrained Transformers",
+     "authors": "Damai Dai, Li Dong, Yaru Hao, Zhifang Sui, Baobao Chang, Furu Wei",
+     "venue_year": "ACL 2022",
+     "link": "https://aclanthology.org/2022.acl-long.581/",
+     "selection_criterion": "Integrated-gradients attribution of each FFN intermediate neuron to the correct-answer probability, as its activation is scaled from 0 to its original value. Neurons above 0.2 times the maximum score are kept, and only those shared by more than p% of paraphrased prompts survive.",
+     "granularity": "unit (FFN neuron)",
+     "domain": "NLP (BERT; factual relations from ParaRel)",
+     "compares_against_random_subset": true,
+     "closeness": "related",
+     "note": "About 4 neurons per fact. Suppressing or amplifying them changes the correct-answer probability by -29% and +31%; an activation-based neuron baseline changes it by only about -1.5% and -1.3%. Editing the value slots of about 4 knowledge neurons changed the fact in 34.4% of cases, versus 0% for the same number of random neurons. Integrated gradients cost more than plain gradients but saturate less. The filter that keeps neurons shared across prompts is like keeping units that rank high across many states or seeds."
+    },
+    {
+     "title": "Does Localization Inform Editing? Surprising Differences in Causality-Based Localization vs. Knowledge Editing in Language Models",
+     "authors": "Peter Hase, Mohit Bansal, Been Kim, Asma Ghandeharioun",
+     "venue_year": "NeurIPS 2023",
+     "link": "https://arxiv.org/abs/2301.04213",
+     "selection_criterion": "Causal Tracing (ROME's localisation by restoring activations), tested as a guide for which layer to edit with ROME, MEMIT and constrained fine-tuning.",
+     "granularity": "layer",
+     "domain": "NLP (autoregressive LMs; factual-knowledge editing)",
+     "compares_against_random_subset": false,
+     "closeness": "related",
+     "note": "A caution for the plan 'find where the behaviour lives, then train there'. The tracing effect explains almost none of the variation in edit success. For ROME error injection, R^2 is 0.016 for the tracing effect alone and 0.947 for the edit layer alone; across settings, adding tracing raises R^2 by at most 3.2 points. Where an existing behaviour is stored is not where changing weights best produces a new one. This favours gradient or Fisher scores, which measure where updates lower the new-task loss, over localising the source behaviour. It compares layers, not random subsets."
+    },
+    {
+     "title": "Locating and Editing Factual Associations in GPT",
+     "authors": "Kevin Meng, David Bau, Alex Andonian, Yonatan Belinkov",
+     "venue_year": "NeurIPS 2022",
+     "link": "https://arxiv.org/abs/2202.05262",
+     "selection_criterion": "Causal tracing: corrupt the subject tokens, then restore single hidden states (per layer, token, MLP or attention) from the clean run and measure how much of the correct prediction comes back. The decisive mid-layer MLP is then edited with a rank-one update (ROME).",
+     "granularity": "layer / module (per token position)",
+     "domain": "NLP (GPT-style LMs; factual recall)",
+     "compares_against_random_subset": false,
+     "closeness": "background",
+     "note": "The interventional ('patching') way to locate where a behaviour is computed. It could be applied to an actor by patching unit activations between source-task and new-task states. However, it localises a behaviour the network already has, it works per layer or module rather than per unit, and it has no random-subset control. Hase et al. (NeurIPS 2023) show its localisation does not predict where editing works best."
+    }
+   ]
+  }
+ },
+ {
+  "key": "v2:b4118604ed1d9d4b97c266b108d2d543671ed65a53ac486ee385fb88c176d165",
+  "result": {
+   "papers": [
+    {
+     "title": "Training Neural Networks with Fixed Sparse Masks",
+     "authors": "Yi-Lin Sung, Varun Nair, Colin Raffel",
+     "venue_year": "NeurIPS 2021",
+     "link": "https://arxiv.org/abs/2111.09839",
+     "selection_criterion": "Top-k parameters (global ranking) by empirical Fisher information, i.e. the mean squared gradient of the log-likelihood on target-task samples. Computed once before training, then the mask stays fixed. The new classifier head is always trainable.",
+     "granularity": "parameter",
+     "domain": "NLP (GLUE fine-tuning) and vision (CIFAR-10)",
+     "compares_against_random_subset": true,
+     "closeness": "very close",
+     "note": "Uses the same criterion family as ours (squared task gradient, scored once, fixed mask), but selects individual parameters rather than units. The Fisher came from N=1024 GLUE samples, and results held steady with as few as ~32 samples. A fixed random mask of the same sparsity was much worse: on GLUE test at 0.5%, random scored 76.8, FISH 82.6, and dense fine-tuning 82.5. FISH also beat random at every sparsity tested and on CIFAR-10 (0.5%: 74.8 vs 90.5). It roughly ties BitFit at 0.08% (81.3 vs 81.2) and beats Diff Pruning at 0.5% (82.6 vs 81.5). Supervised tasks only, with no RL. What differs from our method: parameter-level rather than unit-level selection, a supervised log-likelihood instead of the PPO loss, and no head-only warmup before scoring."
+    },
+    {
+     "title": "An Efficient Sparse Fine-Tuning with Low Quantization Error via Neural Network Pruning (SPruFT)",
+     "authors": "Cen-Jhih Li, Aditya Bhaskara",
+     "venue_year": "TMLR 2025",
+     "link": "https://arxiv.org/abs/2502.11439",
+     "selection_criterion": "Top-r output neurons (whole rows of each weight matrix) ranked by one of several importance scores: the data-free l2 norm of the row; first-order Taylor eta_i=|theta_i^T grad L| on task data; class-quantile Taylor (QMTaylor); or zeroth-order Taylor from SPSA gradient estimates.",
+     "granularity": "unit/neuron (weight rows)",
+     "domain": "NLP (Llama-2-7B, Llama-3-8B) and vision (ViT, DeiT, ResNet)",
+     "compares_against_random_subset": true,
+     "closeness": "very close",
+     "note": "Same granularity as ours: whole neurons (rows of incoming weights) are chosen by importance, and only a zero-initialised r x d_in delta on those rows is trained while W stays frozen. Its row-level Taylor score is the group-Taylor criterion of Molchanov et al. (CVPR 2019, 'Importance Estimation for Neural Network Pruning'), and is a ready alternative to summed squared gradients. Randomly chosen rows ('rd') were consistently worse on LLMs: Llama-3 GSM8K scored 42.5 with random rows, 46.1 with l2 and 55.1 with ZO-Taylor, and the commonsense average was 76.1 vs 80.6 (l2). On vision, Taylor-style scores beat l2. A Fisher score was not tested. Supervised fine-tuning only, no RL. Related work: NeFT (Xu et al., COLING 2025) also tunes neurons, picking those whose weights moved most between the base and the fully fine-tuned model."
+    },
+    {
+     "title": "Raise a Child in Large Language Model: Towards Effective and Generalizable Fine-tuning (Child-Tuning)",
+     "authors": "Runxin Xu, Fuli Luo, Zhiyuan Zhang, Chuanqi Tan, Baobao Chang, Songfang Huang, Fei Huang",
+     "venue_year": "EMNLP 2021",
+     "link": "https://arxiv.org/abs/2109.05687",
+     "selection_criterion": "Child-Tuning_D takes the top p_D (10-30%) of parameters by diagonal empirical Fisher (mean squared gradient of the log-likelihood) on the target training set. The mask is computed once before fine-tuning and kept fixed, and gradients of all other parameters are masked. Child-Tuning_F instead draws a fresh random Bernoulli gradient mask at each step.",
+     "granularity": "parameter",
+     "domain": "NLP (GLUE, BERT/RoBERTa/ELECTRA)",
+     "compares_against_random_subset": true,
+     "closeness": "very close",
+     "note": "Direct evidence that choosing parameters by task Fisher beats choosing them at random. On BERT-large, Child-Tuning_D averaged 79.92 vs 79.29 for _F and 78.42 for vanilla fine-tuning. In the ablation, a fixed random child network gained only about +0.18 over vanilla, against +1.5 for the Fisher-selected child. Choosing the lowest-Fisher parameters scored 6.65 points below Child-Tuning_D. Caveat: the subsets are large (10-30% of parameters), much bigger than our few units, and the task is supervised NLP."
+    },
+    {
+     "title": "Gradient-based Parameter Selection for Efficient Fine-Tuning (GPS)",
+     "authors": "Zhi Zhang, Qizhe Zhang, Zijun Gao, Renrui Zhang, Ekaterina Shutova, Shiji Zhou, Shanghang Zhang",
+     "venue_year": "CVPR 2024",
+     "link": "https://arxiv.org/abs/2312.10136",
+     "selection_criterion": "For every neuron, keep the top-K incoming connections ranked by gradient magnitude on the target training set (K=1 for most tasks, up to 10). Gradients come from a supervised contrastive loss, so no head is involved. The mask is fixed.",
+     "granularity": "parameter (organised per neuron: top-K incoming weights of each unit)",
+     "domain": "vision (ViT/Swin on FGVC, VTAB-1k)",
+     "compares_against_random_subset": true,
+     "closeness": "very close",
+     "note": "A neuron-aware gradient criterion: every unit gets a little capacity, rather than a few whole units getting all of it. That makes it a natural alternative design to test against our top units. GPS beat both whole-network random and per-neuron random selection of the same size (e.g. CUB 88.07 vs 86.60 and 87.17) and magnitude-based selection (87.29). With 0.36% of parameters it beats full fine-tuning on FGVC and VTAB. Relevant to our head-only warmup: scoring with cross-entropy through a randomly initialised head (Head+CE) gave worse selections, which supports training the head before scoring importance."
+    },
+    {
+     "title": "HarmoDT: Harmony Multi-Task Decision Transformer for Offline Reinforcement Learning",
+     "authors": "Shengchao Hu, Ziqing Fan, Li Shen, Ya Zhang, Yanfeng Wang, Dacheng Tao",
+     "venue_year": "ICML 2024",
+     "link": "https://arxiv.org/abs/2405.18080",
+     "selection_criterion": "Each task gets its own parameter mask, chosen by a harmony score: the gradient agreement A = g_i ⊙ mean_task_gradient plus lambda times an importance term, which is either |theta| or Fisher (grad log L ⊙ M)^2. Sparsity is set by ERK at 20%. Every 5k steps, low-score weights are dropped and high-agreement weights regrown inside a bi-level meta-learning loop.",
+     "granularity": "parameter (task-specific mask)",
+     "domain": "RL: offline multi-task RL (Decision Transformer) on Meta-World MT5/MT30/MT50 manipulation",
+     "compares_against_random_subset": true,
+     "closeness": "related",
+     "note": "The closest confirmed RL use of Fisher-scored masks on manipulation tasks. On MT50 (near-optimal data), fixed random masks scored 75.4, magnitude masks 80.3, Fisher masks 82.2, and the no-mask Prompt-DT 69.3. With sub-optimal data: random 53.8, Fisher 57.2. How it differs from ours: it trains all tasks jointly to avoid gradient conflict, rather than transferring from a frozen source policy, and it works on single parameters inside a transformer rather than units of an MLP actor. A follow-up, SoCo-DT (arXiv 2511.13133, 2025), uses Fisher-adjusted soft masks in the same setting. I found no paper that picks units of a frozen source RL policy by the new task's policy-gradient Fisher."
+    },
+    {
+     "title": "S2FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+     "authors": "Xinyu Yang, Jixuan Leng, Geyang Guo, Jiawei Zhao, Ryumei Nakada, Linjun Zhang, Huaxiu Yao, Beidi Chen",
+     "venue_year": "NeurIPS 2024",
+     "link": "https://arxiv.org/abs/2412.06289",
+     "selection_criterion": "Selects a few attention heads and FFN channels per block, at random by default (S2FT-R). Ablations rank channels by weight magnitude, activation magnitude, weight x activation, or gradient magnitude, taking either the largest or the smallest.",
+     "granularity": "unit/neuron (FFN channels: column subsets of up/gate, row subsets of down projection; attention heads)",
+     "domain": "NLP (LLaMA-family LLM fine-tuning)",
+     "compares_against_random_subset": true,
+     "closeness": "related",
+     "note": "Key counter-evidence to picking the largest-gradient units. Random selection is the default, and the authors call it 'a strong baseline'. On LLaMA3-8B, the smallest-activation channels did best (commonsense 87.3 vs 86.6 random; arithmetic 80.0 vs 79.6). The largest-gradient channels did worse than random (commonsense 85.4 vs 86.6), which the authors attribute to those channels holding pre-trained knowledge that tuning overwrites. Gains over random were small overall (+0.4 to +0.7). For our study: add a low-score or low-activation unit arm next to the high-Fisher arm. MIGU (Du et al., EMNLP 2024 Findings) takes the opposite rule, updating only weights tied to large linear-layer output magnitudes."
+    },
+    {
+     "title": "Mechanistic Finetuning of Vision-Language-Action Models via Few-Shot Demonstrations (Robotic Steering)",
+     "authors": "Chancharik Mitra, Yusen Luo, Raj Saravanan, Dantong Niu, Anirudh Pai, Jesse Thomason, Trevor Darrell, Abrar Anwar, Deva Ramanan, Roei Herzig",
+     "venue_year": "arXiv 2025 (preprint)",
+     "link": "https://arxiv.org/abs/2511.22697",
+     "selection_criterion": "Scores each attention head with few-shot demonstrations by k-NN action regression: for each timestep it finds the nearest timesteps in that head's activation space and measures the MSE of their averaged actions. The 20 heads (of 144) with the lowest MSE are kept.",
+     "granularity": "attention head (then LoRA r=8 on the q/o projections of the selected heads plus those blocks' MLPs)",
+     "domain": "robotics: VLA (pi0, pi0.5) fine-tuning, real Franka arm, imitation learning",
+     "compares_against_random_subset": false,
+     "closeness": "related",
+     "note": "The closest confirmed robot/VLA paper that selects which components to tune for a new task from task data. The vision encoder and action expert stay frozen. It beats full-head LoRA with far fewer trainable parameters (e.g. 78.8M vs 1781.3M) and is more robust to task variation. Its criterion is representational ('does this head's activation predict the action') rather than gradient-based, and it is supervised imitation, not RL. It has no random-head fine-tuning ablation. In an appendix, random heads were 'surprisingly competitive' for a different, classification-based selector (82.5% vs 86.75% for the top 20 heads). A k-NN action-predictability score per hidden unit could be computed from RL rollouts as a gradient-free alternative criterion."
+    },
+    {
+     "title": "Continual Task Allocation in Meta-Policy Network via Sparse Prompting (CoTASP)",
+     "authors": "Yijun Yang, Tianyi Zhou, Jing Jiang, Guodong Long, Yuhui Shi",
+     "venue_year": "ICML 2023",
+     "link": "https://arxiv.org/abs/2305.18444",
+     "selection_criterion": "Neuron-level binary masks ('prompts') for each task, generated by sparse coding of a Sentence-BERT task-description embedding over learned over-complete dictionaries. Only weights never allocated to any previous task are trained.",
+     "granularity": "unit/neuron (binary mask on each neuron's output)",
+     "domain": "RL: continual RL with SAC on Continual World CW10/CW20 (Meta-World manipulation)",
+     "compares_against_random_subset": false,
+     "closeness": "related",
+     "note": "Shows that choosing a sparse set of neurons for each new manipulation task inside a shared policy, while protecting weights from old tasks, works for RL. However, the selection comes from the task's text embedding, not from new-task gradient importance. There is no random-mask baseline; the closest ablation swaps the learned dictionary for a frozen random one (CW20 performance 0.73 vs 0.88). Follow-up SSDE (Zheng, Yin, Chen, Ng, Ong, Tsang; arXiv 2503.05246, 2025) splits each sub-network into frozen forward-transfer and trainable task-specific parts, and resets 'dormant' neurons scored by how much their output changes under input perturbation. It reports 95% success on CW10."
+    },
+    {
+     "title": "Refining Salience-Aware Sparse Fine-Tuning Strategies for Language Models",
+     "authors": "Xinxin Liu, Aaron Thomas, Cheng Zhang, Jianyi Cheng, Yiren Zhao, Xitong Gao",
+     "venue_year": "ACL 2025",
+     "link": "https://arxiv.org/abs/2412.13488",
+     "selection_criterion": "Compares 8 salience metrics for static sparse PEFT: magnitude, gradient, SNIP, FORCE, Taylor-FO, SynFlow, GRaSP and Fisher (squared gradient). Salience comes from 64 steps x batch 16, with a global top-rho mask fixed before training.",
+     "granularity": "parameter",
+     "domain": "NLP (BERT, RoBERTa, OPT, Gemma2, Qwen2)",
+     "compares_against_random_subset": false,
+     "closeness": "related",
+     "note": "The most direct head-to-head study of selection criteria, at LoRA-matched density (~0.2-1%). Plain gradient salience was the best metric overall. Fisher (squared gradient) was clearly worse on OPT (78.3 vs 88.5 on OPT-350m; 72.3 vs 86.9 on OPT-125m) and slightly worse on BERT (86.9 vs 87.4). Static masks matched periodic re-selection, and global vs per-layer top-k made no consistent difference. The paper does not say whether gradients are averaged before taking magnitude. Implication for us: compare our mean squared PPO gradient, which also accumulates minibatch noise, against the magnitude of the accumulated gradient. Caveat: no random baseline."
+    },
+    {
+     "title": "Reinforcement Learning Finetunes Small Subnetworks in Large Language Models",
+     "authors": "Sagnik Mukherjee, Lifan Yuan, Dilek Hakkani-Tür, Hao Peng",
+     "venue_year": "NeurIPS 2025",
+     "link": "https://arxiv.org/abs/2505.11711",
+     "selection_criterion": "Post hoc: the subnetwork is the set of parameters changed by full RL training (|delta theta| > 1e-5). RL is then re-run with gradients masked to that set.",
+     "granularity": "parameter",
+     "domain": "RL fine-tuning of LLMs (PPO, GRPO, DPO, PRIME and others)",
+     "compares_against_random_subset": false,
+     "closeness": "related",
+     "note": "Supports the hypothesis that a small set of parameters carries what RL learns. Across 7 RL algorithms and 10 LLMs, RL changes only 5-30% of parameters. Re-running RL on that subnetwork alone matches or beats full RL (PRIME 72.2 vs 69.8; DPO average 41.9 vs 40.3). The subnetworks overlap across seeds, data and algorithms more than chance (e.g. 60.5% vs 36.7% for a random set). However, the subnetwork is read off after full training, not chosen beforehand; finding it early is left as future work, and that is the gap our early, warmup-based scoring targets. Random sets appear only as an overlap reference, not as a training baseline."
+    },
+    {
+     "title": "The Multiple Ticket Hypothesis: Random Sparse Subnetworks Suffice for RLVR",
+     "authors": "Israel Adewuyi, Solomon Okibe, Vladmir Ivanov",
+     "venue_year": "arXiv 2026 (preprint)",
+     "link": "https://arxiv.org/abs/2602.01599",
+     "selection_criterion": "A uniformly random parameter mask, about 1% of parameters. No importance scoring.",
+     "granularity": "parameter",
+     "domain": "RL fine-tuning of LLMs (GRPO with beta=0, Qwen2.5-0.5B/1.5B, math and sorting tasks)",
+     "compares_against_random_subset": false,
+     "closeness": "related",
+     "note": "The strongest warning about random baselines in RL fine-tuning. Training a random 1% of parameters matches or beats full RLVR. All 20 random masks tested succeeded despite near-zero overlap (Jaccard ~0.005), and performance collapsed only below ~0.01-0.001% trainable. The authors explain this by the per-step KL constraint confining updates to a low-dimensional Fisher subspace that many random masks can span. Random masks are the method here, with no head-to-head against importance-selected masks; the only other baselines are full fine-tuning and first-layer-only or last-layer-only masks. Our random-units control is therefore essential. A small MLP actor learning a new skill may behave differently from LLM RLVR."
+    },
+    {
+     "title": "Task-Specific Skill Localization in Fine-tuned Language Models",
+     "authors": "Abhishek Panigrahi, Nikunj Saunshi, Haoyu Zhao, Sanjeev Arora",
+     "venue_year": "ICML 2023",
+     "link": "https://arxiv.org/abs/2302.06600",
+     "selection_criterion": "Grafting: after fine-tuning, learn a sparse binary mask (starting from the top-moved parameters, ~100 SGD steps). The mask is chosen so that pasting only those fine-tuned values into the pretrained model fits the task.",
+     "granularity": "parameter",
+     "domain": "NLP (RoBERTa, GPT-2 on GLUE and others)",
+     "compares_against_random_subset": true,
+     "closeness": "related",
+     "note": "Supports the 'few key parameters' hypothesis: 0.01% (RoBERTa) or 0.05% (GPT-2) of parameters recover about 95% of fine-tuned accuracy. Random regions of the same size fail (QNLI 50.7 vs 84.7; SST-2 77.8 vs 92.4). It also cautions against Fisher scored at the start: FISH-mask regions graft much worse (QNLI 65.1), and they overlap the learned region by only about 10%. So the top-Fisher parameters at the start are not where fine-tuning puts the skill. Regions for different tasks are almost disjoint, which matters for reusing one source policy across many new tasks."
+    },
+    {
+     "title": "The Path Not Taken: RLVR Provably Learns Off the Principals",
+     "authors": "Hanqing Zhu, Zhenyu Zhang, Hanxian Huang, DiJia Su, Zechun Liu, Jiawei Zhao, Igor Fedorov, Hamed Pirsiavash, Zhizhou Sha, Jinwon Lee, David Z. Pan, Zhangyang Wang, Yuandong Tian, Kai Sheng Tai",
+     "venue_year": "arXiv 2025 (preliminary version: spotlight, NeurIPS 2025 Workshop on Efficient Reasoning)",
+     "link": "https://arxiv.org/abs/2511.08567",
+     "selection_criterion": "Masks built from the pretrained weight geometry. It compares a principal-only mask (top-50% principal weights), a non-principal mask, a low-magnitude mask, a 'safe' mask (low-magnitude ∪ non-principal), and a random mask with the same layer-wise sparsity.",
+     "granularity": "parameter",
+     "domain": "RL fine-tuning of LLMs (RLVR)",
+     "compares_against_random_subset": true,
+     "closeness": "related",
+     "note": "Argues that RLVR updates go off the principal, high-curvature directions of the pretrained weights and barely change their spectrum, unlike SFT. The principal-only mask learned worst; the safe mask (~70% of parameters) tracked dense RLVR and reached comparable accuracy. The authors conclude that 'principal-targeted directions favored in SFT are ineffective for RL', so sparse-selection rules designed for SFT may not carry over to RL. A possible tension for us (my reading, not tested in the paper): ranking by squared gradient (Fisher, a curvature proxy) favours high-curvature directions, so an ablation that picks low-score units is worth running. Masks here are dense (~50-70%), and the setting is LLM RLVR with a KL constraint."
+    },
+    {
+     "title": "Surgical Fine-Tuning Improves Adaptation to Distribution Shifts",
+     "authors": "Yoonho Lee, Annie S. Chen, Fahim Tajwar, Ananya Kumar, Huaxiu Yao, Percy Liang, Chelsea Finn",
+     "venue_year": "ICLR 2023",
+     "link": "https://arxiv.org/abs/2210.11466",
+     "selection_criterion": "Tune a hand-chosen block that suits the shift type: first block for input-level shifts, middle blocks for feature-level shifts, last layer for output-level shifts. Two automatic variants: Auto-RGN scales each tensor's learning rate by its relative gradient norm ||g||/||theta||, normalised per epoch; Auto-SNR freezes layers whose gradient signal-to-noise ratio falls below a threshold.",
+     "granularity": "layer",
+     "domain": "vision (CIFAR-C, ImageNet-C, Living-17, Entity-30, Camelyon, Waterbirds, etc.)",
+     "compares_against_random_subset": false,
+     "closeness": "related",
+     "note": "Layer-level version of our idea, with matching baselines (full fine-tuning and last-layer-only, which correspond to our full-FT and head-only arms). Tuning one well-chosen block often matches or beats full fine-tuning. Auto-RGN was the best single-run method (average rank 1.29) and matched or beat full fine-tuning on every dataset. Auto-SNR was weaker. RGN and SNR are cheap gradient statistics that could be computed per hidden unit. Gradient SNR (mean over std across samples) in particular would remove the minibatch noise that a summed squared PPO gradient includes. No random-subset baseline."
+    },
+    {
+     "title": "Composable Sparse Fine-Tuning for Cross-Lingual Transfer (Lottery Ticket Sparse Fine-Tuning, LT-SFT)",
+     "authors": "Alan Ansell, Edoardo Maria Ponti, Anna Korhonen, Ivan Vulić",
+     "venue_year": "ACL 2022",
+     "link": "https://arxiv.org/abs/2110.07560",
+     "selection_criterion": "Fully fine-tune, then keep the K parameters with the largest absolute change |theta_ft - theta_0|. Rewind to the pretrained values and retrain only those K, with an optional L1 penalty toward the pretrained values.",
+     "granularity": "parameter",
+     "domain": "NLP (cross-lingual transfer: POS, dependency parsing, NER, NLI)",
+     "compares_against_random_subset": true,
+     "closeness": "related",
+     "note": "The movement-based alternative to gradient-at-start scoring. Picking random K parameters (rand-SFT) is worse: POS 69.2 vs 71.1, and DP UAS/LAS 54.3/33.9 vs 57.1/37.8. For our setting, this would mean a short all-unit PPO probe, then picking the units whose incoming weights moved most. Because the masks are sparse, task and language masks can be added together with little interference, which suggests a way to keep several new-task unit sets on one source policy."
+    }
+   ]
+  }
+ },
+ {
+  "key": "v2:ad71133840eec80b9116c6d7942215890085088f443ab46810e01a8876df0c21",
+  "result": {
+   "verified": [
+    {
+     "title": "Training Neural Networks with Fixed Sparse Masks (FISH Mask)",
+     "venue_year": "NeurIPS 2021",
+     "link": "https://arxiv.org/abs/2111.09839",
+     "ok": true,
+     "fix": "Correct; listed 3 times, so merge. Verified: GLUE test at 0.5% gives FISH 82.6, random mask 76.8, dense 82.5; N=1024, and 32 samples are enough. Two corrections to the notes: (1) the Fisher is computed through the new, randomly initialised head, which is always in the mask; (2) the CIFAR-10 '90.5 vs 74.8' uses a mask recomputed every epoch. A single fixed FISH mask scored 78.5 vs random 74.8 at 0.5%."
+    },
+    {
+     "title": "An Efficient Sparse Fine-Tuning with Low Quantization Error via Neural Network Pruning (SPruFT)",
+     "venue_year": "TMLR 2025 (published Nov 2025)",
+     "link": "https://arxiv.org/abs/2502.11439",
+     "ok": true,
+     "fix": "Correct. Llama-3 numbers verified: GSM8K random 42.53, l2 46.10, ZO-Taylor 55.12; commonsense 76.08 random vs 80.55 l2. Correction: the vision results have no random-row baseline, and the paper calls the differences between metrics there 'not substantial'."
+    },
+    {
+     "title": "Raise a Child in Large Language Model: Towards Effective and Generalizable Fine-tuning (Child-Tuning)",
+     "venue_year": "EMNLP 2021",
+     "link": "https://aclanthology.org/2021.emnlp-main.749/",
+     "ok": true,
+     "fix": "Correct; listed twice, and arXiv 2109.05687 is also valid. Verified on BERT-large: average Child-Tuning_D 79.92, _F 79.29, vanilla 78.42. Ablation: random child 78.61, lowest-Fisher child 73.13. The paper does not state the size of the random child."
+    },
+    {
+     "title": "Gradient-based Parameter Selection for Efficient Fine-Tuning (GPS)",
+     "venue_year": "CVPR 2024",
+     "link": "https://arxiv.org/abs/2312.10136",
+     "ok": true,
+     "fix": "Correct; listed 3 times, and the CVF open-access page is also valid. Verified FGVC averages: GPS 91.36, neuron-random 90.83, net-random 90.53, global top-k gradient 90.80; Head+CE loses 0.67. Not checked: the claim that global top-k 'concentrates in the top blocks'."
+    },
+    {
+     "title": "HarmoDT: Harmony Multi-Task Decision Transformer for Offline Reinforcement Learning",
+     "venue_year": "ICML 2024",
+     "link": "https://arxiv.org/abs/2405.18080",
+     "ok": true,
+     "fix": "Correct. Verified MT50, near-optimal data: random fixed masks 75.39, magnitude 80.33, Fisher 82.20, no mask (Prompt-DT) 69.33. Sub-optimal data: 53.80 / 57.20 / 57.20 / 48.40. Note that the masks are re-learned (pruned and regrown) during training, not fixed."
+    },
+    {
+     "title": "S2FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+     "venue_year": "NeurIPS 2024",
+     "link": "https://arxiv.org/abs/2412.06289",
+     "ok": true,
+     "fix": "Correct; listed 3 times. Verified LLaMA3-8B Table 4 (commonsense/arithmetic): random 86.6/79.6, largest-gradient 85.4/77.8, smallest-gradient 86.2/79.5, largest-activation 84.7/77.1, smallest-activation 87.3/80.0."
+    },
+    {
+     "title": "Mechanistic Finetuning of Vision-Language-Action Models via Few-Shot Demonstrations (Robotic Steering)",
+     "venue_year": "arXiv preprint, Nov 2025 (no venue found)",
+     "link": "https://arxiv.org/abs/2511.22697",
+     "ok": true,
+     "fix": "Correct. Verified: 20 of 144 PaliGemma heads are chosen by k-NN action-regression MSE, with LoRA r=8. Training is supervised on 20 demos (no RL). There is no random-head fine-tuning baseline; the 82.5 vs 86.75 figure comes from a classification probe."
+    },
+    {
+     "title": "Continual Task Allocation in Meta-Policy Network via Sparse Prompting (CoTASP)",
+     "venue_year": "ICML 2023",
+     "link": "https://proceedings.mlr.press/v202/yang23t.html",
+     "ok": true,
+     "fix": "Correct; listed twice, and arXiv 2305.18444 is also valid. Verified: SAC with a 4x1024 MLP actor; neuron masks come from sparse coding of the task text; only weights never allocated before are trained. No random-mask control; a frozen random dictionary gives CW20 0.73 vs 0.88."
+    },
+    {
+     "title": "Refining Salience-Aware Sparse Fine-Tuning Strategies for Language Models",
+     "venue_year": "ACL 2025",
+     "link": "https://arxiv.org/abs/2412.13488",
+     "ok": true,
+     "fix": "Correct. Verified: plain gradient salience was best overall. Fisher vs gradient: 78.33 vs 88.45 (OPT-350m), 72.31 vs 86.92 (OPT-125m), 86.91 vs 87.42 (BERT). Static masks did as well as dynamic ones. No random baseline."
+    },
+    {
+     "title": "Reinforcement Learning Finetunes Small Subnetworks in Large Language Models",
+     "venue_year": "NeurIPS 2025",
+     "link": "https://arxiv.org/abs/2505.11711",
+     "ok": true,
+     "fix": "Correct; listed twice. Do not confuse it with the withdrawn near-duplicate by Balashov (arXiv 2507.17107)."
+    },
+    {
+     "title": "The Multiple Ticket Hypothesis: Random Sparse Subnetworks Suffice for RLVR",
+     "venue_year": "arXiv Feb 2026; poster at the ICML 2026 workshop on High Dimensional Learning Dynamics (not main track)",
+     "link": "https://arxiv.org/abs/2602.01599",
+     "ok": false,
+     "fix": "Venue incomplete: the paper is also an ICML 2026 workshop poster, with the title reordered there. The third author is Vladimir V. Ivanov (arXiv spells it 'Vladmir'). Content claims verified: random 1% masks match full RLVR, and 20 masks with Jaccard about 0.005 all work."
+    },
+    {
+     "title": "Task-Specific Skill Localization in Fine-tuned Language Models",
+     "venue_year": "ICML 2023",
+     "link": "https://proceedings.mlr.press/v202/panigrahi23a.html",
+     "ok": true,
+     "fix": "Correct; listed 3 times, and arXiv 2302.06600 is also valid. Verified at 0.01%: learned graft QNLI 84.7, FISH-mask graft 65.1, random 50.7. The FISH mask overlaps the graft region by only 7.6-11.4%."
+    },
+    {
+     "title": "The Path Not Taken: RLVR Provably Learns Off the Principals",
+     "venue_year": "NeurIPS 2026 poster (listed as 'The Path Not Taken: RLVR Learns Off the Principals'); earlier version a NeurIPS 2025 Efficient Reasoning workshop spotlight",
+     "link": "https://arxiv.org/abs/2511.08567",
+     "ok": false,
+     "fix": "Venue out of date: neurips.cc lists it as a NeurIPS 2026 poster under the shorter title, so cite that version."
+    },
+    {
+     "title": "Surgical Fine-Tuning Improves Adaptation to Distribution Shifts",
+     "venue_year": "ICLR 2023",
+     "link": "https://arxiv.org/abs/2210.11466",
+     "ok": true,
+     "fix": "Correct."
+    },
+    {
+     "title": "Composable Sparse Fine-Tuning for Cross-Lingual Transfer (LT-SFT)",
+     "venue_year": "ACL 2022",
+     "link": "https://arxiv.org/abs/2110.07560",
+     "ok": true,
+     "fix": "Correct."
+    },
+    {
+     "title": "Neuron-level Balance between Stability and Plasticity in Deep Reinforcement Learning (NBSP)",
+     "venue_year": "arXiv preprint, Apr 2025 (no venue found)",
+     "link": "https://arxiv.org/abs/2504.08000",
+     "ok": true,
+     "fix": "Correct. Verified: Score = max(Acc, 1-Acc), measured against success (Meta-World) or return (Atari). It selects the top ~20% of neurons in all layers but the last and scales their gradients by 0.2(1-Score). Uses SAC (CleanRL). Table 3 random-neuron ablation, e.g. drawer-open->close success 0.72 random vs 0.96."
+    },
+    {
+     "title": "Measure gradients, not activations! Enhancing neuronal activity in deep reinforcement learning (GraMa)",
+     "venue_year": "NeurIPS 2025",
+     "link": "https://arxiv.org/abs/2505.24061",
+     "ok": true,
+     "fix": "Correct. The arXiv page has no venue line, but the NeurIPS 2025 proceedings list the paper. Score verified: E|dL/dh_i| divided by the layer mean."
+    },
+    {
+     "title": "The Dormant Neuron Phenomenon in Deep Reinforcement Learning",
+     "venue_year": "ICML 2023 (oral)",
+     "link": "https://proceedings.mlr.press/v202/sokar23a.html",
+     "ok": true,
+     "fix": "Correct; listed twice. Verified: the score is E|h_i| divided by the layer mean. Recycling random or most-active neurons 'hinders learning and causes performance collapse'."
+    },
+    {
+     "title": "Continual World: A Robotic Benchmark For Continual Reinforcement Learning",
+     "venue_year": "NeurIPS 2021",
+     "link": "https://arxiv.org/abs/2105.10919",
+     "ok": true,
+     "fix": "Correct. Verified CW20: PackNet performance 0.80, forgetting 0.00, forward transfer 0.19. Fine-tuning forward transfer 0.20; reference 0.46. SAC with a 4x256 MLP actor."
+    },
+    {
+     "title": "Fine-tuning Reinforcement Learning Models is Secretly a Forgetting Mitigation Problem",
+     "venue_year": "ICML 2024 (spotlight)",
+     "link": "https://arxiv.org/abs/2402.02868",
+     "ok": true,
+     "fix": "Correct."
+    },
+    {
+     "title": "Overcoming Catastrophic Forgetting with Hard Attention to the Task (HAT)",
+     "venue_year": "ICML 2018",
+     "link": "https://proceedings.mlr.press/v80/serra18a.html",
+     "ok": true,
+     "fix": "Correct."
+    },
+    {
+     "title": "Overcoming catastrophic forgetting in neural networks (EWC)",
+     "venue_year": "PNAS 2017, 114(13):3521-3526",
+     "link": "https://doi.org/10.1073/pnas.1611835114",
+     "ok": true,
+     "fix": "Correct (arXiv 1612.00796)."
+    },
+    {
+     "title": "Importance Estimation for Neural Network Pruning",
+     "venue_year": "CVPR 2019",
+     "link": "https://openaccess.thecvf.com/content_CVPR_2019/html/Molchanov_Importance_Estimation_for_Neural_Network_Pruning_CVPR_2019_paper.html",
+     "ok": true,
+     "fix": "Correct; listed twice. arXiv 1906.10771."
+    },
+    {
+     "title": "Pruning Convolutional Neural Networks for Resource Efficient Inference",
+     "venue_year": "ICLR 2017",
+     "link": "https://arxiv.org/abs/1611.06440",
+     "ok": true,
+     "fix": "Correct."
+    },
+    {
+     "title": "Pruning Neural Networks at Initialization: Why are We Missing the Mark?",
+     "venue_year": "ICLR 2021",
+     "link": "https://arxiv.org/abs/2009.08576",
+     "ok": true,
+     "fix": "Correct."
+    },
+    {
+     "title": "The State of Sparse Training in Deep Reinforcement Learning",
+     "venue_year": "ICML 2022",
+     "link": "https://proceedings.mlr.press/v162/graesser22a.html",
+     "ok": true,
+     "fix": "Correct. Verified quote: 'for most sparsities (50%-95%) we observe little difference' between RigL and SET. Minibatch gradient SNR is as low as 0.01, and lower still for actor networks."
+    },
+    {
+     "title": "On Lottery Tickets and Minimal Task Representations in Deep Reinforcement Learning",
+     "venue_year": "ICLR 2022 (spotlight)",
+     "link": "https://arxiv.org/abs/2105.01648",
+     "ok": true,
+     "fix": "Correct."
+    },
+    {
+     "title": "Finding Skill Neurons in Pre-trained Transformer-based Language Models",
+     "venue_year": "EMNLP 2022",
+     "link": "https://aclanthology.org/2022.emnlp-main.765/",
+     "ok": true,
+     "fix": "Correct."
+    },
+    {
+     "title": "Knowledge Neurons in Pretrained Transformers",
+     "venue_year": "ACL 2022",
+     "link": "https://aclanthology.org/2022.acl-long.581/",
+     "ok": true,
+     "fix": "Correct."
+    },
+    {
+     "title": "Does Localization Inform Editing? Surprising Differences in Causality-Based Localization vs. Knowledge Editing in Language Models",
+     "venue_year": "NeurIPS 2023 (spotlight)",
+     "link": "https://arxiv.org/abs/2301.04213",
+     "ok": true,
+     "fix": "Correct."
+    },
+    {
+     "title": "Locating and Editing Factual Associations in GPT (ROME)",
+     "venue_year": "NeurIPS 2022",
+     "link": "https://arxiv.org/abs/2202.05262",
+     "ok": true,
+     "fix": "Correct."
+    },
+    {
+     "title": "Understanding LLM Parameter Update Sparsity through the Lens of Fisher (Zhang, Mukherjee and Peng)",
+     "venue_year": "arXiv preprint, Sep 2026",
+     "link": "https://arxiv.org/abs/2609.36262",
+     "ok": true,
+     "fix": "ADDED (not among the candidates); this is the closest RL evidence. It compares fixed masks of the top initial-Fisher coordinates with same-size random masks under Dr. GRPO. Numbers verified from the HTML version."
+    },
+    {
+     "title": "Lifelong Learning with Dynamically Expandable Networks (DEN, selective retraining)",
+     "venue_year": "ICLR 2018",
+     "link": "https://arxiv.org/abs/1708.01547",
+     "ok": true,
+     "fix": "ADDED: for each new task it fits a sparse new head first, then retrains only the units connected to that head. This is the closest precedent for our pipeline."
+    },
+    {
+     "title": "Learning to Modulate pre-trained Models in RL (L2M)",
+     "venue_year": "NeurIPS 2023",
+     "link": "https://arxiv.org/abs/2306.14884",
+     "ok": true,
+     "fix": "ADDED: compares PEFT methods for adapting a pretrained Decision Transformer to new Meta-World/DMC tasks (head-only, last layer+head, adapters, LoRA, (IA)3, prompt and prefix tuning). Full FT scored best on CW10. None of the methods selects parameters by importance."
+    },
+    {
+     "title": "Faster gaze prediction with dense networks and Fisher pruning (Theis et al.)",
+     "venue_year": "arXiv preprint 2018",
+     "link": "https://arxiv.org/abs/1801.05787",
+     "ok": true,
+     "fix": "ADDED (cited in the candidate notes): derives a unit-gate Fisher that reproduces Molchanov's Taylor criterion."
+    },
+    {
+     "title": "Fine-Tuning can Distort Pretrained Features and Underperform Out-of-Distribution (LP-FT)",
+     "venue_year": "ICLR 2022 (oral)",
+     "link": "https://arxiv.org/abs/2202.10054",
+     "ok": true,
+     "fix": "ADDED (cited in the candidate notes): a linear probe (head first), then fine-tuning; this is the justification for our head-only warm-up."
+    },
+    {
+     "title": "Let's Focus on Neuron: Neuron-Level Supervised Fine-tuning for Large Language Model (NeFT)",
+     "venue_year": "COLING 2025",
+     "link": "https://aclanthology.org/2025.coling-main.630/",
+     "ok": true,
+     "fix": "ADDED (cited in the candidate notes as Xu et al., COLING 2025): confirmed."
+    },
+    {
+     "title": "Mastering Continual Reinforcement Learning through Fine-Grained Sparse Network Allocation and Dormant Neuron Exploration (SSDE)",
+     "venue_year": "arXiv preprint, Mar 2025 (no venue found)",
+     "link": "https://arxiv.org/abs/2503.05246",
+     "ok": true,
+     "fix": "Mentioned in the candidate notes; confirmed as arXiv-only."
+    },
+    {
+     "title": "Mechanistic Interpretability for Steering Vision-Language-Action Models (Haon et al.)",
+     "venue_year": "CoRL 2025 (PMLR 305)",
+     "link": "https://proceedings.mlr.press/v305/haon25a.html",
+     "ok": true,
+     "fix": "ADDED: finds action-relevant FFN neurons in OpenVLA/pi0 and steers them at inference time, with no training."
+    }
+   ],
+   "criteria": [
+    {
+     "name": "Empirical Fisher of the new-task loss, top-k units, fixed mask (our current score)",
+     "formula": "S_j = Σ_k Σ_{i∈{w_j,b_j}} (∂L_PPO,k/∂θ_i)^2 over warm-up minibatches k; keep the top-k units per layer. Per sample, the row sum equals δ_j^2(‖x‖^2+1), where δ_j = ∂L/∂z_j.",
+     "source": "FISH Mask (Sung, Nair and Raffel, NeurIPS 2021); Child-Tuning_D (Xu et al., EMNLP 2021)",
+     "fit_for_us": "The baseline criterion, with strong supervised evidence: at 0.5% of weights, FISH 82.6 vs same-size random 76.8 vs dense 82.5, stable with as few as 32 samples. At unit level the row sum reduces to the backprop error times the input norm. So rank within each layer, because ‖x‖^2 differs between layers, and note that units with zero derivative can never be picked. FISH scored through a random head; our head warm-up follows GPS (a random head cost 0.67 on FGVC) and LP-FT."
+    },
+    {
+     "name": "Reward-free policy (model) Fisher",
+     "formula": "F_j = E_{s~π on new task, a~π(·|s)} Σ_{i∈row j} (∂log π(a|s)/∂θ_i)^2. With a diagonal Gaussian head and state-independent σ: F_j = E_s[(‖x(s)‖^2+1) Σ_d (∂μ_d/∂z_j)^2 / σ_d^2].",
+     "source": "Zhang, Mukherjee and Peng, arXiv 2609.36262 (2026); the same diagonal Fisher as EWC (Kirkpatrick et al., PNAS 2017)",
+     "fit_for_us": "Uses no advantages, so PPO's noisy advantage estimates do not affect it. It asks which units can move the action distribution on new-task states, and it is exact and cheap for a Gaussian actor. In LLM RL (Dr. GRPO), a fixed top-initial-Fisher mask beat same-size random masks by 24-28 points at ≤1% and recovered 96% of the full-RL gain at 1%. Run it against our advantage-weighted score to test whether reward information in the selection matters."
+    },
+    {
+     "name": "Unit-gate Fisher / first-order Taylor",
+     "formula": "G_j = E_n[(z_jn · ∂L_n/∂z_jn)^2] (gate Fisher). Molchanov's group form is (Σ_{i∈row j} g_i θ_i)^2, and SPruFT's row form is η_j = |θ_row j · ∇_row j L|. Per sample, θ_row·∇_row L = z_j δ_j, so all three are the same per-sample quantity aggregated differently.",
+     "source": "Molchanov et al. (ICLR 2017; CVPR 2019); Theis et al. (arXiv 2018); SPruFT (Li and Bhaskara, TMLR 2025)",
+     "fit_for_us": "A whole-unit quantity that matches unfreezing whole rows, at the cost of one product per unit. It measures how much the loss depends on the unit's current output (its removal cost), while our g^2 measures the first-order gain from training the row, which makes it a natural ablation. SPruFT's row-Taylor beat random rows on Llama-3 GSM8K (55.1 vs 42.5)."
+    },
+    {
+     "name": "Layer-normalised unit gradient (GraMa) with per-layer quotas",
+     "formula": "G_j^l = E_s|∂L/∂h_j^l| / ((1/H_l) Σ_k E_s|∂L/∂h_k^l|); take the top-k within each layer, or a fixed quota per layer.",
+     "source": "Liu et al., 'Measure gradients, not activations!' (NeurIPS 2025); allocation evidence from GPS (Zhang et al., CVPR 2024)",
+     "fit_for_us": "An RL-native unit score, validated with SAC on DMC and MuJoCo. Within a layer our row score is essentially E[δ_j^2‖x‖^2], so GraMa is its layer-normalised first-moment version. Normalising or using quotas stops a global top-k from piling into one layer. In GPS, global top-k by gradient was about equal to random (90.80 vs 90.83), while giving every neuron a share won (91.36)."
+    },
+    {
+     "name": "Gradient consistency (SNR) instead of summed squares",
+     "formula": "SNR_j = ‖Σ_k g_{j,k}‖^2 / Σ_k ‖g_{j,k} − ḡ_j‖^2, or rank by ‖Σ_k g_{j,k}‖ rather than Σ_k ‖g_{j,k}‖^2. Optional RGN_j = ‖g_j‖/‖θ_j‖.",
+     "source": "Surgical fine-tuning, Auto-SNR / Auto-RGN (Lee et al., ICLR 2023); gradient vs Fisher salience (Liu et al., ACL 2025); Graesser et al. (ICML 2022)",
+     "fit_for_us": "Summing squared minibatch gradients also rewards noise. In deep RL, gradient SNR can be as low as 0.01 and is lower for actors, which is why gradient-chosen growth (RigL) was about equal to random growth (SET). In static sparse PEFT, plain gradient beat Fisher on OPT-350m (88.5 vs 78.3). It uses the same warm-up data at no extra cost. Also check that the ranking is stable across seeds and warm-up lengths."
+    },
+    {
+     "name": "Dormant / low-activation units (opposite arm)",
+     "formula": "s_j = E_s|h_j(s)| / ((1/H_l) Σ_k E_s|h_k(s)|) on new-task states; train the k units with the smallest s_j.",
+     "source": "Sokar et al. (ICML 2023, oral); S2FT (Yang et al., NeurIPS 2024)",
+     "fit_for_us": "The opposite hypothesis: give the new action spare capacity and leave the source policy's working units alone. S2FT found that smallest-activation channels beat random (87.3 vs 86.6), while largest-gradient channels lost to random (85.4). Sokar found that recycling active or random units instead of dormant ones collapses DQN. If this arm wins, the 'key units' story fails, so it must be run."
+    },
+    {
+     "name": "Activation-outcome predictivity (skill neurons)",
+     "formula": "Acc_j = (1/T) Σ_t 1[(h_j(s_t) > mean h_j) == (q_t > mean q)]; Score_j = max(Acc_j, 1 − Acc_j), where q_t = success, or the advantage sign / a dense progress signal.",
+     "source": "Wang et al., 'Finding Skill Neurons' (EMNLP 2022); Lan et al., NBSP (arXiv 2025, Meta-World + SAC)",
+     "fit_for_us": "Gradient-free, and it reuses rollouts we already collect. Lan et al. use exactly this score with Meta-World success to pick ~20% of neurons and beat random neurons. For a new action, success is near 0 at the start, so use the advantage sign instead. Best as a cross-check rather than the main selector."
+    },
+    {
+     "name": "Movement after a short all-unit probe (oracle / diagnostic)",
+     "formula": "M_j = ‖θ_row j^(probe) − θ_row j^(0)‖_2 (optionally divided by ‖θ_row j^(0)‖) after N full-PPO iterations; rewind to θ^(0) and train the top-k movers plus the head.",
+     "source": "LT-SFT (Ansell et al., ACL 2022); grafting (Panigrahi et al., ICML 2023); NeFT (Xu et al., COLING 2025); Mukherjee et al. (NeurIPS 2025)",
+     "fit_for_us": "Needs a probe run, but it gives both an upper bound and a diagnostic. LT-SFT's top movers beat random parameters. Grafting showed that regions chosen by Fisher at the start overlap only ~8-11% with where fine-tuning actually puts the skill (QNLI 65.1 vs 84.7). Measure how much the early-Fisher units overlap with the top movers of our full-FT run."
+    }
+   ],
+   "closest": [
+    {
+     "paper": "Training Neural Networks with Fixed Sparse Masks (FISH Mask; Sung, Nair and Raffel, NeurIPS 2021), with Child-Tuning_D (Xu et al., EMNLP 2021)",
+     "what_it_does": "Ranks every weight by diagonal empirical Fisher: the mean squared log-likelihood gradient on ~1k target examples (32 are enough), computed through the new, randomly initialised head. It keeps the global top-k fixed and trains only those weights plus the head. At 0.5% of BERT-Large it matches dense fine-tuning on GLUE (82.6 vs 82.5) and beats a same-size random mask (76.8). Child-Tuning_D applies the same rule at 10-30% of weights: the Fisher child gains +1.5 over vanilla, a random child +0.18, and the lowest-Fisher child scores 6.65 below the highest.",
+     "what_we_add": "We select whole units (incoming row plus bias), not scattered weights, and score with the PPO policy-gradient loss instead of a supervised log-likelihood. Scoring happens after a head-only warm-up rather than through a random head. The source is a frozen RL-trained policy, the target a new manipulation action, and the outcome speed to 90% success. Methodologically this is the same recipe at a different granularity and in a different domain."
+    },
+    {
+     "paper": "SPruFT (Li and Bhaskara, TMLR 2025), with S2FT (Yang et al., NeurIPS 2024) and NeFT (Xu et al., COLING 2025)",
+     "what_it_does": "SPruFT picks the top-r neurons (rows) of each weight matrix by importance (row l2 norm, Taylor |θ_row·∇L|, or zeroth-order Taylor), freezes W, and trains a zero-initialised delta on just those rows. Importance beats random rows on Llama-3: GSM8K 55.1 with ZO-Taylor, 46.1 with l2, 42.5 random. S2FT trains a few selected FFN channels and heads. Random selection is its default and a strong one: largest-gradient channels lose to random (85.4 vs 86.6), and smallest-activation channels win (87.3). NeFT tunes the neurons that change most under supervised fine-tuning.",
+     "what_we_add": "Same row-level granularity, but all three are supervised LLM or vision fine-tuning. None uses a squared-gradient Fisher score, a head warm-up, or RL. We test whether high-gradient units help or hurt, S2FT's warning, for a small MLP actor under PPO transfer."
+    },
+    {
+     "paper": "Lifelong Learning with Dynamically Expandable Networks, selective retraining (Yoon et al., ICLR 2018)",
+     "what_it_does": "For each new task, DEN freezes the network and fits an L1-sparse new output layer on the top hidden units. It then searches breadth-first back from the units with non-zero head weights, collects every unit and weight with a path to the new output, and retrains only that subnetwork. It adds capacity only if the loss stays high. Tested on supervised continual learning (MNIST-Variation, CIFAR-100, AwA): selective retraining is faster than full retraining and gains about 2 points of AUROC over the base network.",
+     "what_we_add": "DEN already uses our pipeline shape: train the new head first, then retrain only the units it needs. We differ in selecting units by new-task PPO-gradient magnitude after a dense head warm-up, instead of by sparse-head connectivity. We fix an explicit small unit budget, compare against the same number of random units, and work in RL transfer from a frozen source policy. DEN has no random-subnetwork control and no RL."
+    },
+    {
+     "paper": "Understanding LLM Parameter Update Sparsity through the Lens of Fisher (Zhang, Mukherjee and Peng, arXiv 2609.36262, Sep 2026), with Mukherjee et al. (NeurIPS 2025)",
+     "what_it_does": "RL fine-tuning of Qwen3-1.7B-Base with Dr. GRPO on MATH-500. A fixed mask of the coordinates with the highest initial model Fisher, E[(∂log π(y|x))^2] from 800 on-policy samples with no reward involved, beats same-size random masks at every budget: 0.1%: 51.4 vs 23.9; 1%: 55.0 vs 31.1; 5%: 56.0 vs 47.6. It recovers 85% / 96% / 99% of the full-RL gain (full: 56.4). Caveats: all arms share one learning rate, and masks are coordinate-level only. Mukherjee et al. had shown that the RL-updated subnetwork alone matches full RL, but they found it after training and ran no random control.",
+     "what_we_add": "This is the strongest existing result that, under RL, importance-selected parameters beat random ones and nearly match full training, so we cannot claim that idea in general. We add: whole-unit selection; continuous-control robot policies (MLP actor, PPO) transferred from a frozen source to a new action; an advantage-weighted PPO score after head warm-up, compared head-to-head with their reward-free Fisher; learning rate tuned per arm; and steps to 90% success as the outcome."
+    },
+    {
+     "paper": "Neuron selection inside RL policies on Meta-World: CoTASP (Yang et al., ICML 2023) and NBSP 'RL skill neurons' (Lan et al., arXiv 2025)",
+     "what_it_does": "CoTASP: for each new Continual World task, it sparse-codes the task-description embedding into a binary neuron mask over a 4x1024 SAC actor. It trains only weights never allocated to an earlier task. There is no random-mask control; replacing the learned dictionary with a frozen random one drops CW20 from 0.88 to 0.73. NBSP: it scores neurons by how often above-mean activation coincides with above-mean success, takes the top ~20% as skill neurons, and shrinks their gradients to at most 0.1x (plus replay) while everything else trains. It beats choosing neurons at random (e.g. drawer-open->close success 0.96 vs 0.72).",
+     "what_we_add": "We select units from the new task's policy gradients; CoTASP uses task text and NBSP uses old-task activation-success agreement. We train only the selected units and freeze the rest, the reverse of NBSP. Neither paper compares against head-only or full fine-tuning at a matched budget for speed of transfer."
+    }
+   ],
+   "rl_evidence": "No. I found no paper showing, in RL or robot policy transfer, that importance-selected hidden units both beat the same number of random units and match full fine-tuning. What exists:\n\n(1) The closest positive result is for LLMs and single weights: Zhang, Mukherjee and Peng (arXiv 2609.36262, Sep 2026). Under Dr. GRPO, a fixed mask of the top initial-Fisher coordinates beats same-size random masks at every budget, e.g. 0.1%: 51.4 vs 23.9 on MATH-500, with full RL at 56.4. It recovers 85-99% of the full-RL gain. Caveats: one learning rate for all arms, so the random arms may be under-trained; masks are single weights, not units; no robots. It conflicts, unresolved, with the Multiple Ticket Hypothesis (ICML 2026 workshop), where random 1% masks matched full GRPO.\n\n(2) Multi-task offline RL on Meta-World MT50 (HarmoDT, ICML 2024): Fisher-learned weight masks 82.2 vs random fixed masks 75.4 (magnitude 80.3, no mask 69.3). These masks are weight-level and re-learned during joint training; it is not transfer.\n\n(3) Continual RL on Meta-World with SAC (Lan et al., arXiv 2025): choosing ~20% 'skill neurons' by activation-success agreement beats random neurons (0.96 vs 0.72 success on drawer-open->close). But those neurons are protected and the rest trained, the reverse of our recipe, and there is no matched full-FT comparison. CoTASP (ICML 2023) picks neurons for each new task from its text description and has no random control.\n\n(4) In deep RL generally, which units you touch matters for resets: in Sokar et al. (ICML 2023), recycling random or most-active units instead of dormant ones collapses DQN.\n\n(5) Against gradient-based choice in RL: in Graesser et al. (ICML 2022), RigL's gradient-chosen connections were no better than SET's random ones at 50-95% sparsity, which the authors attribute to gradient SNR as low as 0.01 (lower still in actors).\n\n(6) Robots: Robotic Steering (arXiv 2025) selects 20 of 144 VLA heads from demos and reports gains over LoRA. It is imitation learning, with no random-head fine-tuning control. In Continual World, PackNet freezes old weights yet gains no forward transfer (0.19 vs 0.20 for plain fine-tuning; reference 0.46). In L2M (NeurIPS 2023), full FT scored best on CW10 among the parameter-efficient methods.\n\nSo a unit-level PPO result in robot transfer, with a matched random-units control and a full-FT comparison, would be new. The LLM-RL Fisher-mask paper is what a reviewer will cite against the general idea.",
+   "novelty": "The mechanism is not new; what is new is the setting and the controlled test.\n\nPrior work already covers the parts:\n(i) Scoring parameters by squared task gradient (diagonal Fisher), fixing the top-k and training them plus the head: FISH Mask and Child-Tuning (2021).\n(ii) Training only selected whole neurons or rows: SPruFT, NeFT and S2FT.\n(iii) Fitting the new head first, then retraining only the units it needs: DEN's selective retraining (ICLR 2018).\n(iv) In RL, Zhang, Mukherjee and Peng (2026) show that initial-Fisher masks beat random masks and nearly match full RL, for LLM weights.\n\nA reviewer will call the method 'FISH/SPruFT applied to PPO'. What we found no claim of: unit-level Fisher selection after a head-only warm-up, inside a frozen RL-trained source actor, for a new manipulation action, compared against matched random units, head-only and full FT. That is an empirical contribution in a new domain, not a new algorithm.\n\nThe hypothesis can fail:\n- S2FT found high-gradient units worse than random.\n- Multiple Ticket (in LLM RL) and Graesser et al. (in deep RL) found random choices about as good as selected ones.\n- Frankle et al. found that the per-layer budget explains most of what pruning-at-initialisation scores achieve.\n- In L2M and Continual World, full or plain fine-tuning did best on new-task learning.\nSo aim to match full FT with few trainable units and better source retention, not to beat it.\n\nTo make the result defensible:\n(1) Draw random units with the same count per layer, use several random draws, and tune the learning rate per arm.\n(2) Add a low-score or dormant-units arm, a reward-free policy-Fisher arm and a unit-gate Taylor arm.\n(3) Report steps to 90% success and source-task retention, and include BC- or EWC-regularised full FT (Wolczyk et al., ICML 2024) and a LoRA or bias-only baseline.\n(4) Show something RL-specific: how many warm-up iterations make the ranking stable across seeds given the low gradient SNR; how much the early-selected units overlap with the units that move most under full FT; and whether the selected units are the ones that most move the action mean, using the Gaussian-policy Fisher closed form.\n\nIf the selected-vs-random gap is large and consistent, this is a training-recipe paper ('which units to unfreeze'). If it is not, it becomes an analysis result showing there are no 'key neurons' in RL transfer."
+  }
+ }
+]

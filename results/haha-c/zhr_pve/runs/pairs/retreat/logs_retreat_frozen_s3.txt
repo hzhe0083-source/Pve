@@ -1,0 +1,6 @@
+iter 1 step 0 eval success_once=0.672 lam=0.000
+iter 6 step 204800 eval success_once=0.898 lam=0.000
+iter 11 step 409600 eval success_once=0.977 lam=0.000
+iter 16 step 614400 eval success_once=0.977 lam=0.000
+early stop: reached 0.9
+done retreat_frozen_s3 steps=614400 wall=53s SPS=11664

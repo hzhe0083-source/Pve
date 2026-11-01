@@ -1,0 +1,2 @@
+iteration,global_step,success_once,success_at_end,return,prior_coef,wall_s,ev_grasp,ev_held,ev_held_succ,ev_no_release,ev_lost,ev_no_grasp
+1,0,0.0078125,0.0,0.01171875,0.0,3.0,1.0,0.98046875,0.00390625,0.9765625,0.015625,0.0

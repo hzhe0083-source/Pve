@@ -1,0 +1,47 @@
+{
+ "source": {
+  "success": 0.00341796875,
+  "let_go_at_goal": 0.0,
+  "steps_in_region_per_episode": 36.336669921875
+ },
+ "global:0.3": {
+  "success": 0.009033203125,
+  "let_go_at_goal": 0.0,
+  "steps_in_region_per_episode": 30.869140625
+ },
+ "global:0.6": {
+  "success": 0.0458984375,
+  "let_go_at_goal": 0.0,
+  "steps_in_region_per_episode": 21.784912109375
+ },
+ "global:1.0": {
+  "success": 0.095947265625,
+  "let_go_at_goal": 0.0,
+  "steps_in_region_per_episode": 15.39794921875
+ },
+ "seam:0.3": {
+  "success": 0.00732421875,
+  "let_go_at_goal": 0.0,
+  "steps_in_region_per_episode": 32.531005859375
+ },
+ "seam:0.6": {
+  "success": 0.039306640625,
+  "let_go_at_goal": 0.0,
+  "steps_in_region_per_episode": 28.294677734375
+ },
+ "seam:1.0": {
+  "success": 0.12060546875,
+  "let_go_at_goal": 0.0,
+  "steps_in_region_per_episode": 27.141357421875
+ },
+ "pseam:0.6": {
+  "success": 0.047119140625,
+  "let_go_at_goal": 0.0,
+  "steps_in_region_per_episode": 27.799072265625
+ },
+ "pseam:1.0": {
+  "success": 0.1162109375,
+  "let_go_at_goal": 0.0,
+  "steps_in_region_per_episode": 26.730224609375
+ }
+}

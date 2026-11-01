@@ -1,0 +1,10 @@
+LATCH_PART_START 20:17:54 dell-5090
+DONE place_probe_s1
+DONE place_latch_rule_s1
+DONE place_probe_s2
+DONE place_latch_rule_s2
+DONE place_probe_s3
+DONE place_latch_rule_s3
+DONE place_probe_s4
+DONE place_latch_rule_s4
+LATCH_PART_END 20:32:07

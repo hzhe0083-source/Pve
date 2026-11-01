@@ -1,0 +1,2 @@
+STACK_C_START 15:23:19
+STACK_C_END 17:56:34 success_once_mean=0.6875 ckpt=runs/StackCube_c1/final_ckpt.pt

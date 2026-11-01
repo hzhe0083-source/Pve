@@ -1,0 +1,38 @@
+{
+ "old_expert": 0.9921875,
+ "runs": {
+  "runs/protect_np/runs/place_nsa64np_s4/ckpt_512000.pt": {
+   "old_head": 0.9921875,
+   "new_head": 0.9609375,
+   "moved": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "old_head_last": 0.9765625,
+   "read": "own"
+  },
+  "runs/protect_np/runs/place_nsa64np_s4/ckpt_1024000.pt": {
+   "old_head": 0.9921875,
+   "new_head": 0.48046875,
+   "moved": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "old_head_last": 0.89453125,
+   "read": "own"
+  },
+  "runs/protect_np/runs/place_nsa64np_s4/final_ckpt.pt": {
+   "old_head": 0.9921875,
+   "new_head": 0.4609375,
+   "moved": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "old_head_last": 0.890625,
+   "read": "own"
+  }
+ }
+}

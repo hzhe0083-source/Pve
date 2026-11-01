@@ -1,0 +1,35 @@
+iter 1 step 0 eval success_once=0.000 lam=0.000
+iter 3 step 102400 eval success_once=0.000 lam=0.000
+iter 5 step 204800 eval success_once=0.000 lam=0.000
+iter 7 step 307200 eval success_once=0.000 lam=0.000
+iter 9 step 409600 eval success_once=0.000 lam=0.000
+iter 11 step 512000 eval success_once=0.000 lam=0.000
+iter 13 step 614400 eval success_once=0.000 lam=0.000
+iter 15 step 716800 eval success_once=0.000 lam=0.000
+iter 17 step 819200 eval success_once=0.074 lam=0.000
+iter 19 step 921600 eval success_once=0.062 lam=0.000
+iter 21 step 1024000 eval success_once=0.176 lam=0.000
+iter 23 step 1126400 eval success_once=0.227 lam=0.000
+iter 25 step 1228800 eval success_once=0.293 lam=0.000
+iter 27 step 1331200 eval success_once=0.434 lam=0.000
+iter 29 step 1433600 eval success_once=0.375 lam=0.000
+iter 31 step 1536000 eval success_once=0.418 lam=0.000
+iter 33 step 1638400 eval success_once=0.383 lam=0.000
+iter 35 step 1740800 eval success_once=0.449 lam=0.000
+iter 37 step 1843200 eval success_once=0.543 lam=0.000
+iter 39 step 1945600 eval success_once=0.602 lam=0.000
+iter 41 step 2048000 eval success_once=0.625 lam=0.000
+iter 43 step 2150400 eval success_once=0.688 lam=0.000
+iter 45 step 2252800 eval success_once=0.730 lam=0.000
+iter 47 step 2355200 eval success_once=0.719 lam=0.000
+iter 49 step 2457600 eval success_once=0.727 lam=0.000
+iter 51 step 2560000 eval success_once=0.754 lam=0.000
+iter 53 step 2662400 eval success_once=0.793 lam=0.000
+iter 55 step 2764800 eval success_once=0.887 lam=0.000
+iter 57 step 2867200 eval success_once=0.887 lam=0.000
+iter 59 step 2969600 eval success_once=0.852 lam=0.000
+iter 61 step 3072000 eval success_once=0.926 lam=0.000
+iter 63 step 3174400 eval success_once=0.906 lam=0.000
+iter 65 step 3276800 eval success_once=0.910 lam=0.000
+early stop: reached 0.9
+done stack_latch_rule_s1 steps=3276800 wall=360s SPS=9109

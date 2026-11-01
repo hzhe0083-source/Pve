@@ -1,0 +1,23 @@
+{
+ "tasks": [
+  "PushCube-v1",
+  "PullCube-v1",
+  "PickCube-v1",
+  "StackCube-v1",
+  "PlaceSphere-v1",
+  "PokeCube-v1",
+  "LiftPegUpright-v1",
+  "PullCubeTool-v1"
+ ],
+ "seed": 0,
+ "success_once": {
+  "PushCube-v1": 1.0,
+  "PullCube-v1": 1.0,
+  "PickCube-v1": 0.984375,
+  "StackCube-v1": 0.73828125,
+  "PlaceSphere-v1": 0.88671875,
+  "PokeCube-v1": 0.984375,
+  "LiftPegUpright-v1": 0.984375,
+  "PullCubeTool-v1": 0.0
+ }
+}

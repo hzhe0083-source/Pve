@@ -1,0 +1,63 @@
+PIPELINE_START 23:56:27
+PushCube-v1          horizon=50 expert success_once=1.000 median success step=12.0
+[33;1m2026-10-30 23:56:31,735 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+PullCube-v1          horizon=50 expert success_once=0.998 median success step=11.0
+PickCube-v1          horizon=50 expert success_once=0.988 median success step=15.0
+StackCube-v1         horizon=50 expert success_once=0.822 median success step=18.0
+[33;1m2026-10-30 23:56:38,509 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:56:38,515 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+PlaceSphere-v1       horizon=50 expert success_once=0.777 median success step=17.0
+PokeCube-v1          horizon=50 expert success_once=0.988 median success step=18.0
+LiftPegUpright-v1    horizon=50 expert success_once=0.965 median success step=13.0
+[33;1m2026-10-30 23:56:45,050 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:56:45,249 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:56:45,255 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+PullCubeTool-v1      horizon=100 expert success_once=0.000 median success step=-1
+saved /home/zhr/pve/data/rollouts.pt
+COLLECT_DONE 23:56:49
+BC on 230400 samples from 8 tasks; mse=0.0046
+[33;1m2026-10-30 23:56:54,837 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:57:01,412 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:57:01,415 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:57:07,893 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:57:07,997 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:57:08,000 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+DAgger iter 1: 345600 samples, mse=0.0036
+[33;1m2026-10-30 23:57:14,410 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:57:20,865 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:57:20,868 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:57:27,370 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:57:27,475 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:57:27,479 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+DAgger iter 2: 460800 samples, mse=0.0025
+[33;1m2026-10-30 23:57:34,229 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:57:40,843 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:57:40,846 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:57:47,311 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:57:47,420 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:57:47,424 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+DAgger iter 3: 576000 samples, mse=0.0018
+  shared policy on PushCube-v1          success_once=1.000
+[33;1m2026-10-30 23:57:54,461 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+  shared policy on PullCube-v1          success_once=1.000
+  shared policy on PickCube-v1          success_once=0.984
+  shared policy on StackCube-v1         success_once=0.738
+[33;1m2026-10-30 23:58:01,036 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:58:01,039 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+  shared policy on PlaceSphere-v1       success_once=0.887
+  shared policy on PokeCube-v1          success_once=0.984
+  shared policy on LiftPegUpright-v1    success_once=0.984
+[33;1m2026-10-30 23:58:07,484 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:58:07,588 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:58:07,591 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+  shared policy on PullCubeTool-v1      success_once=0.000
+saved /home/zhr/pve/runs/distill/shared.pt
+DISTILL_DONE 23:58:11
+/home/zhr/pve/.venv/lib/python3.11/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/home/zhr/pve/.venv/lib/python3.11/site-packages/numba/np/ufunc/parallel.py:373: NumbaWarning: The TBB threading layer requires TBB version 2021 update 6 or later i.e., TBB_INTERFACE_VERSION >= 12060. Found TBB_INTERFACE_VERSION = 12050. The TBB threading layer is disabled.
+  warnings.warn(problem)
+saved /home/zhr/pve/figures/latent_umap.png
+saved /home/zhr/pve/figures/latent_pca.png
+PLOT_DONE 23:58:41
+PIPELINE_END rc=0 23:58:41

@@ -1,0 +1,41 @@
+{
+ "old_expert": 0.9921875,
+ "runs": {
+  "runs/protect/runs/stack_block09g_s3/ckpt_512000.pt": {
+   "old_head": 0.9765625,
+   "new_head": 0.96875,
+   "moved": [
+    0.02204054221510887,
+    0.05688431113958359,
+    0.06332562118768692
+   ]
+  },
+  "runs/protect/runs/stack_block09g_s3/ckpt_1024000.pt": {
+   "old_head": 0.8515625,
+   "new_head": 0.78515625,
+   "moved": [
+    0.04353920370340347,
+    0.09539581835269928,
+    0.10580629110336304
+   ]
+  },
+  "runs/protect/runs/stack_block09g_s3/ckpt_1536000.pt": {
+   "old_head": 0.70703125,
+   "new_head": 0.6875,
+   "moved": [
+    0.0633275955915451,
+    0.12669737637043,
+    0.14184577763080597
+   ]
+  },
+  "runs/protect/runs/stack_block09g_s3/final_ckpt.pt": {
+   "old_head": 0.68359375,
+   "new_head": 0.640625,
+   "moved": [
+    0.07303288578987122,
+    0.13989020884037018,
+    0.1561615914106369
+   ]
+  }
+ }
+}

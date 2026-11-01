@@ -1,0 +1,6 @@
+iter 1 step 0 eval success_once=0.680 lam=0.000
+iter 6 step 204800 eval success_once=0.289 lam=0.000
+iter 11 step 409600 eval success_once=0.945 lam=0.000
+iter 16 step 614400 eval success_once=0.969 lam=0.000
+early stop: reached 0.9
+done retreat_ft_s4 steps=614400 wall=55s SPS=11155

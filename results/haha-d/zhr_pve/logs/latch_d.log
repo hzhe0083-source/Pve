@@ -1,0 +1,9 @@
+LATCH_PART_START 20:18:01 zhaobo40901-Precision-3680
+DONE place_latch_probe_s1
+DONE place_global_s2
+DONE place_latch_probe_s2
+DONE place_global_s3
+DONE place_latch_probe_s3
+DONE place_global_s4
+DONE place_latch_probe_s4
+LATCH_PART_END 20:29:23

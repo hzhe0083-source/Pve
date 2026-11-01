@@ -1,0 +1,18 @@
+PushCube-v1 envs=1024 steps=200 obs_dim=35 act_dim=8 SPS=75543 gpu_used=2.25GiB/31.3GiB
+PushCube-v1 envs=2048 steps=200 obs_dim=35 act_dim=8 SPS=133947 gpu_used=2.44GiB/31.3GiB
+PushCube-v1 envs=4096 steps=200 obs_dim=35 act_dim=8 SPS=219226 gpu_used=2.76GiB/31.3GiB
+PickCube-v1 envs=2048 steps=200 obs_dim=42 act_dim=8 SPS=126799 gpu_used=2.44GiB/31.3GiB
+PegInsertionSide-v1 envs=1024 steps=200 obs_dim=43 act_dim=8 SPS=25317 gpu_used=2.32GiB/31.3GiB
+PushCube-v1 envs=1024 prefix=10 horizon=30
+  success rate A=0.000 B=0.000 agreement=1.0000
+  actor table-workspace: pos diff mean=0.000mm max=0.000mm share<1mm=1.0000
+  actor cube: pos diff mean=0.442mm max=175.087mm share<1mm=0.9834
+  actor goal_region: pos diff mean=0.000mm max=0.000mm share<1mm=1.0000
+  articulation panda: max abs diff mean=5.06e-03 max=4.23e+00
+PickCube-v1 envs=1024 prefix=10 horizon=30
+  success rate A=0.000 B=0.000 agreement=1.0000
+  actor table-workspace: pos diff mean=0.000mm max=0.000mm share<1mm=1.0000
+  actor cube: pos diff mean=0.293mm max=86.848mm share<1mm=0.9814
+  actor goal_site: pos diff mean=0.000mm max=0.000mm share<1mm=1.0000
+  articulation panda: max abs diff mean=1.16e-03 max=7.03e-01
+SMOKE_DONE

@@ -1,0 +1,2 @@
+iter 1 step 0 eval success_once=0.000 lam=0.000
+/home/zhaobo/zhr_pve/scripts/with_gpu_mem.sh: line 16: 1168641 Killed                  "$@" 9>&-

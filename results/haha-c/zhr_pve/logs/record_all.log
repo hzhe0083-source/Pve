@@ -1,0 +1,8 @@
+videos/stack_1_source_pick: success in 0/6 recorded episodes (0, 0, 0, 0, 0, 0)
+videos/stack_2_method: success in 6/6 recorded episodes (1, 1, 1, 1, 1, 1)
+videos/stack_3_frozen_no_exploration: success in 0/6 recorded episodes (0, 0, 0, 0, 0, 0)
+videos/stack_4_finetune: success in 4/6 recorded episodes (0, 0, 1, 1, 1, 1)
+videos/retreat_1_source_push: success in 3/6 recorded episodes (1, 0, 0, 1, 1, 0)
+videos/retreat_2_method: success in 6/6 recorded episodes (1, 1, 1, 1, 1, 1)
+videos/retreat_3_frozen_no_exploration: success in 6/6 recorded episodes (1, 1, 1, 1, 1, 1)
+RECORD_END

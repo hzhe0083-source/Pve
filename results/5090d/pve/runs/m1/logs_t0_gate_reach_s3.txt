@@ -1,0 +1,5 @@
+iter 1 step 0 eval success_once=0.000 lam=0.500
+iter 3 step 81920 eval success_once=0.969 lam=0.484
+iter 5 step 163840 eval success_once=0.953 lam=0.467
+early stop: reached 0.9
+done t0_gate_reach_s3 steps=163840 wall=18s SPS=8904

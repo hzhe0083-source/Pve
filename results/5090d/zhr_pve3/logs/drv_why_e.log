@@ -1,0 +1,7 @@
+start 18:35:46
+smoke pass 1 18:49:16 unfinished 0
+smoke_nsa64 old head max change 9.54e-07
+smoke_nsa64lo old head max change 9.54e-07
+smoke_nsa64z old head max change 9.54e-07
+smoke_nsa64d old head max change 9.54e-07
+smoke passed 18:49:16

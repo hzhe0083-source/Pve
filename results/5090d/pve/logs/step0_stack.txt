@@ -1,0 +1,2 @@
+StackCube (sparse, deterministic): {'Pick via adapter': 0.0, 'Pick: min distance to adapted goal (median, m)': 0.011, 'Pick via adapter + scripted release': 0.574, 'release fired (fraction of episodes)': 0.934, 'StackCube expert': 0.922}
+saved logs/step0_stack.json

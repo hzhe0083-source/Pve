@@ -1,0 +1,11 @@
+GATE1_START 18:59:30
+[33;1m2026-10-31 19:01:54,085 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+pick: 102400 states in 2048 episodes, expert success 0.978, kept 0.387 (before the first success) -> data/bc_pick_c1.pt
+  kept held@goal 3631 (1.77/episode), released near goal 24 (0.01/episode); ~20% become test states: raise --rounds if that is under ~200
+  raw means past +-1 per dim 0.01 0.23 0.01 0.03 0.00 0.12 0.00 0.55 | mean overshoot there 0.19 0.37 0.19 0.22 0.00 0.36 0.00 0.14
+stack: 102400 states in 2048 episodes, expert success 0.732, kept 0.547 (before the first success) -> data/bc_stack_c1.pt
+  kept held@goal 3504 (1.71/episode), released near goal 4675 (2.28/episode); ~20% become test states: raise --rounds if that is under ~200
+  raw means past +-1 per dim 0.01 0.16 0.02 0.04 0.03 0.15 0.00 0.34 | mean overshoot there 0.23 0.24 0.20 0.22 0.21 0.36 0.12 0.58
+GATE1_pick 19:12:51 rc=0
+GATE1_random 19:19:09 rc=0
+GATE1_END 19:19:09

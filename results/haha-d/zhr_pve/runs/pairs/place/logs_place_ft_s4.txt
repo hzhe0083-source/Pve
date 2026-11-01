@@ -1,0 +1,14 @@
+[33;1m2026-10-31 18:13:12,251 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2026-10-31 18:13:15,253 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+iter 1 step 0 eval success_once=0.008 lam=0.000
+iter 11 step 512000 eval success_once=0.055 lam=0.000
+iter 21 step 1024000 eval success_once=0.211 lam=0.000
+iter 31 step 1536000 eval success_once=0.469 lam=0.000
+iter 41 step 2048000 eval success_once=0.477 lam=0.000
+iter 51 step 2560000 eval success_once=0.609 lam=0.000
+iter 61 step 3072000 eval success_once=0.820 lam=0.000
+iter 71 step 3584000 eval success_once=0.898 lam=0.000
+iter 81 step 4096000 eval success_once=0.977 lam=0.000
+iter 91 step 4608000 eval success_once=0.945 lam=0.000
+early stop: reached 0.9
+done place_ft_s4 steps=4608000 wall=555s SPS=8296

@@ -1,0 +1,12 @@
+14:58:57 place_head_s1 ok
+15:04:57 place_monitor_s1 ok
+15:10:58 place_head_s2 ok
+18:33:53 place_head_s3 yielded, retry
+18:38:32 place_head_s4 ok
+18:40:02 place_monitor_s2 ok
+18:41:32 place_monitor_s3 ok
+18:43:02 place_monitor_s4 ok
+18:45:32 place_head_s3 ok
+18:47:03 place_head_s5 ok
+18:53:03 place_head_s8 ok
+18:56:03 place_monitor_s5 ok

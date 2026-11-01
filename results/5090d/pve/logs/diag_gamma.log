@@ -1,0 +1,6 @@
+DIAG_GAMMA_START 10:55:52
+DONE t45_scratch_g08_s1
+DONE t90_finetune_g08_s1
+DONE t90_kickstart_g08_s1
+DONE t90_oracle_g08_s1
+DIAG_GAMMA_END 11:52:09

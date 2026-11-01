@@ -1,0 +1,256 @@
+[33;1m2026-11-01 00:34:24,311 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[2026-11-01 00:34:24.783] [SAPIEN] [critical] /buildAgent/work/eb2f45c4acc808a0/physx/source/gpucommon/src/PxgCudaMemoryAllocator.cpp
+[2026-11-01 00:34:24.783] [SAPIEN] [critical] /buildAgent/work/eb2f45c4acc808a0/physx/source/gpucommon/src/PxgCudaMemoryAllocator.cpp
+[2026-11-01 00:34:26.022] [SAPIEN] [critical] SynchronizeStreams cuEventRecord failed with error 700
+
+[2026-11-01 00:34:26.022] [SAPIEN] [critical] SynchronizeStreams cuStreamWaitEvent failed with error 700
+
+[2026-11-01 00:34:26.022] [SAPIEN] [critical] memcpy failed fail!
+  700
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] /buildAgent/work/eb2f45c4acc808a0/physx/source/gpucommon/src/PxgCudaMemoryAllocator.cpp
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] SynchronizeStreams cuEventRecord failed with error 700
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] SynchronizeStreams cuStreamWaitEvent failed with error 700
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] SynchronizeStreams cuEventRecord failed with error 700
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] SynchronizeStreams cuStreamWaitEvent failed with error 700
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] SynchronizeStreams cuEventRecord failed with error 700
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] SynchronizeStreams cuStreamWaitEvent failed with error 700
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] SynchronizeStreams cuEventRecord failed with error 700
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] SynchronizeStreams cuStreamWaitEvent failed with error 700
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveContactParallel fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU initializeSolverVelocitiesTGS fail to launch kernel!! 700
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU compute solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveSelfConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU artiSolveInternalTendonConstraints1T fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveInternalConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU propagate solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU compute solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveSelfConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU artiSolveInternalTendonConstraints1T fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveInternalConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU propagate solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU compute solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveSelfConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU artiSolveInternalTendonConstraints1T fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveInternalConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU propagate solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU compute solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveSelfConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU artiSolveInternalTendonConstraints1T fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveInternalConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU propagate solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU compute solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveSelfConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU artiSolveInternalTendonConstraints1T fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveInternalConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU propagate solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU compute solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveSelfConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU artiSolveInternalTendonConstraints1T fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveInternalConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU propagate solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU compute solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveSelfConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU artiSolveInternalTendonConstraints1T fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveInternalConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU propagate solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU compute solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveSelfConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU artiSolveInternalTendonConstraints1T fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveInternalConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU propagate solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU compute solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveSelfConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU artiSolveInternalTendonConstraints1T fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveInternalConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU propagate solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU compute solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveSelfConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU artiSolveInternalTendonConstraints1T fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveInternalConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU propagate solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU compute solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveSelfConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU artiSolveInternalTendonConstraints1T fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveInternalConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU propagate solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU compute solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveSelfConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU artiSolveInternalTendonConstraints1T fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveInternalConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU propagate solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU compute solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveSelfConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU artiSolveInternalTendonConstraints1T fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveInternalConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU propagate solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU compute solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveSelfConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU artiSolveInternalTendonConstraints1T fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveInternalConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU propagate solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU compute solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveSelfConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU artiSolveInternalTendonConstraints1T fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveInternalConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU propagate solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveContactParallel fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU compute solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveSelfConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU artiSolveInternalTendonConstraints1T fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU solveInternalConstraints fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU compute solver bodies average velocities fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] SynchronizeStreams cuEventRecord failed with error 700
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] SynchronizeStreams cuStreamWaitEvent failed with error 700
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] GPU integrateCoreParallel fail to launch kernel!!
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] SynchronizeStreams cuEventRecord failed with error 700
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] SynchronizeStreams cuStreamWaitEvent failed with error 700
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] SynchronizeStreams cuEventRecord failed with error 700
+
+[2026-11-01 00:34:26.024] [SAPIEN] [critical] SynchronizeStreams cuStreamWaitEvent failed with error 700
+
+[2026-11-01 00:34:26.225] [SAPIEN] [critical] PhysX Internal CUDA error. Simulation can not continue! Error code 700!
+
+Traceback (most recent call last):
+  File "/home/zhaobo/zhr_pve/.venv/lib/python3.10/site-packages/torch/random.py", line 199, in fork_rng
+    yield
+  File "/home/zhaobo/zhr_pve/.venv/lib/python3.10/site-packages/mani_skill/envs/sapien_env.py", line 913, in reset
+    self._reconfigure(options)
+  File "/home/zhaobo/zhr_pve/.venv/lib/python3.10/site-packages/mani_skill/envs/sapien_env.py", line 746, in _reconfigure
+    self.scene._setup(enable_gpu=self.gpu_sim_enabled)
+  File "/home/zhaobo/zhr_pve/.venv/lib/python3.10/site-packages/mani_skill/envs/scene.py", line 910, in _setup
+    self.px.gpu_init()
+RuntimeError: CUDA error: an illegal memory access was encountered
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhaobo/zhr_pve/scripts/retention_eval.py", line 27, in <module>
+    env = gym.make("PickCube-v1", num_envs=a.envs, obs_mode="state", robot_uids="panda_wristcam",
+  File "/home/zhaobo/zhr_pve/.venv/lib/python3.10/site-packages/gymnasium/envs/registration.py", line 738, in make
+    env = env_creator(**env_spec_kwargs)  # ty:ignore[call-top-callable]
+  File "/home/zhaobo/zhr_pve/.venv/lib/python3.10/site-packages/mani_skill/utils/registration.py", line 182, in make
+    env = env_spec.make(**kwargs)
+  File "/home/zhaobo/zhr_pve/.venv/lib/python3.10/site-packages/mani_skill/utils/registration.py", line 79, in make
+    return self.cls(**_kwargs)
+  File "/home/zhaobo/zhr_pve/.venv/lib/python3.10/site-packages/mani_skill/envs/tasks/tabletop/pick_cube.py", line 64, in __init__
+    super().__init__(*args, robot_uids=robot_uids, **kwargs)
+  File "/home/zhaobo/zhr_pve/.venv/lib/python3.10/site-packages/mani_skill/envs/sapien_env.py", line 327, in __init__
+    obs, _ = self.reset(seed=[2022 + i for i in range(self.num_envs)], options=dict(reconfigure=True))
+  File "/home/zhaobo/zhr_pve/.venv/lib/python3.10/site-packages/mani_skill/envs/sapien_env.py", line 911, in reset
+    with torch.random.fork_rng():
+  File "/usr/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/zhaobo/zhr_pve/.venv/lib/python3.10/site-packages/torch/random.py", line 203, in fork_rng
+    device_mod.set_rng_state(device_rng_state, device)
+  File "/home/zhaobo/zhr_pve/.venv/lib/python3.10/site-packages/torch/cuda/random.py", line 79, in set_rng_state
+    _lazy_call(cb)
+  File "/home/zhaobo/zhr_pve/.venv/lib/python3.10/site-packages/torch/cuda/__init__.py", line 341, in _lazy_call
+    callable()
+  File "/home/zhaobo/zhr_pve/.venv/lib/python3.10/site-packages/torch/cuda/random.py", line 77, in cb
+    default_generator.set_state(new_state)
+torch.AcceleratorError: CUDA error: an illegal memory access was encountered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+[2026-11-01 00:34:26.405] [SAPIEN] [critical] Mem free failed with error code 700!
+
+[2026-11-01 00:34:26.405] [SAPIEN] [critical] /buildAgent/work/eb2f45c4acc808a0/physx/source/gpucommon/src/PxgCudaMemoryAllocator.cpp
+[2026-11-01 00:34:26.405] [SAPIEN] [critical] /buildAgent/work/eb2f45c4acc808a0/physx/source/gpucommon/src/PxgCudaMemoryAllocator.cpp
+[2026-11-01 00:34:26.406] [SAPIEN] [critical] /buildAgent/work/eb2f45c4acc808a0/physx/source/gpucommon/src/PxgCudaMemoryAllocator.cpp

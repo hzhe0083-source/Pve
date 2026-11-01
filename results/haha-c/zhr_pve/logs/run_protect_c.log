@@ -1,0 +1,11 @@
+PROT_START 01:59:43 dell-5090 jobs=9
+DONE stack_nsa256_s1
+DONE stack_monitor_s1
+DONE stack_nsa256_s2
+DONE stack_distill1d_s1
+DONE stack_monitor_s2
+DONE stack_nsa256_s3
+DONE stack_distill1d_s2
+DONE stack_monitor_s3
+DONE stack_distill1d_s3
+PROT_END 02:20:02

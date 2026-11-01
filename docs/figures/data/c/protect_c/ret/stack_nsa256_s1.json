@@ -1,0 +1,32 @@
+{
+ "old_expert": 0.9921875,
+ "runs": {
+  "runs/protect_c/runs/stack_nsa256_s1/ckpt_512000.pt": {
+   "old_head": 0.99609375,
+   "new_head": 0.98828125,
+   "moved": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "runs/protect_c/runs/stack_nsa256_s1/ckpt_1024000.pt": {
+   "old_head": 0.99609375,
+   "new_head": 0.96875,
+   "moved": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "runs/protect_c/runs/stack_nsa256_s1/final_ckpt.pt": {
+   "old_head": 0.99609375,
+   "new_head": 0.93359375,
+   "moved": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ }
+}

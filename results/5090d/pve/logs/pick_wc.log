@@ -1,0 +1,4 @@
+PICK_WC_START 03:34:54
+PICK_WC_s1 4096000,1.0 ckpt=runs/PickCube_wc_s1/final_ckpt.pt
+PICK_WC_s2 5632000,0.984375 ckpt=runs/PickCube_wc_s2/final_ckpt.pt
+PICK_WC_DONE 03:51:31

@@ -1,0 +1,11 @@
+held-out c*: Spearman / top-10% AUROC on the held-out task's remaining states, mean over 7 tasks x 3 draws
+features               shots      other tasks + shots     shots only (ridge)
+latent (no task id)        0   +0.32 / 0.63               +nan / nan
+latent (no task id)       16   +0.31 / 0.64               +0.29 / 0.63
+latent (no task id)       64   +0.40 / 0.68               +0.42 / 0.71
+raw obs                    0   +0.25 / 0.58               +nan / nan
+raw obs                   16   +0.32 / 0.66               +0.27 / 0.65
+raw obs                   64   +0.40 / 0.70               +0.36 / 0.67
+hand features              0   +0.18 / 0.56               +nan / nan
+hand features             16   +0.24 / 0.57               +0.16 / 0.56
+hand features             64   +0.35 / 0.65               +0.22 / 0.62

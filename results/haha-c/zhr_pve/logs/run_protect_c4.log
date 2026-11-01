@@ -1,0 +1,21 @@
+PROT_START 02:56:04 dell-5090 jobs=15
+DONE place_nsa256_s1
+DONE place_nsa64_s1
+DONE place_nsa16_s1
+DONE place_monitor_s2
+DONE place_head_s2
+DONE place_monitor_s3
+DONE place_nsa16_s2
+DONE place_nsa64_s3
+DONE place_head_s3
+DONE place_nsa16_s3
+PROT_END 12:09:17
+pass 1 done 12:09:17, unfinished 5
+PROT_START 12:14:17 dell-5090 jobs=5
+DONE place_head_s1
+DONE place_monitor_s1
+DONE place_nsa64_s2
+DONE place_nsa256_s2
+DONE place_nsa256_s3
+PROT_END 12:24:45
+pass 2 done 12:24:45, unfinished 0

@@ -1,0 +1,16 @@
+LATCH_START 20:37:03 floor=0.6 jobs=16
+DONE stack_global_s3
+DONE stack_probe_s3
+DONE stack_latch_probe_s3
+DONE stack_latch_rule_s3
+DONE stack_global_s4
+DONE stack_latch_probe_s4
+DONE stack_probe_s4
+DONE stack_latch_rule_s4
+DONE place_global_s3
+DONE place_probe_s3
+DONE place_latch_probe_s3
+Terminated
+LATCH_END 21:06:18
+DONE place_latch_rule_s3
+DONE place_global_s4

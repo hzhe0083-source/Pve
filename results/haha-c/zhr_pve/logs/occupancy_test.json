@@ -1,0 +1,69 @@
+{
+ "err": [
+  8.259181022644043,
+  0.14818435907363892,
+  11.122313499450684
+ ],
+ "layers": [
+  {
+   "layer": "layer 1 (state -> h1)",
+   "dim": 42,
+   "k": 10,
+   "stack_energy_inside": 0.9638251662254333,
+   "dW_inside": 0.09040651470422745,
+   "ctl_inside": 0.168349489569664,
+   "eff_rank": 10,
+   "eff_rank_ctl": 11,
+   "eff_rank_inside": 6,
+   "eff_rank_inside_ctl": 6,
+   "rows90": 197,
+   "rows90_ctl": 210,
+   "rows": 256
+  },
+  {
+   "layer": "layer 2 (h1 -> h2)",
+   "dim": 256,
+   "k": 21,
+   "stack_energy_inside": 0.9415187835693359,
+   "dW_inside": 0.6755815744400024,
+   "ctl_inside": 0.7193626165390015,
+   "eff_rank": 21,
+   "eff_rank_ctl": 19,
+   "eff_rank_inside": 14,
+   "eff_rank_inside_ctl": 13,
+   "rows90": 200,
+   "rows90_ctl": 206,
+   "rows": 256
+  },
+  {
+   "layer": "layer 3 (h2 -> h3)",
+   "dim": 256,
+   "k": 18,
+   "stack_energy_inside": 0.9632685780525208,
+   "dW_inside": 0.6635463833808899,
+   "ctl_inside": 0.7062568068504333,
+   "eff_rank": 23,
+   "eff_rank_ctl": 19,
+   "eff_rank_inside": 10,
+   "eff_rank_inside_ctl": 7,
+   "rows90": 184,
+   "rows90_ctl": 174,
+   "rows": 256
+  },
+  {
+   "layer": "readout (h3 -> action)",
+   "dim": 256,
+   "k": 58,
+   "stack_energy_inside": 0.9688451886177063,
+   "dW_inside": 0.2646552324295044,
+   "ctl_inside": 0.5366731286048889,
+   "eff_rank": 7,
+   "eff_rank_ctl": 6,
+   "eff_rank_inside": 6,
+   "eff_rank_inside_ctl": 5,
+   "rows90": 7,
+   "rows90_ctl": 7,
+   "rows": 8
+  }
+ ]
+}

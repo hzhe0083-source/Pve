@@ -1,0 +1,27 @@
+iter 1 step 0 eval success_once=0.000 lam=0.000
+iter 3 step 81920 eval success_once=0.000 lam=0.000
+iter 5 step 163840 eval success_once=0.000 lam=0.000
+iter 7 step 245760 eval success_once=0.000 lam=0.000
+iter 9 step 327680 eval success_once=0.000 lam=0.000
+iter 11 step 409600 eval success_once=0.000 lam=0.000
+iter 13 step 491520 eval success_once=0.000 lam=0.000
+iter 15 step 573440 eval success_once=0.555 lam=0.000
+iter 17 step 655360 eval success_once=0.633 lam=0.000
+iter 19 step 737280 eval success_once=0.789 lam=0.000
+iter 21 step 819200 eval success_once=0.758 lam=0.000
+iter 23 step 901120 eval success_once=0.898 lam=0.000
+iter 25 step 983040 eval success_once=0.836 lam=0.000
+iter 27 step 1064960 eval success_once=0.898 lam=0.000
+iter 29 step 1146880 eval success_once=0.742 lam=0.000
+iter 31 step 1228800 eval success_once=0.719 lam=0.000
+iter 33 step 1310720 eval success_once=0.758 lam=0.000
+iter 35 step 1392640 eval success_once=0.727 lam=0.000
+iter 37 step 1474560 eval success_once=0.602 lam=0.000
+iter 39 step 1556480 eval success_once=0.773 lam=0.000
+iter 41 step 1638400 eval success_once=0.805 lam=0.000
+iter 43 step 1720320 eval success_once=0.867 lam=0.000
+iter 45 step 1802240 eval success_once=0.867 lam=0.000
+iter 47 step 1884160 eval success_once=0.953 lam=0.000
+iter 49 step 1966080 eval success_once=0.984 lam=0.000
+early stop: reached 0.9
+done t0_scratch_s3 steps=1966080 wall=163s SPS=12081

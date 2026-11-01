@@ -1,0 +1,13 @@
+[33;1m2026-11-01 03:15:14,501 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+old PickCube expert on PickCube: 0.992
+checkpoint                                       | old head | new head | weight change per hidden layer
+Traceback (most recent call last):
+  File "/home/zhaobo/zhr_pve/scripts/retention_eval.py", line 45, in <module>
+    new = load_policy(c, 42)
+  File "/home/zhaobo/zhr_pve/wrwl/experts.py", line 42, in load_policy
+    agent.load_state_dict(torch.load(path, map_location=device))
+  File "/home/zhaobo/zhr_pve/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 2624, in load_state_dict
+    raise RuntimeError(
+RuntimeError: Error(s) in loading state_dict for Agent:
+	Missing key(s) in state_dict: "actor_mean.0.weight", "actor_mean.0.bias", "actor_mean.2.weight", "actor_mean.2.bias", "actor_mean.4.weight", "actor_mean.4.bias", "actor_mean.6.weight", "actor_mean.6.bias". 
+	Unexpected key(s) in state_dict: "actor_mean.0.null", "actor_mean.0.trunk.0.weight", "actor_mean.0.trunk.0.bias", "actor_mean.0.trunk.2.weight", "actor_mean.0.trunk.2.bias", "actor_mean.0.trunk.4.weight", "actor_mean.0.trunk.4.bias", "actor_mean.0.adapter.0.weight", "actor_mean.0.adapter.0.bias", "actor_mean.0.adapter.2.weight", "actor_mean.0.adapter.2.bias", "actor_mean.1.weight", "actor_mean.1.bias". 

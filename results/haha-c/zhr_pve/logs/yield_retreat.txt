@@ -1,0 +1,10 @@
+source std: arm 0.249, gripper 0.130; PushRetreat-v1, noise on arm, 4096 episodes per layout
+  layout        success let go at goal steps in region
+  source         0.3894         0.0000           36.23
+  global:0.3     0.5229         0.0000           31.29
+  global:0.6     0.7742         0.0000           21.63
+  global:1.0     0.6582         0.0000           14.89
+  seam:0.3       0.5127         0.0000           32.44
+  seam:0.6       0.8633         0.0000           28.32
+  seam:1.0       0.9634         0.0000           27.08
+  pseam:0.6      0.8533         0.0000           28.07

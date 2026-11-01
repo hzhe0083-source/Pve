@@ -1,0 +1,1 @@
+/home/zhaobo/zhr_pve/scripts/with_gpu_mem.sh: line 17: 1772932 Segmentation fault      (core dumped) "$@" 9>&-

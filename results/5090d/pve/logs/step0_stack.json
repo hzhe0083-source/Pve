@@ -1,0 +1,10 @@
+{
+ "push": {},
+ "stack": {
+  "Pick via adapter": 0.0,
+  "Pick: min distance to adapted goal (median, m)": 0.010693625546991825,
+  "Pick via adapter + scripted release": 0.57421875,
+  "release fired (fraction of episodes)": 0.93359375,
+  "StackCube expert": 0.921875
+ }
+}

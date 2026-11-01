@@ -1,0 +1,51 @@
+[33;1m2026-10-31 04:35:23,566 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+
+== push45<-S0: valid 990 (early 963, contact 268), coverage 0.13, base rate harmful 0.70, P(Delta<0.1) 0.30 (early 0.29), worst-20% harm share 0.40; library ['S180', 't0_s2', 't0_s3', 't180_s2', 't180_s3']
+  [all] ceiling 0.99   unfam 0.83   cbar 0.52   D_all 0.77   D_fam 0.42   D_fam|unc 0.62   rank sum 0.82   c_src 0.36   D_all*c_src 0.40   *dist tcp-mover 0.81   *grasp 0.52   *t/H 0.77   *dist mover-goal 0.70   *src chunk progress 0.89
+  [early] ceiling 0.99   unfam 0.85   cbar 0.51   D_all 0.78   D_fam 0.33   D_fam|unc 0.62   rank sum 0.83   c_src 0.37   D_all*c_src 0.41   *dist tcp-mover 0.81   *grasp 0.52   *t/H 0.77   *dist mover-goal 0.72   *src chunk progress 0.89
+  [contact] ceiling 0.96   unfam 0.77   cbar 0.35   D_all 0.57   D_fam 0.34   D_fam|unc 0.65   rank sum 0.75   c_src 0.61   D_all*c_src 0.59   *dist tcp-mover 0.63   *grasp 0.51   *t/H 0.51   *dist mover-goal 0.69   *src chunk progress 0.82
+
+== push45<-S180: valid 990 (early 963, contact 268), coverage 0.13, base rate harmful 0.76, P(Delta<0.1) 0.24 (early 0.23), worst-20% harm share 0.35; library ['S0', 't0_s2', 't0_s3', 't180_s2', 't180_s3']
+  [all] ceiling 0.99   unfam 0.78   cbar 0.55   D_all 0.83   D_fam 0.72   D_fam|unc 0.67   rank sum 0.81   c_src 0.74   D_all*c_src 0.78   *dist tcp-mover 0.84   *grasp 0.51   *t/H 0.80   *dist mover-goal 0.74   *src chunk progress 0.95
+  [early] ceiling 0.99   unfam 0.81   cbar 0.53   D_all 0.85   D_fam 0.76   D_fam|unc 0.66   rank sum 0.83   c_src 0.73   D_all*c_src 0.78   *dist tcp-mover 0.84   *grasp 0.51   *t/H 0.80   *dist mover-goal 0.76   *src chunk progress 0.96
+  [contact] ceiling 0.99   unfam 0.63   cbar 0.55   D_all 0.77   D_fam 0.73   D_fam|unc 0.73   rank sum 0.70   c_src 0.76   D_all*c_src 0.83   *dist tcp-mover 0.54   *grasp 0.52   *t/H 0.50   *dist mover-goal 0.71   *src chunk progress 0.89
+
+== push90<-S0: valid 440 (early 410, contact 27), coverage 0.02, base rate harmful 0.74, P(Delta<0.1) 0.26 (early 0.23), worst-20% harm share 0.35; library ['S180', 't0_s2', 't0_s3', 't180_s2', 't180_s3']
+  [all] ceiling 0.94   unfam 0.92   cbar 0.83   D_all 0.61   D_fam 1.00   D_fam|unc 0.52   rank sum 0.92   c_src 0.59   D_all*c_src 0.69   *dist tcp-mover 0.92   *grasp 0.50   *t/H 0.89   *dist mover-goal 0.73   *src chunk progress 0.77
+  [early] ceiling 0.95   unfam 0.94   cbar 0.83   D_all 0.68   D_fam 1.00   D_fam|unc 0.51   rank sum 0.94   c_src 0.60   D_all*c_src 0.75   *dist tcp-mover 0.95   *grasp 0.50   *t/H 0.90   *dist mover-goal 0.73   *src chunk progress 0.83
+  [contact] ceiling 0.68   unfam 0.67   cbar 0.55   D_all 0.59   D_fam nan   D_fam|unc 0.55   rank sum 0.67   c_src 0.52   D_all*c_src 0.63   *dist tcp-mover 0.52   *grasp 0.50   *t/H 0.56   *dist mover-goal 0.61   *src chunk progress 0.62
+
+== push90<-S180: valid 440 (early 410, contact 27), coverage 0.02, base rate harmful 0.82, P(Delta<0.1) 0.18 (early 0.18), worst-20% harm share 0.33; library ['S0', 't0_s2', 't0_s3', 't180_s2', 't180_s3']
+  [all] ceiling 0.96   unfam 0.95   cbar 0.64   D_all 0.80   D_fam 0.83   D_fam|unc 0.50   rank sum 0.94   c_src 0.51   D_all*c_src 0.74   *dist tcp-mover 0.94   *grasp 0.50   *t/H 0.80   *dist mover-goal 0.81   *src chunk progress 0.96
+  [early] ceiling 0.96   unfam 0.97   cbar 0.64   D_all 0.82   D_fam 1.00   D_fam|unc 0.50   rank sum 0.95   c_src 0.49   D_all*c_src 0.75   *dist tcp-mover 0.96   *grasp 0.50   *t/H 0.85   *dist mover-goal 0.81   *src chunk progress 0.96
+  [contact] ceiling 0.81   unfam 0.80   cbar 0.56   D_all 0.74   D_fam nan   D_fam|unc 0.55   rank sum 0.81   c_src 0.34   D_all*c_src 0.67   *dist tcp-mover 0.74   *grasp 0.50   *t/H 0.64   *dist mover-goal 0.77   *src chunk progress 0.84
+
+== push180<-S0: valid 699 (early 665, contact 294), coverage 0.54, base rate harmful 0.67, P(Delta<0.1) 0.33 (early 0.31), worst-20% harm share 0.40; library ['S180', 't0_s2', 't0_s3']
+  [all] ceiling 0.97   unfam 0.89   cbar 0.74   D_all 0.70   D_fam 0.87   D_fam|unc 0.77   rank sum 0.90   c_src 0.49   D_all*c_src 0.70   *dist tcp-mover 0.87   *grasp 0.51   *t/H 0.84   *dist mover-goal 0.80   *src chunk progress 0.92
+  [early] ceiling 0.97   unfam 0.90   cbar 0.73   D_all 0.71   D_fam 0.87   D_fam|unc 0.81   rank sum 0.91   c_src 0.50   D_all*c_src 0.70   *dist tcp-mover 0.87   *grasp 0.50   *t/H 0.83   *dist mover-goal 0.79   *src chunk progress 0.93
+  [contact] ceiling 0.92   unfam 0.63   cbar 0.52   D_all 0.66   D_fam 0.74   D_fam|unc 0.73   rank sum 0.75   c_src 0.50   D_all*c_src 0.66   *dist tcp-mover 0.60   *grasp 0.56   *t/H 0.54   *dist mover-goal 0.64   *src chunk progress 0.74
+
+== push180<-S180: valid 699 (early 665, contact 294), coverage 0.00, base rate harmful 0.15, P(Delta<0.1) 0.85 (early 0.85), worst-20% harm share 0.99; library ['S0', 't0_s2', 't0_s3']
+  [all] ceiling 0.87   unfam 0.77   cbar 0.37   D_all 0.34   D_fam nan   D_fam|unc 0.50   rank sum 0.77   c_src 0.64   D_all*c_src 0.58   *dist tcp-mover 0.67   *grasp 0.58   *t/H 0.69   *dist mover-goal 0.54   *src chunk progress 0.67
+  [early] ceiling 0.87   unfam 0.77   cbar 0.36   D_all 0.32   D_fam nan   D_fam|unc 0.50   rank sum 0.77   c_src 0.64   D_all*c_src 0.58   *dist tcp-mover 0.68   *grasp 0.58   *t/H 0.71   *dist mover-goal 0.55   *src chunk progress 0.66
+  [contact] ceiling 0.90   unfam 0.76   cbar 0.42   D_all 0.57   D_fam nan   D_fam|unc 0.50   rank sum 0.76   c_src 0.53   D_all*c_src 0.54   *dist tcp-mover 0.79   *grasp 0.65   *t/H 0.59   *dist mover-goal 0.54   *src chunk progress 0.67
+
+== push0<-S0: valid 714 (early 709, contact 343), coverage 0.01, base rate harmful 0.08, P(Delta<0.1) 0.92 (early 0.92), worst-20% harm share 1.00; library ['S180', 't180_s2', 't180_s3']
+  [all] ceiling 0.90   unfam 0.90   cbar 0.38   D_all 0.66   D_fam 0.80   D_fam|unc 0.49   rank sum 0.88   c_src 0.60   D_all*c_src 0.70   *dist tcp-mover 0.50   *grasp 0.54   *t/H 0.58   *dist mover-goal 0.60   *src chunk progress 0.85
+  [early] ceiling 0.89   unfam 0.90   cbar 0.39   D_all 0.67   D_fam 0.80   D_fam|unc 0.49   rank sum 0.89   c_src 0.60   D_all*c_src 0.70   *dist tcp-mover 0.51   *grasp 0.54   *t/H 0.58   *dist mover-goal 0.61   *src chunk progress 0.84
+  [contact] ceiling 0.98   unfam 0.97   cbar 0.10   D_all 0.74   D_fam 0.80   D_fam|unc 0.48   rank sum 0.94   c_src 0.62   D_all*c_src 0.81   *dist tcp-mover 0.81   *grasp 0.66   *t/H 0.72   *dist mover-goal 0.77   *src chunk progress 0.99
+
+== push0<-S180: valid 714 (early 709, contact 343), coverage 0.58, base rate harmful 0.61, P(Delta<0.1) 0.39 (early 0.39), worst-20% harm share 0.43; library ['S0', 't180_s2', 't180_s3']
+  [all] ceiling 0.95   unfam 0.90   cbar 0.56   D_all 0.82   D_fam 0.69   D_fam|unc 0.84   rank sum 0.93   c_src 0.56   D_all*c_src 0.73   *dist tcp-mover 0.85   *grasp 0.54   *t/H 0.86   *dist mover-goal 0.82   *src chunk progress 0.95
+  [early] ceiling 0.95   unfam 0.91   cbar 0.56   D_all 0.82   D_fam 0.69   D_fam|unc 0.84   rank sum 0.93   c_src 0.56   D_all*c_src 0.73   *dist tcp-mover 0.85   *grasp 0.54   *t/H 0.87   *dist mover-goal 0.83   *src chunk progress 0.95
+  [contact] ceiling 0.84   unfam 0.73   cbar 0.33   D_all 0.65   D_fam 0.58   D_fam|unc 0.67   rank sum 0.80   c_src 0.51   D_all*c_src 0.63   *dist tcp-mover 0.63   *grasp 0.56   *t/H 0.59   *dist mover-goal 0.75   *src chunk progress 0.83
+[33;1m2026-10-31 04:35:49,574 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2026-10-31 04:35:54,893 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+
+== stack<-Pick: valid 1870 (early 1579, contact 1326), coverage 0.96, base rate harmful 0.26, P(Delta<0.1) 0.74 (early 0.72), worst-20% harm share 0.78; library ['Pick_s2']
+  [all] ceiling 0.83   unfam 0.68   cbar 0.72   D_all 0.64   D_fam 0.65   D_fam|unc 0.64   rank sum 0.67   c_src 0.49   D_all*c_src 0.59   *dist tcp-mover 0.72   *grasp 0.66   *t/H 0.66   *dist mover-goal 0.69   *src chunk progress 0.54
+  [early] ceiling 0.83   unfam 0.66   cbar 0.70   D_all 0.61   D_fam 0.62   D_fam|unc 0.61   rank sum 0.65   c_src 0.50   D_all*c_src 0.57   *dist tcp-mover 0.71   *grasp 0.66   *t/H 0.64   *dist mover-goal 0.67   *src chunk progress 0.55
+  [contact] ceiling 0.83   unfam 0.63   cbar 0.70   D_all 0.65   D_fam 0.65   D_fam|unc 0.65   rank sum 0.65   c_src 0.60   D_all*c_src 0.68   *dist tcp-mover 0.71   *grasp 0.59   *t/H 0.58   *dist mover-goal 0.67   *src chunk progress 0.57
+
+pooled over push pairs (source selection + gating): D_fam|unc 0.56   D_all 0.58   unfam 0.82   rank sum 0.81
+saved logs/d1p_eval.json

@@ -1,0 +1,50 @@
+{
+ "old_expert": 0.9921875,
+ "runs": {
+  "runs/protect/runs/stack_distill1_s1/ckpt_512000.pt": {
+   "old_head": 0.9921875,
+   "new_head": 0.9453125,
+   "moved": [
+    0.013112491928040981,
+    0.017717450857162476,
+    0.02920130454003811
+   ]
+  },
+  "runs/protect/runs/stack_distill1_s1/ckpt_1024000.pt": {
+   "old_head": 0.9921875,
+   "new_head": 0.79296875,
+   "moved": [
+    0.024215126410126686,
+    0.030196141451597214,
+    0.04981028288602829
+   ]
+  },
+  "runs/protect/runs/stack_distill1_s1/ckpt_1536000.pt": {
+   "old_head": 0.98828125,
+   "new_head": 0.76171875,
+   "moved": [
+    0.035201545804739,
+    0.043574098497629166,
+    0.06419599056243896
+   ]
+  },
+  "runs/protect/runs/stack_distill1_s1/ckpt_2048000.pt": {
+   "old_head": 0.9921875,
+   "new_head": 0.76171875,
+   "moved": [
+    0.04529297351837158,
+    0.05536603555083275,
+    0.07704707235097885
+   ]
+  },
+  "runs/protect/runs/stack_distill1_s1/final_ckpt.pt": {
+   "old_head": 0.9921875,
+   "new_head": 0.68359375,
+   "moved": [
+    0.04999156296253204,
+    0.05974374711513519,
+    0.08196531236171722
+   ]
+  }
+ }
+}

@@ -1,0 +1,24 @@
+/home/zhaobo/zhr_pve/.venv/lib/python3.10/site-packages/torch/autograd/graph.py:829: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:179.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+iter 1 step 0 eval success_once=0.000 lam=0.000
+iter 3 step 102400 eval success_once=0.000 lam=0.000
+iter 5 step 204800 eval success_once=0.000 lam=0.000
+iter 7 step 307200 eval success_once=0.000 lam=0.000
+iter 9 step 409600 eval success_once=0.000 lam=0.000
+iter 11 step 512000 eval success_once=0.000 lam=0.000
+iter 13 step 614400 eval success_once=0.070 lam=0.000
+iter 15 step 716800 eval success_once=0.258 lam=0.000
+iter 17 step 819200 eval success_once=0.375 lam=0.000
+iter 19 step 921600 eval success_once=0.402 lam=0.000
+iter 21 step 1024000 eval success_once=0.691 lam=0.000
+iter 23 step 1126400 eval success_once=0.785 lam=0.000
+iter 25 step 1228800 eval success_once=0.840 lam=0.000
+iter 27 step 1331200 eval success_once=0.859 lam=0.000
+iter 29 step 1433600 eval success_once=0.852 lam=0.000
+iter 31 step 1536000 eval success_once=0.902 lam=0.000
+iter 33 step 1638400 eval success_once=0.895 lam=0.000
+iter 35 step 1740800 eval success_once=0.953 lam=0.000
+iter 37 step 1843200 eval success_once=0.973 lam=0.000
+iter 39 step 1945600 eval success_once=0.969 lam=0.000
+early stop: reached 0.9
+done stack_block09_s3 steps=1945600 wall=319s SPS=6104

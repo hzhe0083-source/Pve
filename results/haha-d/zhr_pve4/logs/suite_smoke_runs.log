@@ -1,0 +1,10 @@
+PROT_START 18:42:36 zhaobo40901-Precision-3680 jobs=28
+DONE ycb_nsa64_s0
+DONE ycb_nsa64npr_s0
+DONE ycb_monitor_s0
+DONE ycb_head_s0
+DONE pushng_nsa64_s0
+DONE pushng_nsa64npr_s0
+DONE pushng_monitor_s0
+DONE pushng_head_s0
+DONE pullng_nsa64_s0

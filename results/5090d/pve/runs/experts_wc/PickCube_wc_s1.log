@@ -1,0 +1,13 @@
+[33;1m2026-10-31 03:34:55,593 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2026-10-31 03:34:58,310 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+iter 1 step 0 eval success_once=0.000 lam=0.000
+iter 11 step 512000 eval success_once=0.000 lam=0.000
+iter 21 step 1024000 eval success_once=0.000 lam=0.000
+iter 31 step 1536000 eval success_once=0.031 lam=0.000
+iter 41 step 2048000 eval success_once=0.180 lam=0.000
+iter 51 step 2560000 eval success_once=0.258 lam=0.000
+iter 61 step 3072000 eval success_once=0.555 lam=0.000
+iter 71 step 3584000 eval success_once=1.000 lam=0.000
+iter 81 step 4096000 eval success_once=1.000 lam=0.000
+early stop: reached 0.95
+done PickCube_wc_s1 steps=4096000 wall=698s SPS=5871

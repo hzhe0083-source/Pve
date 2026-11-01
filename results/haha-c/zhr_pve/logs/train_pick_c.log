@@ -1,0 +1,2 @@
+PICK_C_START 13:41:40
+PICK_C_END 13:45:37 5120000,1.0 ckpt=runs/PickCube_wc_c1/final_ckpt.pt

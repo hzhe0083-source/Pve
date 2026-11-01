@@ -1,0 +1,821 @@
+{
+ "step2": {
+  "PickCube_g0.95": {
+   "median": {
+    "auc": 0.0,
+    "T1": Infinity,
+    "T10": Infinity,
+    "T80": Infinity,
+    "final": 0.0
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.0,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 24576000.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    }
+   }
+  },
+  "StackCube_g0.95": {
+   "median": {
+    "auc": 0.0,
+    "T1": Infinity,
+    "T10": Infinity,
+    "T80": Infinity,
+    "final": 0.0
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.0,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 24576000.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    }
+   }
+  },
+  "push_t0_g0.8": {
+   "median": {
+    "auc": 0.0,
+    "T1": Infinity,
+    "T10": Infinity,
+    "T80": Infinity,
+    "final": 0.0
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.0,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 24780800.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    },
+    "2": {
+     "auc": 0.0,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 24780800.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    }
+   }
+  },
+  "push_t0_g0.95": {
+   "median": {
+    "auc": 0.0,
+    "T1": Infinity,
+    "T10": Infinity,
+    "T80": Infinity,
+    "final": 0.0
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.0,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 24780800.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    },
+    "2": {
+     "auc": 0.0,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 24780800.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    }
+   }
+  },
+  "push_t180_g0.8": {
+   "median": {
+    "auc": 0.0135075,
+    "T1": 19046400.0,
+    "T10": 23142400.0,
+    "T80": Infinity,
+    "final": 0.1171875
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.0135075,
+     "T1": 19046400.0,
+     "T10": 23142400.0,
+     "T80": Infinity,
+     "final": 0.1171875,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 24780800.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    }
+   }
+  },
+  "push_t180_g0.95": {
+   "median": {
+    "auc": 0.0,
+    "T1": Infinity,
+    "T10": Infinity,
+    "T80": Infinity,
+    "final": 0.0
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.0,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 24780800.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    }
+   }
+  },
+  "push_t90_g0.8": {
+   "median": {
+    "auc": 0.83827025,
+    "T1": 921600.0,
+    "T10": 1740800.0,
+    "T80": 3174400.0,
+    "final": 0.94140625
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.8076945,
+     "T1": 614400.0,
+     "T10": 2048000.0,
+     "T80": 3481600.0,
+     "final": 0.9140625,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 3891200.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    },
+    "2": {
+     "auc": 0.868846,
+     "T1": 1228800.0,
+     "T10": 1433600.0,
+     "T80": 2867200.0,
+     "final": 0.96875,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 3686400.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    }
+   }
+  },
+  "push_t90_g0.95": {
+   "median": {
+    "auc": 0.0,
+    "T1": Infinity,
+    "T10": Infinity,
+    "T80": Infinity,
+    "final": 0.0
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.0,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 24780800.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    },
+    "2": {
+     "auc": 0.0,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 24780800.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    }
+   }
+  }
+ },
+ "step3": {
+  "stack_finetune": {
+   "median": {
+    "auc": 0.00112,
+    "T1": Infinity,
+    "T10": Infinity,
+    "T80": Infinity,
+    "final": 0.0
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.00208,
+     "T1": 10240000.0,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 24576000.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    },
+    "2": {
+     "auc": 0.00016,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 24576000.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    }
+   }
+  },
+  "stack_kickstart": {
+   "median": {
+    "auc": 0.23321375,
+    "T1": Infinity,
+    "T10": Infinity,
+    "T80": Infinity,
+    "final": 0.49609375
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.4662675,
+     "T1": 12800000.0,
+     "T10": 12800000.0,
+     "T80": 13312000.0,
+     "final": 0.9921875,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 13824000.0,
+     "copy_fraction": 1.0,
+     "fallback_fraction": 0.0
+    },
+    "2": {
+     "auc": 0.00016,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 24576000.0,
+     "copy_fraction": 1.0,
+     "fallback_fraction": 0.0
+    }
+   }
+  },
+  "stack_oracle": {
+   "median": {
+    "auc": 0.16147,
+    "T1": Infinity,
+    "T10": Infinity,
+    "T80": Infinity,
+    "final": 0.46875
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.0,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 24576000.0,
+     "copy_fraction": 0.9068618524269979,
+     "fallback_fraction": 0.25809297594623487
+    },
+    "2": {
+     "auc": 0.32294,
+     "T1": 13824000.0,
+     "T10": 13824000.0,
+     "T80": 17920000.0,
+     "final": 0.9375,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 20992000.0,
+     "copy_fraction": 0.9052904678172753,
+     "fallback_fraction": 0.2294872191841485
+    }
+   }
+  },
+  "stack_scratch": {
+   "median": {
+    "auc": 0.0,
+    "T1": Infinity,
+    "T10": Infinity,
+    "T80": Infinity,
+    "final": 0.0
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.0,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 24576000.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    },
+    "2": {
+     "auc": 0.0,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 24576000.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    }
+   }
+  },
+  "stack_warmkick": {
+   "median": {
+    "auc": 0.0,
+    "T1": Infinity,
+    "T10": Infinity,
+    "T80": Infinity,
+    "final": 0.0
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.0,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 24576000.0,
+     "copy_fraction": 1.0,
+     "fallback_fraction": 0.0
+    },
+    "2": {
+     "auc": 0.0,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 25000000,
+     "finished": false,
+     "steps": 6144000.0,
+     "copy_fraction": 1.0,
+     "fallback_fraction": 0.0
+    }
+   }
+  },
+  "stack_warmoracle": {
+   "median": {
+    "auc": 0.0,
+    "T1": Infinity,
+    "T10": Infinity,
+    "T80": Infinity,
+    "final": 0.0
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.0,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 25000000,
+     "finished": true,
+     "steps": 24576000.0,
+     "copy_fraction": 0.876149844195022,
+     "fallback_fraction": 0.06603515478324329
+    },
+    "2": {
+     "auc": 0.0,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 25000000,
+     "finished": false,
+     "steps": 12288000.0,
+     "copy_fraction": 0.8859735315044721,
+     "fallback_fraction": 0.04216373598901555
+    }
+   }
+  },
+  "t45_finetune": {
+   "median": {
+    "auc": 0.93073625,
+    "T1": 0.0,
+    "T10": 204800.0,
+    "T80": 921600.0,
+    "final": 0.97265625
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.9272825,
+     "T1": 0.0,
+     "T10": 204800.0,
+     "T80": 1024000.0,
+     "final": 0.9765625,
+     "budget": 15000000,
+     "finished": true,
+     "steps": 1228800.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    },
+    "2": {
+     "auc": 0.93419,
+     "T1": 0.0,
+     "T10": 204800.0,
+     "T80": 819200.0,
+     "final": 0.96875,
+     "budget": 15000000,
+     "finished": true,
+     "steps": 1024000.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    }
+   }
+  },
+  "t45_kickstart": {
+   "median": {
+    "auc": 0.5646837499999999,
+    "T1": 204800.0,
+    "T10": 512000.0,
+    "T80": 7065600.0,
+    "final": 0.96484375
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.5675766666666666,
+     "T1": 204800.0,
+     "T10": 819200.0,
+     "T80": 6963200.0,
+     "final": 0.96875,
+     "budget": 15000000,
+     "finished": true,
+     "steps": 7372800.0,
+     "copy_fraction": 1.0,
+     "fallback_fraction": 0.0
+    },
+    "2": {
+     "auc": 0.5617908333333334,
+     "T1": 204800.0,
+     "T10": 204800.0,
+     "T80": 7168000.0,
+     "final": 0.9609375,
+     "budget": 15000000,
+     "finished": true,
+     "steps": 7372800.0,
+     "copy_fraction": 1.0,
+     "fallback_fraction": 0.0
+    }
+   }
+  },
+  "t45_oracle": {
+   "median": {
+    "auc": 0.8357141666666666,
+    "T1": 204800.0,
+    "T10": 614400.0,
+    "T80": 2355200.0,
+    "final": 0.9296875
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.8403266666666667,
+     "T1": 204800.0,
+     "T10": 614400.0,
+     "T80": 2252800.0,
+     "final": 0.9375,
+     "budget": 15000000,
+     "finished": true,
+     "steps": 4096000.0,
+     "copy_fraction": 0.4269377517700195,
+     "fallback_fraction": 0.2503767129336484
+    },
+    "2": {
+     "auc": 0.8311016666666666,
+     "T1": 204800.0,
+     "T10": 614400.0,
+     "T80": 2457600.0,
+     "final": 0.921875,
+     "budget": 15000000,
+     "finished": true,
+     "steps": 3686400.0,
+     "copy_fraction": 0.4315638626201285,
+     "fallback_fraction": 0.27388590917042976
+    }
+   }
+  },
+  "t45_scratch": {
+   "median": {
+    "auc": 0.0,
+    "T1": Infinity,
+    "T10": Infinity,
+    "T80": Infinity,
+    "final": 0.0
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.0,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 15000000,
+     "finished": true,
+     "steps": 14950400.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    },
+    "2": {
+     "auc": 0.0,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 15000000,
+     "finished": true,
+     "steps": 14950400.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    },
+    "3": {
+     "auc": 0.0,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 15000000,
+     "finished": false,
+     "steps": 819200.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    }
+   }
+  },
+  "t45_warmkick": {
+   "median": {
+    "auc": 0.5822320833333333,
+    "T1": 0.0,
+    "T10": 716800.0,
+    "T80": 6963200.0,
+    "final": 0.94921875
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.5675025,
+     "T1": 0.0,
+     "T10": 409600.0,
+     "T80": 6963200.0,
+     "final": 0.9140625,
+     "budget": 15000000,
+     "finished": true,
+     "steps": 7168000.0,
+     "copy_fraction": 1.0,
+     "fallback_fraction": 0.0
+    },
+    "2": {
+     "auc": 0.5969616666666666,
+     "T1": 0.0,
+     "T10": 1024000.0,
+     "T80": 6963200.0,
+     "final": 0.984375,
+     "budget": 15000000,
+     "finished": true,
+     "steps": 7372800.0,
+     "copy_fraction": 1.0,
+     "fallback_fraction": 0.0
+    }
+   }
+  },
+  "t45_warmoracle": {
+   "median": {
+    "auc": 0.8434200000000001,
+    "T1": 0.0,
+    "T10": 204800.0,
+    "T80": 2150400.0,
+    "final": 0.9375
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.8617925,
+     "T1": 0.0,
+     "T10": 204800.0,
+     "T80": 2048000.0,
+     "final": 0.9453125,
+     "budget": 15000000,
+     "finished": true,
+     "steps": 2662400.0,
+     "copy_fraction": 0.3445755761403304,
+     "fallback_fraction": 0.20018667732007228
+    },
+    "2": {
+     "auc": 0.8250475,
+     "T1": 0.0,
+     "T10": 204800.0,
+     "T80": 2252800.0,
+     "final": 0.9296875,
+     "budget": 15000000,
+     "finished": true,
+     "steps": 3072000.0,
+     "copy_fraction": 0.35743359923362733,
+     "fallback_fraction": 0.21539128034065166
+    }
+   }
+  },
+  "t90_finetune": {
+   "median": {
+    "auc": 0.54887125,
+    "T1": 4198400.0,
+    "T10": 5324800.0,
+    "T80": 7065600.0,
+    "final": 0.95703125
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.32971,
+     "T1": 6553600.0,
+     "T10": 8601600.0,
+     "T80": 10854400.0,
+     "final": 0.96875,
+     "budget": 15000000,
+     "finished": true,
+     "steps": 11059200.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    },
+    "2": {
+     "auc": 0.7680325,
+     "T1": 1843200.0,
+     "T10": 2048000.0,
+     "T80": 3276800.0,
+     "final": 0.9453125,
+     "budget": 15000000,
+     "finished": true,
+     "steps": 4710400.0,
+     "copy_fraction": NaN,
+     "fallback_fraction": NaN
+    }
+   }
+  },
+  "t90_kickstart": {
+   "median": {
+    "auc": 0.45911291666666665,
+    "T1": 7372800.0,
+    "T10": 7577600.0,
+    "T80": 7782400.0,
+    "final": 0.94140625
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.4517141666666667,
+     "T1": 7372800.0,
+     "T10": 7577600.0,
+     "T80": 7782400.0,
+     "final": 0.9296875,
+     "budget": 15000000,
+     "finished": true,
+     "steps": 7987200.0,
+     "copy_fraction": 1.0,
+     "fallback_fraction": 0.0
+    },
+    "2": {
+     "auc": 0.46651166666666666,
+     "T1": 7372800.0,
+     "T10": 7577600.0,
+     "T80": 7782400.0,
+     "final": 0.953125,
+     "budget": 15000000,
+     "finished": true,
+     "steps": 8192000.0,
+     "copy_fraction": 1.0,
+     "fallback_fraction": 0.0
+    }
+   }
+  },
+  "t90_oracle": {
+   "median": {
+    "auc": 0.28686208333333335,
+    "T1": 5529600.0,
+    "T10": Infinity,
+    "T80": Infinity,
+    "final": 0.54296875
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.5191208333333334,
+     "T1": 4915200.0,
+     "T10": 6758400.0,
+     "T80": 7577600.0,
+     "final": 0.9921875,
+     "budget": 15000000,
+     "finished": true,
+     "steps": 7782400.0,
+     "copy_fraction": 0.6622858902266442,
+     "fallback_fraction": 0.2479088002055008
+    },
+    "2": {
+     "auc": 0.05460333333333333,
+     "T1": 6144000.0,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.09375,
+     "budget": 15000000,
+     "finished": false,
+     "steps": 6348800.0,
+     "copy_fraction": 0.66666651306053,
+     "fallback_fraction": 0.24061116959666834
+    }
+   }
+  },
+  "t90_warmkick": {
+   "median": {
+    "auc": 0.3561375,
+    "T1": 8396800.0,
+    "T10": 8806400.0,
+    "T80": 9830400.0,
+    "final": 0.9609375
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.3561375,
+     "T1": 8396800.0,
+     "T10": 8806400.0,
+     "T80": 9830400.0,
+     "final": 0.9609375,
+     "budget": 15000000,
+     "finished": true,
+     "steps": 10444800.0,
+     "copy_fraction": 1.0,
+     "fallback_fraction": 0.0
+    }
+   }
+  },
+  "t90_warmoracle": {
+   "median": {
+    "auc": 0.0,
+    "T1": Infinity,
+    "T10": Infinity,
+    "T80": Infinity,
+    "final": 0.0
+   },
+   "seeds": {
+    "1": {
+     "auc": 0.0,
+     "T1": Infinity,
+     "T10": Infinity,
+     "T80": Infinity,
+     "final": 0.0,
+     "budget": 15000000,
+     "finished": true,
+     "steps": 14950400.0,
+     "copy_fraction": 0.6897946643373354,
+     "fallback_fraction": 0.07699928627619164
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,2 @@
+iteration,global_step,old_drift,removed_l1,removed_l2,removed_l3
+0,0,0.0,0.0,0.0,0.0

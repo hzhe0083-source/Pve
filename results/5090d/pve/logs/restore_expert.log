@@ -1,0 +1,38 @@
+PushCube-v1          t0= 10 states= 90 agree=1.000 consensus=1.000 time=0.899 orig_success=1.00 pos_err median=24.72mm p95=100.41mm spread median=14.80mm  by phase: free=1.00(n=40) near=1.00(n=41) grasped=1.00(n=9)
+PushCube-v1          t0= 20 every episode already succeeded, skipped
+PushCube-v1          t0= 30 every episode already succeeded, skipped
+[33;1m2026-10-31 02:59:24,327 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 02:59:27,918 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+PullCube-v1          t0= 10 states= 84 agree=0.976 consensus=1.000 time=0.771 orig_success=1.00 pos_err median=42.01mm p95=224.99mm spread median=23.76mm  by phase: free=0.98(n=80) near=1.00(n=4)
+PullCube-v1          t0= 20 every episode already succeeded, skipped
+PullCube-v1          t0= 30 every episode already succeeded, skipped
+PickCube-v1          t0= 10 states=115 agree=0.987 consensus=0.991 time=0.922 orig_success=1.00 pos_err median=0.71mm p95=4.93mm spread median=0.01mm  by phase: free=1.00(n=9) near=1.00(n=3) grasped=0.99(n=103)
+PickCube-v1          t0= 20 states= 31 agree=1.000 consensus=1.000 time=0.952 orig_success=1.00 pos_err median=0.50mm p95=4.66mm spread median=0.01mm  by phase: free=1.00(n=2) near=1.00(n=1) grasped=1.00(n=28)
+PickCube-v1          t0= 30 states=  3 agree=1.000 consensus=1.000 time=1.000 orig_success=1.00 pos_err median=0.09mm p95=2.84mm spread median=0.63mm  by phase: grasped=1.00(n=3)
+StackCube-v1         t0= 10 states=128 agree=0.933 consensus=0.930 time=0.616 orig_success=0.79 pos_err median=3.14mm p95=140.04mm spread median=1.30mm  by phase: free=0.96(n=31) near=1.00(n=6) grasped=0.92(n=91)
+StackCube-v1         t0= 20 states= 72 agree=0.939 consensus=0.972 time=0.753 orig_success=0.62 pos_err median=2.82mm p95=109.96mm spread median=0.85mm  by phase: free=0.80(n=5) near=0.96(n=31) grasped=0.94(n=36)
+StackCube-v1         t0= 30 states= 37 agree=0.976 consensus=0.946 time=0.939 orig_success=0.27 pos_err median=4.14mm p95=41.47mm spread median=2.39mm  by phase: free=0.95(n=7) near=0.90(n=5) grasped=1.00(n=25)
+[33;1m2026-10-31 03:00:02,776 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 03:00:02,778 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 03:00:08,211 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 03:00:08,224 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+PlaceSphere-v1       t0= 10 states=125 agree=0.877 consensus=0.904 time=0.588 orig_success=0.77 pos_err median=1.24mm p95=6.60mm spread median=0.54mm  by phase: free=0.89(n=19) near=0.96(n=46) grasped=0.81(n=60)
+PlaceSphere-v1       t0= 20 states= 47 agree=0.981 consensus=0.957 time=0.928 orig_success=0.38 pos_err median=0.10mm p95=2.09mm spread median=0.06mm  by phase: free=0.98(n=46) near=1.00(n=1)
+PlaceSphere-v1       t0= 30 states= 31 agree=0.972 consensus=0.935 time=0.940 orig_success=0.06 pos_err median=0.05mm p95=0.47mm spread median=0.02mm  by phase: free=0.97(n=30) near=1.00(n=1)
+PokeCube-v1          t0= 10 states=128 agree=1.000 consensus=1.000 time=0.844 orig_success=1.00 pos_err median=2.10mm p95=6.35mm spread median=0.53mm  by phase: free=1.00(n=18) grasped=1.00(n=110)
+PokeCube-v1          t0= 20 states= 28 agree=1.000 consensus=1.000 time=0.897 orig_success=1.00 pos_err median=1.50mm p95=5.98mm spread median=0.58mm  by phase: grasped=1.00(n=28)
+PokeCube-v1          t0= 30 every episode already succeeded, skipped
+LiftPegUpright-v1    t0= 10 states=127 agree=1.000 consensus=1.000 time=0.996 orig_success=0.95 pos_err median=11.47mm p95=98.96mm spread median=11.99mm  by phase: free=1.00(n=62) grasped=1.00(n=65)
+LiftPegUpright-v1    t0= 20 states=  8 agree=1.000 consensus=1.000 time=1.000 orig_success=0.25 pos_err median=10.34mm p95=86.00mm spread median=8.52mm  by phase: free=1.00(n=5) grasped=1.00(n=3)
+LiftPegUpright-v1    t0= 30 states=  7 agree=1.000 consensus=1.000 time=1.000 orig_success=0.14 pos_err median=3.28mm p95=18.33mm spread median=2.58mm  by phase: free=1.00(n=4) grasped=1.00(n=3)
+[33;1m2026-10-31 03:00:47,432 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 03:00:47,507 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 03:00:47,509 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 03:00:53,787 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 03:00:54,286 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 03:00:54,303 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+PullCubeTool-v1      t0= 20 states=128 agree=0.988 consensus=0.992 time=0.984 orig_success=0.01 pos_err median=11.01mm p95=91.40mm spread median=2.11mm  by phase: free=1.00(n=5) grasped=0.99(n=123)
+PullCubeTool-v1      t0= 40 states=128 agree=0.987 consensus=0.984 time=0.985 orig_success=0.01 pos_err median=9.41mm p95=74.00mm spread median=2.11mm  by phase: free=1.00(n=6) grasped=0.99(n=122)
+PullCubeTool-v1      t0= 60 states=128 agree=0.993 consensus=0.984 time=0.989 orig_success=0.01 pos_err median=7.09mm p95=48.58mm spread median=1.61mm  by phase: free=1.00(n=6) grasped=0.99(n=122)
+overall agreement 0.973  (G1 condition 2 needs >= 0.95)
+saved /home/zhr/pve/data/restore_expert.json

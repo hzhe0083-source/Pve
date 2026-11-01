@@ -1,0 +1,7 @@
+iter 1 step 0 eval success_once=0.008 lam=0.000
+iter 6 step 204800 eval success_once=0.125 lam=0.000
+iter 11 step 409600 eval success_once=0.438 lam=0.000
+iter 16 step 614400 eval success_once=0.938 lam=0.000
+iter 21 step 819200 eval success_once=0.945 lam=0.000
+early stop: reached 0.9
+done far10_probe10_s2 steps=819200 wall=33s SPS=24648

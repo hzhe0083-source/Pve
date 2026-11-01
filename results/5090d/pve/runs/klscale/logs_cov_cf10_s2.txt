@@ -1,0 +1,16 @@
+iter 1 step 0 eval success_once=0.000 lam=0.000
+iter 6 step 102400 eval success_once=0.000 lam=0.000
+iter 11 step 204800 eval success_once=0.000 lam=0.000
+iter 16 step 307200 eval success_once=0.000 lam=0.000
+iter 21 step 409600 eval success_once=0.000 lam=0.000
+iter 26 step 512000 eval success_once=0.000 lam=0.000
+iter 31 step 614400 eval success_once=0.250 lam=0.000
+iter 36 step 716800 eval success_once=0.617 lam=0.000
+iter 41 step 819200 eval success_once=0.766 lam=0.000
+iter 46 step 921600 eval success_once=0.828 lam=0.000
+iter 51 step 1024000 eval success_once=0.836 lam=0.000
+iter 56 step 1126400 eval success_once=0.922 lam=0.000
+iter 61 step 1228800 eval success_once=0.961 lam=0.000
+iter 66 step 1331200 eval success_once=0.969 lam=0.000
+iter 71 step 1433600 eval success_once=0.953 lam=0.000
+done cov_cf10_s2 steps=1495040 wall=217s SPS=6904

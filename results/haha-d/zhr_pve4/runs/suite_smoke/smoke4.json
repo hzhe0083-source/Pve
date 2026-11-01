@@ -1,0 +1,558 @@
+{
+ "place": {
+  "env": "PlaceCube-v1",
+  "adapter": null,
+  "max_episode_steps": 50,
+  "det": {
+   "success": 0.0,
+   "grasped": 1.0,
+   "fail": null
+  },
+  "floor": {
+   "success": 0.75,
+   "grasped": 1.0,
+   "fail": null
+  },
+  "slot_max_error": {
+   "qpos": 0.0,
+   "qvel": 0.0,
+   "flag": 0.0,
+   "tcp": 0.0,
+   "goal": 0.0,
+   "obj_p": 0.0,
+   "tcp_to_obj": 0.0,
+   "obj_to_goal": 0.0,
+   "obj_q": 0.0
+  },
+  "eval_seconds": 2.1770806312561035
+ },
+ "stack": {
+  "env": "StackCubeNarrow-v1",
+  "adapter": "stack_to_pick",
+  "max_episode_steps": 50,
+  "det": {
+   "success": 0.0,
+   "grasped": 1.0,
+   "fail": null
+  },
+  "floor": {
+   "success": 0.0,
+   "grasped": 1.0,
+   "fail": null
+  },
+  "slot_max_error": {
+   "qpos": 0.0,
+   "qvel": 0.0,
+   "flag": 0.0,
+   "tcp": 0.0,
+   "goal": 0.0,
+   "obj_p": 0.0,
+   "tcp_to_obj": 0.0,
+   "obj_to_goal": 3.725290298461914e-09,
+   "obj_q": 0.0
+  },
+  "final_info": "is_cubeA_grasped at step 50",
+  "eval_seconds": 2.2384960651397705
+ },
+ "sphere": {
+  "env": "PlaceSphere-v1",
+  "adapter": "sphere_to_pick",
+  "max_episode_steps": 50,
+  "det": {
+   "success": 0.0,
+   "grasped": 1.0,
+   "fail": null
+  },
+  "floor": {
+   "success": 0.0,
+   "grasped": 1.0,
+   "fail": null
+  },
+  "slot_max_error": {
+   "qpos": 0.0,
+   "qvel": 0.0,
+   "flag": 0.0,
+   "tcp": 0.0,
+   "goal": 0.0,
+   "obj_p": 0.0,
+   "tcp_to_obj": 0.0,
+   "obj_to_goal": 0.0,
+   "obj_q": 0.0
+  },
+  "eval_seconds": 2.236900806427002
+ },
+ "ycb": {
+  "env": "PickYCBSubset-v1",
+  "adapter": "ycb_to_pick",
+  "max_episode_steps": 50,
+  "det": {
+   "success": 1.0,
+   "grasped": 1.0,
+   "fail": null
+  },
+  "ycb_det_success": {
+   "038_padlock": [
+    1.0,
+    1
+   ],
+   "072-e_toy_airplane": [
+    1.0,
+    1
+   ],
+   "073-f_lego_duplo": [
+    1.0,
+    1
+   ],
+   "077_rubiks_cube": [
+    1.0,
+    1
+   ]
+  },
+  "floor": {
+   "success": 0.5,
+   "grasped": 1.0,
+   "fail": null
+  },
+  "ycb_rule_models": [
+   "005_tomato_soup_can",
+   "007_tuna_fish_can",
+   "010_potted_meat_can",
+   "012_strawberry",
+   "014_lemon",
+   "015_peach",
+   "016_pear",
+   "018_plum",
+   "038_padlock",
+   "053_mini_soccer_ball",
+   "054_softball",
+   "056_tennis_ball",
+   "057_racquetball",
+   "058_golf_ball",
+   "061_foam_brick",
+   "063-b_marbles",
+   "065-a_cups",
+   "065-b_cups",
+   "065-c_cups",
+   "070-b_colored_wood_blocks",
+   "071_nine_hole_peg_test",
+   "072-c_toy_airplane",
+   "072-d_toy_airplane",
+   "072-e_toy_airplane",
+   "073-a_lego_duplo",
+   "073-b_lego_duplo",
+   "073-c_lego_duplo",
+   "073-d_lego_duplo",
+   "073-e_lego_duplo",
+   "073-f_lego_duplo",
+   "077_rubiks_cube"
+  ],
+  "ycb_json_cm": {
+   "005_tomato_soup_can": [
+    6.9,
+    6.9,
+    10.3
+   ],
+   "007_tuna_fish_can": [
+    7.0,
+    6.9,
+    2.8
+   ],
+   "010_potted_meat_can": [
+    10.4,
+    5.9,
+    8.4
+   ],
+   "012_strawberry": [
+    4.8,
+    4.4,
+    4.7
+   ],
+   "014_lemon": [
+    6.1,
+    6.0,
+    5.3
+   ],
+   "015_peach": [
+    5.9,
+    6.5,
+    6.1
+   ],
+   "016_pear": [
+    6.8,
+    9.6,
+    6.6
+   ],
+   "018_plum": [
+    5.7,
+    5.4,
+    5.3
+   ],
+   "038_padlock": [
+    5.6,
+    7.2,
+    3.0
+   ],
+   "053_mini_soccer_ball": [
+    6.4,
+    6.4,
+    6.2
+   ],
+   "054_softball": [
+    6.8,
+    6.8,
+    6.6
+   ],
+   "056_tennis_ball": [
+    6.8,
+    6.8,
+    6.7
+   ],
+   "057_racquetball": [
+    5.7,
+    5.7,
+    5.7
+   ],
+   "058_golf_ball": [
+    4.3,
+    4.3,
+    4.3
+   ],
+   "061_foam_brick": [
+    5.3,
+    7.8,
+    5.2
+   ],
+   "063-b_marbles": [
+    3.5,
+    3.5,
+    3.5
+   ],
+   "065-a_cups": [
+    5.9,
+    5.9,
+    6.3
+   ],
+   "065-b_cups": [
+    6.2,
+    6.2,
+    6.5
+   ],
+   "065-c_cups": [
+    6.6,
+    6.8,
+    6.8
+   ],
+   "070-b_colored_wood_blocks": [
+    2.7,
+    2.6,
+    2.7
+   ],
+   "071_nine_hole_peg_test": [
+    6.7,
+    7.8,
+    2.2
+   ],
+   "072-c_toy_airplane": [
+    3.1,
+    3.1,
+    6.8
+   ],
+   "072-d_toy_airplane": [
+    3.2,
+    3.2,
+    6.8
+   ],
+   "072-e_toy_airplane": [
+    3.2,
+    3.2,
+    6.7
+   ],
+   "073-a_lego_duplo": [
+    6.5,
+    3.3,
+    2.5
+   ],
+   "073-b_lego_duplo": [
+    3.3,
+    3.3,
+    4.4
+   ],
+   "073-c_lego_duplo": [
+    3.4,
+    6.6,
+    2.4
+   ],
+   "073-d_lego_duplo": [
+    3.4,
+    4.9,
+    4.4
+   ],
+   "073-e_lego_duplo": [
+    3.4,
+    9.8,
+    4.4
+   ],
+   "073-f_lego_duplo": [
+    3.4,
+    3.4,
+    4.4
+   ],
+   "077_rubiks_cube": [
+    5.9,
+    6.0,
+    5.8
+   ]
+  },
+  "ycb_mesh_cm": {
+   "073-f_lego_duplo": [
+    3.4,
+    3.4,
+    4.4
+   ],
+   "072-e_toy_airplane": [
+    3.2,
+    3.2,
+    6.7
+   ],
+   "038_padlock": [
+    5.6,
+    7.2,
+    3.0
+   ],
+   "077_rubiks_cube": [
+    5.9,
+    6.0,
+    5.8
+   ]
+  },
+  "ycb_all_models": [
+   "002_master_chef_can",
+   "003_cracker_box",
+   "004_sugar_box",
+   "005_tomato_soup_can",
+   "006_mustard_bottle",
+   "007_tuna_fish_can",
+   "008_pudding_box",
+   "009_gelatin_box",
+   "010_potted_meat_can",
+   "011_banana",
+   "012_strawberry",
+   "013_apple",
+   "014_lemon",
+   "015_peach",
+   "016_pear",
+   "017_orange",
+   "018_plum",
+   "019_pitcher_base",
+   "021_bleach_cleanser",
+   "024_bowl",
+   "025_mug",
+   "026_sponge",
+   "030_fork",
+   "031_spoon",
+   "032_knife",
+   "033_spatula",
+   "035_power_drill",
+   "036_wood_block",
+   "037_scissors",
+   "038_padlock",
+   "040_large_marker",
+   "042_adjustable_wrench",
+   "043_phillips_screwdriver",
+   "044_flat_screwdriver",
+   "048_hammer",
+   "050_medium_clamp",
+   "051_large_clamp",
+   "052_extra_large_clamp",
+   "053_mini_soccer_ball",
+   "054_softball",
+   "055_baseball",
+   "056_tennis_ball",
+   "057_racquetball",
+   "058_golf_ball",
+   "061_foam_brick",
+   "062_dice",
+   "063-a_marbles",
+   "063-b_marbles",
+   "065-a_cups",
+   "065-b_cups",
+   "065-c_cups",
+   "065-d_cups",
+   "065-e_cups",
+   "065-f_cups",
+   "065-g_cups",
+   "065-h_cups",
+   "065-i_cups",
+   "065-j_cups",
+   "070-a_colored_wood_blocks",
+   "070-b_colored_wood_blocks",
+   "071_nine_hole_peg_test",
+   "072-a_toy_airplane",
+   "072-b_toy_airplane",
+   "072-c_toy_airplane",
+   "072-d_toy_airplane",
+   "072-e_toy_airplane",
+   "073-a_lego_duplo",
+   "073-b_lego_duplo",
+   "073-c_lego_duplo",
+   "073-d_lego_duplo",
+   "073-e_lego_duplo",
+   "073-f_lego_duplo",
+   "073-g_lego_duplo",
+   "077_rubiks_cube"
+  ],
+  "slot_max_error": {
+   "qpos": 0.0,
+   "qvel": 0.0,
+   "flag": 0.0,
+   "tcp": 0.0,
+   "goal": 0.0,
+   "obj_p": 0.0,
+   "tcp_to_obj": 0.0,
+   "obj_to_goal": 0.0,
+   "obj_q": 0.0
+  },
+  "eval_seconds": 3.6399335861206055
+ },
+ "pushng": {
+  "env": "PushCubeNoGrasp-v1",
+  "adapter": "push_to_pick",
+  "max_episode_steps": 50,
+  "det": {
+   "success": 0.0,
+   "grasped": 1.0,
+   "fail": 1.0
+  },
+  "floor": {
+   "success": 0.0,
+   "grasped": 1.0,
+   "fail": 1.0
+  },
+  "slot_max_error": {
+   "qpos": 0.0,
+   "qvel": 0.0,
+   "flag": 0.0,
+   "tcp": 0.0,
+   "goal": 0.0,
+   "obj_p": 0.0,
+   "tcp_to_obj": 0.0,
+   "obj_to_goal": 0.0,
+   "obj_q": 0.0
+  },
+  "final_info": "is_grasped at step 5",
+  "eval_seconds": 2.1559741497039795
+ },
+ "pullng": {
+  "env": "PullCubeNoGrasp-v1",
+  "adapter": "push_to_pick",
+  "max_episode_steps": 50,
+  "det": {
+   "success": 0.0,
+   "grasped": 1.0,
+   "fail": 1.0
+  },
+  "floor": {
+   "success": 0.0,
+   "grasped": 1.0,
+   "fail": 1.0
+  },
+  "slot_max_error": {
+   "qpos": 0.0,
+   "qvel": 0.0,
+   "flag": 0.0,
+   "tcp": 0.0,
+   "goal": 0.0,
+   "obj_p": 0.0,
+   "tcp_to_obj": 0.0,
+   "obj_to_goal": 0.0,
+   "obj_q": 0.0
+  },
+  "final_info": "is_grasped at step 5",
+  "eval_seconds": 2.2400732040405273
+ },
+ "beside": {
+  "env": "PyramidBeside-v1",
+  "adapter": "beside_to_pick",
+  "max_episode_steps": 50,
+  "det": {
+   "success": 0.0,
+   "grasped": 1.0,
+   "fail": null
+  },
+  "floor": {
+   "success": 0.25,
+   "grasped": 1.0,
+   "fail": null
+  },
+  "slot_max_error": {
+   "qpos": 0.0,
+   "qvel": 0.0,
+   "flag": 0.0,
+   "tcp": 0.0,
+   "goal": 7.450580596923828e-09,
+   "obj_p": 0.0,
+   "tcp_to_obj": 0.0,
+   "obj_to_goal": 0.0,
+   "obj_q": 0.0
+  },
+  "final_info": "is_cubeA_grasped at step 50",
+  "eval_seconds": 2.447713851928711
+ },
+ "onpair": {
+  "env": "PyramidOnPair-v1",
+  "adapter": "onpair_to_pick",
+  "max_episode_steps": 50,
+  "det": {
+   "success": 0.0,
+   "grasped": 1.0,
+   "fail": null
+  },
+  "floor": {
+   "success": 0.25,
+   "grasped": 1.0,
+   "fail": null
+  },
+  "slot_max_error": {
+   "qpos": 0.0,
+   "qvel": 0.0,
+   "flag": 0.0,
+   "tcp": 0.0,
+   "goal": 0.0,
+   "obj_p": 0.0,
+   "tcp_to_obj": 0.0,
+   "obj_to_goal": 0.0,
+   "obj_q": 0.0
+  },
+  "final_info": "is_cubeC_grasped at step 50",
+  "eval_seconds": 2.4468188285827637
+ },
+ "liftpeg": {
+  "env": "LiftPegUprightG-v1",
+  "adapter": "peg_to_pick",
+  "max_episode_steps": 50,
+  "det": {
+   "success": 0.0,
+   "grasped": 0.75,
+   "fail": null
+  },
+  "floor": {
+   "success": 0.0,
+   "grasped": 0.5,
+   "fail": null
+  },
+  "slot_max_error": {
+   "qpos": 0.0,
+   "qvel": 0.0,
+   "flag": 0.0,
+   "tcp": 0.0,
+   "goal": 2.9802322387695312e-08,
+   "obj_p": 2.9802322387695312e-08,
+   "tcp_to_obj": 0.0,
+   "obj_to_goal": 0.0,
+   "obj_q": 1.1920928955078125e-07,
+   "obj_axis": 1.7881393432617188e-07
+  },
+  "final_info": "is_grasped at step 50",
+  "eval_seconds": 2.1445746421813965
+ }
+}

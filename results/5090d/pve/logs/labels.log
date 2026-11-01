@@ -1,0 +1,28 @@
+LABELS_START 23:58:44
+PushCube-v1          states=256 mean q=0.960 c*: median=0.0000 p90=0.0055 KL nats: median=0.000 p90=0.335  split-half c*: spearman=0.83 top10% overlap=0.62 (full-set top10% n=26)
+[33;1m2026-10-30 23:59:20,410 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+PullCube-v1          states=256 mean q=0.928 c*: median=0.0000 p90=0.0057 KL nats: median=0.029 p90=0.424  split-half c*: spearman=0.91 top10% overlap=0.77 (full-set top10% n=26)
+PickCube-v1          states=256 mean q=0.887 c*: median=0.0021 p90=0.0114 KL nats: median=0.146 p90=0.598  split-half c*: spearman=0.72 top10% overlap=0.77 (full-set top10% n=26)
+StackCube-v1         states=256 mean q=0.549 c*: median=0.0056 p90=0.0266 KL nats: median=0.455 p90=1.052  split-half c*: spearman=0.59 top10% overlap=0.31 (full-set top10% n=26)
+[33;1m2026-10-31 00:01:12,595 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:01:12,665 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+PlaceSphere-v1       states=256 mean q=0.542 c*: median=0.0050 p90=0.0383 KL nats: median=0.504 p90=1.367  split-half c*: spearman=0.53 top10% overlap=0.54 (full-set top10% n=26)
+PokeCube-v1          states=256 mean q=0.884 c*: median=0.0019 p90=0.0138 KL nats: median=0.157 p90=0.746  split-half c*: spearman=0.83 top10% overlap=0.69 (full-set top10% n=26)
+LiftPegUpright-v1    states=256 mean q=0.767 c*: median=0.0047 p90=0.0225 KL nats: median=0.307 p90=0.997  split-half c*: spearman=0.70 top10% overlap=0.65 (full-set top10% n=26)
+[33;1m2026-10-31 00:03:23,361 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:03:25,127 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:03:25,189 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+PullCubeTool-v1      states=256 mean q=0.002 c*: median=0.0000 p90=0.0000 KL nats: median=0.000 p90=0.000  split-half c*: spearman=1.00 top10% overlap=1.00 (full-set top10% n=256)
+saved /home/zhr/pve/data/labels.pt
+LABELS_DONE 00:05:46
+/home/zhr/pve/.venv/lib/python3.11/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/home/zhr/pve/.venv/lib/python3.11/site-packages/numba/np/ufunc/parallel.py:373: NumbaWarning: The TBB threading layer requires TBB version 2021 update 6 or later i.e., TBB_INTERFACE_VERSION >= 12060. Found TBB_INTERFACE_VERSION = 12050. The TBB threading layer is disabled.
+  warnings.warn(problem)
+saved /home/zhr/pve/figures/latent_umap.png
+saved /home/zhr/pve/figures/latent_pca.png
+/home/zhr/pve/.venv/lib/python3.11/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+saved /home/zhr/pve/figures/latent_criticality.png
+PLOT2_DONE 00:07:33
+LABELS_END rc=0 00:07:33

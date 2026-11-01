@@ -1,0 +1,50 @@
+{
+ "old_expert": 0.9921875,
+ "runs": {
+  "runs/protect_c/runs/stack_nsa16_s2/ckpt_512000.pt": {
+   "old_head": 0.99609375,
+   "new_head": 0.9765625,
+   "moved": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "runs/protect_c/runs/stack_nsa16_s2/ckpt_1024000.pt": {
+   "old_head": 0.99609375,
+   "new_head": 0.9765625,
+   "moved": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "runs/protect_c/runs/stack_nsa16_s2/ckpt_1536000.pt": {
+   "old_head": 0.99609375,
+   "new_head": 0.91015625,
+   "moved": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "runs/protect_c/runs/stack_nsa16_s2/ckpt_2048000.pt": {
+   "old_head": 0.99609375,
+   "new_head": 0.86328125,
+   "moved": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "runs/protect_c/runs/stack_nsa16_s2/final_ckpt.pt": {
+   "old_head": 0.99609375,
+   "new_head": 0.859375,
+   "moved": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ }
+}

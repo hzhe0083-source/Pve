@@ -1,0 +1,2 @@
+[33;1m2026-10-31 16:03:52,908 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+PlaceCube-v1 states visited by the source: probe fires on 0.716, hand-written region 0.602; P(region | fires) 0.837, P(fires | region) 0.995

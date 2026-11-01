@@ -1,0 +1,24 @@
+PROT_START 14:50:19 dell-5090 jobs=16
+DONE place_head_s1
+DONE place_monitor_s1
+DONE place_monitor_s2
+DONE place_head_s2
+DONE place_monitor_s3
+DONE place_head_s3
+DONE place_monitor_s4
+DONE place_head_s4
+DONE place_monitor_s5
+DONE place_head_s5
+DONE place_monitor_s6
+EXIT 75 place_head_s6
+EXIT 75 place_monitor_s7
+EXIT 75 place_head_s7
+EXIT 75 place_monitor_s8
+DONE place_head_s8
+PROT_END 18:40:43
+PROT_START 18:45:43 dell-5090 jobs=4
+DONE place_head_s6
+DONE place_monitor_s7
+DONE place_head_s7
+DONE place_monitor_s8
+PROT_END 18:54:33

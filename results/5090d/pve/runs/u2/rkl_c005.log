@@ -1,0 +1,15 @@
+iter 1 step 0 eval success_once=0.000 lam=0.050
+iter 3 step 81920 eval success_once=0.000 lam=0.047
+iter 5 step 163840 eval success_once=0.000 lam=0.045
+iter 7 step 245760 eval success_once=0.008 lam=0.042
+iter 9 step 327680 eval success_once=0.000 lam=0.039
+iter 11 step 409600 eval success_once=0.055 lam=0.036
+iter 13 step 491520 eval success_once=0.000 lam=0.034
+iter 15 step 573440 eval success_once=0.141 lam=0.031
+iter 17 step 655360 eval success_once=0.438 lam=0.028
+iter 19 step 737280 eval success_once=0.680 lam=0.025
+iter 21 step 819200 eval success_once=0.797 lam=0.023
+iter 23 step 901120 eval success_once=0.953 lam=0.020
+iter 25 step 983040 eval success_once=0.977 lam=0.017
+early stop: reached 0.9
+done rkl_c005 steps=983040 wall=162s SPS=6053

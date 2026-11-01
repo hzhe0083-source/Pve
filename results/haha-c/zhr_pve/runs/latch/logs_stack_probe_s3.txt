@@ -1,0 +1,29 @@
+iter 1 step 0 eval success_once=0.000 lam=0.000
+iter 3 step 102400 eval success_once=0.000 lam=0.000
+iter 5 step 204800 eval success_once=0.000 lam=0.000
+iter 7 step 307200 eval success_once=0.000 lam=0.000
+iter 9 step 409600 eval success_once=0.000 lam=0.000
+iter 11 step 512000 eval success_once=0.000 lam=0.000
+iter 13 step 614400 eval success_once=0.000 lam=0.000
+iter 15 step 716800 eval success_once=0.004 lam=0.000
+iter 17 step 819200 eval success_once=0.055 lam=0.000
+iter 19 step 921600 eval success_once=0.160 lam=0.000
+iter 21 step 1024000 eval success_once=0.344 lam=0.000
+iter 23 step 1126400 eval success_once=0.488 lam=0.000
+iter 25 step 1228800 eval success_once=0.469 lam=0.000
+iter 27 step 1331200 eval success_once=0.625 lam=0.000
+iter 29 step 1433600 eval success_once=0.707 lam=0.000
+iter 31 step 1536000 eval success_once=0.676 lam=0.000
+iter 33 step 1638400 eval success_once=0.750 lam=0.000
+iter 35 step 1740800 eval success_once=0.781 lam=0.000
+iter 37 step 1843200 eval success_once=0.777 lam=0.000
+iter 39 step 1945600 eval success_once=0.844 lam=0.000
+iter 41 step 2048000 eval success_once=0.875 lam=0.000
+iter 43 step 2150400 eval success_once=0.863 lam=0.000
+iter 45 step 2252800 eval success_once=0.895 lam=0.000
+iter 47 step 2355200 eval success_once=0.875 lam=0.000
+iter 49 step 2457600 eval success_once=0.902 lam=0.000
+iter 51 step 2560000 eval success_once=0.910 lam=0.000
+iter 53 step 2662400 eval success_once=0.914 lam=0.000
+early stop: reached 0.9
+done stack_probe_s3 steps=2662400 wall=286s SPS=9305

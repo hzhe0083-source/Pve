@@ -1,0 +1,22 @@
+13:18:15 stack_fncl_s1 ok
+13:25:15 stack_fnbank_s1 ok
+13:30:45 stack_fncl_w5_s1 ok
+13:34:45 stack_klcl1_s1 ok
+13:40:15 stack_monitor_s1 ok
+13:45:16 stack_klclp1_s1 ok
+13:49:46 stack_klclp3_s1 ok
+13:54:36 stack_monitor_s2 ok
+14:01:16 stack_fnbank_s2 ok
+14:07:16 stack_fncl_s2 ok
+14:08:46 stack_fncl_w5_s2 ok
+14:12:16 stack_klclp1_s3 ok
+14:29:57 stack_klcl1_s2 ok
+14:34:27 stack_klclp1_s2 ok
+14:39:27 stack_klclp3_s2 ok
+14:42:27 stack_monitor_s3 ok
+14:45:27 stack_fnbank_s3 ok
+14:46:57 stack_fncl_s3 ok
+14:48:27 stack_fncl_w5_s3 ok
+14:49:57 stack_klcl1_s3 ok
+14:51:27 stack_klclp3_s3 ok
+RET_END 14:52:27

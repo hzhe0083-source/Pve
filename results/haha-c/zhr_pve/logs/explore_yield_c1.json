@@ -1,0 +1,56 @@
+{
+ "source": {
+  "success": 0.0,
+  "released_at_goal": 0.000732421875,
+  "dropped_before_goal": 0.847412109375,
+  "steps_held_at_goal_per_episode": 29.247314453125
+ },
+ "global:0.6": {
+  "success": 0.009765625,
+  "released_at_goal": 0.4306640625,
+  "dropped_before_goal": 0.9091796875,
+  "steps_held_at_goal_per_episode": 26.341552734375
+ },
+ "global:1.0": {
+  "success": 0.109130859375,
+  "released_at_goal": 0.659912109375,
+  "dropped_before_goal": 0.85888671875,
+  "steps_held_at_goal_per_episode": 16.173095703125
+ },
+ "seam:0.6": {
+  "success": 0.009033203125,
+  "released_at_goal": 0.446533203125,
+  "dropped_before_goal": 0.90380859375,
+  "steps_held_at_goal_per_episode": 28.773681640625
+ },
+ "seam:1.0": {
+  "success": 0.146728515625,
+  "released_at_goal": 0.91259765625,
+  "dropped_before_goal": 0.8740234375,
+  "steps_held_at_goal_per_episode": 26.04736328125
+ },
+ "boost:1.2": {
+  "success": 0.10888671875,
+  "released_at_goal": 0.88232421875,
+  "dropped_before_goal": 0.8935546875,
+  "steps_held_at_goal_per_episode": 26.75244140625
+ },
+ "pseam:0.6": {
+  "success": 0.0078125,
+  "released_at_goal": 0.4599609375,
+  "dropped_before_goal": 0.929931640625,
+  "steps_held_at_goal_per_episode": 33.092041015625
+ },
+ "pseam:1.0": {
+  "success": 0.132568359375,
+  "released_at_goal": 0.8779296875,
+  "dropped_before_goal": 0.850830078125,
+  "steps_held_at_goal_per_episode": 28.901123046875
+ },
+ "pboost:1.2": {
+  "success": 0.093994140625,
+  "released_at_goal": 0.85791015625,
+  "dropped_before_goal": 0.85791015625,
+  "steps_held_at_goal_per_episode": 29.822998046875
+ }
+}

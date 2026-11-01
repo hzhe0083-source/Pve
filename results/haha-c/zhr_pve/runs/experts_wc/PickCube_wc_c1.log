@@ -1,0 +1,17 @@
+[33;1m2026-10-31 13:41:41,701 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+Downloading PhysX GPU library to /home/zhaobo/.sapien/physx/105.1-physx-5.3.1.patch0 from Github. This can take several minutes. If it fails to download, please manually download fhttps://github.com/sapien-sim/physx-precompiled/releases/download/105.1-physx-5.3.1.patch0/linux-so.zip and unzip at /home/zhaobo/.sapien/physx/105.1-physx-5.3.1.patch0.
+Download complete.
+[33;1m2026-10-31 13:42:11,420 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+iter 1 step 0 eval success_once=0.000 lam=0.000
+iter 11 step 512000 eval success_once=0.000 lam=0.000
+iter 21 step 1024000 eval success_once=0.031 lam=0.000
+iter 31 step 1536000 eval success_once=0.008 lam=0.000
+iter 41 step 2048000 eval success_once=0.172 lam=0.000
+iter 51 step 2560000 eval success_once=0.227 lam=0.000
+iter 61 step 3072000 eval success_once=0.336 lam=0.000
+iter 71 step 3584000 eval success_once=0.992 lam=0.000
+iter 81 step 4096000 eval success_once=0.930 lam=0.000
+iter 91 step 4608000 eval success_once=0.992 lam=0.000
+iter 101 step 5120000 eval success_once=1.000 lam=0.000
+early stop: reached 0.95
+done PickCube_wc_c1 steps=5120000 wall=204s SPS=25145

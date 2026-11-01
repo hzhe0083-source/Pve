@@ -1,0 +1,8 @@
+iter 1 step 0 eval success_once=0.000 lam=0.500
+iter 3 step 81920 eval success_once=0.516 lam=0.473
+iter 5 step 163840 eval success_once=0.953 lam=0.445
+iter 7 step 245760 eval success_once=0.836 lam=0.418
+iter 9 step 327680 eval success_once=0.922 lam=0.390
+iter 11 step 409600 eval success_once=0.953 lam=0.363
+early stop: reached 0.9
+done fkl_c05_notkl steps=409600 wall=111s SPS=3704

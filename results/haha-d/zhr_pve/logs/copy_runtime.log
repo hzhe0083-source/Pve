@@ -1,0 +1,14 @@
+COPY_START 20:19:16
+COPIED 20:20:07 25G
+python 3.11.15 /home/zhaobo/zhr_pve/a2r_env/RoboDojo
+isaaclab         /home/zhaobo/zhr_pve/a2r_env/src/IsaacLab/source/isaaclab/isaaclab/__init__.py
+isaaclab_tasks   /home/zhaobo/zhr_pve/a2r_env/src/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/__init__.py
+isaaclab_assets  /home/zhaobo/zhr_pve/a2r_env/src/IsaacLab/source/isaaclab_assets/isaaclab_assets/__init__.py
+isaaclab_rl      /home/zhaobo/zhr_pve/a2r_env/src/IsaacLab/source/isaaclab_rl/isaaclab_rl/__init__.py
+isaaclab_mimic   /home/zhaobo/zhr_pve/a2r_env/src/IsaacLab/source/isaaclab_mimic/isaaclab_mimic/__init__.py
+isaaclab_contrib /home/zhaobo/zhr_pve/a2r_env/src/IsaacLab/source/isaaclab_contrib/isaaclab_contrib/__init__.py
+curobo           /home/zhaobo/zhr_pve/a2r_env/src/curobo/curobo/__init__.py
+XPolicyLab       /home/zhaobo/zhr_pve/a2r_env/src/XPolicyLab/XPolicyLab.py
+isaacsim         /home/zhaobo/zhr_pve/a2r_env/RoboDojo/lib/python3.11/site-packages/isaacsim/__init__.py
+torch            /home/zhaobo/zhr_pve/a2r_env/RoboDojo/lib/python3.11/site-packages/torch/__init__.py
+COPY_OK 20:20:08

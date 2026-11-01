@@ -1,0 +1,11 @@
+iter 1 step 0 eval success_once=0.000 lam=0.000
+iter 11 step 512000 eval success_once=0.000 lam=0.000
+iter 21 step 1024000 eval success_once=0.070 lam=0.000
+iter 31 step 1536000 eval success_once=0.484 lam=0.000
+iter 41 step 2048000 eval success_once=0.773 lam=0.000
+iter 51 step 2560000 eval success_once=0.906 lam=0.000
+iter 61 step 3072000 eval success_once=0.898 lam=0.000
+iter 71 step 3584000 eval success_once=0.977 lam=0.000
+iter 81 step 4096000 eval success_once=0.984 lam=0.000
+early stop: reached 0.9
+done stack_floor_global06_s3_c1 steps=4096000 wall=978s SPS=4188

@@ -1,0 +1,42 @@
+{
+ "shuffle@125e5": {
+  "mean": {
+   "reach": 0.998,
+   "grasp": 1.0,
+   "lift": 1.0,
+   "at_goal": 0.277,
+   "release_at_goal": 0.0,
+   "success": 0.0,
+   "knock_B": 0.41
+  },
+  "sample": {
+   "reach": 0.979,
+   "grasp": 0.99,
+   "lift": 0.857,
+   "at_goal": 0.451,
+   "release_at_goal": 0.559,
+   "success": 0.223,
+   "knock_B": 0.764
+  }
+ },
+ "shuffle_final": {
+  "mean": {
+   "reach": 1.0,
+   "grasp": 1.0,
+   "lift": 0.998,
+   "at_goal": 0.1,
+   "release_at_goal": 0.998,
+   "success": 0.998,
+   "knock_B": 0.166
+  },
+  "sample": {
+   "reach": 1.0,
+   "grasp": 1.0,
+   "lift": 1.0,
+   "at_goal": 0.379,
+   "release_at_goal": 0.99,
+   "success": 0.924,
+   "knock_B": 0.332
+  }
+ }
+}

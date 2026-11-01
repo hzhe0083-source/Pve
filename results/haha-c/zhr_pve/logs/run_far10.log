@@ -1,0 +1,26 @@
+FAR_START 18:35:48 dist=0.10 doses=0.6 1.0 jobs=24
+DONE far10_frozen_s1
+DONE far10_ft_s1
+DONE far10_global06_s1
+DONE far10_seam06_s1
+DONE far10_probe06_s1
+DONE far10_global10_s1
+DONE far10_seam10_s1
+DONE far10_probe10_s1
+DONE far10_frozen_s2
+DONE far10_ft_s2
+DONE far10_global06_s2
+DONE far10_seam06_s2
+DONE far10_probe06_s2
+DONE far10_global10_s2
+DONE far10_seam10_s2
+DONE far10_probe10_s2
+DONE far10_frozen_s3
+DONE far10_ft_s3
+DONE far10_global06_s3
+DONE far10_seam06_s3
+DONE far10_probe06_s3
+DONE far10_global10_s3
+DONE far10_seam10_s3
+DONE far10_probe10_s3
+FAR_END 19:21:22

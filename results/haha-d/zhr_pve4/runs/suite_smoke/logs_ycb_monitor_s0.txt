@@ -1,0 +1,5 @@
+/home/zhaobo/zhr_pve/.venv/lib/python3.10/site-packages/torch/autograd/graph.py:829: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:179.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+iter 1 step 0 eval success_once=0.672 lam=0.000
+halt at 102400
+done ycb_monitor_s0 steps=102400 wall=18s SPS=5630

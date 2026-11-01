@@ -1,0 +1,1 @@
+/home/zhaobo/zhr_pve/scripts/with_gpu_mem.sh: 行 12: python: 未找到命令

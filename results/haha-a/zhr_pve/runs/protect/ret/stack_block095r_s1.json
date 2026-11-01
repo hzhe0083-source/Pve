@@ -1,0 +1,41 @@
+{
+ "old_expert": 0.9921875,
+ "runs": {
+  "runs/protect/runs/stack_block095r_s1/ckpt_512000.pt": {
+   "old_head": 0.94921875,
+   "new_head": 0.84765625,
+   "moved": [
+    0.03997620940208435,
+    0.06212523952126503,
+    0.05458745360374451
+   ]
+  },
+  "runs/protect/runs/stack_block095r_s1/ckpt_1024000.pt": {
+   "old_head": 0.984375,
+   "new_head": 0.9296875,
+   "moved": [
+    0.07037346065044403,
+    0.0918264389038086,
+    0.09319183230400085
+   ]
+  },
+  "runs/protect/runs/stack_block095r_s1/ckpt_1536000.pt": {
+   "old_head": 0.86328125,
+   "new_head": 0.8125,
+   "moved": [
+    0.10987501591444016,
+    0.13217592239379883,
+    0.126779705286026
+   ]
+  },
+  "runs/protect/runs/stack_block095r_s1/final_ckpt.pt": {
+   "old_head": 0.8671875,
+   "new_head": 0.8125,
+   "moved": [
+    0.10987501591444016,
+    0.13217592239379883,
+    0.126779705286026
+   ]
+  }
+ }
+}

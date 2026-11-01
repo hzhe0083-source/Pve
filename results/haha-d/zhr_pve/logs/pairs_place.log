@@ -1,0 +1,24 @@
+PAIRS_START 15:46:59 on zhaobo40901-Precision-3680: place
+PAIR place floor=1.0 16:05:20
+DONE place_floor_global_s1
+DONE place_floor_global_s2
+DONE place_ft_s2
+DONE place_floor_seam_s2
+DONE place_floor_probe_s2
+DONE place_frozen_s3
+DONE place_ft_s3
+DONE place_floor_global_s3
+DONE place_floor_seam_s3
+DONE place_floor_probe_s3
+DONE place_kick_s2
+DONE place_frozen_s4
+DONE place_ft_s4
+DONE place_floor_global_s4
+DONE place_floor_seam_s4
+DONE place_kick_s3
+DONE place_scratch_floor_s3
+DONE place_floor_probe_s4
+DONE place_scratch_floor_s4
+DONE place_kick_s4
+PAIR_END place 18:49:31
+PAIRS_END 18:49:31

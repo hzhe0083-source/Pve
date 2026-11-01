@@ -1,0 +1,29 @@
+WHY_START 16:46:52 zhaobo40901-Precision-3680 jobs=24
+DONE place_nsa64_s1
+DONE place_npr_s1
+DONE place_rp_s1
+DONE place_nsa64_s2
+DONE place_npr_s2
+DONE place_rp_s2
+DONE place_nsa64_s3
+DONE place_npr_s3
+DONE place_rp_s3
+DONE place_nsa64_s4
+DONE place_npr_s4
+DONE place_rp_s4
+DONE place_nsa64_s5
+DONE place_npr_s5
+EXIT 75 place_rp_s5
+DONE place_npr_s6
+DONE place_nsa64_s6
+DONE place_rp_s6
+DONE place_nsa64_s7
+DONE place_npr_s7
+DONE place_rp_s7
+DONE place_nsa64_s8
+DONE place_npr_s8
+EXIT 75 place_rp_s8
+WHY_END 18:27:34
+WHY_START 18:27:43 zhaobo40901-Precision-3680 jobs=1
+DONE place_rp_s8
+WHY_END 18:32:24

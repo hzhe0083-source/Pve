@@ -1,0 +1,13 @@
+bit_old: done bit_old steps=51200 wall=35s SPS=1473
+bit_old2: done bit_old2 steps=51200 wall=26s SPS=2001
+bit_new: done bit_new steps=51200 wall=28s SPS=1805
+gate_time: done gate_time steps=51200 wall=23s SPS=2235
+gate_grasp: done gate_grasp steps=51200 wall=17s SPS=3015
+warm: done warm steps=51200 wall=20s SPS=2518
+old code run twice, train.csv identical: True
+DEFAULT PATH: train.csv common columns identical: True | weights max diff: 0.0 | eval identical: True
+gate_time iterations 4 | seam_frac [0.645, 0.637, 0.651, 0.644] | applied gripper std [0.742, 0.737, 0.748, 0.744]
+gate_grasp iterations 4 | seam_frac [0.708, 0.694, 0.677, 0.674] | applied gripper std [0.787, 0.779, 0.769, 0.767]
+warm iterations 4 | seam_frac ['nan', 'nan', 'nan', 'nan'] | applied gripper std [0.6, 0.6, 0.6, 0.6]
+critic warm-up: actor max change after the 3 value-only iterations (must be 0): 0.0 | critic changed: True
+BITCHECK_END

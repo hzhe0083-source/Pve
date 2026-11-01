@@ -1,0 +1,13 @@
+iter 1 step 0 eval success_once=0.000 lam=0.500
+iter 3 step 81920 eval success_once=0.000 lam=0.484
+iter 5 step 163840 eval success_once=0.008 lam=0.467
+iter 7 step 245760 eval success_once=0.945 lam=0.451
+iter 9 step 327680 eval success_once=0.852 lam=0.434
+iter 11 step 409600 eval success_once=0.844 lam=0.418
+iter 13 step 491520 eval success_once=0.820 lam=0.402
+iter 15 step 573440 eval success_once=0.883 lam=0.385
+iter 17 step 655360 eval success_once=0.891 lam=0.369
+iter 19 step 737280 eval success_once=0.938 lam=0.352
+iter 21 step 819200 eval success_once=0.992 lam=0.336
+early stop: reached 0.9
+done t0_gate_contact_s1 steps=819200 wall=80s SPS=10235

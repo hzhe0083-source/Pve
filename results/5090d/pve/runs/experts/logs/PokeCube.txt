@@ -1,0 +1,1374 @@
+Running training
+####
+args.num_iterations=488 args.num_envs=1024 args.num_eval_envs=16
+args.minibatch_size=640 args.batch_size=20480 args.update_epochs=8
+####
+Epoch: 1, global_step=0
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=0.0
+eval_return_mean=3.0727648735046387
+eval_episode_len_mean=50.0
+eval_reward_mean=0.06145529821515083
+eval_success_at_end_mean=0.0
+model saved to runs/PokeCube/ckpt_1.pt
+SPS: 4507
+Epoch: 2, global_step=20480
+SPS: 6167
+Epoch: 3, global_step=40960
+SPS: 7033
+Epoch: 4, global_step=61440
+SPS: 7428
+Epoch: 5, global_step=81920
+SPS: 7634
+Epoch: 6, global_step=102400
+SPS: 7808
+Epoch: 7, global_step=122880
+SPS: 8066
+Epoch: 8, global_step=143360
+SPS: 8171
+Epoch: 9, global_step=163840
+SPS: 8234
+Epoch: 10, global_step=184320
+SPS: 8292
+Epoch: 11, global_step=204800
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=0.0
+eval_return_mean=7.304740905761719
+eval_episode_len_mean=50.0
+eval_reward_mean=0.14609482884407043
+eval_success_at_end_mean=0.0
+model saved to runs/PokeCube/ckpt_11.pt
+SPS: 7698
+Epoch: 12, global_step=225280
+SPS: 7828
+Epoch: 13, global_step=245760
+SPS: 7920
+Epoch: 14, global_step=266240
+SPS: 8015
+Epoch: 15, global_step=286720
+SPS: 8070
+Epoch: 16, global_step=307200
+SPS: 8140
+Epoch: 17, global_step=327680
+SPS: 8196
+Epoch: 18, global_step=348160
+SPS: 8254
+Epoch: 19, global_step=368640
+SPS: 8316
+Epoch: 20, global_step=389120
+SPS: 8340
+Epoch: 21, global_step=409600
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=0.0
+eval_return_mean=8.420294761657715
+eval_episode_len_mean=50.0
+eval_reward_mean=0.16840589046478271
+eval_success_at_end_mean=0.0
+model saved to runs/PokeCube/ckpt_21.pt
+SPS: 8012
+Epoch: 22, global_step=430080
+SPS: 8091
+Epoch: 23, global_step=450560
+SPS: 8128
+Epoch: 24, global_step=471040
+SPS: 8175
+Epoch: 25, global_step=491520
+SPS: 8168
+Epoch: 26, global_step=512000
+SPS: 8217
+Epoch: 27, global_step=532480
+SPS: 8246
+Epoch: 28, global_step=552960
+SPS: 8249
+Epoch: 29, global_step=573440
+SPS: 8303
+Epoch: 30, global_step=593920
+SPS: 8272
+Epoch: 31, global_step=614400
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=0.0
+eval_return_mean=16.0092716217041
+eval_episode_len_mean=50.0
+eval_reward_mean=0.32018542289733887
+eval_success_at_end_mean=0.0
+model saved to runs/PokeCube/ckpt_31.pt
+SPS: 8044
+Epoch: 32, global_step=634880
+SPS: 8059
+Epoch: 33, global_step=655360
+SPS: 8070
+Epoch: 34, global_step=675840
+SPS: 8106
+Epoch: 35, global_step=696320
+SPS: 8098
+Epoch: 36, global_step=716800
+SPS: 8120
+Epoch: 37, global_step=737280
+SPS: 8110
+Epoch: 38, global_step=757760
+SPS: 8103
+Epoch: 39, global_step=778240
+SPS: 8110
+Epoch: 40, global_step=798720
+SPS: 8084
+Epoch: 41, global_step=819200
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=0.0
+eval_return_mean=22.09137535095215
+eval_episode_len_mean=50.0
+eval_reward_mean=0.4418275058269501
+eval_success_at_end_mean=0.0
+model saved to runs/PokeCube/ckpt_41.pt
+SPS: 7920
+Epoch: 42, global_step=839680
+SPS: 7918
+Epoch: 43, global_step=860160
+SPS: 7933
+Epoch: 44, global_step=880640
+SPS: 7953
+Epoch: 45, global_step=901120
+SPS: 7940
+Epoch: 46, global_step=921600
+SPS: 7972
+Epoch: 47, global_step=942080
+SPS: 7974
+Epoch: 48, global_step=962560
+SPS: 7986
+Epoch: 49, global_step=983040
+SPS: 7994
+Epoch: 50, global_step=1003520
+SPS: 7975
+Epoch: 51, global_step=1024000
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=0.0625
+eval_return_mean=22.61882781982422
+eval_episode_len_mean=50.0
+eval_reward_mean=0.4523765444755554
+eval_success_at_end_mean=0.0625
+model saved to runs/PokeCube/ckpt_51.pt
+SPS: 7844
+Epoch: 52, global_step=1044480
+SPS: 7838
+Epoch: 53, global_step=1064960
+SPS: 7848
+Epoch: 54, global_step=1085440
+SPS: 7868
+Epoch: 55, global_step=1105920
+SPS: 7867
+Epoch: 56, global_step=1126400
+SPS: 7885
+Epoch: 57, global_step=1146880
+SPS: 7872
+Epoch: 58, global_step=1167360
+SPS: 7880
+Epoch: 59, global_step=1187840
+SPS: 7893
+Epoch: 60, global_step=1208320
+SPS: 7885
+Epoch: 61, global_step=1228800
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=0.1875
+eval_return_mean=23.625564575195312
+eval_episode_len_mean=50.0
+eval_reward_mean=0.47251129150390625
+eval_success_at_end_mean=0.1875
+model saved to runs/PokeCube/ckpt_61.pt
+SPS: 7789
+Epoch: 62, global_step=1249280
+SPS: 7791
+Epoch: 63, global_step=1269760
+SPS: 7800
+Epoch: 64, global_step=1290240
+SPS: 7811
+Epoch: 65, global_step=1310720
+SPS: 7797
+Epoch: 66, global_step=1331200
+SPS: 7807
+Epoch: 67, global_step=1351680
+SPS: 7807
+Epoch: 68, global_step=1372160
+SPS: 7809
+Epoch: 69, global_step=1392640
+SPS: 7815
+Epoch: 70, global_step=1413120
+SPS: 7813
+Epoch: 71, global_step=1433600
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=0.3125
+eval_return_mean=25.13232421875
+eval_episode_len_mean=50.0
+eval_reward_mean=0.5026465058326721
+eval_success_at_end_mean=0.25
+model saved to runs/PokeCube/ckpt_71.pt
+SPS: 7719
+Epoch: 72, global_step=1454080
+SPS: 7721
+Epoch: 73, global_step=1474560
+SPS: 7734
+Epoch: 74, global_step=1495040
+SPS: 7738
+Epoch: 75, global_step=1515520
+SPS: 7738
+Epoch: 76, global_step=1536000
+SPS: 7748
+Epoch: 77, global_step=1556480
+SPS: 7748
+Epoch: 78, global_step=1576960
+SPS: 7750
+Epoch: 79, global_step=1597440
+SPS: 7752
+Epoch: 80, global_step=1617920
+SPS: 7754
+Epoch: 81, global_step=1638400
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=0.5
+eval_return_mean=28.07974624633789
+eval_episode_len_mean=50.0
+eval_reward_mean=0.5615949034690857
+eval_success_at_end_mean=0.375
+model saved to runs/PokeCube/ckpt_81.pt
+SPS: 7666
+Epoch: 82, global_step=1658880
+SPS: 7664
+Epoch: 83, global_step=1679360
+SPS: 7663
+Epoch: 84, global_step=1699840
+SPS: 7657
+Epoch: 85, global_step=1720320
+SPS: 7655
+Epoch: 86, global_step=1740800
+SPS: 7657
+Epoch: 87, global_step=1761280
+SPS: 7658
+Epoch: 88, global_step=1781760
+SPS: 7681
+Epoch: 89, global_step=1802240
+SPS: 7680
+Epoch: 90, global_step=1822720
+SPS: 7682
+Epoch: 91, global_step=1843200
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=0.875
+eval_return_mean=35.73284912109375
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7146569490432739
+eval_success_at_end_mean=0.5625
+model saved to runs/PokeCube/ckpt_91.pt
+SPS: 7599
+Epoch: 92, global_step=1863680
+SPS: 7595
+Epoch: 93, global_step=1884160
+SPS: 7592
+Epoch: 94, global_step=1904640
+SPS: 7591
+Epoch: 95, global_step=1925120
+SPS: 7587
+Epoch: 96, global_step=1945600
+SPS: 7582
+Epoch: 97, global_step=1966080
+SPS: 7619
+Epoch: 98, global_step=1986560
+SPS: 7632
+Epoch: 99, global_step=2007040
+SPS: 7640
+Epoch: 100, global_step=2027520
+SPS: 7657
+Epoch: 101, global_step=2048000
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=0.875
+eval_return_mean=34.32714080810547
+eval_episode_len_mean=50.0
+eval_reward_mean=0.686542809009552
+eval_success_at_end_mean=0.6875
+model saved to runs/PokeCube/ckpt_101.pt
+SPS: 7587
+Epoch: 102, global_step=2068480
+SPS: 7595
+Epoch: 103, global_step=2088960
+SPS: 7609
+Epoch: 104, global_step=2109440
+SPS: 7610
+Epoch: 105, global_step=2129920
+SPS: 7613
+Epoch: 106, global_step=2150400
+SPS: 7613
+Epoch: 107, global_step=2170880
+SPS: 7632
+Epoch: 108, global_step=2191360
+SPS: 7644
+Epoch: 109, global_step=2211840
+SPS: 7661
+Epoch: 110, global_step=2232320
+SPS: 7665
+Epoch: 111, global_step=2252800
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=37.4783935546875
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7495678067207336
+eval_success_at_end_mean=0.75
+model saved to runs/PokeCube/ckpt_111.pt
+SPS: 7618
+Epoch: 112, global_step=2273280
+SPS: 7642
+Epoch: 113, global_step=2293760
+SPS: 7659
+Epoch: 114, global_step=2314240
+SPS: 7683
+Epoch: 115, global_step=2334720
+SPS: 7700
+Epoch: 116, global_step=2355200
+SPS: 7698
+Epoch: 117, global_step=2375680
+SPS: 7716
+Epoch: 118, global_step=2396160
+SPS: 7737
+Epoch: 119, global_step=2416640
+SPS: 7738
+Epoch: 120, global_step=2437120
+SPS: 7759
+Epoch: 121, global_step=2457600
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=36.787994384765625
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7357599139213562
+eval_success_at_end_mean=0.9375
+model saved to runs/PokeCube/ckpt_121.pt
+SPS: 7713
+Epoch: 122, global_step=2478080
+SPS: 7738
+Epoch: 123, global_step=2498560
+SPS: 7758
+Epoch: 124, global_step=2519040
+SPS: 7782
+Epoch: 125, global_step=2539520
+SPS: 7803
+Epoch: 126, global_step=2560000
+SPS: 7821
+Epoch: 127, global_step=2580480
+SPS: 7842
+Epoch: 128, global_step=2600960
+SPS: 7860
+Epoch: 129, global_step=2621440
+SPS: 7880
+Epoch: 130, global_step=2641920
+SPS: 7902
+Epoch: 131, global_step=2662400
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.520965576171875
+eval_episode_len_mean=50.0
+eval_reward_mean=0.790419340133667
+eval_success_at_end_mean=0.9375
+model saved to runs/PokeCube/ckpt_131.pt
+SPS: 7863
+Epoch: 132, global_step=2682880
+SPS: 7877
+Epoch: 133, global_step=2703360
+SPS: 7891
+Epoch: 134, global_step=2723840
+SPS: 7906
+Epoch: 135, global_step=2744320
+SPS: 7918
+Epoch: 136, global_step=2764800
+SPS: 7935
+Epoch: 137, global_step=2785280
+SPS: 7951
+Epoch: 138, global_step=2805760
+SPS: 7954
+Epoch: 139, global_step=2826240
+SPS: 7971
+Epoch: 140, global_step=2846720
+SPS: 7979
+Epoch: 141, global_step=2867200
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=0.9375
+eval_return_mean=36.32191467285156
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7264383435249329
+eval_success_at_end_mean=0.9375
+model saved to runs/PokeCube/ckpt_141.pt
+SPS: 7935
+Epoch: 142, global_step=2887680
+SPS: 7946
+Epoch: 143, global_step=2908160
+SPS: 7967
+Epoch: 144, global_step=2928640
+SPS: 7986
+Epoch: 145, global_step=2949120
+SPS: 8005
+Epoch: 146, global_step=2969600
+SPS: 8024
+Epoch: 147, global_step=2990080
+SPS: 8040
+Epoch: 148, global_step=3010560
+SPS: 8053
+Epoch: 149, global_step=3031040
+SPS: 8070
+Epoch: 150, global_step=3051520
+SPS: 8090
+Epoch: 151, global_step=3072000
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.08387756347656
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7816774845123291
+eval_success_at_end_mean=0.9375
+model saved to runs/PokeCube/ckpt_151.pt
+SPS: 8054
+Epoch: 152, global_step=3092480
+SPS: 8051
+Epoch: 153, global_step=3112960
+SPS: 8065
+Epoch: 154, global_step=3133440
+SPS: 8077
+Epoch: 155, global_step=3153920
+SPS: 8094
+Epoch: 156, global_step=3174400
+SPS: 8109
+Epoch: 157, global_step=3194880
+SPS: 8126
+Epoch: 158, global_step=3215360
+SPS: 8135
+Epoch: 159, global_step=3235840
+SPS: 8137
+Epoch: 160, global_step=3256320
+SPS: 8151
+Epoch: 161, global_step=3276800
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.561161041259766
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7912232875823975
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_161.pt
+SPS: 8116
+Epoch: 162, global_step=3297280
+SPS: 8130
+Epoch: 163, global_step=3317760
+SPS: 8139
+Epoch: 164, global_step=3338240
+SPS: 8155
+Epoch: 165, global_step=3358720
+SPS: 8175
+Epoch: 166, global_step=3379200
+SPS: 8191
+Epoch: 167, global_step=3399680
+SPS: 8207
+Epoch: 168, global_step=3420160
+SPS: 8221
+Epoch: 169, global_step=3440640
+SPS: 8238
+Epoch: 170, global_step=3461120
+SPS: 8251
+Epoch: 171, global_step=3481600
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.39776611328125
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7879554033279419
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_171.pt
+SPS: 8219
+Epoch: 172, global_step=3502080
+SPS: 8216
+Epoch: 173, global_step=3522560
+SPS: 8229
+Epoch: 174, global_step=3543040
+SPS: 8242
+Epoch: 175, global_step=3563520
+SPS: 8258
+Epoch: 176, global_step=3584000
+SPS: 8268
+Epoch: 177, global_step=3604480
+SPS: 8281
+Epoch: 178, global_step=3624960
+SPS: 8295
+Epoch: 179, global_step=3645440
+SPS: 8309
+Epoch: 180, global_step=3665920
+SPS: 8324
+Epoch: 181, global_step=3686400
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.112152099609375
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8022431135177612
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_181.pt
+SPS: 8292
+Epoch: 182, global_step=3706880
+SPS: 8308
+Epoch: 183, global_step=3727360
+SPS: 8322
+Epoch: 184, global_step=3747840
+SPS: 8318
+Epoch: 185, global_step=3768320
+SPS: 8332
+Epoch: 186, global_step=3788800
+SPS: 8345
+Epoch: 187, global_step=3809280
+SPS: 8359
+Epoch: 188, global_step=3829760
+SPS: 8374
+Epoch: 189, global_step=3850240
+SPS: 8387
+Epoch: 190, global_step=3870720
+SPS: 8400
+Epoch: 191, global_step=3891200
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.12211608886719
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8024423122406006
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_191.pt
+SPS: 8368
+Epoch: 192, global_step=3911680
+SPS: 8382
+Epoch: 193, global_step=3932160
+SPS: 8395
+Epoch: 194, global_step=3952640
+SPS: 8404
+Epoch: 195, global_step=3973120
+SPS: 8420
+Epoch: 196, global_step=3993600
+SPS: 8433
+Epoch: 197, global_step=4014080
+SPS: 8446
+Epoch: 198, global_step=4034560
+SPS: 8458
+Epoch: 199, global_step=4055040
+SPS: 8470
+Epoch: 200, global_step=4075520
+SPS: 8480
+Epoch: 201, global_step=4096000
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.765625
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7953124642372131
+eval_success_at_end_mean=0.9375
+model saved to runs/PokeCube/ckpt_201.pt
+SPS: 8449
+Epoch: 202, global_step=4116480
+SPS: 8457
+Epoch: 203, global_step=4136960
+SPS: 8470
+Epoch: 204, global_step=4157440
+SPS: 8477
+Epoch: 205, global_step=4177920
+SPS: 8490
+Epoch: 206, global_step=4198400
+SPS: 8502
+Epoch: 207, global_step=4218880
+SPS: 8513
+Epoch: 208, global_step=4239360
+SPS: 8526
+Epoch: 209, global_step=4259840
+SPS: 8536
+Epoch: 210, global_step=4280320
+SPS: 8543
+Epoch: 211, global_step=4300800
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.44755554199219
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7889511585235596
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_211.pt
+SPS: 8510
+Epoch: 212, global_step=4321280
+SPS: 8519
+Epoch: 213, global_step=4341760
+SPS: 8532
+Epoch: 214, global_step=4362240
+SPS: 8542
+Epoch: 215, global_step=4382720
+SPS: 8554
+Epoch: 216, global_step=4403200
+SPS: 8565
+Epoch: 217, global_step=4423680
+SPS: 8576
+Epoch: 218, global_step=4444160
+SPS: 8588
+Epoch: 219, global_step=4464640
+SPS: 8597
+Epoch: 220, global_step=4485120
+SPS: 8606
+Epoch: 221, global_step=4505600
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.482269287109375
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7896453738212585
+eval_success_at_end_mean=0.9375
+model saved to runs/PokeCube/ckpt_221.pt
+SPS: 8576
+Epoch: 222, global_step=4526080
+SPS: 8586
+Epoch: 223, global_step=4546560
+SPS: 8597
+Epoch: 224, global_step=4567040
+SPS: 8609
+Epoch: 225, global_step=4587520
+SPS: 8619
+Epoch: 226, global_step=4608000
+SPS: 8631
+Epoch: 227, global_step=4628480
+SPS: 8641
+Epoch: 228, global_step=4648960
+SPS: 8650
+Epoch: 229, global_step=4669440
+SPS: 8661
+Epoch: 230, global_step=4689920
+SPS: 8670
+Epoch: 231, global_step=4710400
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.198974609375
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8039795160293579
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_231.pt
+SPS: 8642
+Epoch: 232, global_step=4730880
+SPS: 8652
+Epoch: 233, global_step=4751360
+SPS: 8658
+Epoch: 234, global_step=4771840
+SPS: 8669
+Epoch: 235, global_step=4792320
+SPS: 8680
+Epoch: 236, global_step=4812800
+SPS: 8688
+Epoch: 237, global_step=4833280
+SPS: 8698
+Epoch: 238, global_step=4853760
+SPS: 8709
+Epoch: 239, global_step=4874240
+SPS: 8719
+Epoch: 240, global_step=4894720
+SPS: 8725
+Epoch: 241, global_step=4915200
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.92607116699219
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8185213804244995
+eval_success_at_end_mean=0.9375
+model saved to runs/PokeCube/ckpt_241.pt
+SPS: 8696
+Epoch: 242, global_step=4935680
+SPS: 8706
+Epoch: 243, global_step=4956160
+SPS: 8717
+Epoch: 244, global_step=4976640
+SPS: 8727
+Epoch: 245, global_step=4997120
+SPS: 8737
+Epoch: 246, global_step=5017600
+SPS: 8745
+Epoch: 247, global_step=5038080
+SPS: 8756
+Epoch: 248, global_step=5058560
+SPS: 8769
+Epoch: 249, global_step=5079040
+SPS: 8775
+Epoch: 250, global_step=5099520
+SPS: 8784
+Epoch: 251, global_step=5120000
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=0.9375
+eval_return_mean=38.329376220703125
+eval_episode_len_mean=50.0
+eval_reward_mean=0.766587495803833
+eval_success_at_end_mean=0.9375
+model saved to runs/PokeCube/ckpt_251.pt
+SPS: 8756
+Epoch: 252, global_step=5140480
+SPS: 8765
+Epoch: 253, global_step=5160960
+SPS: 8775
+Epoch: 254, global_step=5181440
+SPS: 8785
+Epoch: 255, global_step=5201920
+SPS: 8795
+Epoch: 256, global_step=5222400
+SPS: 8802
+Epoch: 257, global_step=5242880
+SPS: 8811
+Epoch: 258, global_step=5263360
+SPS: 8821
+Epoch: 259, global_step=5283840
+SPS: 8830
+Epoch: 260, global_step=5304320
+SPS: 8840
+Epoch: 261, global_step=5324800
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.858375549316406
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7971674799919128
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_261.pt
+SPS: 8813
+Epoch: 262, global_step=5345280
+SPS: 8822
+Epoch: 263, global_step=5365760
+SPS: 8830
+Epoch: 264, global_step=5386240
+SPS: 8839
+Epoch: 265, global_step=5406720
+SPS: 8848
+Epoch: 266, global_step=5427200
+SPS: 8858
+Epoch: 267, global_step=5447680
+SPS: 8866
+Epoch: 268, global_step=5468160
+SPS: 8876
+Epoch: 269, global_step=5488640
+SPS: 8885
+Epoch: 270, global_step=5509120
+SPS: 8891
+Epoch: 271, global_step=5529600
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.80347442626953
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8160694241523743
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_271.pt
+SPS: 8861
+Epoch: 272, global_step=5550080
+SPS: 8870
+Epoch: 273, global_step=5570560
+SPS: 8879
+Epoch: 274, global_step=5591040
+SPS: 8885
+Epoch: 275, global_step=5611520
+SPS: 8895
+Epoch: 276, global_step=5632000
+SPS: 8903
+Epoch: 277, global_step=5652480
+SPS: 8913
+Epoch: 278, global_step=5672960
+SPS: 8921
+Epoch: 279, global_step=5693440
+SPS: 8930
+Epoch: 280, global_step=5713920
+SPS: 8939
+Epoch: 281, global_step=5734400
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.914024353027344
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8182804584503174
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_281.pt
+SPS: 8914
+Epoch: 282, global_step=5754880
+SPS: 8922
+Epoch: 283, global_step=5775360
+SPS: 8931
+Epoch: 284, global_step=5795840
+SPS: 8938
+Epoch: 285, global_step=5816320
+SPS: 8946
+Epoch: 286, global_step=5836800
+SPS: 8953
+Epoch: 287, global_step=5857280
+SPS: 8960
+Epoch: 288, global_step=5877760
+SPS: 8969
+Epoch: 289, global_step=5898240
+SPS: 8977
+Epoch: 290, global_step=5918720
+SPS: 8984
+Epoch: 291, global_step=5939200
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.34798812866211
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8069597482681274
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_291.pt
+SPS: 8960
+Epoch: 292, global_step=5959680
+SPS: 8967
+Epoch: 293, global_step=5980160
+SPS: 8976
+Epoch: 294, global_step=6000640
+SPS: 8985
+Epoch: 295, global_step=6021120
+SPS: 8992
+Epoch: 296, global_step=6041600
+SPS: 9001
+Epoch: 297, global_step=6062080
+SPS: 9007
+Epoch: 298, global_step=6082560
+SPS: 9016
+Epoch: 299, global_step=6103040
+SPS: 9024
+Epoch: 300, global_step=6123520
+SPS: 9032
+Epoch: 301, global_step=6144000
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.239803314208984
+eval_episode_len_mean=50.0
+eval_reward_mean=0.804796040058136
+eval_success_at_end_mean=0.6875
+model saved to runs/PokeCube/ckpt_301.pt
+SPS: 9007
+Epoch: 302, global_step=6164480
+SPS: 9016
+Epoch: 303, global_step=6184960
+SPS: 9019
+Epoch: 304, global_step=6205440
+SPS: 9031
+Epoch: 305, global_step=6225920
+SPS: 9037
+Epoch: 306, global_step=6246400
+SPS: 9045
+Epoch: 307, global_step=6266880
+SPS: 9053
+Epoch: 308, global_step=6287360
+SPS: 9059
+Epoch: 309, global_step=6307840
+SPS: 9067
+Epoch: 310, global_step=6328320
+SPS: 9074
+Epoch: 311, global_step=6348800
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=0.9375
+eval_return_mean=40.27408218383789
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8054816722869873
+eval_success_at_end_mean=0.9375
+model saved to runs/PokeCube/ckpt_311.pt
+SPS: 9049
+Epoch: 312, global_step=6369280
+SPS: 9057
+Epoch: 313, global_step=6389760
+SPS: 9065
+Epoch: 314, global_step=6410240
+SPS: 9073
+Epoch: 315, global_step=6430720
+SPS: 9080
+Epoch: 316, global_step=6451200
+SPS: 9086
+Epoch: 317, global_step=6471680
+SPS: 9093
+Epoch: 318, global_step=6492160
+SPS: 9099
+Epoch: 319, global_step=6512640
+SPS: 9107
+Epoch: 320, global_step=6533120
+SPS: 9114
+Epoch: 321, global_step=6553600
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=0.9375
+eval_return_mean=39.67728805541992
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7935457229614258
+eval_success_at_end_mean=0.9375
+model saved to runs/PokeCube/ckpt_321.pt
+SPS: 9092
+Epoch: 322, global_step=6574080
+SPS: 9099
+Epoch: 323, global_step=6594560
+SPS: 9106
+Epoch: 324, global_step=6615040
+SPS: 9113
+Epoch: 325, global_step=6635520
+SPS: 9121
+Epoch: 326, global_step=6656000
+SPS: 9130
+Epoch: 327, global_step=6676480
+SPS: 9136
+Epoch: 328, global_step=6696960
+SPS: 9143
+Epoch: 329, global_step=6717440
+SPS: 9150
+Epoch: 330, global_step=6737920
+SPS: 9157
+Epoch: 331, global_step=6758400
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.43962860107422
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8087925910949707
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_331.pt
+SPS: 9133
+Epoch: 332, global_step=6778880
+SPS: 9139
+Epoch: 333, global_step=6799360
+SPS: 9145
+Epoch: 334, global_step=6819840
+SPS: 9152
+Epoch: 335, global_step=6840320
+SPS: 9158
+Epoch: 336, global_step=6860800
+SPS: 9164
+Epoch: 337, global_step=6881280
+SPS: 9170
+Epoch: 338, global_step=6901760
+SPS: 9176
+Epoch: 339, global_step=6922240
+SPS: 9184
+Epoch: 340, global_step=6942720
+SPS: 9190
+Epoch: 341, global_step=6963200
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.45304870605469
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8090609312057495
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_341.pt
+SPS: 9167
+Epoch: 342, global_step=6983680
+SPS: 9174
+Epoch: 343, global_step=7004160
+SPS: 9182
+Epoch: 344, global_step=7024640
+SPS: 9188
+Epoch: 345, global_step=7045120
+SPS: 9195
+Epoch: 346, global_step=7065600
+SPS: 9202
+Epoch: 347, global_step=7086080
+SPS: 9206
+Epoch: 348, global_step=7106560
+SPS: 9211
+Epoch: 349, global_step=7127040
+SPS: 9218
+Epoch: 350, global_step=7147520
+SPS: 9225
+Epoch: 351, global_step=7168000
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=41.37147903442383
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8274295926094055
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_351.pt
+SPS: 9203
+Epoch: 352, global_step=7188480
+SPS: 9209
+Epoch: 353, global_step=7208960
+SPS: 9214
+Epoch: 354, global_step=7229440
+SPS: 9220
+Epoch: 355, global_step=7249920
+SPS: 9226
+Epoch: 356, global_step=7270400
+SPS: 9230
+Epoch: 357, global_step=7290880
+SPS: 9236
+Epoch: 358, global_step=7311360
+SPS: 9244
+Epoch: 359, global_step=7331840
+SPS: 9246
+Epoch: 360, global_step=7352320
+SPS: 9253
+Epoch: 361, global_step=7372800
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.42723083496094
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8085445761680603
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_361.pt
+SPS: 9230
+Epoch: 362, global_step=7393280
+SPS: 9237
+Epoch: 363, global_step=7413760
+SPS: 9242
+Epoch: 364, global_step=7434240
+SPS: 9247
+Epoch: 365, global_step=7454720
+SPS: 9252
+Epoch: 366, global_step=7475200
+SPS: 9255
+Epoch: 367, global_step=7495680
+SPS: 9251
+Epoch: 368, global_step=7516160
+SPS: 9243
+Epoch: 369, global_step=7536640
+SPS: 9241
+Epoch: 370, global_step=7557120
+SPS: 9238
+Epoch: 371, global_step=7577600
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.28005599975586
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8056011199951172
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_371.pt
+SPS: 9215
+Epoch: 372, global_step=7598080
+SPS: 9218
+Epoch: 373, global_step=7618560
+SPS: 9216
+Epoch: 374, global_step=7639040
+SPS: 9216
+Epoch: 375, global_step=7659520
+SPS: 9214
+Epoch: 376, global_step=7680000
+SPS: 9212
+Epoch: 377, global_step=7700480
+SPS: 9212
+Epoch: 378, global_step=7720960
+SPS: 9210
+Epoch: 379, global_step=7741440
+SPS: 9213
+Epoch: 380, global_step=7761920
+SPS: 9220
+Epoch: 381, global_step=7782400
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.870506286621094
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8174101710319519
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_381.pt
+SPS: 9187
+Epoch: 382, global_step=7802880
+SPS: 9185
+Epoch: 383, global_step=7823360
+SPS: 9180
+Epoch: 384, global_step=7843840
+SPS: 9175
+Epoch: 385, global_step=7864320
+SPS: 9174
+Epoch: 386, global_step=7884800
+SPS: 9173
+Epoch: 387, global_step=7905280
+SPS: 9170
+Epoch: 388, global_step=7925760
+SPS: 9168
+Epoch: 389, global_step=7946240
+SPS: 9161
+Epoch: 390, global_step=7966720
+SPS: 9158
+Epoch: 391, global_step=7987200
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.55651092529297
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8111302852630615
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_391.pt
+SPS: 9136
+Epoch: 392, global_step=8007680
+SPS: 9136
+Epoch: 393, global_step=8028160
+SPS: 9131
+Epoch: 394, global_step=8048640
+SPS: 9131
+Epoch: 395, global_step=8069120
+SPS: 9129
+Epoch: 396, global_step=8089600
+SPS: 9122
+Epoch: 397, global_step=8110080
+SPS: 9124
+Epoch: 398, global_step=8130560
+SPS: 9130
+Epoch: 399, global_step=8151040
+SPS: 9128
+Epoch: 400, global_step=8171520
+SPS: 9119
+Epoch: 401, global_step=8192000
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.19434356689453
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7838869094848633
+eval_success_at_end_mean=0.875
+model saved to runs/PokeCube/ckpt_401.pt
+SPS: 9094
+Epoch: 402, global_step=8212480
+SPS: 9098
+Epoch: 403, global_step=8232960
+SPS: 9104
+Epoch: 404, global_step=8253440
+SPS: 9109
+Epoch: 405, global_step=8273920
+SPS: 9114
+Epoch: 406, global_step=8294400
+SPS: 9120
+Epoch: 407, global_step=8314880
+SPS: 9125
+Epoch: 408, global_step=8335360
+SPS: 9131
+Epoch: 409, global_step=8355840
+SPS: 9137
+Epoch: 410, global_step=8376320
+SPS: 9143
+Epoch: 411, global_step=8396800
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=41.36842346191406
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8273684978485107
+eval_success_at_end_mean=0.625
+model saved to runs/PokeCube/ckpt_411.pt
+SPS: 9124
+Epoch: 412, global_step=8417280
+SPS: 9129
+Epoch: 413, global_step=8437760
+SPS: 9135
+Epoch: 414, global_step=8458240
+SPS: 9142
+Epoch: 415, global_step=8478720
+SPS: 9146
+Epoch: 416, global_step=8499200
+SPS: 9151
+Epoch: 417, global_step=8519680
+SPS: 9157
+Epoch: 418, global_step=8540160
+SPS: 9163
+Epoch: 419, global_step=8560640
+SPS: 9168
+Epoch: 420, global_step=8581120
+SPS: 9174
+Epoch: 421, global_step=8601600
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.09247970581055
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8018495440483093
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_421.pt
+SPS: 9155
+Epoch: 422, global_step=8622080
+SPS: 9161
+Epoch: 423, global_step=8642560
+SPS: 9167
+Epoch: 424, global_step=8663040
+SPS: 9172
+Epoch: 425, global_step=8683520
+SPS: 9178
+Epoch: 426, global_step=8704000
+SPS: 9183
+Epoch: 427, global_step=8724480
+SPS: 9188
+Epoch: 428, global_step=8744960
+SPS: 9193
+Epoch: 429, global_step=8765440
+SPS: 9199
+Epoch: 430, global_step=8785920
+SPS: 9203
+Epoch: 431, global_step=8806400
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.487693786621094
+eval_episode_len_mean=50.0
+eval_reward_mean=0.809753954410553
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_431.pt
+SPS: 9157
+Epoch: 432, global_step=8826880
+SPS: 9150
+Epoch: 433, global_step=8847360
+SPS: 9144
+Epoch: 434, global_step=8867840
+SPS: 9133
+Epoch: 435, global_step=8888320
+SPS: 9127
+Epoch: 436, global_step=8908800
+SPS: 9123
+Epoch: 437, global_step=8929280
+SPS: 9113
+Epoch: 438, global_step=8949760
+SPS: 9118
+Epoch: 439, global_step=8970240
+SPS: 9123
+Epoch: 440, global_step=8990720
+SPS: 9129
+Epoch: 441, global_step=9011200
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.10913848876953
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8021827340126038
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_441.pt
+SPS: 9111
+Epoch: 442, global_step=9031680
+SPS: 9116
+Epoch: 443, global_step=9052160
+SPS: 9122
+Epoch: 444, global_step=9072640
+SPS: 9127
+Epoch: 445, global_step=9093120
+SPS: 9131
+Epoch: 446, global_step=9113600
+SPS: 9137
+Epoch: 447, global_step=9134080
+SPS: 9142
+Epoch: 448, global_step=9154560
+SPS: 9148
+Epoch: 449, global_step=9175040
+SPS: 9153
+Epoch: 450, global_step=9195520
+SPS: 9157
+Epoch: 451, global_step=9216000
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.3046989440918
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8060939908027649
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_451.pt
+SPS: 9140
+Epoch: 452, global_step=9236480
+SPS: 9145
+Epoch: 453, global_step=9256960
+SPS: 9149
+Epoch: 454, global_step=9277440
+SPS: 9155
+Epoch: 455, global_step=9297920
+SPS: 9159
+Epoch: 456, global_step=9318400
+SPS: 9164
+Epoch: 457, global_step=9338880
+SPS: 9169
+Epoch: 458, global_step=9359360
+SPS: 9175
+Epoch: 459, global_step=9379840
+SPS: 9179
+Epoch: 460, global_step=9400320
+SPS: 9185
+Epoch: 461, global_step=9420800
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.0167236328125
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8003345131874084
+eval_success_at_end_mean=0.875
+model saved to runs/PokeCube/ckpt_461.pt
+SPS: 9168
+Epoch: 462, global_step=9441280
+SPS: 9173
+Epoch: 463, global_step=9461760
+SPS: 9178
+Epoch: 464, global_step=9482240
+SPS: 9183
+Epoch: 465, global_step=9502720
+SPS: 9188
+Epoch: 466, global_step=9523200
+SPS: 9193
+Epoch: 467, global_step=9543680
+SPS: 9197
+Epoch: 468, global_step=9564160
+SPS: 9202
+Epoch: 469, global_step=9584640
+SPS: 9207
+Epoch: 470, global_step=9605120
+SPS: 9212
+Epoch: 471, global_step=9625600
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=40.40342712402344
+eval_episode_len_mean=50.0
+eval_reward_mean=0.8080685138702393
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_471.pt
+SPS: 9195
+Epoch: 472, global_step=9646080
+SPS: 9200
+Epoch: 473, global_step=9666560
+SPS: 9205
+Epoch: 474, global_step=9687040
+SPS: 9210
+Epoch: 475, global_step=9707520
+SPS: 9214
+Epoch: 476, global_step=9728000
+SPS: 9219
+Epoch: 477, global_step=9748480
+SPS: 9224
+Epoch: 478, global_step=9768960
+SPS: 9229
+Epoch: 479, global_step=9789440
+SPS: 9234
+Epoch: 480, global_step=9809920
+SPS: 9238
+Epoch: 481, global_step=9830400
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=39.728912353515625
+eval_episode_len_mean=50.0
+eval_reward_mean=0.7945782542228699
+eval_success_at_end_mean=1.0
+model saved to runs/PokeCube/ckpt_481.pt
+SPS: 9221
+Epoch: 482, global_step=9850880
+SPS: 9225
+Epoch: 483, global_step=9871360
+SPS: 9230
+Epoch: 484, global_step=9891840
+SPS: 9234
+Epoch: 485, global_step=9912320
+SPS: 9238
+Epoch: 486, global_step=9932800
+SPS: 9243
+Epoch: 487, global_step=9953280
+SPS: 9248
+Epoch: 488, global_step=9973760
+SPS: 9252
+model saved to runs/PokeCube/final_ckpt.pt

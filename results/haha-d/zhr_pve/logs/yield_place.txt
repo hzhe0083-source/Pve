@@ -1,0 +1,9 @@
+[33;1m2026-10-31 15:51:23,484 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+source std: arm 0.145, gripper 0.273; PlaceCube-v1, noise on gripper, 4096 episodes per layout
+  layout        success let go at goal steps in region
+  source         0.0085         0.0056           30.35
+  global:0.6     0.5012         0.4873           28.14
+  global:1.0     0.8286         0.8159           22.15
+  seam:0.6       0.5100         0.4968           29.86
+  seam:1.0       0.9287         0.9221           27.42
+  pseam:1.0      0.9219         0.9119           27.45

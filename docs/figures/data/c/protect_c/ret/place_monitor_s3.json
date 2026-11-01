@@ -1,0 +1,23 @@
+{
+ "old_expert": 0.9921875,
+ "runs": {
+  "runs/protect_c/runs/place_monitor_s3/ckpt_512000.pt": {
+   "old_head": 0.92578125,
+   "new_head": 0.85546875,
+   "moved": [
+    0.036508820950984955,
+    0.04791175574064255,
+    0.056620433926582336
+   ]
+  },
+  "runs/protect_c/runs/place_monitor_s3/final_ckpt.pt": {
+   "old_head": 0.79296875,
+   "new_head": 0.3125,
+   "moved": [
+    0.06492043286561966,
+    0.0771264135837555,
+    0.0915926918387413
+   ]
+  }
+ }
+}

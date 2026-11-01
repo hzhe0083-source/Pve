@@ -1,0 +1,24 @@
+roll-in expert               candidates=779 kept=256
+roll-in src:S0               candidates=673 kept=128
+roll-in switch:S0            candidates=712 kept=128
+roll-in noisy:S0             candidates=752 kept=128
+roll-in src:S180             candidates=1792 kept=128
+roll-in switch:S180          candidates=1720 kept=128
+roll-in noisy:S180           candidates=1792 kept=128
+  batch 1/103: mean Q = expert1=0.93 S01=0.89 S03=0.89 S1801=0.65 S1803=0.47 base1=0.84
+  batch 11/103: mean Q = expert1=0.99 S01=1.00 S03=1.00 S1801=0.73 S1803=0.67 base1=0.92
+  batch 21/103: mean Q = expert1=0.99 S01=1.00 S03=1.00 S1801=0.69 S1803=0.46 base1=0.95
+  batch 31/103: mean Q = expert1=0.95 S01=0.92 S03=0.91 S1801=0.90 S1803=0.64 base1=0.85
+  batch 41/103: mean Q = expert1=0.93 S01=0.94 S03=0.91 S1801=0.90 S1803=0.79 base1=0.87
+  batch 51/103: mean Q = expert1=0.90 S01=0.92 S03=0.91 S1801=0.75 S1803=0.66 base1=0.85
+  batch 61/103: mean Q = expert1=0.90 S01=0.90 S03=0.90 S1801=0.72 S1803=0.65 base1=0.79
+  batch 71/103: mean Q = expert1=0.29 S01=0.29 S03=0.30 S1801=0.00 S1803=0.00 base1=0.27
+  batch 81/103: mean Q = expert1=0.30 S01=0.28 S03=0.30 S1801=0.11 S1803=0.00 base1=0.30
+  batch 91/103: mean Q = expert1=0.30 S01=0.30 S03=0.29 S1801=0.10 S1803=0.00 base1=0.29
+  batch 101/103: mean Q = expert1=0.02 S01=0.02 S03=0.01 S1801=0.00 S1803=0.00 base1=0.03
+push0: 1024 states, V* mean 0.66, V*>0.1: 0.70
+  copy S0 for 1 chunk(s): Delta mean +0.007, P(Delta<0.1) 0.94, P(Delta>=0.3) 0.02
+  copy S0 for 3 chunk(s): Delta mean +0.007, P(Delta<0.1) 0.94, P(Delta>=0.3) 0.03
+  copy S180 for 1 chunk(s): Delta mean +0.263, P(Delta<0.1) 0.58, P(Delta>=0.3) 0.31
+  copy S180 for 3 chunk(s): Delta mean +0.454, P(Delta<0.1) 0.40, P(Delta>=0.3) 0.47
+saved data/copyloss_push0.pt

@@ -1,0 +1,6 @@
+[33;1m2026-10-31 16:43:38,615 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2026-10-31 16:43:41,753 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+iter 1 step 0 eval success_once=0.000 lam=0.000
+iter 11 step 512000 eval success_once=0.047 lam=0.000
+iter 21 step 1024000 eval success_once=0.094 lam=0.000
+/home/zhaobo/zhr_pve/scripts/with_gpu_mem.sh: line 16: 1221729 Killed                  "$@" 9>&-

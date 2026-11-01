@@ -1,0 +1,28 @@
+NIGHT1B_START 02:59:11
+RESTORE_DONE rc=0 03:01:09 overall agreement 0.973  (G1 condition 2 needs >= 0.95)
+DONE cov_cf20_s1
+DONE clip_cf20_s1
+DONE clip_cf10_s1
+DONE cov_cf10_s1
+DONE cov_cf50_s1
+DONE clip_cf50_s1
+DONE clip_cf20_s2
+DONE cov_cf20_s2
+DONE clip_cf10_s2
+DONE cov_cf10_s2
+DONE cov_cf50_s2
+DONE clip_cf50_s2
+KLSCALE_DONE 03:42:34
+DONE push_t0_g0.95_s1
+DONE push_t0_g0.8_s1
+DONE push_t90_g0.8_s1
+DONE push_t90_g0.95_s1
+DONE push_t180_g0.8_s1
+DONE push_t180_g0.95_s1
+DONE PickCube_g0.95_s1
+DONE StackCube_g0.95_s1
+DONE push_t0_g0.8_s2
+DONE push_t90_g0.8_s2
+DONE push_t0_g0.95_s2
+DONE push_t90_g0.95_s2
+NIGHT1B_END 07:45:45 (4 seed-2 jobs moved to run_step2_rest.sh)

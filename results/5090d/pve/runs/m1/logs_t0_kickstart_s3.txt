@@ -1,0 +1,7 @@
+iter 1 step 0 eval success_once=0.000 lam=0.500
+iter 3 step 81920 eval success_once=0.906 lam=0.484
+iter 5 step 163840 eval success_once=0.828 lam=0.467
+iter 7 step 245760 eval success_once=0.914 lam=0.451
+iter 9 step 327680 eval success_once=0.953 lam=0.434
+early stop: reached 0.9
+done t0_kickstart_s3 steps=327680 wall=34s SPS=9674

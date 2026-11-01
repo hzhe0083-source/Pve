@@ -1,0 +1,12 @@
+WHY_START 15:48:41 zhaobo40901-Precision-3680 jobs=10
+DONE smoke_rp
+DONE smoke_nsa64
+DONE smoke_npr
+DONE smoke_vis
+DONE smoke_none
+DONE smoke_nsa64z
+DONE smoke_rf1
+DONE smoke_nsa64d
+DONE smoke_nsa64lo
+DONE smoke_nprhi
+WHY_END 16:46:52

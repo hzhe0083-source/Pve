@@ -1,0 +1,173 @@
+{
+ "old_on_pick": 0.9921875,
+ "runs": {
+  "runs/units/runs/stack_full_s1/final_ckpt.pt": {
+   "none (as trained)": {
+    "removed": 0.0,
+    "pick_old_head": 0.859375,
+    "stack_new_head": 0.98046875
+   },
+   "ours 0.9": {
+    "removed": 0.08010655641555786,
+    "pick_old_head": 0.6171875,
+    "stack_new_head": 0.4296875
+   },
+   "gpm 0.9": {
+    "removed": 0.3325651288032532,
+    "pick_old_head": 0.640625,
+    "stack_new_head": 0.19921875
+   },
+   "ours 0.95": {
+    "removed": 0.1681702733039856,
+    "pick_old_head": 0.6484375,
+    "stack_new_head": 0.2890625
+   },
+   "gpm 0.95": {
+    "removed": 0.4413950443267822,
+    "pick_old_head": 0.6640625,
+    "stack_new_head": 0.0859375
+   },
+   "ours 0.99": {
+    "removed": 0.39112013578414917,
+    "pick_old_head": 0.8671875,
+    "stack_new_head": 0.390625
+   },
+   "gpm 0.99": {
+    "removed": 0.588922530412674,
+    "pick_old_head": 0.859375,
+    "stack_new_head": 0.0703125
+   },
+   "all removed (old trunk)": {
+    "removed": 1.0,
+    "pick_old_head": 0.9921875,
+    "stack_new_head": 0.16796875
+   }
+  },
+  "runs/units/runs/stack_full_s2/final_ckpt.pt": {
+   "none (as trained)": {
+    "removed": 0.0,
+    "pick_old_head": 0.81640625,
+    "stack_new_head": 0.9609375
+   },
+   "ours 0.9": {
+    "removed": 0.0741281509399414,
+    "pick_old_head": 0.6015625,
+    "stack_new_head": 0.484375
+   },
+   "gpm 0.9": {
+    "removed": 0.32863038778305054,
+    "pick_old_head": 0.6015625,
+    "stack_new_head": 0.3515625
+   },
+   "ours 0.95": {
+    "removed": 0.16194838285446167,
+    "pick_old_head": 0.59765625,
+    "stack_new_head": 0.390625
+   },
+   "gpm 0.95": {
+    "removed": 0.43671464920043945,
+    "pick_old_head": 0.6484375,
+    "stack_new_head": 0.234375
+   },
+   "ours 0.99": {
+    "removed": 0.3851621747016907,
+    "pick_old_head": 0.875,
+    "stack_new_head": 0.36328125
+   },
+   "gpm 0.99": {
+    "removed": 0.58642578125,
+    "pick_old_head": 0.89453125,
+    "stack_new_head": 0.19140625
+   },
+   "all removed (old trunk)": {
+    "removed": 1.0,
+    "pick_old_head": 0.9921875,
+    "stack_new_head": 0.2421875
+   }
+  },
+  "runs/pilot2/runs/stack_ft_floor_probe10_s1_c1/final_ckpt.pt": {
+   "none (as trained)": {
+    "removed": 0.0,
+    "pick_old_head": 0.76171875,
+    "stack_new_head": 0.9921875
+   },
+   "ours 0.9": {
+    "removed": 0.08629226684570312,
+    "pick_old_head": 0.62890625,
+    "stack_new_head": 0.609375
+   },
+   "gpm 0.9": {
+    "removed": 0.3282543420791626,
+    "pick_old_head": 0.578125,
+    "stack_new_head": 0.55859375
+   },
+   "ours 0.95": {
+    "removed": 0.1813809871673584,
+    "pick_old_head": 0.67578125,
+    "stack_new_head": 0.67578125
+   },
+   "gpm 0.95": {
+    "removed": 0.4505005478858948,
+    "pick_old_head": 0.609375,
+    "stack_new_head": 0.34765625
+   },
+   "ours 0.99": {
+    "removed": 0.43983250856399536,
+    "pick_old_head": 0.86328125,
+    "stack_new_head": 0.44140625
+   },
+   "gpm 0.99": {
+    "removed": 0.6153148412704468,
+    "pick_old_head": 0.859375,
+    "stack_new_head": 0.23046875
+   },
+   "all removed (old trunk)": {
+    "removed": 1.0,
+    "pick_old_head": 0.9921875,
+    "stack_new_head": 0.1328125
+   }
+  },
+  "runs/pilot2/runs/stack_ft_floor_probe10_s3_c1/final_ckpt.pt": {
+   "none (as trained)": {
+    "removed": 0.0,
+    "pick_old_head": 0.86328125,
+    "stack_new_head": 0.98828125
+   },
+   "ours 0.9": {
+    "removed": 0.08590608835220337,
+    "pick_old_head": 0.62890625,
+    "stack_new_head": 0.6171875
+   },
+   "gpm 0.9": {
+    "removed": 0.32355302572250366,
+    "pick_old_head": 0.6015625,
+    "stack_new_head": 0.3359375
+   },
+   "ours 0.95": {
+    "removed": 0.17640286684036255,
+    "pick_old_head": 0.640625,
+    "stack_new_head": 0.49609375
+   },
+   "gpm 0.95": {
+    "removed": 0.43276745080947876,
+    "pick_old_head": 0.59375,
+    "stack_new_head": 0.22265625
+   },
+   "ours 0.99": {
+    "removed": 0.41746312379837036,
+    "pick_old_head": 0.8359375,
+    "stack_new_head": 0.30078125
+   },
+   "gpm 0.99": {
+    "removed": 0.5902541279792786,
+    "pick_old_head": 0.80859375,
+    "stack_new_head": 0.21484375
+   },
+   "all removed (old trunk)": {
+    "removed": 1.0,
+    "pick_old_head": 0.9921875,
+    "stack_new_head": 0.11328125
+   }
+  }
+ }
+}

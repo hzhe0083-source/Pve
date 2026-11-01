@@ -1,0 +1,150 @@
+PickCube expert success 0.978 | 2048 episodes, kept 39647 of 102400 states (0.387; dropped from the first success on)
+Stack    expert success 0.732 | 2048 episodes, kept 55968 of 102400 states (0.547; dropped from the first success on)
+PickCube split by episode: train 31876 rows, test 7771 rows | test held@goal 703
+Stack    split by episode: train 44573 rows, test 11395 rows | test held@goal 684, released near goal 856
+
+seed 0, init=random: cross-task conflict in run a (shared hidden layers, per-task heads); rows of each hidden layer ranked within the layer, top 1/5/10% = 2, 12, 25 of 256; '*' = above the null's 95th percentile
+  step     0 loss pick 1.770e+01 stack 1.470e+01 | hidden |g| pick 7.35e-01 stack 1.39e+00 (init: do not read)
+    L1 conflict top1/5/10% 0.17/0.52/0.76    null 0.15/0.54/0.78 p95 0.18/0.60/0.82 | align 0.06/0.27/0.44 | C/(C+A) 0.150 neg  73/256 cos<-0.3 0.20 cos q10/50/90 -0.62/+0.46/+0.95 layer cos +0.35 | Jaccard vs rank step 0.00
+    L2 conflict top1/5/10% 0.15/0.50/0.74    null 0.21/0.60/0.81 p95 0.29/0.67/0.85 | align 0.11/0.38/0.55 | C/(C+A) 0.133 neg  75/256 cos<-0.3 0.18 cos q10/50/90 -0.64/+0.42/+0.88 layer cos +0.33 | Jaccard vs rank step 0.00
+    L3 conflict top1/5/10% 0.11/0.40/0.65    null 0.17/0.56/0.77 p95 0.24/0.63/0.82 | align 0.09/0.33/0.53 | C/(C+A) 0.153 neg  79/256 cos<-0.3 0.20 cos q10/50/90 -0.56/+0.48/+0.88 layer cos +0.34 | Jaccard vs rank step 0.00
+    readout rows (a0, the shared head) dot -8.0e+01 +9.1e+02 -1.0e+02 +4.7e+01 -1.4e+02 +3.4e+02 -3.1e+01 +4.0e+01 | cos -0.87 +0.47 -0.86 +0.87 -0.87 +0.74 -0.74 +0.86
+  step   100 loss pick 3.699e+00 stack 3.266e+00 | hidden |g| pick 1.10e+00 stack 6.71e-01
+    L1 conflict top1/5/10% 0.11/0.38/0.59    null 0.10/0.37/0.58 p95 0.12/0.41/0.61 | align 0.09/0.36/0.57 | C/(C+A) 0.555 neg 130/256 cos<-0.3 0.12 cos q10/50/90 -0.33/-0.01/+0.44 layer cos -0.02 | Jaccard vs rank step 0.04
+    L2 conflict top1/5/10% 0.07/0.33/0.52    null 0.08/0.33/0.51 p95 0.09/0.35/0.54 | align 0.11/0.40/0.63 | C/(C+A) 0.656 neg 153/256 cos<-0.3 0.15 cos q10/50/90 -0.34/-0.05/+0.31 layer cos -0.06 | Jaccard vs rank step 0.00
+    L3 conflict top1/5/10% 0.10/0.33/0.52    null 0.08/0.31/0.50 p95 0.10/0.34/0.53 | align 0.08/0.31/0.53 | C/(C+A) 0.524 neg 136/256 cos<-0.3 0.09 cos q10/50/90 -0.30/-0.01/+0.23 layer cos -0.01 | Jaccard vs rank step 0.00
+    readout rows (a0, the shared head) dot -3.6e+00 -8.2e+00 -4.3e+00 -2.9e+00 -2.2e+00 +2.5e-01 -1.9e+00 +2.7e-01 | cos -0.91 -0.47 -0.85 -0.84 -0.92 +0.14 -0.93 +0.46
+  step   300 loss pick 1.578e+00 stack 1.703e+00 | hidden |g| pick 2.97e+00 stack 1.31e+00
+    L1 conflict top1/5/10% 0.11/0.35/0.54    null 0.12/0.38/0.58 p95 0.14/0.42/0.61 | align 0.10/0.43/0.68 | C/(C+A) 0.847 neg 165/256 cos<-0.3 0.59 cos q10/50/90 -0.92/-0.66/+0.91 layer cos -0.43 | Jaccard vs rank step 0.14
+    L2 conflict top1/5/10% 0.07/0.28/0.47    null 0.08/0.31/0.50 p95 0.09/0.33/0.53 | align 0.13/0.43/0.66 | C/(C+A) 0.730 neg 156/256 cos<-0.3 0.53 cos q10/50/90 -0.75/-0.33/+0.75 layer cos -0.21 | Jaccard vs rank step 0.00
+    L3 conflict top1/5/10% 0.09/0.36/0.56    null 0.09/0.37/0.57 p95 0.11/0.40/0.61 | align 0.10/0.38/0.58 | C/(C+A) 0.484 neg 125/256 cos<-0.3 0.30 cos q10/50/90 -0.48/+0.05/+0.58 layer cos +0.01 | Jaccard vs rank step 0.00
+    readout rows (a0, the shared head) dot +3.1e-01 +3.1e-01 +3.9e-01 +1.5e-01 -4.4e-01 +1.7e-02 -5.9e-02 +6.8e-03 | cos +0.22 +0.19 +0.24 +0.08 -0.56 +0.07 -0.43 +0.05
+  step  1000 loss pick 4.329e-01 stack 6.934e-01 | hidden |g| pick 3.25e+00 stack 2.79e+00
+    L1 conflict top1/5/10% 0.43/1.00/1.00    null 0.50/1.00/1.00 p95 0.67/1.00/1.00 | align 0.05/0.24/0.40 | C/(C+A) 0.001 neg  13/256 cos<-0.3 0.04 cos q10/50/90 +0.43/+0.97/+0.99 layer cos +0.94 | Jaccard vs rank step 0.00
+    L2 conflict top1/5/10% 0.20/0.79/0.99    null 0.35/0.87/1.00 p95 0.53/0.93/1.00 | align 0.10/0.31/0.47 | C/(C+A) 0.006 neg  30/256 cos<-0.3 0.08 cos q10/50/90 -0.10/+0.80/+0.85 layer cos +0.75 | Jaccard vs rank step 0.04
+    L3 conflict top1/5/10% 0.22/0.65/0.89    null 0.25/0.71/0.90 p95 0.33/0.77/0.94 | align 0.08/0.33/0.52 | C/(C+A) 0.055 neg  55/256 cos<-0.3 0.12 cos q10/50/90 -0.38/+0.60/+0.78 layer cos +0.49 | Jaccard vs rank step 0.09
+    readout rows (a0, the shared head) dot +5.6e-02 +1.1e-01 +4.1e-01 +2.9e-01 +3.8e-03 +4.4e-02 -8.1e-03 -1.1e-02 | cos +0.31 +0.27 +0.38 +0.69 +0.06 +0.25 -0.05 -0.19
+  step  3000 loss pick 8.084e-02 stack 2.208e-01 | hidden |g| pick 2.88e+00 stack 3.51e+00
+    L1 conflict top1/5/10% 0.55/0.95/1.00*   null 0.37/0.92/1.00 p95 0.50/0.96/1.00 | align 0.07/0.29/0.45 | C/(C+A) 0.013 neg  25/256 cos<-0.3 0.08 cos q10/50/90 +0.24/+0.97/+0.99 layer cos +0.84 | Jaccard vs rank step 0.00
+    L2 conflict top1/5/10% 0.22/0.72/0.95    null 0.27/0.77/0.96 p95 0.36/0.84/0.98 | align 0.08/0.28/0.45 | C/(C+A) 0.019 neg  41/256 cos<-0.3 0.10 cos q10/50/90 -0.29/+0.79/+0.83 layer cos +0.62 | Jaccard vs rank step 0.04
+    L3 conflict top1/5/10% 0.11/0.44/0.70    null 0.22/0.62/0.81 p95 0.29/0.68/0.85 | align 0.12/0.42/0.61 | C/(C+A) 0.132 neg  86/256 cos<-0.3 0.27 cos q10/50/90 -0.67/+0.52/+0.74 layer cos +0.33 | Jaccard vs rank step 0.20
+    readout rows (a0, the shared head) dot +1.1e-01 +7.7e-01 +7.4e-02 -6.4e-02 +2.4e-02 +4.6e-02 +4.5e-02 -4.8e-04 | cos +0.34 +0.41 +0.39 -0.08 +0.52 +0.26 +0.32 -0.08
+ranking window: steps 200-300 every 5 (21 records); stability = Jaccard of the top 12 between the window's halves (chance ~0.05) and the correlation of their per-row dots
+  L1 window-avg conflict top1/5/10% 0.68/1.00/1.00    null p95 0.84/1.00/1.00 | C/(C+A) 0.001 | halves Jaccard 0.20 dot corr +0.98
+  L2 window-avg conflict top1/5/10% 0.33/0.98/1.00    null p95 0.60/1.00/1.00 | C/(C+A) 0.007 | halves Jaccard 0.33 dot corr +0.97
+  L3 window-avg conflict top1/5/10% 0.20/0.75/0.95    null p95 0.36/0.77/0.95 | C/(C+A) 0.055 | halves Jaccard 0.60 dot corr +0.97
+split by the window average: 12 rows per hidden layer (readout per-task in every arm but a0)
+  L1 b rows with dot<0  8, e rows with dot>=0 12 | mean log10|g_p||g_s| b/e/c -2.00/-2.00/-2.05 | mean cos b/e/c +0.19/+0.69/+0.69  WARNING: b includes rows without conflict
+  L2 b rows with dot<0 12, e rows with dot>=0 12 | mean log10|g_p||g_s| b/e/c -3.09/-3.09/-2.82 | mean cos b/e/c -0.33/+0.54/+0.57
+  L3 b rows with dot<0 12, e rows with dot>=0 12 | mean log10|g_p||g_s| b/e/c -3.36/-3.37/-3.56 | mean cos b/e/c -0.34/+0.48/+0.33
+held-out (test-episode) error after 3000 steps, PickCube std units, arm mean / gripper; recovery = (L_a - L) / (L_a - L_d) on the test loss
+  a0 all shared        pick 0.23/0.11 held@goal 0.18/0.13 fit 0.21/0.10 | stack 0.38/0.28 held@goal 0.38/0.49 released 0.35/0.41 fit 0.36/0.26 | test loss 0.4639 recovery -2.16
+  a  task heads        pick 0.19/0.08 held@goal 0.14/0.09 fit 0.18/0.08 | stack 0.35/0.20 held@goal 0.35/0.38 released 0.32/0.35 fit 0.33/0.20 | test loss 0.3781 recovery +0.00
+  b  top conflict      pick 0.18/0.07 held@goal 0.13/0.07 fit 0.17/0.06 | stack 0.35/0.21 held@goal 0.35/0.37 released 0.31/0.33 fit 0.32/0.19 | test loss 0.3706 recovery +0.19
+  c  random #0         pick 0.18/0.07 held@goal 0.13/0.06 fit 0.17/0.07 | stack 0.35/0.20 held@goal 0.35/0.37 released 0.32/0.35 fit 0.33/0.20 | test loss 0.3710 recovery +0.18
+  c  random #1         pick 0.18/0.07 held@goal 0.13/0.08 fit 0.17/0.07 | stack 0.35/0.21 held@goal 0.35/0.37 released 0.31/0.33 fit 0.32/0.20 | test loss 0.3659 recovery +0.31
+  c  random #2         pick 0.18/0.07 held@goal 0.13/0.07 fit 0.17/0.07 | stack 0.35/0.20 held@goal 0.35/0.38 released 0.32/0.34 fit 0.32/0.20 | test loss 0.3700 recovery +0.20
+  c  random #3         pick 0.18/0.08 held@goal 0.13/0.09 fit 0.17/0.08 | stack 0.35/0.21 held@goal 0.35/0.37 released 0.32/0.33 fit 0.32/0.20 | test loss 0.3669 recovery +0.28
+  c  random #4         pick 0.18/0.08 held@goal 0.13/0.09 fit 0.17/0.07 | stack 0.35/0.21 held@goal 0.35/0.37 released 0.31/0.33 fit 0.32/0.19 | test loss 0.3790 recovery -0.02
+  e  magnitude-matched pick 0.18/0.07 held@goal 0.13/0.07 fit 0.17/0.07 | stack 0.35/0.20 held@goal 0.35/0.38 released 0.31/0.33 fit 0.32/0.20 | test loss 0.3652 recovery +0.33
+  d  separate          pick 0.16/0.08 held@goal 0.11/0.06 fit 0.15/0.07 | stack 0.33/0.19 held@goal 0.33/0.33 released 0.30/0.31 fit 0.30/0.18 | test loss 0.3385 recovery +1.00
+
+seed 1, init=random: cross-task conflict in run a (shared hidden layers, per-task heads); rows of each hidden layer ranked within the layer, top 1/5/10% = 2, 12, 25 of 256; '*' = above the null's 95th percentile
+  step     0 loss pick 1.777e+01 stack 1.451e+01 | hidden |g| pick 7.41e-01 stack 1.34e+00 (init: do not read)
+    L1 conflict top1/5/10% 0.16/0.53/0.75    null 0.15/0.52/0.75 p95 0.20/0.58/0.79 | align 0.09/0.34/0.53 | C/(C+A) 0.224 neg  85/256 cos<-0.3 0.22 cos q10/50/90 -0.61/+0.36/+0.94 layer cos +0.28 | Jaccard vs rank step 0.00
+    L2 conflict top1/5/10% 0.10/0.41/0.66    null 0.13/0.46/0.69 p95 0.16/0.51/0.73 | align 0.08/0.34/0.53 | C/(C+A) 0.227 neg 101/256 cos<-0.3 0.28 cos q10/50/90 -0.66/+0.36/+0.89 layer cos +0.27 | Jaccard vs rank step 0.09
+    L3 conflict top1/5/10% 0.15/0.53/0.75    null 0.17/0.51/0.75 p95 0.24/0.58/0.79 | align 0.11/0.33/0.51 | C/(C+A) 0.201 neg  86/256 cos<-0.3 0.21 cos q10/50/90 -0.57/+0.45/+0.88 layer cos +0.26 | Jaccard vs rank step 0.00
+    readout rows (a0, the shared head) dot -8.0e+01 +7.8e+02 -1.0e+02 +4.4e+01 -1.4e+02 +3.2e+02 -3.0e+01 +3.9e+01 | cos -0.86 +0.45 -0.87 +0.88 -0.87 +0.74 -0.72 +0.87
+  step   100 loss pick 3.627e+00 stack 3.204e+00 | hidden |g| pick 8.72e-01 stack 1.05e+00
+    L1 conflict top1/5/10% 0.10/0.40/0.61    null 0.10/0.39/0.61 p95 0.11/0.42/0.64 | align 0.07/0.29/0.48 | C/(C+A) 0.304 neg 107/256 cos<-0.3 0.17 cos q10/50/90 -0.37/+0.13/+0.71 layer cos +0.13 | Jaccard vs rank step 0.00
+    L2 conflict top1/5/10% 0.07/0.29/0.47    null 0.10/0.36/0.56 p95 0.12/0.40/0.59 | align 0.09/0.36/0.57 | C/(C+A) 0.350 neg 130/256 cos<-0.3 0.18 cos q10/50/90 -0.37/-0.01/+0.55 layer cos +0.08 | Jaccard vs rank step 0.00
+    L3 conflict top1/5/10% 0.05/0.24/0.42    null 0.07/0.29/0.47 p95 0.08/0.31/0.50 | align 0.08/0.36/0.57 | C/(C+A) 0.470 neg 141/256 cos<-0.3 0.15 cos q10/50/90 -0.34/-0.05/+0.40 layer cos +0.01 | Jaccard vs rank step 0.00
+    readout rows (a0, the shared head) dot -2.9e+00 -8.2e+00 -4.5e+00 -1.5e+00 -2.0e+00 +1.2e-01 -1.6e+00 +3.2e-01 | cos -0.94 -0.40 -0.93 -0.53 -0.91 +0.06 -0.93 +0.48
+  step   300 loss pick 1.615e+00 stack 1.735e+00 | hidden |g| pick 1.31e+00 stack 8.43e-01
+    L1 conflict top1/5/10% 0.09/0.37/0.59    null 0.14/0.47/0.68 p95 0.17/0.52/0.72 | align 0.10/0.35/0.56 | C/(C+A) 0.247 neg 103/256 cos<-0.3 0.33 cos q10/50/90 -0.83/+0.35/+0.84 layer cos +0.28 | Jaccard vs rank step 0.00
+    L2 conflict top1/5/10% 0.09/0.35/0.56*   null 0.08/0.33/0.55 p95 0.09/0.36/0.58 | align 0.05/0.25/0.44 | C/(C+A) 0.395 neg 108/256 cos<-0.3 0.28 cos q10/50/90 -0.63/+0.22/+0.62 layer cos +0.09 | Jaccard vs rank step 0.00
+    L3 conflict top1/5/10% 0.15/0.46/0.69*   null 0.12/0.43/0.66 p95 0.15/0.48/0.70 | align 0.07/0.29/0.47 | C/(C+A) 0.284 neg  96/256 cos<-0.3 0.09 cos q10/50/90 -0.26/+0.10/+0.42 layer cos +0.09 | Jaccard vs rank step 0.09
+    readout rows (a0, the shared head) dot -6.6e-01 -4.6e-02 -1.6e-02 +2.9e+00 -5.1e-01 -4.4e-02 -5.9e-02 -1.6e-02 | cos -0.74 -0.02 -0.03 +0.50 -0.66 -0.26 -0.60 -0.27
+  step  1000 loss pick 4.262e-01 stack 6.809e-01 | hidden |g| pick 3.35e+00 stack 2.09e+00
+    L1 conflict top1/5/10% 0.18/0.54/0.78    null 0.20/0.59/0.80 p95 0.27/0.66/0.84 | align 0.10/0.36/0.55 | C/(C+A) 0.176 neg  76/256 cos<-0.3 0.26 cos q10/50/90 -0.89/+0.85/+0.98 layer cos +0.43 | Jaccard vs rank step 0.00
+    L2 conflict top1/5/10% 0.13/0.48/0.69    null 0.20/0.61/0.80 p95 0.24/0.67/0.84 | align 0.10/0.41/0.61 | C/(C+A) 0.122 neg  89/256 cos<-0.3 0.26 cos q10/50/90 -0.73/+0.61/+0.83 layer cos +0.45 | Jaccard vs rank step 0.00
+    L3 conflict top1/5/10% 0.11/0.46/0.73    null 0.18/0.57/0.78 p95 0.23/0.62/0.82 | align 0.10/0.37/0.57 | C/(C+A) 0.159 neg  87/256 cos<-0.3 0.24 cos q10/50/90 -0.58/+0.37/+0.70 layer cos +0.32 | Jaccard vs rank step 0.00
+    readout rows (a0, the shared head) dot +2.0e-01 +5.9e-01 +1.0e-01 +2.6e-02 -1.4e-02 +1.5e-01 -2.1e-02 +4.8e-02 | cos +0.55 +0.27 +0.30 +0.05 -0.21 +0.40 -0.20 +0.40
+  step  3000 loss pick 7.959e-02 stack 2.135e-01 | hidden |g| pick 1.34e+00 stack 1.15e+00
+    L1 conflict top1/5/10% 0.31/0.80/0.97    null 0.33/0.80/0.96 p95 0.44/0.86/0.98 | align 0.09/0.35/0.54 | C/(C+A) 0.035 neg  40/256 cos<-0.3 0.12 cos q10/50/90 -0.40/+0.94/+0.98 layer cos +0.76 | Jaccard vs rank step 0.00
+    L2 conflict top1/5/10% 0.21/0.68/0.89    null 0.29/0.72/0.91 p95 0.43/0.81/0.95 | align 0.13/0.37/0.55 | C/(C+A) 0.053 neg  52/256 cos<-0.3 0.13 cos q10/50/90 -0.38/+0.63/+0.79 layer cos +0.52 | Jaccard vs rank step 0.04
+    L3 conflict top1/5/10% 0.22/0.55/0.75    null 0.28/0.61/0.79 p95 0.36/0.70/0.83 | align 0.18/0.51/0.66 | C/(C+A) 0.175 neg  96/256 cos<-0.3 0.19 cos q10/50/90 -0.47/+0.26/+0.63 layer cos +0.21 | Jaccard vs rank step 0.04
+    readout rows (a0, the shared head) dot +2.0e-01 +8.9e-03 +2.0e-01 +1.5e+00 +2.8e-02 +6.6e-02 +2.6e-02 +3.2e-03 | cos +0.33 +0.13 +0.36 +0.32 +0.53 +0.20 +0.59 +0.28
+ranking window: steps 200-300 every 5 (21 records); stability = Jaccard of the top 12 between the window's halves (chance ~0.05) and the correlation of their per-row dots
+  L1 window-avg conflict top1/5/10% 0.49/1.00/1.00    null p95 0.75/1.00/1.00 | C/(C+A) 0.003 | halves Jaccard 0.33 dot corr +0.98
+  L2 window-avg conflict top1/5/10% 0.50/1.00/1.00    null p95 0.72/1.00/1.00 | C/(C+A) 0.003 | halves Jaccard 0.33 dot corr +0.88
+  L3 window-avg conflict top1/5/10% 0.34/0.92/1.00**  null p95 0.32/0.88/1.00 | C/(C+A) 0.043 | halves Jaccard 0.60 dot corr +0.80
+split by the window average: 12 rows per hidden layer (readout per-task in every arm but a0)
+  L1 b rows with dot<0 10, e rows with dot>=0 12 | mean log10|g_p||g_s| b/e/c -2.38/-2.37/-1.93 | mean cos b/e/c -0.16/+0.92/+0.89  WARNING: b includes rows without conflict
+  L2 b rows with dot<0  7, e rows with dot>=0 12 | mean log10|g_p||g_s| b/e/c -3.17/-3.17/-2.74 | mean cos b/e/c -0.02/+0.69/+0.71  WARNING: b includes rows without conflict
+  L3 b rows with dot<0 12, e rows with dot>=0 12 | mean log10|g_p||g_s| b/e/c -3.49/-3.49/-3.57 | mean cos b/e/c -0.39/+0.45/+0.41
+held-out (test-episode) error after 3000 steps, PickCube std units, arm mean / gripper; recovery = (L_a - L) / (L_a - L_d) on the test loss
+  a0 all shared        pick 0.23/0.11 held@goal 0.18/0.13 fit 0.21/0.11 | stack 0.38/0.26 held@goal 0.37/0.47 released 0.34/0.42 fit 0.36/0.24 | test loss 0.4630 recovery -2.51
+  a  task heads        pick 0.19/0.08 held@goal 0.15/0.08 fit 0.18/0.07 | stack 0.35/0.21 held@goal 0.35/0.36 released 0.31/0.32 fit 0.32/0.19 | test loss 0.3680 recovery +0.00
+  b  top conflict      pick 0.18/0.07 held@goal 0.13/0.07 fit 0.16/0.06 | stack 0.34/0.20 held@goal 0.34/0.37 released 0.30/0.33 fit 0.31/0.19 | test loss 0.3496 recovery +0.48
+  c  random #0         pick 0.18/0.06 held@goal 0.13/0.06 fit 0.17/0.06 | stack 0.34/0.19 held@goal 0.34/0.36 released 0.31/0.33 fit 0.31/0.19 | test loss 0.3361 recovery +0.84
+  c  random #1         pick 0.18/0.07 held@goal 0.13/0.07 fit 0.17/0.07 | stack 0.34/0.19 held@goal 0.34/0.34 released 0.30/0.33 fit 0.31/0.18 | test loss 0.3556 recovery +0.33
+  c  random #2         pick 0.18/0.07 held@goal 0.13/0.07 fit 0.17/0.06 | stack 0.34/0.19 held@goal 0.35/0.36 released 0.31/0.32 fit 0.32/0.19 | test loss 0.3547 recovery +0.35
+  c  random #3         pick 0.18/0.07 held@goal 0.13/0.07 fit 0.17/0.06 | stack 0.34/0.19 held@goal 0.35/0.35 released 0.30/0.32 fit 0.31/0.19 | test loss 0.3525 recovery +0.41
+  c  random #4         pick 0.18/0.07 held@goal 0.13/0.07 fit 0.17/0.06 | stack 0.34/0.20 held@goal 0.35/0.35 released 0.32/0.33 fit 0.32/0.19 | test loss 0.3602 recovery +0.21
+  e  magnitude-matched pick 0.18/0.07 held@goal 0.14/0.07 fit 0.17/0.06 | stack 0.34/0.19 held@goal 0.34/0.34 released 0.31/0.32 fit 0.31/0.19 | test loss 0.3517 recovery +0.43
+  d  separate          pick 0.16/0.07 held@goal 0.12/0.07 fit 0.15/0.06 | stack 0.33/0.19 held@goal 0.33/0.35 released 0.30/0.30 fit 0.30/0.18 | test loss 0.3301 recovery +1.00
+
+seed 2, init=random: cross-task conflict in run a (shared hidden layers, per-task heads); rows of each hidden layer ranked within the layer, top 1/5/10% = 2, 12, 25 of 256; '*' = above the null's 95th percentile
+  step     0 loss pick 1.768e+01 stack 1.447e+01 | hidden |g| pick 7.24e-01 stack 1.30e+00 (init: do not read)
+    L1 conflict top1/5/10% 0.14/0.51/0.75    null 0.18/0.53/0.76 p95 0.25/0.60/0.80 | align 0.11/0.35/0.52 | C/(C+A) 0.199 neg  81/256 cos<-0.3 0.21 cos q10/50/90 -0.66/+0.40/+0.94 layer cos +0.30 | Jaccard vs rank step 0.00
+    L2 conflict top1/5/10% 0.11/0.44/0.69    null 0.16/0.51/0.74 p95 0.21/0.58/0.79 | align 0.08/0.32/0.50 | C/(C+A) 0.173 neg  83/256 cos<-0.3 0.21 cos q10/50/90 -0.67/+0.45/+0.89 layer cos +0.31 | Jaccard vs rank step 0.00
+    L3 conflict top1/5/10% 0.20/0.50/0.73    null 0.16/0.57/0.79 p95 0.21/0.63/0.83 | align 0.08/0.32/0.54 | C/(C+A) 0.193 neg  82/256 cos<-0.3 0.22 cos q10/50/90 -0.61/+0.42/+0.87 layer cos +0.30 | Jaccard vs rank step 0.04
+    readout rows (a0, the shared head) dot -8.2e+01 +8.3e+02 -1.1e+02 +4.9e+01 -1.5e+02 +3.4e+02 -3.0e+01 +3.9e+01 | cos -0.87 +0.45 -0.87 +0.90 -0.87 +0.76 -0.72 +0.86
+  step   100 loss pick 3.683e+00 stack 3.263e+00 | hidden |g| pick 1.02e+00 stack 1.51e+00
+    L1 conflict top1/5/10% 0.19/0.64/0.88    null 0.21/0.70/0.91 p95 0.26/0.77/0.94 | align 0.06/0.28/0.47 | C/(C+A) 0.048 neg  55/256 cos<-0.3 0.12 cos q10/50/90 -0.37/+0.45/+0.70 layer cos +0.43 | Jaccard vs rank step 0.04
+    L2 conflict top1/5/10% 0.16/0.51/0.74    null 0.17/0.56/0.78 p95 0.21/0.62/0.82 | align 0.08/0.32/0.49 | C/(C+A) 0.134 neg  77/256 cos<-0.3 0.15 cos q10/50/90 -0.44/+0.24/+0.60 layer cos +0.26 | Jaccard vs rank step 0.04
+    L3 conflict top1/5/10% 0.11/0.43/0.63 *  null 0.09/0.39/0.62 p95 0.12/0.43/0.65 | align 0.06/0.27/0.46 | C/(C+A) 0.250 neg 106/256 cos<-0.3 0.13 cos q10/50/90 -0.34/+0.10/+0.41 layer cos +0.12 | Jaccard vs rank step 0.14
+    readout rows (a0, the shared head) dot -3.1e+00 -9.5e+00 -3.0e+00 -2.3e+00 -2.3e+00 +5.1e-01 -1.7e+00 +3.3e-01 | cos -0.91 -0.56 -0.84 -0.78 -0.91 +0.26 -0.93 +0.55
+  step   300 loss pick 1.590e+00 stack 1.703e+00 | hidden |g| pick 1.39e+00 stack 1.78e+00
+    L1 conflict top1/5/10% 0.24/0.71/0.97    null 0.31/0.85/0.99 p95 0.45/0.92/1.00 | align 0.08/0.28/0.45 | C/(C+A) 0.007 neg  32/256 cos<-0.3 0.08 cos q10/50/90 -0.18/+0.92/+0.97 layer cos +0.86 | Jaccard vs rank step 0.04
+    L2 conflict top1/5/10% 0.19/0.70/0.93    null 0.24/0.78/0.97 p95 0.30/0.85/0.98 | align 0.05/0.23/0.40 | C/(C+A) 0.023 neg  37/256 cos<-0.3 0.09 cos q10/50/90 -0.25/+0.74/+0.85 layer cos +0.69 | Jaccard vs rank step 0.04
+    L3 conflict top1/5/10% 0.20/0.73/0.93    null 0.20/0.69/0.92 p95 0.27/0.75/0.94 | align 0.05/0.23/0.40 | C/(C+A) 0.040 neg  46/256 cos<-0.3 0.07 cos q10/50/90 -0.15/+0.49/+0.72 layer cos +0.45 | Jaccard vs rank step 0.09
+    readout rows (a0, the shared head) dot +3.5e-01 -2.4e-01 +1.7e+00 +6.9e-01 -4.4e-01 -5.1e-02 -5.9e-02 -3.4e-03 | cos +0.15 -0.29 +0.55 +0.35 -0.68 -0.18 -0.42 -0.06
+  step  1000 loss pick 4.253e-01 stack 6.921e-01 | hidden |g| pick 2.94e+00 stack 3.97e+00
+    L1 conflict top1/5/10% 0.20/0.58/0.78    null 0.18/0.60/0.82 p95 0.23/0.66/0.86 | align 0.07/0.31/0.50 | C/(C+A) 0.080 neg  75/256 cos<-0.3 0.28 cos q10/50/90 -0.93/+0.95/+0.99 layer cos +0.55 | Jaccard vs rank step 0.00
+    L2 conflict top1/5/10% 0.07/0.37/0.64    null 0.18/0.60/0.78 p95 0.23/0.66/0.83 | align 0.09/0.39/0.61 | C/(C+A) 0.120 neg  94/256 cos<-0.3 0.34 cos q10/50/90 -0.78/+0.69/+0.84 layer cos +0.49 | Jaccard vs rank step 0.00
+    L3 conflict top1/5/10% 0.17/0.52/0.73    null 0.23/0.62/0.81 p95 0.34/0.70/0.86 | align 0.17/0.42/0.61 | C/(C+A) 0.119 neg  85/256 cos<-0.3 0.25 cos q10/50/90 -0.61/+0.45/+0.71 layer cos +0.34 | Jaccard vs rank step 0.00
+    readout rows (a0, the shared head) dot +7.6e-01 +6.4e-02 +8.1e-01 -3.6e-01 +8.6e-02 -1.6e-02 -3.4e-02 +3.1e-02 | cos +0.35 +0.12 +0.32 -0.23 +0.25 -0.14 -0.58 +0.50
+  step  3000 loss pick 7.828e-02 stack 2.196e-01 | hidden |g| pick 1.33e+00 stack 2.14e+00
+    L1 conflict top1/5/10% 0.12/0.43/0.64    null 0.16/0.46/0.65 p95 0.21/0.52/0.70 | align 0.22/0.51/0.69 | C/(C+A) 0.500 neg 134/256 cos<-0.3 0.50 cos q10/50/90 -0.95/-0.20/+0.96 layer cos -0.00 | Jaccard vs rank step 0.00
+    L2 conflict top1/5/10% 0.12/0.38/0.58    null 0.12/0.39/0.58 p95 0.15/0.43/0.62 | align 0.12/0.39/0.59 | C/(C+A) 0.400 neg 133/256 cos<-0.3 0.43 cos q10/50/90 -0.77/-0.05/+0.74 layer cos +0.09 | Jaccard vs rank step 0.00
+    L3 conflict top1/5/10% 0.13/0.41/0.61    null 0.12/0.44/0.64 p95 0.14/0.48/0.67 | align 0.11/0.45/0.67 | C/(C+A) 0.443 neg 131/256 cos<-0.3 0.38 cos q10/50/90 -0.62/-0.03/+0.57 layer cos +0.03 | Jaccard vs rank step 0.04
+    readout rows (a0, the shared head) dot +1.9e-03 -2.3e-01 +2.8e-02 +3.1e-02 +3.0e-02 +2.2e-02 +3.7e-03 -1.7e-03 | cos +0.01 -0.35 +0.10 +0.15 +0.47 +0.18 +0.12 -0.10
+ranking window: steps 200-300 every 5 (21 records); stability = Jaccard of the top 12 between the window's halves (chance ~0.05) and the correlation of their per-row dots
+  L1 window-avg conflict top1/5/10% 0.55/1.00/1.00    null p95 0.77/1.00/1.00 | C/(C+A) 0.002 | halves Jaccard 0.50 dot corr +0.91
+  L2 window-avg conflict top1/5/10% 0.30/0.97/1.00    null p95 0.49/0.98/1.00 | C/(C+A) 0.008 | halves Jaccard 0.50 dot corr +0.85
+  L3 window-avg conflict top1/5/10% 0.40/0.86/1.00**  null p95 0.35/0.83/1.00 | C/(C+A) 0.052 | halves Jaccard 0.33 dot corr +0.76
+split by the window average: 12 rows per hidden layer (readout per-task in every arm but a0)
+  L1 b rows with dot<0 10, e rows with dot>=0 12 | mean log10|g_p||g_s| b/e/c -2.39/-2.41/-1.86 | mean cos b/e/c -0.22/+0.91/+0.97  WARNING: b includes rows without conflict
+  L2 b rows with dot<0 12, e rows with dot>=0 12 | mean log10|g_p||g_s| b/e/c -3.06/-3.06/-2.64 | mean cos b/e/c -0.51/+0.90/+0.76
+  L3 b rows with dot<0 12, e rows with dot>=0 12 | mean log10|g_p||g_s| b/e/c -3.41/-3.41/-3.53 | mean cos b/e/c -0.53/+0.68/+0.61
+held-out (test-episode) error after 3000 steps, PickCube std units, arm mean / gripper; recovery = (L_a - L) / (L_a - L_d) on the test loss
+  a0 all shared        pick 0.23/0.12 held@goal 0.18/0.14 fit 0.22/0.11 | stack 0.37/0.26 held@goal 0.36/0.44 released 0.34/0.40 fit 0.35/0.25 | test loss 0.4479 recovery -1.32
+  a  task heads        pick 0.19/0.07 held@goal 0.14/0.08 fit 0.18/0.07 | stack 0.35/0.20 held@goal 0.35/0.36 released 0.32/0.34 fit 0.33/0.19 | test loss 0.3734 recovery +0.00
+  b  top conflict      pick 0.18/0.07 held@goal 0.13/0.07 fit 0.17/0.07 | stack 0.34/0.19 held@goal 0.33/0.33 released 0.31/0.32 fit 0.32/0.18 | test loss 0.3586 recovery +0.26
+  c  random #0         pick 0.18/0.07 held@goal 0.14/0.08 fit 0.17/0.07 | stack 0.34/0.19 held@goal 0.34/0.35 released 0.31/0.32 fit 0.32/0.19 | test loss 0.3517 recovery +0.38
+  c  random #1         pick 0.18/0.07 held@goal 0.13/0.08 fit 0.16/0.07 | stack 0.34/0.20 held@goal 0.34/0.37 released 0.31/0.33 fit 0.32/0.20 | test loss 0.3521 recovery +0.38
+  c  random #2         pick 0.17/0.07 held@goal 0.13/0.07 fit 0.16/0.06 | stack 0.34/0.19 held@goal 0.34/0.35 released 0.30/0.33 fit 0.31/0.19 | test loss 0.3426 recovery +0.54
+  c  random #3         pick 0.18/0.07 held@goal 0.13/0.07 fit 0.17/0.07 | stack 0.34/0.20 held@goal 0.35/0.36 released 0.31/0.33 fit 0.32/0.19 | test loss 0.3539 recovery +0.34
+  c  random #4         pick 0.18/0.07 held@goal 0.13/0.07 fit 0.17/0.06 | stack 0.34/0.19 held@goal 0.34/0.33 released 0.31/0.32 fit 0.32/0.19 | test loss 0.3561 recovery +0.30
+  e  magnitude-matched pick 0.18/0.07 held@goal 0.13/0.07 fit 0.17/0.07 | stack 0.34/0.19 held@goal 0.34/0.35 released 0.31/0.32 fit 0.32/0.19 | test loss 0.3498 recovery +0.42
+  d  separate          pick 0.15/0.08 held@goal 0.10/0.08 fit 0.14/0.07 | stack 0.32/0.18 held@goal 0.32/0.31 released 0.29/0.31 fit 0.30/0.18 | test loss 0.3168 recovery +1.00
+
+over seeds [0, 1, 2] (c: over seeds x 5 masks): mean +- sd
+  a0  (n= 3) test loss 0.4583 +- 0.0089 (pick 0.1385, stack 0.3198) | recovery -2.00 +- 0.61
+  a   (n= 3) test loss 0.3732 +- 0.0051 (pick 0.1021, stack 0.2711) | recovery +0.00 +- 0.00
+  b   (n= 3) test loss 0.3596 +- 0.0105 (pick 0.0955, stack 0.2641) | recovery +0.31 +- 0.15
+  c   (n=15) test loss 0.3579 +- 0.0112 (pick 0.0942, stack 0.2637) | recovery +0.34 +- 0.19
+  e   (n= 3) test loss 0.3556 +- 0.0084 (pick 0.0937, stack 0.2619) | recovery +0.39 +- 0.06
+  d   (n= 3) test loss 0.3285 +- 0.0109 (pick 0.0855, stack 0.2430) | recovery +1.00 +- 0.00

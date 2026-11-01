@@ -1,0 +1,32 @@
+{
+ "old_expert": 0.9921875,
+ "runs": {
+  "runs/protect_c/runs/place_head_s2/ckpt_512000.pt": {
+   "old_head": 0.9921875,
+   "new_head": 0.99609375,
+   "moved": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "runs/protect_c/runs/place_head_s2/ckpt_1024000.pt": {
+   "old_head": 0.9921875,
+   "new_head": 0.95703125,
+   "moved": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "runs/protect_c/runs/place_head_s2/final_ckpt.pt": {
+   "old_head": 0.9921875,
+   "new_head": 0.8515625,
+   "moved": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ }
+}

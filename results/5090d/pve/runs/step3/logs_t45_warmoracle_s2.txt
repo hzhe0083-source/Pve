@@ -1,0 +1,19 @@
+oracle gate: 990 of 2048 labelled states kept (V* > 0.1), safe fraction 0.30, leave-one-out kNN agreement 0.87, fallback radius 7.35
+iter 1 step 0 eval success_once=0.070 lam=0.500
+iter 6 step 204800 eval success_once=0.125 lam=0.486
+iter 11 step 409600 eval success_once=0.125 lam=0.473
+iter 16 step 614400 eval success_once=0.172 lam=0.459
+iter 21 step 819200 eval success_once=0.141 lam=0.445
+iter 26 step 1024000 eval success_once=0.109 lam=0.432
+iter 31 step 1228800 eval success_once=0.086 lam=0.418
+iter 36 step 1433600 eval success_once=0.219 lam=0.404
+iter 41 step 1638400 eval success_once=0.281 lam=0.391
+iter 46 step 1843200 eval success_once=0.625 lam=0.377
+iter 51 step 2048000 eval success_once=0.750 lam=0.363
+iter 56 step 2252800 eval success_once=0.859 lam=0.350
+iter 61 step 2457600 eval success_once=0.898 lam=0.336
+iter 66 step 2662400 eval success_once=0.859 lam=0.322
+iter 71 step 2867200 eval success_once=0.961 lam=0.309
+iter 76 step 3072000 eval success_once=0.930 lam=0.295
+early stop: reached 0.9
+done t45_warmoracle_s2 steps=3072000 wall=610s SPS=5034

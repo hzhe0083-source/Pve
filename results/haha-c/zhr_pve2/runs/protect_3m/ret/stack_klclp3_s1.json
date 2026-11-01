@@ -1,0 +1,14 @@
+{
+ "old_expert": 0.9921875,
+ "runs": {
+  "runs/protect_3m/runs/stack_klclp3_s1/final_ckpt.pt": {
+   "old_head": 0.98046875,
+   "new_head": 0.80078125,
+   "moved": [
+    0.095085509121418,
+    0.1047937422990799,
+    0.12086940556764603
+   ]
+  }
+ }
+}

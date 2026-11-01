@@ -1,0 +1,182 @@
+{
+ "oracle@10M": {
+  "mean": {
+   "reach": 0.998,
+   "grasp": 1.0,
+   "lift": 0.979,
+   "at_goal": 0.971,
+   "release_at_goal": 0.0,
+   "success": 0.0,
+   "knock_B": 0.826
+  },
+  "sample": {
+   "reach": 0.895,
+   "grasp": 0.982,
+   "lift": 0.73,
+   "at_goal": 0.525,
+   "release_at_goal": 0.01,
+   "success": 0.0,
+   "knock_B": 0.674
+  }
+ },
+ "oracle@12M": {
+  "mean": {
+   "reach": 0.998,
+   "grasp": 1.0,
+   "lift": 0.949,
+   "at_goal": 0.613,
+   "release_at_goal": 0.0,
+   "success": 0.0,
+   "knock_B": 0.885
+  },
+  "sample": {
+   "reach": 0.902,
+   "grasp": 0.977,
+   "lift": 0.727,
+   "at_goal": 0.447,
+   "release_at_goal": 0.006,
+   "success": 0.0,
+   "knock_B": 0.699
+  }
+ },
+ "oracle@2M": {
+  "mean": {
+   "reach": 0.994,
+   "grasp": 1.0,
+   "lift": 0.973,
+   "at_goal": 0.957,
+   "release_at_goal": 0.0,
+   "success": 0.0,
+   "knock_B": 0.816
+  },
+  "sample": {
+   "reach": 0.861,
+   "grasp": 0.949,
+   "lift": 0.682,
+   "at_goal": 0.412,
+   "release_at_goal": 0.027,
+   "success": 0.0,
+   "knock_B": 0.621
+  }
+ },
+ "oracle@5M": {
+  "mean": {
+   "reach": 0.996,
+   "grasp": 0.998,
+   "lift": 0.977,
+   "at_goal": 0.947,
+   "release_at_goal": 0.0,
+   "success": 0.0,
+   "knock_B": 0.84
+  },
+  "sample": {
+   "reach": 0.881,
+   "grasp": 0.971,
+   "lift": 0.697,
+   "at_goal": 0.463,
+   "release_at_goal": 0.012,
+   "success": 0.0,
+   "knock_B": 0.629
+  }
+ },
+ "oracle@7M": {
+  "mean": {
+   "reach": 0.996,
+   "grasp": 1.0,
+   "lift": 0.963,
+   "at_goal": 0.904,
+   "release_at_goal": 0.0,
+   "success": 0.0,
+   "knock_B": 0.822
+  },
+  "sample": {
+   "reach": 0.861,
+   "grasp": 0.979,
+   "lift": 0.684,
+   "at_goal": 0.477,
+   "release_at_goal": 0.002,
+   "success": 0.0,
+   "knock_B": 0.615
+  }
+ },
+ "shuffle@10M": {
+  "mean": {
+   "reach": 0.994,
+   "grasp": 0.998,
+   "lift": 0.982,
+   "at_goal": 0.967,
+   "release_at_goal": 0.0,
+   "success": 0.0,
+   "knock_B": 0.822
+  },
+  "sample": {
+   "reach": 0.973,
+   "grasp": 0.988,
+   "lift": 0.742,
+   "at_goal": 0.324,
+   "release_at_goal": 0.338,
+   "success": 0.02,
+   "knock_B": 0.752
+  }
+ },
+ "shuffle@2M": {
+  "mean": {
+   "reach": 0.998,
+   "grasp": 1.0,
+   "lift": 0.99,
+   "at_goal": 0.959,
+   "release_at_goal": 0.0,
+   "success": 0.0,
+   "knock_B": 0.842
+  },
+  "sample": {
+   "reach": 0.867,
+   "grasp": 0.975,
+   "lift": 0.662,
+   "at_goal": 0.357,
+   "release_at_goal": 0.076,
+   "success": 0.006,
+   "knock_B": 0.652
+  }
+ },
+ "shuffle@5M": {
+  "mean": {
+   "reach": 0.994,
+   "grasp": 0.998,
+   "lift": 0.988,
+   "at_goal": 0.963,
+   "release_at_goal": 0.0,
+   "success": 0.0,
+   "knock_B": 0.826
+  },
+  "sample": {
+   "reach": 0.859,
+   "grasp": 0.969,
+   "lift": 0.654,
+   "at_goal": 0.312,
+   "release_at_goal": 0.109,
+   "success": 0.0,
+   "knock_B": 0.629
+  }
+ },
+ "shuffle@7M": {
+  "mean": {
+   "reach": 0.998,
+   "grasp": 1.0,
+   "lift": 0.98,
+   "at_goal": 0.969,
+   "release_at_goal": 0.0,
+   "success": 0.0,
+   "knock_B": 0.787
+  },
+  "sample": {
+   "reach": 0.914,
+   "grasp": 0.971,
+   "lift": 0.672,
+   "at_goal": 0.287,
+   "release_at_goal": 0.191,
+   "success": 0.006,
+   "knock_B": 0.66
+  }
+ }
+}

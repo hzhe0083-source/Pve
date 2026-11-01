@@ -1,0 +1,47 @@
+{
+ "source": {
+  "success": 0.0,
+  "let_go_at_goal": 0.00146484375,
+  "steps_in_region_per_episode": 29.3427734375
+ },
+ "global:0.6": {
+  "success": 0.008056640625,
+  "let_go_at_goal": 0.4345703125,
+  "steps_in_region_per_episode": 26.152587890625
+ },
+ "global:1.0": {
+  "success": 0.106689453125,
+  "let_go_at_goal": 0.66259765625,
+  "steps_in_region_per_episode": 16.38671875
+ },
+ "seam:1.0": {
+  "success": 0.13330078125,
+  "let_go_at_goal": 0.91357421875,
+  "steps_in_region_per_episode": 26.18603515625
+ },
+ "pseam:1.0": {
+  "success": 0.1279296875,
+  "let_go_at_goal": 0.875,
+  "steps_in_region_per_episode": 24.434326171875
+ },
+ "lseam:0.6": {
+  "success": 0.0087890625,
+  "let_go_at_goal": 0.459228515625,
+  "steps_in_region_per_episode": 28.47705078125
+ },
+ "lseam:1.0": {
+  "success": 0.17626953125,
+  "let_go_at_goal": 0.909423828125,
+  "steps_in_region_per_episode": 25.313232421875
+ },
+ "lpseam:0.6": {
+  "success": 0.01220703125,
+  "let_go_at_goal": 0.45849609375,
+  "steps_in_region_per_episode": 28.570556640625
+ },
+ "lpseam:1.0": {
+  "success": 0.1640625,
+  "let_go_at_goal": 0.863037109375,
+  "steps_in_region_per_episode": 23.32470703125
+ }
+}

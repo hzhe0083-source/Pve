@@ -1,0 +1,23 @@
+{
+ "old_expert": 0.9921875,
+ "runs": {
+  "runs/protect_3m/runs/stack_fnbank_s1/ckpt_1433600.pt": {
+   "old_head": 0.99609375,
+   "new_head": 0.93359375,
+   "moved": [
+    0.10219469666481018,
+    0.15163969993591309,
+    0.14632290601730347
+   ]
+  },
+  "runs/protect_3m/runs/stack_fnbank_s1/final_ckpt.pt": {
+   "old_head": 0.9921875,
+   "new_head": 0.6328125,
+   "moved": [
+    0.19160015881061554,
+    0.25156325101852417,
+    0.23155488073825836
+   ]
+  }
+ }
+}

@@ -1,0 +1,383 @@
+[33;1m2026-10-30 22:22:16,498 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:22:17,669 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:22:19,608 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:22:19,888 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:22:21,477 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:22:42,302 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:22:44,673 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:23:07,734 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:23:10,196 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:23:33,867 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:23:36,150 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:24:00,748 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:24:02,951 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:24:26,437 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:24:28,412 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:24:50,461 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:24:52,345 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:25:12,746 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:25:14,498 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:25:32,194 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:25:34,042 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:25:51,916 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:25:53,749 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:26:12,997 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:26:14,769 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:26:33,431 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:26:35,297 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Running training
+####
+args.num_iterations=122 args.num_envs=2048 args.num_eval_envs=16
+args.minibatch_size=1280 args.batch_size=40960 args.update_epochs=8
+####
+Epoch: 1, global_step=0
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=0.0
+eval_return_mean=4.819574356079102
+eval_episode_len_mean=50.0
+eval_reward_mean=0.09639148414134979
+eval_success_at_end_mean=0.0
+model saved to runs/PullCube/ckpt_1.pt
+SPS: 9635
+Epoch: 2, global_step=40960
+SPS: 13274
+Epoch: 3, global_step=81920
+SPS: 15140
+Epoch: 4, global_step=122880
+SPS: 16033
+Epoch: 5, global_step=163840
+SPS: 16541
+Epoch: 6, global_step=204800
+SPS: 16931
+Epoch: 7, global_step=245760
+SPS: 17228
+Epoch: 8, global_step=286720
+SPS: 17481
+Epoch: 9, global_step=327680
+SPS: 17567
+Epoch: 10, global_step=368640
+SPS: 17905
+Epoch: 11, global_step=409600
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=0.0
+eval_return_mean=13.320472717285156
+eval_episode_len_mean=50.0
+eval_reward_mean=0.2664094865322113
+eval_success_at_end_mean=0.0
+model saved to runs/PullCube/ckpt_11.pt
+SPS: 16204
+Epoch: 12, global_step=450560
+SPS: 16351
+Epoch: 13, global_step=491520
+SPS: 16547
+Epoch: 14, global_step=532480
+SPS: 16670
+Epoch: 15, global_step=573440
+SPS: 16708
+Epoch: 16, global_step=614400
+SPS: 16822
+Epoch: 17, global_step=655360
+SPS: 16898
+Epoch: 18, global_step=696320
+SPS: 16934
+Epoch: 19, global_step=737280
+SPS: 16945
+Epoch: 20, global_step=778240
+SPS: 16939
+Epoch: 21, global_step=819200
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=0.0625
+eval_return_mean=14.649551391601562
+eval_episode_len_mean=50.0
+eval_reward_mean=0.292991042137146
+eval_success_at_end_mean=0.0625
+model saved to runs/PullCube/ckpt_21.pt
+SPS: 16125
+Epoch: 22, global_step=860160
+SPS: 16183
+Epoch: 23, global_step=901120
+SPS: 16226
+Epoch: 24, global_step=942080
+SPS: 16287
+Epoch: 25, global_step=983040
+SPS: 16344
+Epoch: 26, global_step=1024000
+SPS: 16377
+Epoch: 27, global_step=1064960
+SPS: 16400
+Epoch: 28, global_step=1105920
+SPS: 16441
+Epoch: 29, global_step=1146880
+SPS: 16481
+Epoch: 30, global_step=1187840
+SPS: 16495
+Epoch: 31, global_step=1228800
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=0.8125
+eval_return_mean=24.030179977416992
+eval_episode_len_mean=50.0
+eval_reward_mean=0.48060357570648193
+eval_success_at_end_mean=0.3125
+model saved to runs/PullCube/ckpt_31.pt
+SPS: 15995
+Epoch: 32, global_step=1269760
+SPS: 16031
+Epoch: 33, global_step=1310720
+SPS: 16055
+Epoch: 34, global_step=1351680
+SPS: 16056
+Epoch: 35, global_step=1392640
+SPS: 16065
+Epoch: 36, global_step=1433600
+SPS: 16078
+Epoch: 37, global_step=1474560
+SPS: 16093
+Epoch: 38, global_step=1515520
+SPS: 16114
+Epoch: 39, global_step=1556480
+SPS: 16142
+Epoch: 40, global_step=1597440
+SPS: 16159
+Epoch: 41, global_step=1638400
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=23.997934341430664
+eval_episode_len_mean=50.0
+eval_reward_mean=0.479958713054657
+eval_success_at_end_mean=0.0
+model saved to runs/PullCube/ckpt_41.pt
+SPS: 15823
+Epoch: 42, global_step=1679360
+SPS: 15845
+Epoch: 43, global_step=1720320
+SPS: 15873
+Epoch: 44, global_step=1761280
+SPS: 15899
+Epoch: 45, global_step=1802240
+SPS: 15958
+Epoch: 46, global_step=1843200
+SPS: 15978
+Epoch: 47, global_step=1884160
+SPS: 16072
+Epoch: 48, global_step=1925120
+SPS: 16089
+Epoch: 49, global_step=1966080
+SPS: 16099
+Epoch: 50, global_step=2007040
+SPS: 16119
+Epoch: 51, global_step=2048000
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=20.726463317871094
+eval_episode_len_mean=50.0
+eval_reward_mean=0.4145292341709137
+eval_success_at_end_mean=0.0
+model saved to runs/PullCube/ckpt_51.pt
+SPS: 15865
+Epoch: 52, global_step=2088960
+SPS: 15907
+Epoch: 53, global_step=2129920
+SPS: 15924
+Epoch: 54, global_step=2170880
+SPS: 16004
+Epoch: 55, global_step=2211840
+SPS: 16011
+Epoch: 56, global_step=2252800
+SPS: 16068
+Epoch: 57, global_step=2293760
+SPS: 16079
+Epoch: 58, global_step=2334720
+SPS: 16199
+Epoch: 59, global_step=2375680
+SPS: 16237
+Epoch: 60, global_step=2416640
+SPS: 16268
+Epoch: 61, global_step=2457600
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=19.785751342773438
+eval_episode_len_mean=50.0
+eval_reward_mean=0.39571505784988403
+eval_success_at_end_mean=0.0
+model saved to runs/PullCube/ckpt_61.pt
+SPS: 16097
+Epoch: 62, global_step=2498560
+SPS: 16191
+Epoch: 63, global_step=2539520
+SPS: 16200
+Epoch: 64, global_step=2580480
+SPS: 16293
+Epoch: 65, global_step=2621440
+SPS: 16374
+Epoch: 66, global_step=2662400
+SPS: 16402
+Epoch: 67, global_step=2703360
+SPS: 16476
+Epoch: 68, global_step=2744320
+SPS: 16480
+Epoch: 69, global_step=2785280
+SPS: 16499
+Epoch: 70, global_step=2826240
+SPS: 16538
+Epoch: 71, global_step=2867200
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=19.543174743652344
+eval_episode_len_mean=50.0
+eval_reward_mean=0.39086347818374634
+eval_success_at_end_mean=0.0
+model saved to runs/PullCube/ckpt_71.pt
+SPS: 16419
+Epoch: 72, global_step=2908160
+SPS: 16488
+Epoch: 73, global_step=2949120
+SPS: 16586
+Epoch: 74, global_step=2990080
+SPS: 16633
+Epoch: 75, global_step=3031040
+SPS: 16683
+Epoch: 76, global_step=3072000
+SPS: 16766
+Epoch: 77, global_step=3112960
+SPS: 16829
+Epoch: 78, global_step=3153920
+SPS: 16897
+Epoch: 79, global_step=3194880
+SPS: 16941
+Epoch: 80, global_step=3235840
+SPS: 16994
+Epoch: 81, global_step=3276800
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=20.050865173339844
+eval_episode_len_mean=50.0
+eval_reward_mean=0.40101733803749084
+eval_success_at_end_mean=0.0
+model saved to runs/PullCube/ckpt_81.pt
+SPS: 16850
+Epoch: 82, global_step=3317760
+SPS: 16922
+Epoch: 83, global_step=3358720
+SPS: 16979
+Epoch: 84, global_step=3399680
+SPS: 17038
+Epoch: 85, global_step=3440640
+SPS: 17117
+Epoch: 86, global_step=3481600
+SPS: 17144
+Epoch: 87, global_step=3522560
+SPS: 17169
+Epoch: 88, global_step=3563520
+SPS: 17213
+Epoch: 89, global_step=3604480
+SPS: 17285
+Epoch: 90, global_step=3645440
+SPS: 17345
+Epoch: 91, global_step=3686400
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=19.22845458984375
+eval_episode_len_mean=50.0
+eval_reward_mean=0.38456910848617554
+eval_success_at_end_mean=0.0
+model saved to runs/PullCube/ckpt_91.pt
+SPS: 17189
+Epoch: 92, global_step=3727360
+SPS: 17231
+Epoch: 93, global_step=3768320
+SPS: 17269
+Epoch: 94, global_step=3809280
+SPS: 17314
+Epoch: 95, global_step=3850240
+SPS: 17363
+Epoch: 96, global_step=3891200
+SPS: 17407
+Epoch: 97, global_step=3932160
+SPS: 17436
+Epoch: 98, global_step=3973120
+SPS: 17479
+Epoch: 99, global_step=4014080
+SPS: 17496
+Epoch: 100, global_step=4055040
+SPS: 17532
+Epoch: 101, global_step=4096000
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=19.502277374267578
+eval_episode_len_mean=50.0
+eval_reward_mean=0.39004552364349365
+eval_success_at_end_mean=0.0
+model saved to runs/PullCube/ckpt_101.pt
+SPS: 17393
+Epoch: 102, global_step=4136960
+SPS: 17452
+Epoch: 103, global_step=4177920
+SPS: 17486
+Epoch: 104, global_step=4218880
+SPS: 17530
+Epoch: 105, global_step=4259840
+SPS: 17572
+Epoch: 106, global_step=4300800
+SPS: 17613
+Epoch: 107, global_step=4341760
+SPS: 17633
+Epoch: 108, global_step=4382720
+SPS: 17670
+Epoch: 109, global_step=4423680
+SPS: 17709
+Epoch: 110, global_step=4464640
+SPS: 17735
+Epoch: 111, global_step=4505600
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=19.309768676757812
+eval_episode_len_mean=50.0
+eval_reward_mean=0.3861953616142273
+eval_success_at_end_mean=0.0
+model saved to runs/PullCube/ckpt_111.pt
+SPS: 17617
+Epoch: 112, global_step=4546560
+SPS: 17647
+Epoch: 113, global_step=4587520
+SPS: 17685
+Epoch: 114, global_step=4628480
+SPS: 17735
+Epoch: 115, global_step=4669440
+SPS: 17763
+Epoch: 116, global_step=4710400
+SPS: 17798
+Epoch: 117, global_step=4751360
+SPS: 17822
+Epoch: 118, global_step=4792320
+SPS: 17852
+Epoch: 119, global_step=4833280
+SPS: 17887
+Epoch: 120, global_step=4874240[33;1m2026-10-30 22:26:53,360 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 22:26:55,426 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+
+SPS: 17942
+Epoch: 121, global_step=4915200
+Evaluating
+Evaluated 800 steps resulting in 16 episodes
+eval_success_once_mean=1.0
+eval_return_mean=19.070772171020508
+eval_episode_len_mean=50.0
+eval_reward_mean=0.3814154267311096
+eval_success_at_end_mean=0.0
+model saved to runs/PullCube/ckpt_121.pt
+SPS: 17828
+Epoch: 122, global_step=4956160
+SPS: 17862
+model saved to runs/PullCube/final_ckpt.pt

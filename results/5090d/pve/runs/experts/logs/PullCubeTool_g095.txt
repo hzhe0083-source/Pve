@@ -1,0 +1,853 @@
+[33;1m2026-10-31 00:03:34,186 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:03:35,290 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:03:35,321 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:03:36,939 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:03:37,101 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:03:37,103 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Running training
+[33;1m2026-10-31 00:03:38,285 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:03:38,442 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:03:38,444 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+####
+args.num_iterations=244 args.num_envs=2048 args.num_eval_envs=64
+args.minibatch_size=3200 args.batch_size=102400 args.update_epochs=8
+####
+Epoch: 1, global_step=0
+Evaluating
+[33;1m2026-10-31 00:03:38,942 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:03:39,096 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:03:39,099 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:03:49,857 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:03:49,994 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:03:49,995 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=3.93532133102417
+eval_episode_len_mean=100.0
+eval_reward_mean=0.03935321420431137
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_1.pt
+SPS: 4175
+Epoch: 2, global_step=102400
+SPS: 5635
+Epoch: 3, global_step=204800
+SPS: 6250
+Epoch: 4, global_step=307200
+SPS: 6580
+Epoch: 5, global_step=409600
+SPS: 6789
+Epoch: 6, global_step=512000
+SPS: 6917
+Epoch: 7, global_step=614400
+SPS: 7035
+Epoch: 8, global_step=716800
+SPS: 7074
+Epoch: 9, global_step=819200
+SPS: 7186
+Epoch: 10, global_step=921600
+SPS: 7453
+Epoch: 11, global_step=1024000
+Evaluating
+[33;1m2026-10-31 00:05:55,408 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:05:55,541 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:05:55,546 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:06:05,397 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:06:05,502 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:06:05,504 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=25.433393478393555
+eval_episode_len_mean=100.0
+eval_reward_mean=0.2543339133262634
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_11.pt
+SPS: 7136
+Epoch: 12, global_step=1126400
+SPS: 7324
+Epoch: 13, global_step=1228800
+SPS: 7508
+Epoch: 14, global_step=1331200
+SPS: 7723
+Epoch: 15, global_step=1433600
+SPS: 7853
+Epoch: 16, global_step=1536000
+SPS: 7951
+Epoch: 17, global_step=1638400
+SPS: 8058
+Epoch: 18, global_step=1740800
+SPS: 8158
+Epoch: 19, global_step=1843200
+SPS: 8324
+Epoch: 20, global_step=1945600
+SPS: 8454
+Epoch: 21, global_step=2048000
+Evaluating
+[33;1m2026-10-31 00:07:40,253 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:07:40,447 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:07:40,448 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:07:53,838 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:07:54,038 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:07:54,041 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=28.82940673828125
+eval_episode_len_mean=100.0
+eval_reward_mean=0.2882940471172333
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_21.pt
+SPS: 7974
+Epoch: 22, global_step=2150400
+SPS: 7975
+Epoch: 23, global_step=2252800
+SPS: 7981
+Epoch: 24, global_step=2355200
+SPS: 7996
+Epoch: 25, global_step=2457600
+SPS: 7998
+Epoch: 26, global_step=2560000
+SPS: 7997
+Epoch: 27, global_step=2662400
+SPS: 7985
+Epoch: 28, global_step=2764800
+SPS: 7979
+Epoch: 29, global_step=2867200
+SPS: 7945
+Epoch: 30, global_step=2969600
+SPS: 7926
+Epoch: 31, global_step=3072000
+Evaluating
+[33;1m2026-10-31 00:10:05,562 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:10:05,719 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:10:05,720 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:10:18,352 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:10:18,537 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:10:18,538 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=43.09049987792969
+eval_episode_len_mean=100.0
+eval_reward_mean=0.4309050142765045
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_31.pt
+SPS: 7646
+Epoch: 32, global_step=3174400
+SPS: 7648
+Epoch: 33, global_step=3276800
+SPS: 7635
+Epoch: 34, global_step=3379200
+SPS: 7636
+Epoch: 35, global_step=3481600
+SPS: 7628
+Epoch: 36, global_step=3584000
+SPS: 7636
+Epoch: 37, global_step=3686400
+SPS: 7631
+Epoch: 38, global_step=3788800
+SPS: 7681
+Epoch: 39, global_step=3891200
+SPS: 7736
+Epoch: 40, global_step=3993600
+SPS: 7806
+Epoch: 41, global_step=4096000
+Evaluating
+[33;1m2026-10-31 00:12:22,802 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:12:22,955 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:12:22,958 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:12:32,153 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:12:32,316 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:12:32,319 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=73.54841613769531
+eval_episode_len_mean=100.0
+eval_reward_mean=0.7354841828346252
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_41.pt
+SPS: 7704
+Epoch: 42, global_step=4198400
+SPS: 7738
+Epoch: 43, global_step=4300800
+SPS: 7778
+Epoch: 44, global_step=4403200
+SPS: 7819
+Epoch: 45, global_step=4505600
+SPS: 7864
+Epoch: 46, global_step=4608000
+SPS: 7916
+Epoch: 47, global_step=4710400
+SPS: 7954
+Epoch: 48, global_step=4812800
+SPS: 7998
+Epoch: 49, global_step=4915200
+SPS: 8042
+Epoch: 50, global_step=5017600
+SPS: 8080
+Epoch: 51, global_step=5120000
+Evaluating
+[33;1m2026-10-31 00:14:11,693 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:14:11,827 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:14:11,828 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:14:20,522 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:14:20,602 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:14:20,603 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=83.5572509765625
+eval_episode_len_mean=100.0
+eval_reward_mean=0.8355725407600403
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_51.pt
+SPS: 8004
+Epoch: 52, global_step=5222400
+SPS: 8051
+Epoch: 53, global_step=5324800
+SPS: 8084
+Epoch: 54, global_step=5427200
+SPS: 8142
+Epoch: 55, global_step=5529600
+SPS: 8173
+Epoch: 56, global_step=5632000
+SPS: 8208
+Epoch: 57, global_step=5734400
+SPS: 8247
+Epoch: 58, global_step=5836800
+SPS: 8278
+Epoch: 59, global_step=5939200
+SPS: 8326
+Epoch: 60, global_step=6041600
+SPS: 8362
+Epoch: 61, global_step=6144000
+Evaluating
+[33;1m2026-10-31 00:15:52,702 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:15:52,785 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:15:52,788 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:16:00,470 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:16:00,613 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:16:00,617 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=90.76377868652344
+eval_episode_len_mean=100.0
+eval_reward_mean=0.9076377749443054
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_61.pt
+SPS: 8295
+Epoch: 62, global_step=6246400
+SPS: 8315
+Epoch: 63, global_step=6348800
+SPS: 8349
+Epoch: 64, global_step=6451200
+SPS: 8374
+Epoch: 65, global_step=6553600
+SPS: 8399
+Epoch: 66, global_step=6656000
+SPS: 8434
+Epoch: 67, global_step=6758400
+SPS: 8461
+Epoch: 68, global_step=6860800
+SPS: 8495
+Epoch: 69, global_step=6963200
+SPS: 8520
+Epoch: 70, global_step=7065600
+SPS: 8538
+Epoch: 71, global_step=7168000
+Evaluating
+[33;1m2026-10-31 00:17:37,471 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:17:37,584 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:17:37,585 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:17:46,554 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:17:46,654 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:17:46,655 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=96.36222839355469
+eval_episode_len_mean=100.0
+eval_reward_mean=0.9636222124099731
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_71.pt
+SPS: 8465
+Epoch: 72, global_step=7270400
+SPS: 8502
+Epoch: 73, global_step=7372800
+SPS: 8520
+Epoch: 74, global_step=7475200
+SPS: 8540
+Epoch: 75, global_step=7577600
+SPS: 8565
+Epoch: 76, global_step=7680000
+SPS: 8584
+Epoch: 77, global_step=7782400
+SPS: 8613
+Epoch: 78, global_step=7884800
+SPS: 8630
+Epoch: 79, global_step=7987200
+SPS: 8647
+Epoch: 80, global_step=8089600
+SPS: 8685
+Epoch: 81, global_step=8192000
+Evaluating
+[33;1m2026-10-31 00:19:21,252 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:19:21,336 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:19:21,339 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:19:30,335 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:19:30,452 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:19:30,457 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=102.74528503417969
+eval_episode_len_mean=100.0
+eval_reward_mean=1.027452826499939
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_81.pt
+SPS: 8617
+Epoch: 82, global_step=8294400
+SPS: 8645
+Epoch: 83, global_step=8396800
+SPS: 8658
+Epoch: 84, global_step=8499200
+SPS: 8677
+Epoch: 85, global_step=8601600
+SPS: 8696
+Epoch: 86, global_step=8704000
+SPS: 8737
+Epoch: 87, global_step=8806400
+SPS: 8752
+Epoch: 88, global_step=8908800
+SPS: 8784
+Epoch: 89, global_step=9011200
+SPS: 8800
+Epoch: 90, global_step=9113600
+SPS: 8813
+Epoch: 91, global_step=9216000
+Evaluating
+[33;1m2026-10-31 00:21:03,638 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:21:03,816 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:21:03,819 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:21:13,332 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:21:13,456 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:21:13,458 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=104.80583190917969
+eval_episode_len_mean=100.0
+eval_reward_mean=1.048058271408081
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_91.pt
+SPS: 8744
+Epoch: 92, global_step=9318400
+SPS: 8770
+Epoch: 93, global_step=9420800
+SPS: 8784
+Epoch: 94, global_step=9523200
+SPS: 8818
+Epoch: 95, global_step=9625600
+SPS: 8843
+Epoch: 96, global_step=9728000
+SPS: 8889
+Epoch: 97, global_step=9830400
+SPS: 8894
+Epoch: 98, global_step=9932800
+SPS: 8904
+Epoch: 99, global_step=10035200
+SPS: 8907
+Epoch: 100, global_step=10137600
+SPS: 8927
+Epoch: 101, global_step=10240000
+Evaluating
+[33;1m2026-10-31 00:22:45,103 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:22:45,204 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:22:45,206 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:22:54,751 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:22:54,927 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:22:54,929 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=108.89697265625
+eval_episode_len_mean=100.0
+eval_reward_mean=1.0889697074890137
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_101.pt
+SPS: 8858
+Epoch: 102, global_step=10342400
+SPS: 8884
+Epoch: 103, global_step=10444800
+SPS: 8894
+Epoch: 104, global_step=10547200
+SPS: 8921
+Epoch: 105, global_step=10649600
+SPS: 8934
+Epoch: 106, global_step=10752000
+SPS: 8949
+Epoch: 107, global_step=10854400
+SPS: 8961
+Epoch: 108, global_step=10956800
+SPS: 8973
+Epoch: 109, global_step=11059200
+SPS: 8992
+Epoch: 110, global_step=11161600
+SPS: 9003
+Epoch: 111, global_step=11264000
+Evaluating
+[33;1m2026-10-31 00:24:29,127 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:24:29,291 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:24:29,293 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:24:38,126 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:24:38,260 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:24:38,261 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=107.06138610839844
+eval_episode_len_mean=100.0
+eval_reward_mean=1.0706138610839844
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_111.pt
+SPS: 8957
+Epoch: 112, global_step=11366400
+SPS: 8983
+Epoch: 113, global_step=11468800
+SPS: 9013
+Epoch: 114, global_step=11571200
+SPS: 9038
+Epoch: 115, global_step=11673600
+SPS: 9050
+Epoch: 116, global_step=11776000
+SPS: 9068
+Epoch: 117, global_step=11878400
+SPS: 9074
+Epoch: 118, global_step=11980800
+SPS: 9097
+Epoch: 119, global_step=12083200
+SPS: 9104
+Epoch: 120, global_step=12185600
+SPS: 9122
+Epoch: 121, global_step=12288000
+Evaluating
+[33;1m2026-10-31 00:26:05,062 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:26:05,223 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:26:05,227 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:26:14,506 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:26:14,613 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:26:14,614 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=109.34253692626953
+eval_episode_len_mean=100.0
+eval_reward_mean=1.0934252738952637
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_121.pt
+SPS: 9059
+Epoch: 122, global_step=12390400
+SPS: 9072
+Epoch: 123, global_step=12492800
+SPS: 9079
+Epoch: 124, global_step=12595200
+SPS: 9108
+Epoch: 125, global_step=12697600
+SPS: 9117
+Epoch: 126, global_step=12800000
+SPS: 9140
+Epoch: 127, global_step=12902400
+SPS: 9151
+Epoch: 128, global_step=13004800
+SPS: 9161
+Epoch: 129, global_step=13107200
+SPS: 9169
+Epoch: 130, global_step=13209600
+SPS: 9182
+Epoch: 131, global_step=13312000
+Evaluating
+[33;1m2026-10-31 00:27:47,654 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:27:47,793 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:27:47,795 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:27:57,031 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:27:57,141 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:27:57,142 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=110.22041320800781
+eval_episode_len_mean=100.0
+eval_reward_mean=1.1022040843963623
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_131.pt
+SPS: 9132
+Epoch: 132, global_step=13414400
+SPS: 9142
+Epoch: 133, global_step=13516800
+SPS: 9150
+Epoch: 134, global_step=13619200
+SPS: 9176
+Epoch: 135, global_step=13721600
+SPS: 9197
+Epoch: 136, global_step=13824000
+SPS: 9218
+Epoch: 137, global_step=13926400
+SPS: 9227
+Epoch: 138, global_step=14028800
+SPS: 9253
+Epoch: 139, global_step=14131200
+SPS: 9265
+Epoch: 140, global_step=14233600
+SPS: 9287
+Epoch: 141, global_step=14336000
+Evaluating
+[33;1m2026-10-31 00:29:21,587 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:29:21,700 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:29:21,701 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:29:30,239 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:29:30,387 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:29:30,388 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=112.15380859375
+eval_episode_len_mean=100.0
+eval_reward_mean=1.1215380430221558
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_141.pt
+SPS: 9240
+Epoch: 142, global_step=14438400
+SPS: 9263
+Epoch: 143, global_step=14540800
+SPS: 9276
+Epoch: 144, global_step=14643200
+SPS: 9292
+Epoch: 145, global_step=14745600
+SPS: 9306
+Epoch: 146, global_step=14848000
+SPS: 9317
+Epoch: 147, global_step=14950400
+SPS: 9332
+Epoch: 148, global_step=15052800
+SPS: 9351
+Epoch: 149, global_step=15155200
+SPS: 9357
+Epoch: 150, global_step=15257600
+SPS: 9377
+Epoch: 151, global_step=15360000
+Evaluating
+[33;1m2026-10-31 00:30:55,956 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:30:56,083 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:30:56,087 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:31:05,013 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:31:05,105 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:31:05,107 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=108.16543579101562
+eval_episode_len_mean=100.0
+eval_reward_mean=1.08165442943573
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_151.pt
+SPS: 9326
+Epoch: 152, global_step=15462400
+SPS: 9346
+Epoch: 153, global_step=15564800
+SPS: 9348
+Epoch: 154, global_step=15667200
+SPS: 9364
+Epoch: 155, global_step=15769600
+SPS: 9378
+Epoch: 156, global_step=15872000
+SPS: 9395
+Epoch: 157, global_step=15974400
+SPS: 9401
+Epoch: 158, global_step=16076800
+SPS: 9416
+Epoch: 159, global_step=16179200
+SPS: 9434
+Epoch: 160, global_step=16281600
+SPS: 9464
+Epoch: 161, global_step=16384000
+Evaluating
+[33;1m2026-10-31 00:32:29,063 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:32:29,141 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:32:29,142 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:32:37,759 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:32:37,883 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:32:37,884 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=112.40811920166016
+eval_episode_len_mean=100.0
+eval_reward_mean=1.1240811347961426
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_161.pt
+SPS: 9423
+Epoch: 162, global_step=16486400
+SPS: 9442
+Epoch: 163, global_step=16588800
+SPS: 9460
+Epoch: 164, global_step=16691200
+SPS: 9480
+Epoch: 165, global_step=16793600
+SPS: 9482
+Epoch: 166, global_step=16896000
+SPS: 9491
+Epoch: 167, global_step=16998400
+SPS: 9492
+Epoch: 168, global_step=17100800
+SPS: 9504
+Epoch: 169, global_step=17203200
+SPS: 9504
+Epoch: 170, global_step=17305600
+SPS: 9522
+Epoch: 171, global_step=17408000
+Evaluating
+[33;1m2026-10-31 00:34:06,191 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:34:06,309 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:34:06,312 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:34:15,287 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:34:15,414 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:34:15,417 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=111.1195068359375
+eval_episode_len_mean=100.0
+eval_reward_mean=1.1111950874328613
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_171.pt
+SPS: 9473
+Epoch: 172, global_step=17510400
+SPS: 9490
+Epoch: 173, global_step=17612800
+SPS: 9498
+Epoch: 174, global_step=17715200
+SPS: 9517
+Epoch: 175, global_step=17817600
+SPS: 9540
+Epoch: 176, global_step=17920000
+SPS: 9576
+Epoch: 177, global_step=18022400
+SPS: 9605
+Epoch: 178, global_step=18124800
+SPS: 9639
+Epoch: 179, global_step=18227200
+SPS: 9669
+Epoch: 180, global_step=18329600
+SPS: 9700
+Epoch: 181, global_step=18432000
+Evaluating
+[33;1m2026-10-31 00:35:18,130 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:35:18,206 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:35:18,207 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:35:22,902 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:35:22,956 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:35:22,958 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=81.82067108154297
+eval_episode_len_mean=100.0
+eval_reward_mean=0.8182066679000854
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_181.pt
+SPS: 9701
+Epoch: 182, global_step=18534400
+SPS: 9735
+Epoch: 183, global_step=18636800
+SPS: 9763
+Epoch: 184, global_step=18739200
+SPS: 9795
+Epoch: 185, global_step=18841600
+SPS: 9823
+Epoch: 186, global_step=18944000
+SPS: 9855
+Epoch: 187, global_step=19046400
+SPS: 9864
+Epoch: 188, global_step=19148800
+SPS: 9877
+Epoch: 189, global_step=19251200
+SPS: 9872
+Epoch: 190, global_step=19353600
+SPS: 9881
+Epoch: 191, global_step=19456000
+Evaluating
+[33;1m2026-10-31 00:36:26,930 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:36:27,054 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:36:27,056 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:36:37,204 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:36:37,325 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:36:37,328 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=111.46878051757812
+eval_episode_len_mean=100.0
+eval_reward_mean=1.1146878004074097
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_191.pt
+SPS: 9823
+Epoch: 192, global_step=19558400
+SPS: 9834
+Epoch: 193, global_step=19660800
+SPS: 9831
+Epoch: 194, global_step=19763200
+SPS: 9848
+Epoch: 195, global_step=19865600
+SPS: 9844
+Epoch: 196, global_step=19968000
+SPS: 9855
+Epoch: 197, global_step=20070400
+SPS: 9853
+Epoch: 198, global_step=20172800
+SPS: 9871
+Epoch: 199, global_step=20275200
+SPS: 9869
+Epoch: 200, global_step=20377600
+SPS: 9882
+Epoch: 201, global_step=20480000
+Evaluating
+[33;1m2026-10-31 00:38:10,335 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:38:10,436 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:38:10,438 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:38:20,350 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:38:20,470 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:38:20,471 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=112.17100524902344
+eval_episode_len_mean=100.0
+eval_reward_mean=1.1217100620269775
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_201.pt
+SPS: 9836
+Epoch: 202, global_step=20582400
+SPS: 9854
+Epoch: 203, global_step=20684800
+SPS: 9868
+Epoch: 204, global_step=20787200
+SPS: 9884
+Epoch: 205, global_step=20889600
+SPS: 9905
+Epoch: 206, global_step=20992000
+SPS: 9928
+Epoch: 207, global_step=21094400
+SPS: 9949
+Epoch: 208, global_step=21196800
+SPS: 9981
+Epoch: 209, global_step=21299200
+SPS: 10010
+Epoch: 210, global_step=21401600
+SPS: 10037
+Epoch: 211, global_step=21504000
+Evaluating
+[33;1m2026-10-31 00:39:20,387 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:39:20,422 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:39:20,423 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:39:26,471 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:39:26,524 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:39:26,525 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=90.91831970214844
+eval_episode_len_mean=100.0
+eval_reward_mean=0.9091832041740417
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_211.pt
+SPS: 10031
+Epoch: 212, global_step=21606400
+SPS: 10060
+Epoch: 213, global_step=21708800
+SPS: 10084
+Epoch: 214, global_step=21811200
+SPS: 10114
+Epoch: 215, global_step=21913600
+SPS: 10138
+Epoch: 216, global_step=22016000
+SPS: 10167
+Epoch: 217, global_step=22118400
+SPS: 10191
+Epoch: 218, global_step=22220800
+SPS: 10217
+Epoch: 219, global_step=22323200
+SPS: 10241
+Epoch: 220, global_step=22425600
+SPS: 10268
+Epoch: 221, global_step=22528000
+Evaluating
+[33;1m2026-10-31 00:40:12,021 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:40:12,103 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:40:12,106 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:40:17,880 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:40:17,927 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:40:17,928 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=104.7413330078125
+eval_episode_len_mean=100.0
+eval_reward_mean=1.0474133491516113
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_221.pt
+SPS: 10261
+Epoch: 222, global_step=22630400
+SPS: 10291
+Epoch: 223, global_step=22732800
+SPS: 10314
+Epoch: 224, global_step=22835200
+SPS: 10338
+Epoch: 225, global_step=22937600
+SPS: 10359
+Epoch: 226, global_step=23040000
+SPS: 10379
+Epoch: 227, global_step=23142400
+SPS: 10372
+Epoch: 228, global_step=23244800
+SPS: 10374
+Epoch: 229, global_step=23347200
+SPS: 10363
+Epoch: 230, global_step=23449600
+SPS: 10366
+Epoch: 231, global_step=23552000
+Evaluating
+[33;1m2026-10-31 00:41:30,067 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:41:30,249 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:41:30,254 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:41:41,635 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:41:41,756 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:41:41,757 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=110.1004409790039
+eval_episode_len_mean=100.0
+eval_reward_mean=1.1010043621063232
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_231.pt
+SPS: 10294
+Epoch: 232, global_step=23654400
+SPS: 10302
+Epoch: 233, global_step=23756800
+SPS: 10287
+Epoch: 234, global_step=23859200
+SPS: 10297
+Epoch: 235, global_step=23961600
+SPS: 10291
+Epoch: 236, global_step=24064000
+SPS: 10313
+Epoch: 237, global_step=24166400
+SPS: 10322
+Epoch: 238, global_step=24268800
+SPS: 10342
+Epoch: 239, global_step=24371200
+SPS: 10353
+Epoch: 240, global_step=24473600
+SPS: 10370
+Epoch: 241, global_step=24576000
+Evaluating
+[33;1m2026-10-31 00:43:07,740 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:43:07,856 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:43:07,857 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:43:14,998 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-31 00:43:15,076 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 00:43:15,077 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Evaluated 6400 steps resulting in 64 episodes
+eval_success_once_mean=0.0
+eval_return_mean=106.01118469238281
+eval_episode_len_mean=100.0
+eval_reward_mean=1.0601117610931396
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool_g095/ckpt_241.pt
+SPS: 10353
+Epoch: 242, global_step=24678400
+SPS: 10373
+Epoch: 243, global_step=24780800
+SPS: 10381
+Epoch: 244, global_step=24883200
+SPS: 10401
+model saved to runs/PullCubeTool_g095/final_ckpt.pt

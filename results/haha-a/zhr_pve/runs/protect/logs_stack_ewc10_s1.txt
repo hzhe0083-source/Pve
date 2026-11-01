@@ -1,0 +1,43 @@
+/home/zhaobo/zhr_pve/.venv/lib/python3.10/site-packages/torch/autograd/graph.py:829: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:179.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+iter 1 step 0 eval success_once=0.000 lam=0.000
+iter 3 step 102400 eval success_once=0.000 lam=0.000
+iter 5 step 204800 eval success_once=0.000 lam=0.000
+iter 7 step 307200 eval success_once=0.000 lam=0.000
+iter 9 step 409600 eval success_once=0.000 lam=0.000
+iter 11 step 512000 eval success_once=0.000 lam=0.000
+iter 13 step 614400 eval success_once=0.047 lam=0.000
+iter 15 step 716800 eval success_once=0.129 lam=0.000
+iter 17 step 819200 eval success_once=0.148 lam=0.000
+iter 19 step 921600 eval success_once=0.254 lam=0.000
+iter 21 step 1024000 eval success_once=0.344 lam=0.000
+iter 23 step 1126400 eval success_once=0.418 lam=0.000
+iter 25 step 1228800 eval success_once=0.527 lam=0.000
+iter 27 step 1331200 eval success_once=0.637 lam=0.000
+iter 29 step 1433600 eval success_once=0.691 lam=0.000
+iter 31 step 1536000 eval success_once=0.734 lam=0.000
+iter 33 step 1638400 eval success_once=0.672 lam=0.000
+iter 35 step 1740800 eval success_once=0.762 lam=0.000
+iter 37 step 1843200 eval success_once=0.777 lam=0.000
+iter 39 step 1945600 eval success_once=0.703 lam=0.000
+iter 41 step 2048000 eval success_once=0.738 lam=0.000
+iter 43 step 2150400 eval success_once=0.723 lam=0.000
+iter 45 step 2252800 eval success_once=0.750 lam=0.000
+iter 47 step 2355200 eval success_once=0.703 lam=0.000
+iter 49 step 2457600 eval success_once=0.863 lam=0.000
+iter 51 step 2560000 eval success_once=0.770 lam=0.000
+iter 53 step 2662400 eval success_once=0.867 lam=0.000
+iter 55 step 2764800 eval success_once=0.875 lam=0.000
+iter 57 step 2867200 eval success_once=0.875 lam=0.000
+iter 59 step 2969600 eval success_once=0.859 lam=0.000
+iter 61 step 3072000 eval success_once=0.883 lam=0.000
+iter 63 step 3174400 eval success_once=0.926 lam=0.000
+iter 65 step 3276800 eval success_once=0.898 lam=0.000
+iter 67 step 3379200 eval success_once=0.898 lam=0.000
+iter 69 step 3481600 eval success_once=0.918 lam=0.000
+iter 71 step 3584000 eval success_once=0.887 lam=0.000
+iter 73 step 3686400 eval success_once=0.969 lam=0.000
+iter 75 step 3788800 eval success_once=0.930 lam=0.000
+iter 77 step 3891200 eval success_once=0.945 lam=0.000
+early stop: reached 0.9
+done stack_ewc10_s1 steps=3891200 wall=546s SPS=7128

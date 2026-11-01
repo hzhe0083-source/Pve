@@ -1,0 +1,15 @@
+nsa64	 --nullspace_adapter=64 --init_ckpt=x --init_actor_only --protect_env=PickCube-v1
+npr	--nsa_project=False --nsa_init=rand --nullspace_adapter=64 --init_ckpt=x --init_actor_only --protect_env=PickCube-v1
+rp	--nsa_proj=random --nullspace_adapter=64 --init_ckpt=x --init_actor_only --protect_env=PickCube-v1
+vis	--nsa_mask=visible --nullspace_adapter=64 --init_ckpt=x --init_actor_only --protect_env=PickCube-v1
+none	--nsa_mask=zero --nullspace_adapter=64 --init_ckpt=x --init_actor_only --protect_env=PickCube-v1
+nsa64z	--nsa_init=zero --nullspace_adapter=64 --init_ckpt=x --init_actor_only --protect_env=PickCube-v1
+rf01	--nsa_project=False --nsa_init=rand --nsa_restore=0.1 --nullspace_adapter=64 --init_ckpt=x --init_actor_only --protect_env=PickCube-v1
+rf1	--nsa_project=False --nsa_init=rand --nsa_restore=1 --nullspace_adapter=64 --init_ckpt=x --init_actor_only --protect_env=PickCube-v1
+rf10	--nsa_project=False --nsa_init=rand --nsa_restore=10 --nullspace_adapter=64 --init_ckpt=x --init_actor_only --protect_env=PickCube-v1
+nsa64d	 --nullspace_adapter=64 --init_ckpt=x --init_actor_only --protect_env=PickCube-v1
+nprd	--nsa_project=False --nsa_init=rand --nullspace_adapter=64 --init_ckpt=x --init_actor_only --protect_env=PickCube-v1
+nsa64lo	--adapter_lr=1e-4 --nullspace_adapter=64 --init_ckpt=x --init_actor_only --protect_env=PickCube-v1
+nsa64hi	--adapter_lr=1e-3 --nullspace_adapter=64 --init_ckpt=x --init_actor_only --protect_env=PickCube-v1
+nprlo	--nsa_project=False --nsa_init=rand --adapter_lr=1e-4 --nullspace_adapter=64 --init_ckpt=x --init_actor_only --protect_env=PickCube-v1
+nprhi	--nsa_project=False --nsa_init=rand --adapter_lr=1e-3 --nullspace_adapter=64 --init_ckpt=x --init_actor_only --protect_env=PickCube-v1

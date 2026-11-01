@@ -1,0 +1,50 @@
+/home/zhaobo/zhr_pve/.venv/lib/python3.10/site-packages/torch/autograd/graph.py:829: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:179.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+iter 1 step 0 eval success_once=0.000 lam=0.000
+iter 3 step 102400 eval success_once=0.000 lam=0.000
+iter 5 step 204800 eval success_once=0.000 lam=0.000
+iter 7 step 307200 eval success_once=0.000 lam=0.000
+iter 9 step 409600 eval success_once=0.000 lam=0.000
+iter 11 step 512000 eval success_once=0.000 lam=0.000
+iter 13 step 614400 eval success_once=0.004 lam=0.000
+iter 15 step 716800 eval success_once=0.035 lam=0.000
+iter 17 step 819200 eval success_once=0.137 lam=0.000
+iter 19 step 921600 eval success_once=0.297 lam=0.000
+iter 21 step 1024000 eval success_once=0.035 lam=0.000
+iter 23 step 1126400 eval success_once=0.043 lam=0.000
+iter 25 step 1228800 eval success_once=0.113 lam=0.000
+iter 27 step 1331200 eval success_once=0.262 lam=0.000
+iter 29 step 1433600 eval success_once=0.430 lam=0.000
+iter 31 step 1536000 eval success_once=0.492 lam=0.000
+iter 33 step 1638400 eval success_once=0.402 lam=0.000
+iter 35 step 1740800 eval success_once=0.562 lam=0.000
+iter 37 step 1843200 eval success_once=0.656 lam=0.000
+iter 39 step 1945600 eval success_once=0.668 lam=0.000
+iter 41 step 2048000 eval success_once=0.594 lam=0.000
+iter 43 step 2150400 eval success_once=0.664 lam=0.000
+iter 45 step 2252800 eval success_once=0.789 lam=0.000
+iter 47 step 2355200 eval success_once=0.695 lam=0.000
+iter 49 step 2457600 eval success_once=0.691 lam=0.000
+iter 51 step 2560000 eval success_once=0.668 lam=0.000
+iter 53 step 2662400 eval success_once=0.613 lam=0.000
+iter 55 step 2764800 eval success_once=0.754 lam=0.000
+iter 57 step 2867200 eval success_once=0.715 lam=0.000
+iter 59 step 2969600 eval success_once=0.758 lam=0.000
+iter 61 step 3072000 eval success_once=0.871 lam=0.000
+iter 63 step 3174400 eval success_once=0.832 lam=0.000
+iter 65 step 3276800 eval success_once=0.840 lam=0.000
+iter 67 step 3379200 eval success_once=0.840 lam=0.000
+iter 69 step 3481600 eval success_once=0.848 lam=0.000
+iter 71 step 3584000 eval success_once=0.898 lam=0.000
+iter 73 step 3686400 eval success_once=0.895 lam=0.000
+iter 75 step 3788800 eval success_once=0.895 lam=0.000
+iter 77 step 3891200 eval success_once=0.859 lam=0.000
+iter 79 step 3993600 eval success_once=0.879 lam=0.000
+iter 81 step 4096000 eval success_once=0.805 lam=0.000
+iter 83 step 4198400 eval success_once=0.906 lam=0.000
+iter 85 step 4300800 eval success_once=0.859 lam=0.000
+iter 87 step 4403200 eval success_once=0.902 lam=0.000
+iter 89 step 4505600 eval success_once=0.941 lam=0.000
+iter 91 step 4608000 eval success_once=0.906 lam=0.000
+early stop: reached 0.9
+done stack_l2_10_s3 steps=4608000 wall=817s SPS=5643

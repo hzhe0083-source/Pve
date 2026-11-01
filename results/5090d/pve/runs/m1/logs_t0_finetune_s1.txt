@@ -1,0 +1,4 @@
+iter 1 step 0 eval success_once=0.961 lam=0.000
+iter 3 step 81920 eval success_once=0.992 lam=0.000
+early stop: reached 0.9
+done t0_finetune_s1 steps=81920 wall=15s SPS=5444

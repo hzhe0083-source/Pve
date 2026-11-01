@@ -1,0 +1,21 @@
+[33;1m2026-11-01 15:07:59,413 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2026-11-01 15:08:02,203 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2026-11-01 15:08:02,807 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+iter 1 step 0 eval success_once=0.004 lam=0.000
+iter 3 step 102400 eval success_once=0.000 lam=0.000
+iter 5 step 204800 eval success_once=0.008 lam=0.000
+iter 7 step 307200 eval success_once=0.000 lam=0.000
+iter 9 step 409600 eval success_once=0.004 lam=0.000
+iter 11 step 512000 eval success_once=0.000 lam=0.000
+iter 13 step 614400 eval success_once=0.008 lam=0.000
+iter 15 step 716800 eval success_once=0.062 lam=0.000
+iter 17 step 819200 eval success_once=0.324 lam=0.000
+iter 19 step 921600 eval success_once=0.531 lam=0.000
+iter 21 step 1024000 eval success_once=0.691 lam=0.000
+iter 23 step 1126400 eval success_once=0.875 lam=0.000
+iter 25 step 1228800 eval success_once=0.922 lam=0.000
+iter 27 step 1331200 eval success_once=0.906 lam=0.000
+iter 29 step 1433600 eval success_once=0.992 lam=0.000
+early stop: reached 0.9
+old skill on PickCube-v1 at the end: 0.992
+done place_head_s5 steps=1433600 wall=100s SPS=14395

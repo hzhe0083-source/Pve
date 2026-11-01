@@ -1,0 +1,6 @@
+iter 1 step 0 eval success_once=0.000 lam=0.500
+iter 3 step 81920 eval success_once=0.883 lam=0.484
+iter 5 step 163840 eval success_once=1.000 lam=0.467
+iter 7 step 245760 eval success_once=0.992 lam=0.451
+early stop: reached 0.9
+done rkl steps=245760 wall=62s SPS=3993

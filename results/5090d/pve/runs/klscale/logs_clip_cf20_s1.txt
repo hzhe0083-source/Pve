@@ -1,0 +1,16 @@
+iter 1 step 0 eval success_once=0.000 lam=0.000
+iter 6 step 204800 eval success_once=0.000 lam=0.000
+iter 11 step 409600 eval success_once=0.000 lam=0.000
+iter 16 step 614400 eval success_once=0.805 lam=0.000
+iter 21 step 819200 eval success_once=0.930 lam=0.000
+iter 26 step 1024000 eval success_once=0.945 lam=0.000
+iter 31 step 1228800 eval success_once=1.000 lam=0.000
+iter 36 step 1433600 eval success_once=0.984 lam=0.000
+iter 41 step 1638400 eval success_once=1.000 lam=0.000
+iter 46 step 1843200 eval success_once=0.984 lam=0.000
+iter 51 step 2048000 eval success_once=0.984 lam=0.000
+iter 56 step 2252800 eval success_once=1.000 lam=0.000
+iter 61 step 2457600 eval success_once=1.000 lam=0.000
+iter 66 step 2662400 eval success_once=1.000 lam=0.000
+iter 71 step 2867200 eval success_once=1.000 lam=0.000
+done clip_cf20_s1 steps=2990080 wall=467s SPS=6397

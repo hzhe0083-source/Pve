@@ -1,0 +1,178 @@
+[33;1m2026-11-01 18:32:57,465 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2026-11-01 18:33:00,336 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+ok    place    PlaceCube-v1         None            steps 50  slots <= 0.0e+00  det 0.00/1.00 floor 0.75/1.00  (success/grasped)  
+        one evaluation (256 envs, reconfiguration_freq=1): 2.1 s
+ok    stack    StackCubeNarrow-v1   stack_to_pick   steps 50  slots <= 3.7e-09  det 0.00/1.00 floor 0.00/1.00  (success/grasped)  is_cubeA_grasped at step 50
+        one evaluation (256 envs, reconfiguration_freq=1): 2.1 s
+[33;1m2026-11-01 18:33:14,780 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2026-11-01 18:33:15,570 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:33:15,573 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:33:17,533 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2026-11-01 18:33:17,901 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:33:17,904 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:33:18,361 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:33:18,365 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:33:18,928 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:33:18,932 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:33:20,538 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:33:20,542 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:33:21,116 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:33:21,119 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:33:22,727 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:33:22,731 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+ok    sphere   PlaceSphere-v1       sphere_to_pick  steps 50  slots <= 0.0e+00  det 0.00/1.00 floor 0.00/1.00  (success/grasped)  
+        one evaluation (256 envs, reconfiguration_freq=1): 2.2 s
+There are less parallel environments than total available models to sample.
+                Not all models will be used during interaction even after resets unless you call env.reset(options=dict(reconfigure=True))
+                or set reconfiguration_freq to be >= 1.
+ok    ycb      PickYCBSubset-v1     ycb_to_pick     steps 50  slots <= 0.0e+00  det 1.00/1.00 floor 0.50/1.00  (success/grasped)  
+        one evaluation (256 envs, reconfiguration_freq=1): 3.6 s
+        the rule keeps 31 of 74 models (det success per model is diagnostic only; the list is not edited):
+        005_tomato_soup_can          json [6.9, 6.9, 10.3] cm  mesh not drawn cm  det nan of 0
+        007_tuna_fish_can            json [7.0, 6.9, 2.8] cm  mesh not drawn cm  det nan of 0
+        010_potted_meat_can          json [10.4, 5.9, 8.4] cm  mesh not drawn cm  det nan of 0
+        012_strawberry               json [4.8, 4.4, 4.7] cm  mesh not drawn cm  det nan of 0
+        014_lemon                    json [6.1, 6.0, 5.3] cm  mesh not drawn cm  det nan of 0
+        015_peach                    json [5.9, 6.5, 6.1] cm  mesh not drawn cm  det nan of 0
+        016_pear                     json [6.8, 9.6, 6.6] cm  mesh not drawn cm  det nan of 0
+        018_plum                     json [5.7, 5.4, 5.3] cm  mesh not drawn cm  det nan of 0
+        038_padlock                  json [5.6, 7.2, 3.0] cm  mesh [5.6, 7.2, 3.0] cm  det 1.00 of 1
+        053_mini_soccer_ball         json [6.4, 6.4, 6.2] cm  mesh not drawn cm  det nan of 0
+        054_softball                 json [6.8, 6.8, 6.6] cm  mesh not drawn cm  det nan of 0
+        056_tennis_ball              json [6.8, 6.8, 6.7] cm  mesh not drawn cm  det nan of 0
+        057_racquetball              json [5.7, 5.7, 5.7] cm  mesh not drawn cm  det nan of 0
+        058_golf_ball                json [4.3, 4.3, 4.3] cm  mesh not drawn cm  det nan of 0
+        061_foam_brick               json [5.3, 7.8, 5.2] cm  mesh not drawn cm  det nan of 0
+        063-b_marbles                json [3.5, 3.5, 3.5] cm  mesh not drawn cm  det nan of 0
+        065-a_cups                   json [5.9, 5.9, 6.3] cm  mesh not drawn cm  det nan of 0
+        065-b_cups                   json [6.2, 6.2, 6.5] cm  mesh not drawn cm  det nan of 0
+        065-c_cups                   json [6.6, 6.8, 6.8] cm  mesh not drawn cm  det nan of 0
+        070-b_colored_wood_blocks    json [2.7, 2.6, 2.7] cm  mesh not drawn cm  det nan of 0
+        071_nine_hole_peg_test       json [6.7, 7.8, 2.2] cm  mesh not drawn cm  det nan of 0
+        072-c_toy_airplane           json [3.1, 3.1, 6.8] cm  mesh not drawn cm  det nan of 0
+        072-d_toy_airplane           json [3.2, 3.2, 6.8] cm  mesh not drawn cm  det nan of 0
+        072-e_toy_airplane           json [3.2, 3.2, 6.7] cm  mesh [3.2, 3.2, 6.7] cm  det 1.00 of 1
+        073-a_lego_duplo             json [6.5, 3.3, 2.5] cm  mesh not drawn cm  det nan of 0
+        073-b_lego_duplo             json [3.3, 3.3, 4.4] cm  mesh not drawn cm  det nan of 0
+        073-c_lego_duplo             json [3.4, 6.6, 2.4] cm  mesh not drawn cm  det nan of 0
+        073-d_lego_duplo             json [3.4, 4.9, 4.4] cm  mesh not drawn cm  det nan of 0
+        073-e_lego_duplo             json [3.4, 9.8, 4.4] cm  mesh not drawn cm  det nan of 0
+        073-f_lego_duplo             json [3.4, 3.4, 4.4] cm  mesh [3.4, 3.4, 4.4] cm  det 1.00 of 1
+        077_rubiks_cube              json [5.9, 6.0, 5.8] cm  mesh [5.9, 6.0, 5.8] cm  det 1.00 of 1
+[33;1m2026-11-01 18:33:35,494 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2026-11-01 18:33:38,327 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+ok    pushng   PushCubeNoGrasp-v1   push_to_pick    steps 50  slots <= 0.0e+00  det 0.00/1.00/fail 1.00 floor 0.00/1.00/fail 1.00  (success/grasped)  is_grasped at step 5
+        one evaluation (256 envs, reconfiguration_freq=1): 2.1 s
+[33;1m2026-11-01 18:33:43,834 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2026-11-01 18:33:44,755 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:33:46,930 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2026-11-01 18:33:47,378 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:33:47,966 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:33:48,551 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:33:50,247 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:33:50,852 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:33:53,176 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+ok    pullng   PullCubeNoGrasp-v1   push_to_pick    steps 50  slots <= 0.0e+00  det 0.00/1.00/fail 1.00 floor 0.00/1.00/fail 1.00  (success/grasped)  is_grasped at step 5
+        one evaluation (256 envs, reconfiguration_freq=1): 2.3 s
+[33;1m2026-11-01 18:33:54,372 - mani_skill  - WARNING - No initial pose set for articulation builder of panda_wristcam, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+gpu_polite: another user's GPU process appeared at 18:33:56, stopping 418484
+yielded 18:34:25, retry in 300 s
+[33;1m2026-11-01 18:39:27,584 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2026-11-01 18:39:30,514 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+ok    place    PlaceCube-v1         None            steps 50  slots <= 0.0e+00  det 0.00/1.00 floor 0.75/1.00  (success/grasped)  
+        one evaluation (256 envs, reconfiguration_freq=1): 2.2 s
+ok    stack    StackCubeNarrow-v1   stack_to_pick   steps 50  slots <= 3.7e-09  det 0.00/1.00 floor 0.00/1.00  (success/grasped)  is_cubeA_grasped at step 50
+        one evaluation (256 envs, reconfiguration_freq=1): 2.2 s
+[33;1m2026-11-01 18:39:45,565 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2026-11-01 18:39:46,376 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:39:46,377 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:39:48,364 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2026-11-01 18:39:48,734 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:39:48,738 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:39:49,227 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:39:49,232 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:39:49,828 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:39:49,833 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:39:51,482 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:39:51,486 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:39:52,076 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:39:52,080 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:39:53,732 - mani_skill  - WARNING - No initial pose set for actor builder of sphere, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:39:53,735 - mani_skill  - WARNING - No initial pose set for actor builder of bin, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+ok    sphere   PlaceSphere-v1       sphere_to_pick  steps 50  slots <= 0.0e+00  det 0.00/1.00 floor 0.00/1.00  (success/grasped)  
+        one evaluation (256 envs, reconfiguration_freq=1): 2.2 s
+There are less parallel environments than total available models to sample.
+                Not all models will be used during interaction even after resets unless you call env.reset(options=dict(reconfigure=True))
+                or set reconfiguration_freq to be >= 1.
+ok    ycb      PickYCBSubset-v1     ycb_to_pick     steps 50  slots <= 0.0e+00  det 1.00/1.00 floor 0.50/1.00  (success/grasped)  
+        one evaluation (256 envs, reconfiguration_freq=1): 3.6 s
+        the rule keeps 31 of 74 models (det success per model is diagnostic only; the list is not edited):
+        005_tomato_soup_can          json [6.9, 6.9, 10.3] cm  mesh not drawn cm  det nan of 0
+        007_tuna_fish_can            json [7.0, 6.9, 2.8] cm  mesh not drawn cm  det nan of 0
+        010_potted_meat_can          json [10.4, 5.9, 8.4] cm  mesh not drawn cm  det nan of 0
+        012_strawberry               json [4.8, 4.4, 4.7] cm  mesh not drawn cm  det nan of 0
+        014_lemon                    json [6.1, 6.0, 5.3] cm  mesh not drawn cm  det nan of 0
+        015_peach                    json [5.9, 6.5, 6.1] cm  mesh not drawn cm  det nan of 0
+        016_pear                     json [6.8, 9.6, 6.6] cm  mesh not drawn cm  det nan of 0
+        018_plum                     json [5.7, 5.4, 5.3] cm  mesh not drawn cm  det nan of 0
+        038_padlock                  json [5.6, 7.2, 3.0] cm  mesh [5.6, 7.2, 3.0] cm  det 1.00 of 1
+        053_mini_soccer_ball         json [6.4, 6.4, 6.2] cm  mesh not drawn cm  det nan of 0
+        054_softball                 json [6.8, 6.8, 6.6] cm  mesh not drawn cm  det nan of 0
+        056_tennis_ball              json [6.8, 6.8, 6.7] cm  mesh not drawn cm  det nan of 0
+        057_racquetball              json [5.7, 5.7, 5.7] cm  mesh not drawn cm  det nan of 0
+        058_golf_ball                json [4.3, 4.3, 4.3] cm  mesh not drawn cm  det nan of 0
+        061_foam_brick               json [5.3, 7.8, 5.2] cm  mesh not drawn cm  det nan of 0
+        063-b_marbles                json [3.5, 3.5, 3.5] cm  mesh not drawn cm  det nan of 0
+        065-a_cups                   json [5.9, 5.9, 6.3] cm  mesh not drawn cm  det nan of 0
+        065-b_cups                   json [6.2, 6.2, 6.5] cm  mesh not drawn cm  det nan of 0
+        065-c_cups                   json [6.6, 6.8, 6.8] cm  mesh not drawn cm  det nan of 0
+        070-b_colored_wood_blocks    json [2.7, 2.6, 2.7] cm  mesh not drawn cm  det nan of 0
+        071_nine_hole_peg_test       json [6.7, 7.8, 2.2] cm  mesh not drawn cm  det nan of 0
+        072-c_toy_airplane           json [3.1, 3.1, 6.8] cm  mesh not drawn cm  det nan of 0
+        072-d_toy_airplane           json [3.2, 3.2, 6.8] cm  mesh not drawn cm  det nan of 0
+        072-e_toy_airplane           json [3.2, 3.2, 6.7] cm  mesh [3.2, 3.2, 6.7] cm  det 1.00 of 1
+        073-a_lego_duplo             json [6.5, 3.3, 2.5] cm  mesh not drawn cm  det nan of 0
+        073-b_lego_duplo             json [3.3, 3.3, 4.4] cm  mesh not drawn cm  det nan of 0
+        073-c_lego_duplo             json [3.4, 6.6, 2.4] cm  mesh not drawn cm  det nan of 0
+        073-d_lego_duplo             json [3.4, 4.9, 4.4] cm  mesh not drawn cm  det nan of 0
+        073-e_lego_duplo             json [3.4, 9.8, 4.4] cm  mesh not drawn cm  det nan of 0
+        073-f_lego_duplo             json [3.4, 3.4, 4.4] cm  mesh [3.4, 3.4, 4.4] cm  det 1.00 of 1
+        077_rubiks_cube              json [5.9, 6.0, 5.8] cm  mesh [5.9, 6.0, 5.8] cm  det 1.00 of 1
+[33;1m2026-11-01 18:40:06,697 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2026-11-01 18:40:09,499 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+ok    pushng   PushCubeNoGrasp-v1   push_to_pick    steps 50  slots <= 0.0e+00  det 0.00/1.00/fail 1.00 floor 0.00/1.00/fail 1.00  (success/grasped)  is_grasped at step 5
+        one evaluation (256 envs, reconfiguration_freq=1): 2.2 s
+[33;1m2026-11-01 18:40:14,948 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2026-11-01 18:40:15,868 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:40:17,928 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2026-11-01 18:40:18,315 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:40:18,799 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:40:19,375 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:40:21,031 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:40:21,624 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-11-01 18:40:23,286 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+ok    pullng   PullCubeNoGrasp-v1   push_to_pick    steps 50  slots <= 0.0e+00  det 0.00/1.00/fail 1.00 floor 0.00/1.00/fail 1.00  (success/grasped)  is_grasped at step 5
+        one evaluation (256 envs, reconfiguration_freq=1): 2.2 s
+[33;1m2026-11-01 18:40:24,307 - mani_skill  - WARNING - No initial pose set for articulation builder of panda_wristcam, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-11-01 18:40:28,176 - mani_skill  - WARNING - No initial pose set for articulation builder of panda_wristcam, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-11-01 18:40:28,678 - mani_skill  - WARNING - No initial pose set for articulation builder of panda_wristcam, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-11-01 18:40:29,267 - mani_skill  - WARNING - No initial pose set for articulation builder of panda_wristcam, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-11-01 18:40:31,133 - mani_skill  - WARNING - No initial pose set for articulation builder of panda_wristcam, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-11-01 18:40:31,718 - mani_skill  - WARNING - No initial pose set for articulation builder of panda_wristcam, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-11-01 18:40:33,607 - mani_skill  - WARNING - No initial pose set for articulation builder of panda_wristcam, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+ok    beside   PyramidBeside-v1     beside_to_pick  steps 50  slots <= 7.5e-09  det 0.00/1.00 floor 0.25/1.00  (success/grasped)  is_cubeA_grasped at step 50
+        one evaluation (256 envs, reconfiguration_freq=1): 2.4 s
+[33;1m2026-11-01 18:40:34,787 - mani_skill  - WARNING - No initial pose set for articulation builder of panda_wristcam, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-11-01 18:40:38,580 - mani_skill  - WARNING - No initial pose set for articulation builder of panda_wristcam, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-11-01 18:40:39,063 - mani_skill  - WARNING - No initial pose set for articulation builder of panda_wristcam, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-11-01 18:40:39,665 - mani_skill  - WARNING - No initial pose set for articulation builder of panda_wristcam, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-11-01 18:40:41,512 - mani_skill  - WARNING - No initial pose set for articulation builder of panda_wristcam, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-11-01 18:40:42,100 - mani_skill  - WARNING - No initial pose set for articulation builder of panda_wristcam, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-11-01 18:40:43,978 - mani_skill  - WARNING - No initial pose set for articulation builder of panda_wristcam, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+ok    onpair   PyramidOnPair-v1     onpair_to_pick  steps 50  slots <= 0.0e+00  det 0.00/1.00 floor 0.25/1.00  (success/grasped)  is_cubeC_grasped at step 50
+        one evaluation (256 envs, reconfiguration_freq=1): 2.4 s
+[33;1m2026-11-01 18:40:44,454 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2026-11-01 18:40:47,981 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+ok    liftpeg  LiftPegUprightG-v1   peg_to_pick     steps 50  slots <= 1.8e-07  det 0.00/0.75 floor 0.00/0.50  (success/grasped)  is_grasped at step 50
+        one evaluation (256 envs, reconfiguration_freq=1): 2.1 s
+ALL OK

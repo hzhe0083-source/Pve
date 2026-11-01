@@ -1,0 +1,24 @@
+source std: arm 0.145, gripper 0.273; StackCubeNarrow-v1, noise on gripper, 4096 episodes per layout
+  layout        success let go at goal steps in region
+  source         0.0000         0.0015           29.34
+  global:0.6     0.0081         0.4346           26.15
+  global:1.0     0.1067         0.6626           16.39
+  seam:1.0       0.1333         0.9136           26.19
+  pseam:1.0      0.1279         0.8750           24.43
+  lseam:0.6      0.0088         0.4592           28.48
+  lseam:1.0      0.1763         0.9094           25.31
+  lpseam:0.6     0.0122         0.4585           28.57
+  lpseam:1.0     0.1641         0.8630           23.32
+[33;1m2026-10-31 19:13:53,863 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+source std: arm 0.145, gripper 0.273; PlaceCube-v1, noise on gripper, 4096 episodes per layout
+  layout        success let go at goal steps in region
+  source         0.0093         0.0081           30.49
+  global:0.6     0.5161         0.5029           28.06
+  global:1.0     0.8257         0.8132           22.29
+  seam:1.0       0.9294         0.9248           27.28
+  pseam:1.0      0.9241         0.9138           27.51
+  lseam:0.6      0.4963         0.4836           29.75
+  lseam:1.0      0.9299         0.9231           26.60
+  lpseam:0.6     0.5342         0.5198           30.12
+  lpseam:1.0     0.9329         0.9258           26.73
+YIELD_LATCH_END

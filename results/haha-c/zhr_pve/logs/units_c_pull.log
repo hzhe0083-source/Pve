@@ -1,0 +1,14 @@
+UNITS_START 21:45:10 dell-5090 jobs=21
+DONE pull_head_s1
+DONE pull_key5_s1
+DONE pull_rand5_s1
+DONE pull_key20_s1
+DONE pull_rand20_s1
+DONE pull_full_s1
+DONE pull_scratch_s1
+DONE pull_head_s2
+已终止
+UNITS_END 22:43:41
+已终止
+DONE pull_key5_s2
+DONE pull_rand5_s2

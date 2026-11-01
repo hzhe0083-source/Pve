@@ -1,0 +1,4 @@
+iteration,global_step,success_once,success_at_end,return,prior_coef,wall_s
+1,0,0.0,0.0,0.0,0.0,4.3
+11,512000,0.0,0.0,0.0,0.0,75.6
+21,1024000,0.2109375,0.0390625,1.90625,0.0,166.9

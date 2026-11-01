@@ -1,0 +1,20 @@
+PROT_START 01:21:52 dell-Precision-3680 jobs=18
+DONE stack_ewc10_s1
+DONE stack_ewc1000_s1
+DONE stack_ewc100_s1
+DONE stack_l2_1_s1
+DONE stack_l2_10_s1
+DONE stack_l2_100_s1
+DONE stack_ewc10_s2
+DONE stack_ewc100_s2
+DONE stack_ewc1000_s2
+DONE stack_l2_1_s2
+DONE stack_l2_10_s2
+DONE stack_l2_100_s2
+DONE stack_ewc10_s3
+DONE stack_ewc100_s3
+DONE stack_ewc1000_s3
+DONE stack_l2_1_s3
+DONE stack_l2_10_s3
+DONE stack_l2_100_s3
+PROT_END 02:42:59

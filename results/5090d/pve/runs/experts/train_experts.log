@@ -1,0 +1,17 @@
+START PushCube 22:22:12
+START PullCube 22:22:12
+END PullCube rc=0 22:27:00
+START StackCube 22:27:00
+END PushCube rc=0 22:27:17
+START PickCube 22:27:17
+END PickCube rc=0 22:42:26
+START PokeCube 22:42:26
+END PokeCube rc=0 23:00:32
+START LiftPegUpright 23:00:32
+END StackCube rc=0 23:00:47
+START PlaceSphere 23:00:47
+END LiftPegUpright rc=0 23:22:07
+END PlaceSphere rc=0 23:40:01
+START PullCubeTool 23:40:01
+END PullCubeTool rc=0 23:56:25
+EXPERTS_DONE

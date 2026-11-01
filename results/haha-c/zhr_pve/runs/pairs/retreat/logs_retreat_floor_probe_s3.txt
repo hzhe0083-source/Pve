@@ -1,0 +1,8 @@
+iter 1 step 0 eval success_once=0.672 lam=0.000
+iter 6 step 204800 eval success_once=0.031 lam=0.000
+iter 11 step 409600 eval success_once=0.008 lam=0.000
+iter 16 step 614400 eval success_once=0.656 lam=0.000
+iter 21 step 819200 eval success_once=0.906 lam=0.000
+iter 26 step 1024000 eval success_once=0.969 lam=0.000
+early stop: reached 0.9
+done retreat_floor_probe_s3 steps=1024000 wall=42s SPS=24659

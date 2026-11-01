@@ -1,0 +1,34 @@
+# Old-skill (Pick) action change of the trained PlaceCube checkpoints, CPU, final_ckpt.pt of runs/protect_np/runs/place_<arm>_s<seed>.
+# Transcribed verbatim (2 significant digits, as printed) from the stdout of scratchpad/exact_check.py, run 2026-11-01 03:36 UTC;
+# the printout survives only in the parent session log (~/.claude/projects/-home-ryan-Documents-pve/2a31a520-ee40-44e4-b92d-86ed12830b96.jsonl, line 15321).
+# The same ranges are summarised in /home/ryan/Documents/pve/docs/conflict-reuse-2026-10-31.md (section '11-01 11:30',
+# the two bullets after the definition of the projection; lines 31-32 as of 2026-11-01 14:12, 23-24 earlier).
+# Re-verified 2026-11-01 14:12 +08: all 24 rows equal the exact_check.py printout, which is on line 15322 (1-indexed) of that log.
+# Columns: max |a_Pick(head reads the LAST level, i.e. the shared vector) - a_Pick(expert)| over 102,400 stored Pick states (stored)
+#          and over 8,192 random N(0, 2^2) states (random); same through Pick's own level (own); max |W_old P| (w_old_null);
+#          max |W_old . adapter write| without the projection on the stored states (raw_no_projection).
+run,arm,seed,stored,random,own,w_old_null,raw_no_projection
+place_nsa64_s1,nsa64,1,1.4e-06,2.1e-06,0.0,6.0e-08,0.83
+place_nsa64_s2,nsa64,2,1.3e-06,1.4e-06,0.0,6.0e-08,0.83
+place_nsa64_s3,nsa64,3,1.5e-06,1.7e-06,0.0,6.0e-08,0.52
+place_nsa64_s4,nsa64,4,1.5e-06,1.4e-06,0.0,6.0e-08,0.53
+place_nsa64_s5,nsa64,5,1.2e-06,1.7e-06,0.0,6.0e-08,0.60
+place_nsa64_s6,nsa64,6,1.4e-06,1.4e-06,0.0,6.0e-08,0.68
+place_nsa64_s7,nsa64,7,1.3e-06,1.4e-06,0.0,6.0e-08,0.79
+place_nsa64_s8,nsa64,8,1.4e-06,1.3e-06,0.0,6.0e-08,0.56
+place_nsa64np_s1,nsa64np,1,7.8e-01,1.3e+00,0.0,2.8e-01,0.78
+place_nsa64np_s2,nsa64np,2,9.2e-01,1.4e+00,0.0,2.8e-01,0.92
+place_nsa64np_s3,nsa64np,3,9.0e-01,1.4e+00,0.0,2.8e-01,0.90
+place_nsa64np_s4,nsa64np,4,7.7e-01,1.2e+00,0.0,2.8e-01,0.77
+place_nsa64np_s5,nsa64np,5,8.1e-01,1.3e+00,0.0,2.8e-01,0.81
+place_nsa64np_s6,nsa64np,6,8.2e-01,1.4e+00,0.0,2.8e-01,0.82
+place_nsa64np_s7,nsa64np,7,8.1e-01,1.2e+00,0.0,2.8e-01,0.81
+place_nsa64np_s8,nsa64np,8,8.3e-01,1.1e+00,0.0,2.8e-01,0.83
+place_nsa64npr_s1,nsa64npr,1,7.5e-01,1.3e+00,0.0,2.8e-01,0.75
+place_nsa64npr_s2,nsa64npr,2,8.2e-01,1.3e+00,0.0,2.8e-01,0.82
+place_nsa64npr_s3,nsa64npr,3,7.4e-01,1.1e+00,0.0,2.8e-01,0.74
+place_nsa64npr_s4,nsa64npr,4,7.0e-01,1.2e+00,0.0,2.8e-01,0.70
+place_nsa64npr_s5,nsa64npr,5,8.2e-01,1.3e+00,0.0,2.8e-01,0.82
+place_nsa64npr_s6,nsa64npr,6,8.2e-01,1.3e+00,0.0,2.8e-01,0.82
+place_nsa64npr_s7,nsa64npr,7,7.2e-01,1.2e+00,0.0,2.8e-01,0.72
+place_nsa64npr_s8,nsa64npr,8,7.4e-01,1.1e+00,0.0,2.8e-01,0.74

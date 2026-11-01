@@ -1,0 +1,15 @@
+CHAIN_START 12:00:58 dell-Precision-3680 jobs=12
+DONE place_chain64_s1
+DONE place_chain64p_s1
+DONE place_ftchain_s1
+DONE place_chain64np_s1
+DONE place_chain64_s2
+DONE place_chain64p_s2
+DONE place_ftchain_s2
+DONE place_chain64np_s2
+DONE place_chain64_s3
+DONE place_chain64p_s3
+DONE place_ftchain_s3
+EXIT 75 place_chain64np_s3
+CHAIN_END 14:18:01
+CHAIN_START 14:18:36 dell-Precision-3680 jobs=1

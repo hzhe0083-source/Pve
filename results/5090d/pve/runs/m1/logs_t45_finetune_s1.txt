@@ -1,0 +1,11 @@
+iter 1 step 0 eval success_once=0.367 lam=0.000
+iter 3 step 81920 eval success_once=0.602 lam=0.000
+iter 5 step 163840 eval success_once=0.578 lam=0.000
+iter 7 step 245760 eval success_once=0.617 lam=0.000
+iter 9 step 327680 eval success_once=0.656 lam=0.000
+iter 11 step 409600 eval success_once=0.742 lam=0.000
+iter 13 step 491520 eval success_once=0.859 lam=0.000
+iter 15 step 573440 eval success_once=0.984 lam=0.000
+iter 17 step 655360 eval success_once=1.000 lam=0.000
+early stop: reached 0.9
+done t45_finetune_s1 steps=655360 wall=55s SPS=11999

@@ -1,0 +1,59 @@
+{
+ "old_expert": 0.9921875,
+ "runs": {
+  "runs/protect/runs/stack_distill01_s3/ckpt_512000.pt": {
+   "old_head": 0.98046875,
+   "new_head": 0.97265625,
+   "moved": [
+    0.021298585459589958,
+    0.029637793079018593,
+    0.04018726944923401
+   ]
+  },
+  "runs/protect/runs/stack_distill01_s3/ckpt_1024000.pt": {
+   "old_head": 0.9921875,
+   "new_head": 0.7734375,
+   "moved": [
+    0.04091941565275192,
+    0.04885505884885788,
+    0.06640074402093887
+   ]
+  },
+  "runs/protect/runs/stack_distill01_s3/ckpt_1536000.pt": {
+   "old_head": 0.984375,
+   "new_head": 0.78125,
+   "moved": [
+    0.06111433729529381,
+    0.06844115257263184,
+    0.08698625862598419
+   ]
+  },
+  "runs/protect/runs/stack_distill01_s3/ckpt_2048000.pt": {
+   "old_head": 0.9921875,
+   "new_head": 0.72265625,
+   "moved": [
+    0.08081024885177612,
+    0.08805792778730392,
+    0.10673249512910843
+   ]
+  },
+  "runs/protect/runs/stack_distill01_s3/ckpt_2508800.pt": {
+   "old_head": 0.98828125,
+   "new_head": 0.80078125,
+   "moved": [
+    0.09716104716062546,
+    0.10444550961256027,
+    0.12304583191871643
+   ]
+  },
+  "runs/protect/runs/stack_distill01_s3/final_ckpt.pt": {
+   "old_head": 0.98046875,
+   "new_head": 0.796875,
+   "moved": [
+    0.109329454600811,
+    0.11609560996294022,
+    0.1347685605287552
+   ]
+  }
+ }
+}

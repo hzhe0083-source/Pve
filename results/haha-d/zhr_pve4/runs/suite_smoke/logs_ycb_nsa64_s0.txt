@@ -1,0 +1,6 @@
+[33;1m2026-11-01 18:42:43,150 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+iter 1 step 0 eval success_once=0.691 lam=0.000
+halt at 102400
+old skill on PickCube-v1 at the end: 0.996
+nullspace adapter: max |old head on h~ - old head on h| = 7.15e-07
+done ycb_nsa64_s0 steps=102400 wall=19s SPS=5325

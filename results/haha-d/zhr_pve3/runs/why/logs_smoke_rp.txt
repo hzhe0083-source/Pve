@@ -1,0 +1,8 @@
+[33;1m2026-11-01 16:35:44,382 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2026-11-01 16:35:47,903 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+[33;1m2026-11-01 16:35:50,308 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+iter 1 step 0 eval success_once=0.008 lam=0.000
+halt at 102400
+old skill on PickCube-v1 at the end: 0.992
+nullspace adapter: max |old head on h~ - old head on h| = 5.88e-02
+done smoke_rp steps=102400 wall=15s SPS=6853

@@ -1,0 +1,643 @@
+[33;1m2026-10-30 23:40:03,341 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:40:03,812 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:40:03,825 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:40:04,645 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:40:04,656 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:40:04,657 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:40:05,333 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:40:05,344 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:40:05,344 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:40:05,594 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:40:05,605 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:40:05,606 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:40:07,179 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:40:07,190 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:40:07,190 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:41:42,276 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:41:42,287 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:41:42,288 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:41:45,034 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:41:45,045 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:41:45,046 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:43:34,137 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:43:34,148 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:43:34,149 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:43:36,784 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:43:36,795 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:43:36,796 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:45:31,298 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:45:31,309 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:45:31,310 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:45:34,191 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:45:34,202 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:45:34,202 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:47:16,588 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:47:16,600 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:47:16,600 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:47:19,201 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:47:19,212 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:47:19,212 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:48:53,109 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:48:53,120 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:48:53,121 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:48:55,749 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:48:55,760 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:48:55,761 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:50:29,089 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:50:29,101 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:50:29,101 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:50:31,727 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:50:31,739 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:50:31,739 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+Running training
+####
+args.num_iterations=244 args.num_envs=1024 args.num_eval_envs=16
+args.minibatch_size=3200 args.batch_size=102400 args.update_epochs=8
+####
+Epoch: 1, global_step=0
+Evaluating
+Evaluated 1600 steps resulting in 16 episodes
+eval_success_once_mean=0.0
+eval_return_mean=3.3141212463378906
+eval_episode_len_mean=100.0
+eval_reward_mean=0.03314121067523956
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool/ckpt_1.pt
+SPS: 19114
+Epoch: 2, global_step=102400
+SPS: 23560
+Epoch: 3, global_step=204800
+SPS: 25345
+Epoch: 4, global_step=307200
+SPS: 26172
+Epoch: 5, global_step=409600
+SPS: 26712
+Epoch: 6, global_step=512000
+SPS: 26898
+Epoch: 7, global_step=614400
+SPS: 26879
+Epoch: 8, global_step=716800
+SPS: 27038
+Epoch: 9, global_step=819200
+SPS: 27182
+Epoch: 10, global_step=921600
+SPS: 27211
+Epoch: 11, global_step=1024000
+SPS: 27149
+Epoch: 12, global_step=1126400
+SPS: 27075
+Epoch: 13, global_step=1228800
+SPS: 27189
+Epoch: 14, global_step=1331200
+SPS: 27191
+Epoch: 15, global_step=1433600
+SPS: 27160
+Epoch: 16, global_step=1536000
+SPS: 27051
+Epoch: 17, global_step=1638400
+SPS: 26936
+Epoch: 18, global_step=1740800
+SPS: 26959
+Epoch: 19, global_step=1843200
+SPS: 26887
+Epoch: 20, global_step=1945600
+SPS: 26747
+Epoch: 21, global_step=2048000
+SPS: 26710
+Epoch: 22, global_step=2150400
+SPS: 26623
+Epoch: 23, global_step=2252800
+SPS: 26536
+Epoch: 24, global_step=2355200
+SPS: 26459
+Epoch: 25, global_step=2457600
+SPS: 26390
+Epoch: 26, global_step=2560000
+Evaluating
+Evaluated 1600 steps resulting in 16 episodes
+eval_success_once_mean=0.0
+eval_return_mean=30.05495262145996
+eval_episode_len_mean=100.0
+eval_reward_mean=0.30054953694343567
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool/ckpt_26.pt
+SPS: 25663
+Epoch: 27, global_step=2662400
+SPS: 25658
+Epoch: 28, global_step=2764800
+SPS: 25683
+Epoch: 29, global_step=2867200
+SPS: 25725
+Epoch: 30, global_step=2969600
+SPS: 25694
+Epoch: 31, global_step=3072000
+SPS: 25617
+Epoch: 32, global_step=3174400
+SPS: 25603
+Epoch: 33, global_step=3276800
+SPS: 25542
+Epoch: 34, global_step=3379200
+SPS: 25485
+Epoch: 35, global_step=3481600
+SPS: 25469
+Epoch: 36, global_step=3584000
+SPS: 25388
+Epoch: 37, global_step=3686400
+SPS: 25330
+Epoch: 38, global_step=3788800
+SPS: 25280
+Epoch: 39, global_step=3891200
+SPS: 25229
+Epoch: 40, global_step=3993600
+SPS: 25167
+Epoch: 41, global_step=4096000
+SPS: 25086
+Epoch: 42, global_step=4198400
+SPS: 25026
+Epoch: 43, global_step=4300800
+SPS: 24950
+Epoch: 44, global_step=4403200
+SPS: 24888
+Epoch: 45, global_step=4505600
+SPS: 24809
+Epoch: 46, global_step=4608000
+SPS: 24746
+Epoch: 47, global_step=4710400
+SPS: 24677
+Epoch: 48, global_step=4812800
+SPS: 24623
+Epoch: 49, global_step=4915200
+SPS: 24570
+Epoch: 50, global_step=5017600
+SPS: 24513
+Epoch: 51, global_step=5120000
+Evaluating
+Evaluated 1600 steps resulting in 16 episodes
+eval_success_once_mean=0.0
+eval_return_mean=84.03290557861328
+eval_episode_len_mean=100.0
+eval_reward_mean=0.8403290510177612
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool/ckpt_51.pt
+SPS: 24146
+Epoch: 52, global_step=5222400
+SPS: 24109
+Epoch: 53, global_step=5324800
+SPS: 24081
+Epoch: 54, global_step=5427200
+SPS: 24056
+Epoch: 55, global_step=5529600
+SPS: 24020
+Epoch: 56, global_step=5632000
+SPS: 24024
+Epoch: 57, global_step=5734400
+SPS: 23995
+Epoch: 58, global_step=5836800
+SPS: 23961
+Epoch: 59, global_step=5939200
+SPS: 23926
+Epoch: 60, global_step=6041600
+SPS: 23889
+Epoch: 61, global_step=6144000
+SPS: 23862
+Epoch: 62, global_step=6246400
+SPS: 23825
+Epoch: 63, global_step=6348800
+SPS: 23790
+Epoch: 64, global_step=6451200
+SPS: 23757
+Epoch: 65, global_step=6553600
+SPS: 23736
+Epoch: 66, global_step=6656000
+SPS: 23710
+Epoch: 67, global_step=6758400
+SPS: 23681
+Epoch: 68, global_step=6860800
+SPS: 23657
+Epoch: 69, global_step=6963200
+SPS: 23642
+Epoch: 70, global_step=7065600
+SPS: 23619
+Epoch: 71, global_step=7168000
+SPS: 23596
+Epoch: 72, global_step=7270400
+SPS: 23585
+Epoch: 73, global_step=7372800
+SPS: 23566
+Epoch: 74, global_step=7475200
+SPS: 23555
+Epoch: 75, global_step=7577600
+SPS: 23556
+Epoch: 76, global_step=7680000
+Evaluating
+Evaluated 1600 steps resulting in 16 episodes
+eval_success_once_mean=0.0
+eval_return_mean=90.37265014648438
+eval_episode_len_mean=100.0
+eval_reward_mean=0.9037265777587891
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool/ckpt_76.pt
+SPS: 23331
+Epoch: 77, global_step=7782400
+SPS: 23333
+Epoch: 78, global_step=7884800
+SPS: 23345
+Epoch: 79, global_step=7987200
+SPS: 23348
+Epoch: 80, global_step=8089600
+SPS: 23352
+Epoch: 81, global_step=8192000
+SPS: 23344
+Epoch: 82, global_step=8294400
+SPS: 23368
+Epoch: 83, global_step=8396800
+SPS: 23373
+Epoch: 84, global_step=8499200
+SPS: 23379
+Epoch: 85, global_step=8601600
+SPS: 23389
+Epoch: 86, global_step=8704000
+SPS: 23406
+Epoch: 87, global_step=8806400
+SPS: 23440
+Epoch: 88, global_step=8908800
+SPS: 23457
+Epoch: 89, global_step=9011200
+SPS: 23475
+Epoch: 90, global_step=9113600
+SPS: 23490
+Epoch: 91, global_step=9216000
+SPS: 23510
+Epoch: 92, global_step=9318400
+SPS: 23534
+Epoch: 93, global_step=9420800
+SPS: 23561
+Epoch: 94, global_step=9523200
+SPS: 23590
+Epoch: 95, global_step=9625600
+SPS: 23613
+Epoch: 96, global_step=9728000
+SPS: 23625
+Epoch: 97, global_step=9830400
+SPS: 23657
+Epoch: 98, global_step=9932800
+SPS: 23678
+Epoch: 99, global_step=10035200
+SPS: 23692
+Epoch: 100, global_step=10137600
+SPS: 23741
+Epoch: 101, global_step=10240000
+Evaluating
+Evaluated 1600 steps resulting in 16 episodes
+eval_success_once_mean=0.0
+eval_return_mean=97.67724609375
+eval_episode_len_mean=100.0
+eval_reward_mean=0.9767724275588989
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool/ckpt_101.pt
+SPS: 23615
+Epoch: 102, global_step=10342400
+SPS: 23644
+Epoch: 103, global_step=10444800
+SPS: 23674
+Epoch: 104, global_step=10547200
+SPS: 23705
+Epoch: 105, global_step=10649600
+SPS: 23725
+Epoch: 106, global_step=10752000
+SPS: 23748
+Epoch: 107, global_step=10854400
+SPS: 23766
+Epoch: 108, global_step=10956800
+SPS: 23790
+Epoch: 109, global_step=11059200
+SPS: 23806
+Epoch: 110, global_step=11161600
+SPS: 23820
+Epoch: 111, global_step=11264000
+SPS: 23866
+Epoch: 112, global_step=11366400
+SPS: 23886
+Epoch: 113, global_step=11468800
+SPS: 23917
+Epoch: 114, global_step=11571200
+SPS: 23956
+Epoch: 115, global_step=11673600
+SPS: 23996
+Epoch: 116, global_step=11776000
+SPS: 24020
+Epoch: 117, global_step=11878400
+SPS: 24046
+Epoch: 118, global_step=11980800
+SPS: 24071
+Epoch: 119, global_step=12083200
+SPS: 24101
+Epoch: 120, global_step=12185600
+SPS: 24125
+Epoch: 121, global_step=12288000
+SPS: 24143
+Epoch: 122, global_step=12390400
+SPS: 24175
+Epoch: 123, global_step=12492800
+SPS: 24195
+Epoch: 124, global_step=12595200
+SPS: 24229
+Epoch: 125, global_step=12697600
+SPS: 24250
+Epoch: 126, global_step=12800000
+Evaluating
+Evaluated 1600 steps resulting in 16 episodes
+eval_success_once_mean=0.0
+eval_return_mean=101.84153747558594
+eval_episode_len_mean=100.0
+eval_reward_mean=1.0184154510498047
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool/ckpt_126.pt
+SPS: 24141
+Epoch: 127, global_step=12902400
+SPS: 24150
+Epoch: 128, global_step=13004800
+SPS: 24167
+Epoch: 129, global_step=13107200
+SPS: 24191
+Epoch: 130, global_step=13209600
+SPS: 24203
+Epoch: 131, global_step=13312000
+SPS: 24227
+Epoch: 132, global_step=13414400
+SPS: 24260
+Epoch: 133, global_step=13516800
+SPS: 24278
+Epoch: 134, global_step=13619200
+SPS: 24287
+Epoch: 135, global_step=13721600
+SPS: 24309
+Epoch: 136, global_step=13824000
+SPS: 24322
+Epoch: 137, global_step=13926400
+SPS: 24354
+Epoch: 138, global_step=14028800
+SPS: 24370
+Epoch: 139, global_step=14131200
+SPS: 24391
+Epoch: 140, global_step=14233600
+SPS: 24405
+Epoch: 141, global_step=14336000
+SPS: 24425
+Epoch: 142, global_step=14438400
+SPS: 24457
+Epoch: 143, global_step=14540800
+SPS: 24477
+Epoch: 144, global_step=14643200
+SPS: 24508
+Epoch: 145, global_step=14745600
+SPS: 24539
+Epoch: 146, global_step=14848000
+SPS: 24567
+Epoch: 147, global_step=14950400
+SPS: 24569
+Epoch: 148, global_step=15052800
+SPS: 24587
+Epoch: 149, global_step=15155200
+SPS: 24609
+Epoch: 150, global_step=15257600
+SPS: 24622
+Epoch: 151, global_step=15360000
+Evaluating
+Evaluated 1600 steps resulting in 16 episodes
+eval_success_once_mean=0.0[33;1m2026-10-30 23:52:03,439 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:52:03,451 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:52:03,451 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:52:06,085 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:52:06,097 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:52:06,097 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:53:38,027 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:53:38,039 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:53:38,039 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:53:40,738 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:53:40,749 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:53:40,750 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:55:14,433 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:55:14,444 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:55:14,445 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:55:17,095 - mani_skill  - WARNING - No initial pose set for articulation builder of panda, setting to default pose q=[1,0,0,0], p=[0,0,0]. There may be simulation issues/bugs if this articulation at it's initial pose collides with other objects at their initial poses.[0m
+[33;1m2026-10-30 23:55:17,106 - mani_skill  - WARNING - No initial pose set for actor builder of cube, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-30 23:55:17,107 - mani_skill  - WARNING - No initial pose set for actor builder of l_shape_tool, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+
+eval_return_mean=111.23277282714844
+eval_episode_len_mean=100.0
+eval_reward_mean=1.1123278141021729
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool/ckpt_151.pt
+SPS: 24534
+Epoch: 152, global_step=15462400
+SPS: 24552
+Epoch: 153, global_step=15564800
+SPS: 24579
+Epoch: 154, global_step=15667200
+SPS: 24588
+Epoch: 155, global_step=15769600
+SPS: 24607
+Epoch: 156, global_step=15872000
+SPS: 24626
+Epoch: 157, global_step=15974400
+SPS: 24642
+Epoch: 158, global_step=16076800
+SPS: 24651
+Epoch: 159, global_step=16179200
+SPS: 24679
+Epoch: 160, global_step=16281600
+SPS: 24704
+Epoch: 161, global_step=16384000
+SPS: 24722
+Epoch: 162, global_step=16486400
+SPS: 24736
+Epoch: 163, global_step=16588800
+SPS: 24761
+Epoch: 164, global_step=16691200
+SPS: 24768
+Epoch: 165, global_step=16793600
+SPS: 24787
+Epoch: 166, global_step=16896000
+SPS: 24792
+Epoch: 167, global_step=16998400
+SPS: 24802
+Epoch: 168, global_step=17100800
+SPS: 24821
+Epoch: 169, global_step=17203200
+SPS: 24835
+Epoch: 170, global_step=17305600
+SPS: 24855
+Epoch: 171, global_step=17408000
+SPS: 24879
+Epoch: 172, global_step=17510400
+SPS: 24903
+Epoch: 173, global_step=17612800
+SPS: 24925
+Epoch: 174, global_step=17715200
+SPS: 24938
+Epoch: 175, global_step=17817600
+SPS: 24952
+Epoch: 176, global_step=17920000
+Evaluating
+Evaluated 1600 steps resulting in 16 episodes
+eval_success_once_mean=0.0
+eval_return_mean=110.7519760131836
+eval_episode_len_mean=100.0
+eval_reward_mean=1.1075198650360107
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool/ckpt_176.pt
+SPS: 24869
+Epoch: 177, global_step=18022400
+SPS: 24884
+Epoch: 178, global_step=18124800
+SPS: 24904
+Epoch: 179, global_step=18227200
+SPS: 24926
+Epoch: 180, global_step=18329600
+SPS: 24938
+Epoch: 181, global_step=18432000
+SPS: 24958
+Epoch: 182, global_step=18534400
+SPS: 24964
+Epoch: 183, global_step=18636800
+SPS: 24983
+Epoch: 184, global_step=18739200
+SPS: 24995
+Epoch: 185, global_step=18841600
+SPS: 25012
+Epoch: 186, global_step=18944000
+SPS: 25030
+Epoch: 187, global_step=19046400
+SPS: 25041
+Epoch: 188, global_step=19148800
+SPS: 25053
+Epoch: 189, global_step=19251200
+SPS: 25059
+Epoch: 190, global_step=19353600
+SPS: 25063
+Epoch: 191, global_step=19456000
+SPS: 25071
+Epoch: 192, global_step=19558400
+SPS: 25088
+Epoch: 193, global_step=19660800
+SPS: 25104
+Epoch: 194, global_step=19763200
+SPS: 25115
+Epoch: 195, global_step=19865600
+SPS: 25136
+Epoch: 196, global_step=19968000
+SPS: 25149
+Epoch: 197, global_step=20070400
+SPS: 25155
+Epoch: 198, global_step=20172800
+SPS: 25172
+Epoch: 199, global_step=20275200
+SPS: 25187
+Epoch: 200, global_step=20377600
+SPS: 25198
+Epoch: 201, global_step=20480000
+Evaluating
+Evaluated 1600 steps resulting in 16 episodes
+eval_success_once_mean=0.0
+eval_return_mean=110.0283432006836
+eval_episode_len_mean=100.0
+eval_reward_mean=1.1002833843231201
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool/ckpt_201.pt
+SPS: 25119
+Epoch: 202, global_step=20582400
+SPS: 25121
+Epoch: 203, global_step=20684800
+SPS: 25113
+Epoch: 204, global_step=20787200
+SPS: 25116
+Epoch: 205, global_step=20889600
+SPS: 25116
+Epoch: 206, global_step=20992000
+SPS: 25133
+Epoch: 207, global_step=21094400
+SPS: 25140
+Epoch: 208, global_step=21196800
+SPS: 25137
+Epoch: 209, global_step=21299200
+SPS: 25147
+Epoch: 210, global_step=21401600
+SPS: 25156
+Epoch: 211, global_step=21504000
+SPS: 25164
+Epoch: 212, global_step=21606400
+SPS: 25165
+Epoch: 213, global_step=21708800
+SPS: 25182
+Epoch: 214, global_step=21811200
+SPS: 25199
+Epoch: 215, global_step=21913600
+SPS: 25213
+Epoch: 216, global_step=22016000
+SPS: 25221
+Epoch: 217, global_step=22118400
+SPS: 25226
+Epoch: 218, global_step=22220800
+SPS: 25228
+Epoch: 219, global_step=22323200
+SPS: 25246
+Epoch: 220, global_step=22425600
+SPS: 25264
+Epoch: 221, global_step=22528000
+SPS: 25279
+Epoch: 222, global_step=22630400
+SPS: 25296
+Epoch: 223, global_step=22732800
+SPS: 25313
+Epoch: 224, global_step=22835200
+SPS: 25331
+Epoch: 225, global_step=22937600
+SPS: 25342
+Epoch: 226, global_step=23040000
+Evaluating
+Evaluated 1600 steps resulting in 16 episodes
+eval_success_once_mean=0.0
+eval_return_mean=110.36931610107422
+eval_episode_len_mean=100.0
+eval_reward_mean=1.1036931276321411
+eval_success_at_end_mean=0.0
+model saved to runs/PullCubeTool/ckpt_226.pt
+SPS: 25277
+Epoch: 227, global_step=23142400
+SPS: 25293
+Epoch: 228, global_step=23244800
+SPS: 25307
+Epoch: 229, global_step=23347200
+SPS: 25320
+Epoch: 230, global_step=23449600
+SPS: 25335
+Epoch: 231, global_step=23552000
+SPS: 25344
+Epoch: 232, global_step=23654400
+SPS: 25360
+Epoch: 233, global_step=23756800
+SPS: 25376
+Epoch: 234, global_step=23859200
+SPS: 25383
+Epoch: 235, global_step=23961600
+SPS: 25398
+Epoch: 236, global_step=24064000
+SPS: 25414
+Epoch: 237, global_step=24166400
+SPS: 25430
+Epoch: 238, global_step=24268800
+SPS: 25437
+Epoch: 239, global_step=24371200
+SPS: 25452
+Epoch: 240, global_step=24473600
+SPS: 25468
+Epoch: 241, global_step=24576000
+SPS: 25480
+Epoch: 242, global_step=24678400
+SPS: 25495
+Epoch: 243, global_step=24780800
+SPS: 25510
+Epoch: 244, global_step=24883200
+SPS: 25525
+model saved to runs/PullCubeTool/final_ckpt.pt

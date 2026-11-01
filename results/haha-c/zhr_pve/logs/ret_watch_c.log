@@ -1,0 +1,10 @@
+02:01:51 stack_nsa256_s1 FAILED
+02:05:16 stack_monitor_s1 ok
+02:07:24 stack_nsa256_s2 FAILED
+02:08:53 stack_distill1d_s1 ok
+02:13:24 stack_monitor_s2 ok
+02:14:31 stack_nsa256_s3 FAILED
+02:16:10 stack_distill1d_s2 ok
+02:18:30 stack_monitor_s3 ok
+02:20:59 stack_distill1d_s3 ok
+RET_END 02:20:59

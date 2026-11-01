@@ -1,0 +1,5 @@
+[33;1m2026-11-01 13:23:47,796 - mani_skill  - WARNING - panda_wristcam is not in the task's list of supported robots. Code may not run as intended[0m
+old PickCube expert on PickCube: 0.992
+checkpoint                                       | old head | new head | weight change per hidden layer
+runs/stack_fnbank_s1                             |    0.996 |    0.934 | 0.102 0.152 0.146
+runs/stack_fnbank_s1                             |    0.992 |    0.633 | 0.192 0.252 0.232

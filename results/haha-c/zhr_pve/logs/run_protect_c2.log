@@ -1,0 +1,8 @@
+PROT_START 02:20:27 dell-5090 jobs=6
+DONE stack_nsa16_s2
+DONE stack_nsa16_s1
+DONE stack_nsa64_s1
+DONE stack_nsa64_s2
+DONE stack_nsa16_s3
+DONE stack_nsa64_s3
+PROT_END 02:32:40

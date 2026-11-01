@@ -1,0 +1,32 @@
+{
+ "old_expert": 0.9921875,
+ "runs": {
+  "runs/protect_c/runs/place_monitor_s2/ckpt_512000.pt": {
+   "old_head": 0.98828125,
+   "new_head": 0.8828125,
+   "moved": [
+    0.03517642617225647,
+    0.046705566346645355,
+    0.05670304223895073
+   ]
+  },
+  "runs/protect_c/runs/place_monitor_s2/ckpt_1024000.pt": {
+   "old_head": 0.6796875,
+   "new_head": 0.26953125,
+   "moved": [
+    0.0684657022356987,
+    0.08454763889312744,
+    0.09822738170623779
+   ]
+  },
+  "runs/protect_c/runs/place_monitor_s2/final_ckpt.pt": {
+   "old_head": 0.6796875,
+   "new_head": 0.26953125,
+   "moved": [
+    0.0684657022356987,
+    0.08454763889312744,
+    0.09822738170623779
+   ]
+  }
+ }
+}

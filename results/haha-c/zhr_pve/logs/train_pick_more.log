@@ -1,0 +1,7 @@
+PICK_c2 4608000,0.9921875 16:29:17
+source states 102400, done rate 0.276; held-out AUROC 0.811, accuracy 0.734
+saved data/done_probe_pick_c2.pt
+PICK_c3 6144000,0.9765625 16:50:03
+source states 102400, done rate 0.331; held-out AUROC 0.809, accuracy 0.724
+saved data/done_probe_pick_c3.pt
+PICK_MORE_END

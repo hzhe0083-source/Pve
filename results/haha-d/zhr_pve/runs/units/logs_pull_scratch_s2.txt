@@ -1,0 +1,3 @@
+[33;1m2026-10-31 21:28:05,584 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+[33;1m2026-10-31 21:28:07,248 - mani_skill  - WARNING - No initial pose set for actor builder of goal_region, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421.[0m
+/home/zhaobo/zhr_pve/scripts/with_gpu_mem.sh: line 17: 1765564 Segmentation fault      (core dumped) "$@" 9>&-
