@@ -5,3 +5,7 @@ smoke_nsa64lo old head max change 9.54e-07
 smoke_nsa64z old head max change 9.54e-07
 smoke_nsa64d old head max change 9.54e-07
 smoke passed 18:49:16
+AE pass 1 19:44:09 unfinished 0
+E extension round 1: nsa64vhi 19:44:09
+Eext1 pass 1 19:50:39 unfinished 0
+E extension round 2: none 19:50:39

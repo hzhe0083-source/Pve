@@ -1,0 +1,3 @@
+iteration,global_step,old_success,old_states
+10,512000,0.98828125,4474
+15,716800,0.9921875,4515

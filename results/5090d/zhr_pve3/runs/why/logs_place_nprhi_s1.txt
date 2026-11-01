@@ -11,3 +11,9 @@ iter 13 step 614400 eval success_once=0.008 lam=0.000
 iter 15 step 716800 eval success_once=0.199 lam=0.000
 iter 17 step 819200 eval success_once=0.668 lam=0.000
 iter 19 step 921600 eval success_once=0.918 lam=0.000
+iter 21 step 1024000 eval success_once=0.965 lam=0.000
+iter 23 step 1126400 eval success_once=0.980 lam=0.000
+early stop: reached 0.9
+old skill on PickCube-v1 at the end: 0.996
+nullspace adapter: max |old head on h~ - old head on h| = 8.50e-01
+done place_nprhi_s1 steps=1126400 wall=77s SPS=14549
